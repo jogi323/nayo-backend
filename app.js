@@ -24,7 +24,9 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('/', index);
 app.use('/users', users);
-
+app.get('/*', function (req, res) {
+  res.sendFile(__dirname + '/dist/index.html'); // uncommented, since it didn't work
+});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
