@@ -8,21 +8,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__ = __webpack_require__(920);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__ = __webpack_require__(923);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_img_cropper__ = __webpack_require__(963);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_img_cropper__ = __webpack_require__(971);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_shared_module__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dashboard_routing_module__ = __webpack_require__(927);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dashboard_component__ = __webpack_require__(909);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_home_home_component__ = __webpack_require__(907);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__top_navbar_top_navbar_component__ = __webpack_require__(932);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__top_navbar_navsearch_navsearch_component__ = __webpack_require__(931);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__side_navbar_side_navbar_component__ = __webpack_require__(929);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__side_navbar_userblock_userblock_component__ = __webpack_require__(930);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_theme_settings_theme_settings_component__ = __webpack_require__(908);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dashboard_routing_module__ = __webpack_require__(931);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dashboard_component__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_home_home_component__ = __webpack_require__(930);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__top_navbar_top_navbar_component__ = __webpack_require__(936);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__top_navbar_navsearch_navsearch_component__ = __webpack_require__(935);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__side_navbar_side_navbar_component__ = __webpack_require__(933);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__side_navbar_userblock_userblock_component__ = __webpack_require__(934);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_theme_settings_theme_settings_component__ = __webpack_require__(911);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__core_menu_menu_service__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__side_navbar_userblock_userblock_service__ = __webpack_require__(910);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__menu__ = __webpack_require__(928);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__side_navbar_userblock_userblock_service__ = __webpack_require__(913);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__menu__ = __webpack_require__(932);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_sales_reports_sales_reports_component__ = __webpack_require__(910);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_activity_reports_activity_reports_component__ = __webpack_require__(907);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_dasboard_dasboard_component__ = __webpack_require__(908);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_home_page_home_page_component__ = __webpack_require__(909);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardModule", function() { return DashboardModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -57,6 +61,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 //Naigation Menu
 
+
+
+
+
 var DashboardModule = (function () {
     function DashboardModule(menuService) {
         this.menuService = menuService;
@@ -81,7 +89,11 @@ DashboardModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_9__top_navbar_top_navbar_component__["a" /* TopNavbarComponent */],
             __WEBPACK_IMPORTED_MODULE_11__side_navbar_side_navbar_component__["a" /* SideNavbarComponent */],
             __WEBPACK_IMPORTED_MODULE_10__top_navbar_navsearch_navsearch_component__["a" /* NavsearchComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__side_navbar_userblock_userblock_component__["a" /* UserblockComponent */]
+            __WEBPACK_IMPORTED_MODULE_12__side_navbar_userblock_userblock_component__["a" /* UserblockComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__components_sales_reports_sales_reports_component__["a" /* SalesReportsComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__components_activity_reports_activity_reports_component__["a" /* ActivityReportsComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__components_dasboard_dasboard_component__["a" /* DasboardComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__components_home_page_home_page_component__["a" /* HomePageComponent */]
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_15__side_navbar_userblock_userblock_service__["a" /* UserblockService */]
@@ -136,8 +148,8 @@ exports.FileLikeObject = FileLikeObject;
 "use strict";
 
 var file_like_object_class_1 = __webpack_require__(902);
-var file_item_class_1 = __webpack_require__(918);
-var file_type_class_1 = __webpack_require__(961);
+var file_item_class_1 = __webpack_require__(921);
+var file_type_class_1 = __webpack_require__(969);
 function isFile(value) {
     return (File && value instanceof File);
 }
@@ -547,7 +559,7 @@ exports.FileUploader = FileUploader;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cropperDrawSettings__ = __webpack_require__(921);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cropperDrawSettings__ = __webpack_require__(924);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CropperSettings; });
 
 var CropperSettings = (function () {
@@ -664,7 +676,7 @@ var Bounds = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(926);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(929);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PointPool; });
 
 var PointPool = (function () {
@@ -716,7 +728,7 @@ var PointPool = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivityReportsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -727,23 +739,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var HomeComponent = (function () {
-    function HomeComponent() {
+var ActivityReportsComponent = (function () {
+    function ActivityReportsComponent() {
     }
-    HomeComponent.prototype.ngOnInit = function () {
+    ActivityReportsComponent.prototype.ngOnInit = function () {
     };
-    return HomeComponent;
+    return ActivityReportsComponent;
 }());
-HomeComponent = __decorate([
+ActivityReportsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-home',
-        template: __webpack_require__(971),
-        styles: [__webpack_require__(942)]
+        selector: 'app-activity-reports',
+        template: __webpack_require__(979),
+        styles: [__webpack_require__(946)]
     }),
     __metadata("design:paramtypes", [])
-], HomeComponent);
+], ActivityReportsComponent);
 
-//# sourceMappingURL=home.component.js.map
+//# sourceMappingURL=activity-reports.component.js.map
 
 /***/ }),
 
@@ -752,7 +764,201 @@ HomeComponent = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_file_upload__ = __webpack_require__(920);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_colors_colors_service__ = __webpack_require__(452);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DasboardComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var DasboardComponent = (function () {
+    function DasboardComponent(colors, http) {
+        var _this = this;
+        this.colors = colors;
+        this.http = http;
+        this.easyPiePercent = 70;
+        this.pieOptions = {
+            animate: {
+                duration: 800,
+                enabled: true
+            },
+            barColor: this.colors.byName('info'),
+            trackColor: 'rgba(200,200,200,0.4)',
+            scaleColor: false,
+            lineWidth: 10,
+            lineCap: 'round',
+            size: 145
+        };
+        this.sparkOptions1 = {
+            barColor: this.colors.byName('info'),
+            height: 30,
+            barWidth: '5',
+            barSpacing: '2'
+        };
+        this.sparkOptions2 = {
+            type: 'line',
+            height: 80,
+            width: '100%',
+            lineWidth: 2,
+            lineColor: this.colors.byName('purple'),
+            spotColor: '#888',
+            minSpotColor: this.colors.byName('purple'),
+            maxSpotColor: this.colors.byName('purple'),
+            fillColor: '',
+            highlightLineColor: '#fff',
+            spotRadius: 3,
+            resize: true
+        };
+        this.splineHeight = 280;
+        this.splineOptions = {
+            series: {
+                lines: {
+                    show: false
+                },
+                points: {
+                    show: true,
+                    radius: 4
+                },
+                splines: {
+                    show: true,
+                    tension: 0.4,
+                    lineWidth: 1,
+                    fill: 0.5
+                }
+            },
+            grid: {
+                borderColor: '#eee',
+                borderWidth: 1,
+                hoverable: true,
+                backgroundColor: '#fcfcfc'
+            },
+            tooltip: true,
+            tooltipOpts: {
+                content: function (label, x, y) { return x + ' : ' + y; }
+            },
+            xaxis: {
+                tickColor: '#fcfcfc',
+                mode: 'categories'
+            },
+            yaxis: {
+                min: 0,
+                max: 150,
+                tickColor: '#eee',
+                // position: ($scope.app.layout.isRTL ? 'right' : 'left'),
+                tickFormatter: function (v) {
+                    return v /* + ' visitors'*/;
+                }
+            },
+            shadowSize: 0
+        };
+        http.get('assets/server/chart/spline.json').map(function (data) { return data.json(); }).subscribe(function (data) { return _this.splineData = data; });
+    }
+    DasboardComponent.prototype.ngOnInit = function () { };
+    DasboardComponent.prototype.colorByName = function (name) {
+        return this.colors.byName(name);
+    };
+    return DasboardComponent;
+}());
+DasboardComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-dasboard',
+        template: __webpack_require__(980),
+        styles: [__webpack_require__(947)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_colors_colors_service__["a" /* ColorsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_colors_colors_service__["a" /* ColorsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _b || Object])
+], DasboardComponent);
+
+var _a, _b;
+//# sourceMappingURL=dasboard.component.js.map
+
+/***/ }),
+
+/***/ 909:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePageComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HomePageComponent = (function () {
+    function HomePageComponent() {
+    }
+    HomePageComponent.prototype.ngOnInit = function () {
+    };
+    return HomePageComponent;
+}());
+HomePageComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-home-page',
+        template: __webpack_require__(981),
+        styles: [__webpack_require__(948)]
+    }),
+    __metadata("design:paramtypes", [])
+], HomePageComponent);
+
+//# sourceMappingURL=home-page.component.js.map
+
+/***/ }),
+
+/***/ 910:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SalesReportsComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SalesReportsComponent = (function () {
+    function SalesReportsComponent() {
+    }
+    SalesReportsComponent.prototype.ngOnInit = function () {
+    };
+    return SalesReportsComponent;
+}());
+SalesReportsComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-sales-reports',
+        template: __webpack_require__(983),
+        styles: [__webpack_require__(950)]
+    }),
+    __metadata("design:paramtypes", [])
+], SalesReportsComponent);
+
+//# sourceMappingURL=sales-reports.component.js.map
+
+/***/ }),
+
+/***/ 911:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_file_upload__ = __webpack_require__(923);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_file_upload___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ng2_file_upload__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_service__ = __webpack_require__(449);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__ = __webpack_require__(25);
@@ -793,10 +999,12 @@ var ThemeSettingsComponent = (function () {
     ThemeSettingsComponent.prototype.ngOnInit = function () {
     };
     ThemeSettingsComponent.prototype.setTheme = function () {
-        this.SettingService.url = 'http://localhost:4200/src/app/shared/data.json';
-        this.SettingService.data = this.currentTheme;
-        this.SettingService.postData().subscribe(function (res) {
-        });
+        localStorage.setItem('currentTheme', this.currentTheme);
+        this.themes.setTheme(this.currentTheme);
+        // this.SettingService.url = 'http://localhost:4200/src/app/shared/data.json';
+        // this.SettingService.data = this.currentTheme;
+        // this.SettingService.postData().subscribe(res => {
+        // });    
     };
     ThemeSettingsComponent.prototype.fileChangeListener = function ($event) {
         // let image: any = new Image();
@@ -810,15 +1018,15 @@ var ThemeSettingsComponent = (function () {
         myReader.readAsDataURL(file);
     };
     ThemeSettingsComponent.prototype.saveLogo = function () {
-        console.log(this.image.src);
+        localStorage.setItem('logo', this.image.src);
     };
     return ThemeSettingsComponent;
 }());
 ThemeSettingsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-theme-settings',
-        template: __webpack_require__(972),
-        styles: [__webpack_require__(943)]
+        template: __webpack_require__(984),
+        styles: [__webpack_require__(951)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__app_service__["a" /* AppService */]) === "function" && _c || Object])
 ], ThemeSettingsComponent);
@@ -828,7 +1036,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 909:
+/***/ 912:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -854,8 +1062,8 @@ var DashboardComponent = (function () {
 DashboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-dashboard',
-        template: __webpack_require__(973),
-        styles: [__webpack_require__(944)]
+        template: __webpack_require__(985),
+        styles: [__webpack_require__(952)]
     }),
     __metadata("design:paramtypes", [])
 ], DashboardComponent);
@@ -864,7 +1072,7 @@ DashboardComponent = __decorate([
 
 /***/ }),
 
-/***/ 910:
+/***/ 913:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -906,7 +1114,7 @@ UserblockService = __decorate([
 
 /***/ }),
 
-/***/ 917:
+/***/ 920:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1026,7 +1234,7 @@ exports.FileDropDirective = FileDropDirective;
 
 /***/ }),
 
-/***/ 918:
+/***/ 921:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1160,7 +1368,7 @@ exports.FileItem = FileItem;
 
 /***/ }),
 
-/***/ 919:
+/***/ 922:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1223,7 +1431,7 @@ exports.FileSelectDirective = FileSelectDirective;
 
 /***/ }),
 
-/***/ 920:
+/***/ 923:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1231,18 +1439,18 @@ exports.FileSelectDirective = FileSelectDirective;
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(919));
-__export(__webpack_require__(917));
+__export(__webpack_require__(922));
+__export(__webpack_require__(920));
 __export(__webpack_require__(903));
-__export(__webpack_require__(918));
+__export(__webpack_require__(921));
 __export(__webpack_require__(902));
-var file_upload_module_1 = __webpack_require__(962);
+var file_upload_module_1 = __webpack_require__(970);
 exports.FileUploadModule = file_upload_module_1.FileUploadModule;
 
 
 /***/ }),
 
-/***/ 921:
+/***/ 924:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1262,16 +1470,16 @@ var CropperDrawSettings = (function () {
 
 /***/ }),
 
-/***/ 922:
+/***/ 925:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__model_bounds__ = __webpack_require__(905);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_cornerMarker__ = __webpack_require__(967);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_cropTouch__ = __webpack_require__(968);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__model_dragMarker__ = __webpack_require__(969);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_imageCropperModel__ = __webpack_require__(970);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__imageCropperDataShare__ = __webpack_require__(965);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_cornerMarker__ = __webpack_require__(975);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_cropTouch__ = __webpack_require__(976);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__model_dragMarker__ = __webpack_require__(977);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_imageCropperModel__ = __webpack_require__(978);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__imageCropperDataShare__ = __webpack_require__(973);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_pointPool__ = __webpack_require__(906);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropper; });
 var __extends = (this && this.__extends) || (function () {
@@ -2275,15 +2483,15 @@ var ImageCropper = (function (_super) {
 
 /***/ }),
 
-/***/ 923:
+/***/ 926:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__imageCropper__ = __webpack_require__(922);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__imageCropper__ = __webpack_require__(925);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cropperSettings__ = __webpack_require__(904);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exif__ = __webpack_require__(964);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_cropPosition__ = __webpack_require__(924);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exif__ = __webpack_require__(972);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_cropPosition__ = __webpack_require__(927);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropperComponent; });
 
 
@@ -2499,7 +2707,7 @@ ImageCropperComponent.propDecorators = {
 
 /***/ }),
 
-/***/ 924:
+/***/ 927:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2530,11 +2738,11 @@ var CropPosition = (function () {
 
 /***/ }),
 
-/***/ 925:
+/***/ 928:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(926);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(929);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cropperSettings__ = __webpack_require__(904);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Handle; });
 
@@ -2583,7 +2791,7 @@ var Handle = (function () {
 
 /***/ }),
 
-/***/ 926:
+/***/ 929:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2622,15 +2830,54 @@ var Point = (function () {
 
 /***/ }),
 
-/***/ 927:
+/***/ 930:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HomeComponent = (function () {
+    function HomeComponent() {
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+    };
+    return HomeComponent;
+}());
+HomeComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-home',
+        template: __webpack_require__(982),
+        styles: [__webpack_require__(949)]
+    }),
+    __metadata("design:paramtypes", [])
+], HomeComponent);
+
+//# sourceMappingURL=home.component.js.map
+
+/***/ }),
+
+/***/ 931:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(909);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_home_home_component__ = __webpack_require__(907);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_theme_settings_theme_settings_component__ = __webpack_require__(908);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_theme_settings_theme_settings_component__ = __webpack_require__(911);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_sales_reports_sales_reports_component__ = __webpack_require__(910);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_activity_reports_activity_reports_component__ = __webpack_require__(907);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_dasboard_dasboard_component__ = __webpack_require__(908);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_page_home_page_component__ = __webpack_require__(909);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2643,14 +2890,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
 var routes = [
     {
         path: '',
         component: __WEBPACK_IMPORTED_MODULE_2__dashboard_component__["a" /* DashboardComponent */],
         children: [
             //{ path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-            { path: '', component: __WEBPACK_IMPORTED_MODULE_3__components_home_home_component__["a" /* HomeComponent */] },
-            { path: 'themesettings', component: __WEBPACK_IMPORTED_MODULE_4__components_theme_settings_theme_settings_component__["a" /* ThemeSettingsComponent */] }
+            { path: '', component: __WEBPACK_IMPORTED_MODULE_6__components_dasboard_dasboard_component__["a" /* DasboardComponent */] },
+            { path: 'themesettings', component: __WEBPACK_IMPORTED_MODULE_3__components_theme_settings_theme_settings_component__["a" /* ThemeSettingsComponent */] },
+            { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_6__components_dasboard_dasboard_component__["a" /* DasboardComponent */] },
+            { path: 'salesreports', component: __WEBPACK_IMPORTED_MODULE_4__components_sales_reports_sales_reports_component__["a" /* SalesReportsComponent */] },
+            { path: 'activityreports', component: __WEBPACK_IMPORTED_MODULE_5__components_activity_reports_activity_reports_component__["a" /* ActivityReportsComponent */] },
+            { path: 'homepage', component: __WEBPACK_IMPORTED_MODULE_7__components_home_page_home_page_component__["a" /* HomePageComponent */] },
         ]
     },
 ];
@@ -2670,7 +2924,7 @@ DashboardRoutingModule = __decorate([
 
 /***/ }),
 
-/***/ 928:
+/***/ 932:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3078,7 +3332,7 @@ var menu = [
 
 /***/ }),
 
-/***/ 929:
+/***/ 933:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3232,8 +3486,8 @@ var SideNavbarComponent = (function () {
 SideNavbarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-side-navbar',
-        template: __webpack_require__(974),
-        styles: [__webpack_require__(945)]
+        template: __webpack_require__(986),
+        styles: [__webpack_require__(953)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"]) === "function" && _c || Object])
 ], SideNavbarComponent);
@@ -3243,12 +3497,12 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 930:
+/***/ 934:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__userblock_service__ = __webpack_require__(910);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__userblock_service__ = __webpack_require__(913);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserblockComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3278,8 +3532,8 @@ var UserblockComponent = (function () {
 UserblockComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-userblock',
-        template: __webpack_require__(975),
-        styles: [__webpack_require__(946)]
+        template: __webpack_require__(987),
+        styles: [__webpack_require__(954)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__userblock_service__["a" /* UserblockService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__userblock_service__["a" /* UserblockService */]) === "function" && _a || Object])
 ], UserblockComponent);
@@ -3289,7 +3543,7 @@ var _a;
 
 /***/ }),
 
-/***/ 931:
+/***/ 935:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3350,8 +3604,8 @@ __decorate([
 NavsearchComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-navsearch',
-        template: __webpack_require__(976),
-        styles: [__webpack_require__(947)]
+        template: __webpack_require__(988),
+        styles: [__webpack_require__(955)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object])
 ], NavsearchComponent);
@@ -3361,7 +3615,7 @@ var _a;
 
 /***/ }),
 
-/***/ 932:
+/***/ 936:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3399,12 +3653,18 @@ var TopNavbarComponent = (function () {
         this.menuItems = menu.getMenu().slice(0, 4); // for horizontal layout
     }
     TopNavbarComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.navbarService.url = 'http://localhost:4200/src/app/shared/data.json';
-        this.navbarService.getData().subscribe(function (res) {
-            _this.logo = res[0].logo.src;
-            _this.themes.setTheme(res[0].default);
-        });
+        // this.navbarService.url  = 'http://localhost:4200/src/app/shared/data.json';
+        // this.navbarService.getData().subscribe(res => {
+        //     console.log(res);
+        //     this.logo = res[0].logo.src;
+        //     this.themes.setTheme(res[0].default);
+        // });
+        if (localStorage.getItem('currentTheme')) {
+            this.themes.setTheme(localStorage.getItem('currentTheme'));
+        }
+        if (localStorage.getItem('logo')) {
+            this.logo = localStorage.getItem('logo');
+        }
         this.isNavSearchVisible = false;
         if (browser.msie) {
             this.fsbutton.nativeElement.style.display = 'none';
@@ -3457,86 +3717,14 @@ __decorate([
 TopNavbarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-top-navbar',
-        template: __webpack_require__(977),
-        styles: [__webpack_require__(948)]
+        template: __webpack_require__(989),
+        styles: [__webpack_require__(956)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__app_service__["a" /* AppService */]) === "function" && _d || Object])
 ], TopNavbarComponent);
 
 var _a, _b, _c, _d;
 //# sourceMappingURL=top-navbar.component.js.map
-
-/***/ }),
-
-/***/ 942:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 943:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 944:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 945:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -3584,6 +3772,150 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 949:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 950:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 951:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 952:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 953:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 954:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 955:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 956:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
 exports.push([module.i, ".btn-primary-outline {\n  background-color: transparent;\n  border-color: #ccc;\n  color: #ccc; }\n\n.brand {\n  font-size: 30px;\n  font-weight: 900;\n  color: white;\n  font-family: inherit;\n  padding-top: 7% !important; }\n", ""]);
 
 // exports
@@ -3594,7 +3926,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 961:
+/***/ 969:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3764,7 +4096,7 @@ exports.FileType = FileType;
 
 /***/ }),
 
-/***/ 962:
+/***/ 970:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3777,8 +4109,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var common_1 = __webpack_require__(15);
 var core_1 = __webpack_require__(0);
-var file_drop_directive_1 = __webpack_require__(917);
-var file_select_directive_1 = __webpack_require__(919);
+var file_drop_directive_1 = __webpack_require__(920);
+var file_select_directive_1 = __webpack_require__(922);
 var FileUploadModule = (function () {
     function FileUploadModule() {
     }
@@ -3796,23 +4128,23 @@ exports.FileUploadModule = FileUploadModule;
 
 /***/ }),
 
-/***/ 963:
+/***/ 971:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__ = __webpack_require__(966);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__ = __webpack_require__(974);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_imageCropperComponent__ = __webpack_require__(923);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_imageCropperComponent__ = __webpack_require__(926);
 /* unused harmony reexport ImageCropperComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_imageCropper__ = __webpack_require__(922);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_imageCropper__ = __webpack_require__(925);
 /* unused harmony reexport ImageCropper */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_cropperSettings__ = __webpack_require__(904);
 /* unused harmony reexport CropperSettings */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_cropperDrawSettings__ = __webpack_require__(921);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_cropperDrawSettings__ = __webpack_require__(924);
 /* unused harmony reexport CropperDrawSettings */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_model_bounds__ = __webpack_require__(905);
 /* unused harmony reexport Bounds */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_model_cropPosition__ = __webpack_require__(924);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_model_cropPosition__ = __webpack_require__(927);
 /* unused harmony reexport CropPosition */
 // core
 
@@ -3828,7 +4160,7 @@ exports.FileUploadModule = FileUploadModule;
 
 /***/ }),
 
-/***/ 964:
+/***/ 972:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4563,7 +4895,7 @@ Exif.StringValues = {
 
 /***/ }),
 
-/***/ 965:
+/***/ 973:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4608,13 +4940,13 @@ ImageCropperDataShare.share = {};
 
 /***/ }),
 
-/***/ 966:
+/***/ 974:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__imageCropperComponent__ = __webpack_require__(923);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__imageCropperComponent__ = __webpack_require__(926);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropperModule; });
 
 
@@ -4638,11 +4970,11 @@ ImageCropperModule.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 967:
+/***/ 975:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(925);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(928);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CornerMarker; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -4756,7 +5088,7 @@ var CornerMarker = (function (_super) {
 
 /***/ }),
 
-/***/ 968:
+/***/ 976:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4777,11 +5109,11 @@ var CropTouch = (function () {
 
 /***/ }),
 
-/***/ 969:
+/***/ 977:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(925);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(928);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pointPool__ = __webpack_require__(906);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DragMarker; });
 var __extends = (this && this.__extends) || (function () {
@@ -4870,7 +5202,7 @@ var DragMarker = (function (_super) {
 
 /***/ }),
 
-/***/ 970:
+/***/ 978:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4885,52 +5217,80 @@ var ImageCropperModel = (function () {
 
 /***/ }),
 
-/***/ 971:
+/***/ 979:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  activity-reports works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ 980:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content-heading\">\r\n  Dashboard\r\n  <small>{{ 'dashboard.WELCOME' | translate }} !</small>\r\n</div>\r\n<!-- START widgets box-->\r\n<div class=\"row\">\r\n  <div class=\"col-lg-3 col-sm-6\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-primary\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-primary-dark pv-lg\">\r\n                  <em class=\"fa fa-truck fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">1700\r\n                    <!-- <small>total</small> -->\r\n                  </div>\r\n                  <div class=\"text-uppercase\">Orders</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-sm-6\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-purple\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-purple-dark pv-lg\">\r\n                  <em class=\"fa fa-user fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">700\r\n                  </div>\r\n                  <div class=\"text-uppercase\">Users</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-green\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\r\n                  <em class=\"fa fa-eye fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">5000</div>\r\n                  <div class=\"text-uppercase\">Visitors</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\r\n      <!-- START date widget-->\r\n      <div class=\"panel widget bg-green\">\r\n        <div class=\"row row-table\">\r\n            <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\r\n                <em class=\"fa fa-money fa-3x\"></em>\r\n            </div>\r\n            <div class=\"col-xs-8 pv-lg\">\r\n                <div class=\"h2 mt0\">$ 90000</div>\r\n                <div class=\"text-uppercase\">Sales</div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n      <!-- END date widget    -->\r\n  </div>\r\n</div>\r\n<!-- END widgets box-->\r\n<div class=\"row\">\r\n  <!-- START dashboard main content-->\r\n  <div class=\"col-lg-9\">\r\n      <!-- START chart-->\r\n      <div class=\"row\">\r\n          <div class=\"col-lg-12\">\r\n              <!-- START widget-->\r\n              <div class=\"panel panel-default\">\r\n                  <div class=\"panel-heading\">\r\n                      <div class=\"panel-title\">Inbound visitor statistics</div>\r\n                  </div>\r\n                  <div class=\"panel-body\">\r\n                      <div flot [dataset]=\"splineData\" [options]=\"splineOptions\" height=\"260\"></div>\r\n                  </div>\r\n              </div>\r\n              <!-- END widget-->\r\n          </div>\r\n      </div>\r\n      <!-- END chart-->\r\n      \r\n      <div class=\"row\">\r\n          <div class=\"col-lg-4\">\r\n              <!-- START widget-->\r\n              <div class=\"panel widget\">\r\n                  <div class=\"panel-body\">\r\n                      <div class=\"clearfix\">\r\n                          <h3 class=\"pull-left text-muted mt0\">300</h3>\r\n                          <em class=\"pull-right text-muted fa fa-shopping-cart  fa-2x\"></em>\r\n                      </div>\r\n                      <div class=\"pv-lg\" [sparkline]=\"sparkOptions2\" values=\"1,3,4,7,5,9,4,4,7,5,9,6,4\"></div>\r\n                      <p>\r\n                          <small class=\"text-muted\">Cart to bag</small>\r\n                      </p>\r\n                      <progressbar class=\"progress-striped progress-xs\" value=\"80\" type=\"info\">80%</progressbar>\r\n                  </div>\r\n              </div>\r\n              <!-- END widget-->\r\n          </div>\r\n          <div class=\"col-lg-8\">\r\n              <div class=\"panel panel-default\">\r\n                  <div class=\"panel-heading\">\r\n                      <!-- <div class=\"pull-right label label-danger\">5</div>\r\n                      <div class=\"pull-right label label-success\">12</div> -->\r\n                      <div class=\"panel-title\">Top selling products</div>\r\n                  </div>\r\n                  <!-- START list group-->\r\n                  <scrollable class=\"list-group\" height=\"180\">\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                          <div class=\"media-box\">\r\n                              <div class=\"pull-left\">\r\n                                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                              </div>\r\n                              <div class=\"media-box-body clearfix\">\r\n                                  <small class=\"pull-right\">200</small>\r\n                                  <strong class=\"media-box-heading text-primary\">\r\n                            <span class=\"text-left\"></span>Product 1</strong>\r\n                                  <p class=\"mb-sm\">\r\n                                      <small>some description about the product</small>\r\n                                  </p>\r\n                              </div>\r\n                          </div>\r\n                      </a>\r\n                      <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product8.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">180</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 2</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product9.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">150</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 3</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product10.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">135</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 4</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">111</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 5</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->                      \r\n                  </scrollable>\r\n                  <!-- END list group-->\r\n                  <!-- START panel footer-->\r\n                  <div class=\"panel-footer clearfix\">\r\n                      <div class=\"input-group\">\r\n                          <input class=\"form-control input-sm\" type=\"text\" placeholder=\"Search message ..\" />\r\n                          <span class=\"input-group-btn\">\r\n                      <button class=\"btn btn-default btn-sm\" type=\"submit\"><i class=\"fa fa-search\"></i>\r\n                      </button>\r\n                   </span>\r\n                      </div>\r\n                  </div>\r\n                  <!-- END panel-footer-->\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <!-- END dashboard main content-->\r\n  <!-- START dashboard sidebar-->\r\n  <aside class=\"col-lg-3\">\r\n      <!-- START loader widget-->\r\n      <div class=\"panel panel-default\">\r\n          <div class=\"panel-body\">\r\n              <a class=\"text-muted pull-right\" href=\"\">\r\n                  <em class=\"fa fa-arrow-right\"></em>\r\n              </a>\r\n              <div class=\"text-info\">Average Monthly Orders</div>\r\n              <div class=\"text-center pv-xl\">\r\n                  <div class=\"easypie-chart easypie-chart-lg\" easypiechart [options]=\"pieOptions\" [percent]=\"easyPiePercent\">\r\n                      <span>{{easyPiePercent}}%</span>\r\n                  </div>\r\n              </div>\r\n              <div class=\"text-center\" [sparkline]=\"sparkOptions1\"  values=\"5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7\"></div>\r\n          </div>\r\n          <div class=\"panel-footer\">\r\n              <p class=\"text-muted\">\r\n                  <em class=\"fa fa-upload fa-fw\"></em>\r\n                  <span>This Month</span>\r\n                  <span class=\"text-dark\">300 orders</span>\r\n              </p>\r\n          </div>\r\n      </div>\r\n      <!-- END loader widget-->\r\n      <!-- START messages and activity-->\r\n      <div class=\"panel panel-default\">\r\n          <div class=\"panel-heading\">\r\n              <div class=\"panel-title\">Last orders</div>\r\n          </div>\r\n          <!-- START list group-->\r\n          <div class=\"list-group\">\r\n              \r\n              <!-- START list group item-->\r\n              <div class=\"list-group-item\">\r\n                  <div class=\"media-box\">\r\n                    <div class=\"pull-left\">\r\n                      <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                    </div>\r\n                    <div class=\"media-box-body clearfix\">\r\n                        <small class=\"text-muted pull-right ml\">15h</small>\r\n                        <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 1</a>\r\n                        </div>\r\n                        <p class=\"m0\">\r\n                            <small>On\r\n                        <em>10/08/2017 09:00 am</em>\r\n                    </small>\r\n                        </p>\r\n                    </div>\r\n                  </div>\r\n              </div>\r\n              <!-- END list group item-->\r\n              <!-- START list group item-->\r\n              <div class=\"list-group-item\">\r\n                <div class=\"media-box\">\r\n                  <div class=\"pull-left\">\r\n                    <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                  </div>\r\n                  <div class=\"media-box-body clearfix\">\r\n                      <small class=\"text-muted pull-right ml\">1D</small>\r\n                      <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 2</a>\r\n                      </div>\r\n                      <p class=\"m0\">\r\n                          <small>On\r\n                      <em>05/08/2017 09:00 am</em>\r\n                  </small>\r\n                      </p>\r\n                  </div>\r\n                </div>\r\n            </div>\r\n            <!-- END list group item-->\r\n            <!-- START list group item-->\r\n            <div class=\"list-group-item\">\r\n              <div class=\"media-box\">\r\n                <div class=\"pull-left\">\r\n                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                </div>\r\n                <div class=\"media-box-body clearfix\">\r\n                    <small class=\"text-muted pull-right ml\">15d</small>\r\n                    <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 3</a>\r\n                    </div>\r\n                    <p class=\"m0\">\r\n                        <small>On\r\n                    <em>2/7/2015 09:00 am</em>\r\n                </small>\r\n                    </p>\r\n                </div>\r\n              </div>\r\n          </div>\r\n          <!-- END list group item-->\r\n          <!-- START list group item-->\r\n          <div class=\"list-group-item\">\r\n            <div class=\"media-box\">\r\n              <div class=\"pull-left\">\r\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n              </div>\r\n              <div class=\"media-box-body clearfix\">\r\n                  <small class=\"text-muted pull-right ml\">21d</small>\r\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 4</a>\r\n                  </div>\r\n                  <p class=\"m0\">\r\n                      <small>On\r\n                  <em>23/06/2017 09:00 am</em>\r\n              </small>\r\n                  </p>\r\n              </div>\r\n            </div>\r\n        </div>\r\n        <!-- END list group item-->\r\n        <!-- START list group item-->\r\n        <div class=\"list-group-item\">\r\n          <div class=\"media-box\">\r\n              <div class=\"pull-left\">\r\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n              </div>\r\n              <div class=\"media-box-body clearfix\">\r\n                  <small class=\"text-muted pull-right ml\">45d</small>\r\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 5</a>\r\n                  </div>\r\n                  <p class=\"m0\">\r\n                      <small>On\r\n                 <em>10/05/2017 09:00 am</em>\r\n              </small>\r\n                  </p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n      <!-- END list group item-->\r\n      \r\n          </div>\r\n          <!-- END list group-->\r\n          <!-- START panel footer-->\r\n          <div class=\"panel-footer clearfix\">\r\n              <a class=\"pull-left\" href=\"\">\r\n                  <small>Load more</small>\r\n              </a>\r\n          </div>\r\n          <!-- END panel-footer-->\r\n      </div>\r\n      <!-- END messages and activity-->\r\n  </aside>\r\n  <!-- END dashboard sidebar-->\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ 981:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  home-page works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ 982:
 /***/ (function(module, exports) {
 
 module.exports = "<p>\n  home works!\n</p>\n"
 
 /***/ }),
 
-/***/ 972:
+/***/ 983:
 /***/ (function(module, exports) {
 
-module.exports = "<tabset [justified]=\"true\">\r\n    <tab>\r\n        <ng-template tabHeading>\r\n            <em class=\"icon-equalizer fa-lg\"></em>\r\n        </ng-template>\r\n        <!-- <h3 class=\"text-center text-thin\">Settings</h3> -->\r\n        <!-- Theme Settings -->\r\n        <div class=\"p\">\r\n            <h4 class=\"text-muted text-thin\">Themes</h4>\r\n            <p class=\"text-muted text-thin\">Select your theme :</p>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"A\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info\"></span>\r\n                          <span class=\"color bg-info-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"B\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green\"></span>\r\n                          <span class=\"color bg-green-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"C\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple\"></span>\r\n                          <span class=\"color bg-purple-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"D\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger\"></span>\r\n                          <span class=\"color bg-danger-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"E\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info-dark\"></span>\r\n                          <span class=\"color bg-info\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"F\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green-dark\"></span>\r\n                          <span class=\"color bg-green\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"G\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple-dark\"></span>\r\n                          <span class=\"color bg-purple\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"H\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger-dark\"></span>\r\n                          <span class=\"color bg-danger\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </tab>\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n\r\n                    <h4>Select file : </h4>\r\n                    <!-- <div ng-show=\"form.uploader.isHTML5\" class=\"\"> -->\r\n                    <!-- 3. nv-file-over uploader=\"link\" over-class=\"className\"-->\r\n                    <!-- <div ng2FileDrop [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\" (fileOver)=\"fileOverBase($event)\" [uploader]=\"uploader\" class=\"box-placeholder my-drop-zone\">\r\n                        Base drop zone\r\n                    </div> -->\r\n                    <!-- Example: nv-file-drop=\"\" uploader=\"{Object}\" options=\"{Object}\" filters=\"{String}\"-->\r\n                    <!-- <div nv-file-drop=\"\" uploader=\"form.uploader\" options=\"{ url: '/foo' }\">\r\n                    <div nv-file-over=\"\" uploader=\"form.uploader\" over-class=\"bg-purple\" class=\"box-placeholder my-drop-zone\">Another drop zone with its own settings</div>\r\n                </div> -->\r\n                    <!-- </div> -->\r\n                    <!-- Example: nv-file-select=\"\" uploader=\"{Object}\" options=\"{Object}\" filters=\"{String}\"-->\r\n                    <!-- <hr> -->\r\n                    <!-- <input filestyle=\"\" type=\"file\" data-button-text=\"Multiple\" data-class-button=\"btn btn-default\" data-class-input=\"form-control inline\"\r\n                nv-file-select=\"\" uploader=\"form.uploader\" multiple=\"\" class=\"form-control\" id=\"filestyle-0\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\">\r\n            <div class=\"bootstrap-filestyle input-group\"><input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\"> \r\n                <span class=\"group-span-filestyle input-group-btn\"\r\n                    tabindex=\"0\"><label for=\"filestyle-0\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>                <span class=\"buttonText\">Multiple</span></label>\r\n                </span>\r\n            </div><br> -->\r\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\"\r\n                        nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-1\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\r\n                        (change)=\"fileChangeListener($event)\">\r\n                    <div class=\"bootstrap-filestyle input-group\">\r\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\r\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\r\n                    <label for=\"filestyle-1\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\r\n                        <span\r\n                            class=\"buttonText\">Upload Logo</span>\r\n                            </label>\r\n                            </span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-6\" *ngIf=\"image.src\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo Preview</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n\r\n                    <div class=\"text-center\">\r\n                        <img  src={{image.src}} height=\"42px\" width=\"300px\"><br>\r\n                        <button class=\"btn btn-primary pull-right\" (click)='saveLogo()'>Save Logo</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</tabset>"
+module.exports = "<p>\r\n  sales-reports works!\r\n</p>\r\n"
 
 /***/ }),
 
-/***/ 973:
+/***/ 984:
+/***/ (function(module, exports) {
+
+module.exports = "<tabset [justified]=\"true\">\r\n    <tab>\r\n        <ng-template tabHeading>\r\n            <em class=\"icon-equalizer fa-lg\"></em>\r\n        </ng-template>\r\n        <!-- <h3 class=\"text-center text-thin\">Settings</h3> -->\r\n        <!-- Theme Settings -->\r\n        <div class=\"p\">\r\n            <h4 class=\"text-muted text-thin\">Themes</h4>\r\n            <p class=\"text-muted text-thin\">Select your theme :</p>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"A\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info\"></span>\r\n                          <span class=\"color bg-info-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"B\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green\"></span>\r\n                          <span class=\"color bg-green-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"C\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple\"></span>\r\n                          <span class=\"color bg-purple-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"D\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger\"></span>\r\n                          <span class=\"color bg-danger-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"E\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info-dark\"></span>\r\n                          <span class=\"color bg-info\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"F\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green-dark\"></span>\r\n                          <span class=\"color bg-green\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"G\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple-dark\"></span>\r\n                          <span class=\"color bg-purple\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"H\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger-dark\"></span>\r\n                          <span class=\"color bg-danger\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </tab>\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n\r\n                    <h4>Select file : </h4>\r\n                    <!-- <div ng-show=\"form.uploader.isHTML5\" class=\"\"> -->\r\n                    <!-- 3. nv-file-over uploader=\"link\" over-class=\"className\"-->\r\n                    <!-- <div ng2FileDrop [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\" (fileOver)=\"fileOverBase($event)\" [uploader]=\"uploader\" class=\"box-placeholder my-drop-zone\">\r\n                        Base drop zone\r\n                    </div> -->\r\n                    <!-- Example: nv-file-drop=\"\" uploader=\"{Object}\" options=\"{Object}\" filters=\"{String}\"-->\r\n                    <!-- <div nv-file-drop=\"\" uploader=\"form.uploader\" options=\"{ url: '/foo' }\">\r\n                    <div nv-file-over=\"\" uploader=\"form.uploader\" over-class=\"bg-purple\" class=\"box-placeholder my-drop-zone\">Another drop zone with its own settings</div>\r\n                </div> -->\r\n                    <!-- </div> -->\r\n                    <!-- Example: nv-file-select=\"\" uploader=\"{Object}\" options=\"{Object}\" filters=\"{String}\"-->\r\n                    <!-- <hr> -->\r\n                    <!-- <input filestyle=\"\" type=\"file\" data-button-text=\"Multiple\" data-class-button=\"btn btn-default\" data-class-input=\"form-control inline\"\r\n                nv-file-select=\"\" uploader=\"form.uploader\" multiple=\"\" class=\"form-control\" id=\"filestyle-0\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\">\r\n            <div class=\"bootstrap-filestyle input-group\"><input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\"> \r\n                <span class=\"group-span-filestyle input-group-btn\"\r\n                    tabindex=\"0\"><label for=\"filestyle-0\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>                <span class=\"buttonText\">Multiple</span></label>\r\n                </span>\r\n            </div><br> -->\r\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\"\r\n                        nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-1\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\r\n                        (change)=\"fileChangeListener($event)\">\r\n                    <div class=\"bootstrap-filestyle input-group\">\r\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\r\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\r\n                    <label for=\"filestyle-1\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\r\n                        <span\r\n                            class=\"buttonText\">Upload Logo</span>\r\n                            </label>\r\n                            </span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-6\" *ngIf=\"image.src\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo Preview</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <div class=\"text-center\">\r\n                        <img  src={{image.src}} height=\"42px\" width=\"300px\"><br>\r\n                        <button class=\"btn btn-primary pull-right\" (click)='saveLogo()'>Save Logo</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</tabset>"
+
+/***/ }),
+
+/***/ 985:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"wrapper\">\r\n    <!-- top navbar-->\r\n    <app-top-navbar class=\"topnavbar-wrapper\"></app-top-navbar>\r\n    <!-- sidebar-->\r\n    <app-side-navbar class=\"aside\"></app-side-navbar>\r\n    <!-- offsidebar-->\r\n    <!--<app-offsidebar class=\"offsidebar\"></app-offsidebar>-->\r\n    <!-- Main section-->\r\n    <section>\r\n        <!-- Page content-->\r\n        <div class=\"content-wrapper\">\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </section>\r\n    <!-- Page footer-->\r\n    <!--<footer app-footer></footer>-->\r\n</div>"
 
 /***/ }),
 
-/***/ 974:
+/***/ 986:
 /***/ (function(module, exports) {
 
 module.exports = "<!-- START Sidebar (left)-->\n<div class=\"aside-inner\">\n    <nav class=\"sidebar\" sidebar-anyclick-close=\"\" [class.show-scrollbar]=\"settings.layout.asideScrollbar\">\n\n        <!-- START sidebar nav-->\n        <ul class=\"nav\">\n\n            <!-- START user info-->\n            <li class=\"has-user-block\">\n                <app-userblock></app-userblock>\n            </li>\n            <!-- END user info-->\n\n            <li *ngFor='let item of menuItems' [ngClass]=\"{'nav-heading': item.heading}\" [routerLinkActive]=\"['active']\">\n                <!-- menu heading -->\n                <span *ngIf=\"item.heading\">{{(item.translate | translate) || item.text}}</span>\n                <!-- external links -->\n                <a *ngIf=\"!item.heading && !item.submenu && item.elink\" [attr.target]=\"item.target\" [attr.href]=\"item.elink\" title=\"{{item.text}}\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- single menu item -->\n                <a *ngIf=\"!item.heading && !item.submenu && !item.elink\" [routerLink]=\"item.link\" [attr.route]=\"item.link\" title=\"{{item.text}}\"\n                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- has submenu -->\n                <a *ngIf=\"!item.heading && item.submenu\" title=\"{{item.text}}\"\n                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                        <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                        <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                        <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- SUBLEVEL -->\n                <ul *ngIf=\"item.submenu\" class=\"nav sidebar-subnav\" [routerLinkActive]=\"['opening']\">\n                    <li class=\"sidebar-subnav-header\">{{(item.translate | translate) || item.text}}</li>\n                    <li *ngFor='let subitem of item.submenu' [routerLinkActive]=\"['active']\">\n                        <!-- sublevel: external links -->\n                        <a *ngIf=\"!subitem.heading && !subitem.submenu && subitem.elink\" [attr.target]=\"subitem.target\" [attr.href]=\"subitem.elink\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: single menu item  -->\n                        <a *ngIf=\"!subitem.submenu && !subitem.elink\" [routerLink]=\"subitem.link\" [attr.route]=\"subitem.link\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: has submenu -->\n                        <a *ngIf=\"subitem.submenu\" title=\"{{subitem.text}}\"\n                            (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                                <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                                <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- SUBLEVEL 2 -->\n                        <ul *ngIf=\"subitem.submenu\" class=\"nav sidebar-subnav level2\" [routerLinkActive]=\"['opening']\">\n                            <li *ngFor='let subitem2 of subitem.submenu' [routerLinkActive]=\"['active']\">\n                                <!-- sublevel 2: single menu item  -->\n                                <a *ngIf=\"!subitem2.submenu\" [routerLink]=\"subitem2.link\" [attr.route]=\"subitem2.link\" title=\"{{subitem2.text}}\">\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- sublevel2: has submenu -->\n                                <a *ngIf=\"subitem2.submenu\" title=\"{{subitem2.text}}\"\n                                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                        <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                        <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                        <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- SUBLEVEL 3 -->\n                                <ul *ngIf=\"subitem2.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                    <li *ngFor='let subitem3 of subitem2.submenu' [routerLinkActive]=\"['active']\">\n                                        <!-- sublevel 2: single menu item  -->\n                                        <a *ngIf=\"!subitem3.submenu\" [routerLink]=\"subitem3.link\" [attr.route]=\"subitem3.link\" title=\"{{subitem3.text}}\">\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- sublevel3: has submenu -->\n                                        <a *ngIf=\"subitem3.submenu\" title=\"{{subitem3.text}}\"\n                                            (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                                <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                                <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                                <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- SUBLEVEL 4 -->\n                                        <ul *ngIf=\"subitem3.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                            <li *ngFor='let subitem4 of subitem3.submenu' [routerLinkActive]=\"['active']\">\n                                                <!-- sublevel 2: single menu item  -->\n                                                <a *ngIf=\"!subitem4.submenu\" [routerLink]=\"subitem4.link\" [attr.route]=\"subitem4.link\" title=\"{{subitem4.text}}\">\n                                                    <span class=\"pull-right\" *ngIf=\"subitem4.alert\" [ngClass]=\"subitem4.label || 'label label-success'\">{{subitem4.alert}}</span>\n                                                    <em class=\"{{subitem4.icon}}\" *ngIf=\"subitem4.icon\"></em>\n                                                    <span>{{(subitem4.translate | translate) || subitem4.text}}</span>\n                                                </a>\n                                            </li>\n                                        </ul>\n                                    </li>\n                                </ul>\n                            <li>\n                        </ul>\n                    <li>\n                </ul>\n            </li>\n\n        </ul>\n        <!-- END sidebar nav-->\n\n    </nav>\n</div>\n<!-- END Sidebar (left)-->\n"
 
 /***/ }),
 
-/***/ 975:
+/***/ 987:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"item user-block\" *ngIf=\"userBlockIsVisible()\">\r\n    <!-- User picture-->\r\n    <div class=\"user-block-picture\">\r\n        <div class=\"user-block-status\">\r\n            <img class=\"img-thumbnail img-circle\" [src]=\"user.picture\" alt=\"Avatar\" />\r\n            <div class=\"circle circle-success circle-lg\"></div>\r\n        </div>\r\n    </div>\r\n    <!-- Name and Job-->\r\n    <div class=\"user-block-info\">\r\n        <span class=\"user-block-name\">Welcome Ashok</span>\r\n        <span class=\"user-block-role\">Programmer</span>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 976:
+/***/ 988:
 /***/ (function(module, exports) {
 
 module.exports = "<!-- START Search form-->\r\n<form class=\"navbar-form\" role=\"search\" action=\"search.html\" [class.open]=\"visible\" (submit)=\"handleForm()\">\r\n    <div class=\"form-group has-feedback\">\r\n        <input [(ngModel)]=\"term\" name=\"term\" class=\"form-control\" type=\"text\" placeholder=\"{{'header.search.PLACEHOLDER' | translate}}\" />\r\n        <div class=\"fa fa-times form-control-feedback\" (click)=\"closeNavSearch()\"></div>\r\n    </div>\r\n    <button class=\"hidden btn btn-default\" type=\"submit\">Submit</button>\r\n</form>\r\n<!-- END Search form-->\r\n"
 
 /***/ }),
 
-/***/ 977:
+/***/ 989:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- START Top Navbar-->\r\n<nav class=\"navbar topnavbar\" role=\"navigation\">\r\n    <!-- START navbar header-->\r\n    <div class=\"navbar-header\">\r\n        <a class=\"navbar-brand\" [routerLink]=\"'/dashboard'\">\r\n            <div class=\"brand-logo\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\" />\r\n            </div>\r\n            <div class=\"brand-logo-collapsed\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\" />\r\n            </div>\r\n        </a>\r\n            <!-- <a class=\"navbar-brand brand\" [routerLink]=\"'/home'\"> -->\r\n                <!--<svg viewbox=\"0 0 220 44\" width=\"220\" height=\"44\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <title>EDCO Products, Steel Roofing and Siding</title>\r\n                    <g class=\"logoMark\">\r\n                        <path d=\"M1.4,2.4h38v39.2h-38V2.4z\" fill=\"#fff\"> </path>\r\n                        <path d=\"M0.1,1v42h40.6V1H0.1z M3.5,37.4V8.1l10.3,14.4L3.5,37.4z M15.2,39.7V5.2l12.1,17.6L15.2,39.7z M28.8,37.4 L29,7.8L38.9,23L28.8,37.4z\"\r\n                            fill=\"#c6202c\"> </path>\r\n                    </g>-->\r\n                    <!--<path class=\"logoType\" d=\"M46.092.98h37.793v10.11h-21.43v5.963h20.5V27.18h-20.5v5.716H84.32V43.02H46.092V.98m40.03 0h24.537c12.48 0 21.29 4.1 21.29 21.144 0 15.903-9.48 20.897-21.97 20.897H86.13zm16.734 31.555h4.162c6.063 0 7.43-3.85 7.43-10.833 0-7.23-1.49-10.97-7.48-10.97h-4.1zm68.542 9.517a49.372 49.372 0 0 1-12 1.69c-14.475 0-26.09-7.33-26.09-22.338 0-14.1 12.112-21.145 26.09-21.145a60.752 60.752 0 0 1 11.876 1.31v11.11a28.947 28.947 0 0 0-8.36-1.59c-7.12 0-12.5 3.68-12.5 10.56 0 7.2 4.995 10.89 11.927 10.89a28.078 28.078 0 0 0 9.07-1.655zm24.252 1.69c-15.232 0-24.165-7.405-24.165-21.742 0-14.088 8.945-21.74 24.165-21.74C210.893.257 220 7.91 220 22c0 14.337-9.107 21.742-24.35 21.742m0-10.126c6.62 0 6.808-7.106 6.882-11.616-.074-3.913-.497-11.63-6.883-11.63-6.18 0-6.68 7.704-6.68 11.63 0 4.51.69 11.616 6.68 11.616\">\r\n                    </path>-->\r\n                <!--</svg>-->\r\n                <!-- nayo\r\n            </a> -->\r\n    </div>\r\n    <!-- END navbar header-->\r\n    <!-- START Nav wrapper-->\r\n    <div class=\"nav-wrapper\">\r\n        <!-- START Left navbar-->\r\n        <ul class=\"nav navbar-nav\">\r\n            <li>\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\r\n        <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        </li>\r\n        <!-- START User avatar toggle-->\r\n        <!--<li>-->\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <!--<a (click)=\"toggleUserBlock($event)\">\r\n                    <em class=\"icon-user\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END User avatar toggle-->\r\n        <!-- START lock screen-->\r\n        <!--<li>\r\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\r\n                    <em class=\"icon-lock\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END lock screen-->\r\n        </ul>\r\n        <!-- END Left navbar-->\r\n        <!-- START Right Navbar-->\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <!-- Search icon-->\r\n            <li>\r\n                <a (click)=\"openNavSearch($event)\">\r\n                    <em class=\"icon-magnifier\"></em>\r\n                </a>\r\n            </li>\r\n            <!-- Fullscreen (only desktops)-->\r\n            <!-- <li class=\"visible-lg\">\r\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\r\n                    <em class=\"fa fa-expand\"></em>\r\n                </a>\r\n            </li> -->\r\n            <!--<li class=\"visible-lg\">\r\n                <a #fsbutton [routerLink]=\"'/login'\">Login\r\n                </a>\r\n            </li>-->\r\n            <!-- START Alert menu-->\r\n            <li class=\"dropdown dropdown-list\" dropdown>\r\n                <a dropdownToggle>\r\n                    <em class=\"icon-bell\"></em>\r\n                    <div class=\"label label-danger\">11</div>\r\n                </a>\r\n                <!-- START Dropdown menu-->\r\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\r\n                    <li>\r\n                        <!-- START list group-->\r\n                        <div class=\"list-group\">\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New followers</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>1 new follower</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New e-mails</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>You have 10 new emails</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">Pending Tasks</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>11 pending task</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- last list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\r\n                                <span class=\"label label-danger pull-right\">14</span>\r\n                            </a>\r\n                        </div>\r\n                        <!-- END list group-->\r\n                    </li>\r\n                </ul>\r\n                <!-- END Dropdown menu-->\r\n            </li>\r\n            <!-- END Alert menu-->\r\n            <!-- START Offsidebar button-->\r\n            <!--<li>\r\n                <a (click)=\"toggleOffsidebar()\">\r\n                    <em class=\"icon-notebook\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END Offsidebar menu-->\r\n        </ul>\r\n        <!-- END Right Navbar-->\r\n    </div>\r\n    <!-- END Nav wrapper-->\r\n\r\n    <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch>\r\n\r\n</nav>\r\n<!-- END Top Navbar-->"
+module.exports = "<!-- START Top Navbar-->\r\n<nav class=\"navbar topnavbar\" role=\"navigation\">\r\n    <!-- START navbar header-->\r\n    <div class=\"navbar-header\">\r\n        <a class=\"navbar-brand\" [routerLink]=\"'/'\">\r\n            <div class=\"brand-logo\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\"  style=\"height:40px;width:100px;\"/>\r\n            </div>\r\n            <div class=\"brand-logo-collapsed\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\" />\r\n            </div>\r\n        </a>\r\n            <!-- <a class=\"navbar-brand brand\" [routerLink]=\"'/home'\"> -->\r\n                <!--<svg viewbox=\"0 0 220 44\" width=\"220\" height=\"44\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <title>EDCO Products, Steel Roofing and Siding</title>\r\n                    <g class=\"logoMark\">\r\n                        <path d=\"M1.4,2.4h38v39.2h-38V2.4z\" fill=\"#fff\"> </path>\r\n                        <path d=\"M0.1,1v42h40.6V1H0.1z M3.5,37.4V8.1l10.3,14.4L3.5,37.4z M15.2,39.7V5.2l12.1,17.6L15.2,39.7z M28.8,37.4 L29,7.8L38.9,23L28.8,37.4z\"\r\n                            fill=\"#c6202c\"> </path>\r\n                    </g>-->\r\n                    <!--<path class=\"logoType\" d=\"M46.092.98h37.793v10.11h-21.43v5.963h20.5V27.18h-20.5v5.716H84.32V43.02H46.092V.98m40.03 0h24.537c12.48 0 21.29 4.1 21.29 21.144 0 15.903-9.48 20.897-21.97 20.897H86.13zm16.734 31.555h4.162c6.063 0 7.43-3.85 7.43-10.833 0-7.23-1.49-10.97-7.48-10.97h-4.1zm68.542 9.517a49.372 49.372 0 0 1-12 1.69c-14.475 0-26.09-7.33-26.09-22.338 0-14.1 12.112-21.145 26.09-21.145a60.752 60.752 0 0 1 11.876 1.31v11.11a28.947 28.947 0 0 0-8.36-1.59c-7.12 0-12.5 3.68-12.5 10.56 0 7.2 4.995 10.89 11.927 10.89a28.078 28.078 0 0 0 9.07-1.655zm24.252 1.69c-15.232 0-24.165-7.405-24.165-21.742 0-14.088 8.945-21.74 24.165-21.74C210.893.257 220 7.91 220 22c0 14.337-9.107 21.742-24.35 21.742m0-10.126c6.62 0 6.808-7.106 6.882-11.616-.074-3.913-.497-11.63-6.883-11.63-6.18 0-6.68 7.704-6.68 11.63 0 4.51.69 11.616 6.68 11.616\">\r\n                    </path>-->\r\n                <!--</svg>-->\r\n                <!-- nayo\r\n            </a> -->\r\n    </div>\r\n    <!-- END navbar header-->\r\n    <!-- START Nav wrapper-->\r\n    <div class=\"nav-wrapper\">\r\n        <!-- START Left navbar-->\r\n        <ul class=\"nav navbar-nav\">\r\n            <li>\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\r\n        <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        </li>\r\n        <!-- START User avatar toggle-->\r\n        <!--<li>-->\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <!--<a (click)=\"toggleUserBlock($event)\">\r\n                    <em class=\"icon-user\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END User avatar toggle-->\r\n        <!-- START lock screen-->\r\n        <!--<li>\r\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\r\n                    <em class=\"icon-lock\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END lock screen-->\r\n        </ul>\r\n        <!-- END Left navbar-->\r\n        <!-- START Right Navbar-->\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <!-- Search icon-->\r\n            <li>\r\n                <a (click)=\"openNavSearch($event)\">\r\n                    <em class=\"icon-magnifier\"></em>\r\n                </a>\r\n            </li>\r\n            <!-- Fullscreen (only desktops)-->\r\n            <!-- <li class=\"visible-lg\">\r\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\r\n                    <em class=\"fa fa-expand\"></em>\r\n                </a>\r\n            </li> -->\r\n            <!--<li class=\"visible-lg\">\r\n                <a #fsbutton [routerLink]=\"'/login'\">Login\r\n                </a>\r\n            </li>-->\r\n            <!-- START Alert menu-->\r\n            <li class=\"dropdown dropdown-list\" dropdown>\r\n                <a dropdownToggle>\r\n                    <em class=\"icon-bell\"></em>\r\n                    <div class=\"label label-danger\">11</div>\r\n                </a>\r\n                <!-- START Dropdown menu-->\r\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\r\n                    <li>\r\n                        <!-- START list group-->\r\n                        <div class=\"list-group\">\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New followers</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>1 new follower</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New e-mails</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>You have 10 new emails</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">Pending Tasks</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>11 pending task</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- last list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\r\n                                <span class=\"label label-danger pull-right\">14</span>\r\n                            </a>\r\n                        </div>\r\n                        <!-- END list group-->\r\n                    </li>\r\n                </ul>\r\n                <!-- END Dropdown menu-->\r\n            </li>\r\n            <!-- END Alert menu-->\r\n            <!-- START Offsidebar button-->\r\n            <!--<li>\r\n                <a (click)=\"toggleOffsidebar()\">\r\n                    <em class=\"icon-notebook\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END Offsidebar menu-->\r\n        </ul>\r\n        <!-- END Right Navbar-->\r\n    </div>\r\n    <!-- END Nav wrapper-->\r\n\r\n    <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch>\r\n\r\n</nav>\r\n<!-- END Top Navbar-->"
 
 /***/ })
 

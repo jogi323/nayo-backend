@@ -1,5 +1,19 @@
 webpackJsonp([1,7],{
 
+/***/ 1000:
+/***/ (function(module, exports) {
+
+module.exports = "<!-- START Top Navbar-->\r\n<nav class=\"navbar topnavbar\" role=\"navigation\">\r\n    <!-- START navbar header-->\r\n    <div class=\"navbar-header\">\r\n        <a class=\"navbar-brand\" [routerLink]=\"'/home'\">\r\n            <div class=\"brand-logo\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\" style=\"height:40px;width:100px;\" />\r\n            </div>\r\n            <div class=\"brand-logo-collapsed\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\" />\r\n            </div>\r\n            <!-- <a class=\"navbar-brand brand\" [routerLink]=\"'/home'\">\r\n                nayo\r\n            </a> -->\r\n        </a>\r\n    </div>\r\n    <!-- END navbar header-->\r\n    <!-- START Nav wrapper-->\r\n    <div class=\"nav-wrapper\">\r\n        <!-- START Left navbar-->\r\n        <ul class=\"nav navbar-nav\">\r\n            <li>\r\n                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n                <!--<a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>-->\r\n                <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\r\n                <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n            </li>\r\n            <!-- START User avatar toggle-->\r\n            <!--<li>-->\r\n                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n                <!--<a (click)=\"toggleUserBlock($event)\">\r\n                    <em class=\"icon-user\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END User avatar toggle-->\r\n            <!-- START lock screen-->\r\n            <!--<li>\r\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\r\n                    <em class=\"icon-lock\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END lock screen-->\r\n        </ul>\r\n        <!-- END Left navbar-->\r\n        <!-- START Right Navbar-->\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <!-- Search icon-->\r\n            <li>\r\n                <a (click)=\"openNavSearch($event)\">\r\n                    <em class=\"icon-magnifier\"></em>\r\n                </a>\r\n            </li>\r\n            <!-- Fullscreen (only desktops)-->\r\n            <!-- <li class=\"visible-lg\">\r\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\r\n                    <em class=\"fa fa-expand\"></em>\r\n                </a>\r\n            </li> -->\r\n            <li class=\"visible-lg\">\r\n                <a #fsbutton [routerLink]=\"'/login'\">Login\r\n                </a>\r\n            </li>\r\n            <li class=\"visible-lg\">\r\n                <a #fsbutton [routerLink]=\"'/register'\">Signup\r\n                </a>\r\n            </li>\r\n            <!-- START Alert menu-->\r\n            <li class=\"dropdown dropdown-list\" dropdown>\r\n                <a dropdownToggle>\r\n                    <em class=\"icon-bell\"></em>\r\n                    <div class=\"label label-danger\">11</div>\r\n                </a>\r\n                <!-- START Dropdown menu-->\r\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\r\n                    <li>\r\n                        <!-- START list group-->\r\n                        <div class=\"list-group\">\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New followers</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>1 new follower</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New e-mails</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>You have 10 new emails</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">Pending Tasks</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>11 pending task</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- last list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\r\n                                <span class=\"label label-danger pull-right\">14</span>\r\n                            </a>\r\n                        </div>\r\n                        <!-- END list group-->\r\n                    </li>\r\n                </ul>\r\n                <!-- END Dropdown menu-->\r\n            </li>\r\n            <!-- END Alert menu-->\r\n            <!-- START Offsidebar button-->\r\n            <!--<li>\r\n                <a (click)=\"toggleOffsidebar()\">\r\n                    <em class=\"icon-notebook\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END Offsidebar menu-->\r\n        </ul>\r\n        <!-- END Right Navbar-->\r\n    </div>\r\n    <!-- END Nav wrapper-->\r\n\r\n    <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch>\r\n\r\n</nav>\r\n<!-- END Top Navbar-->\r\n"
+
+/***/ }),
+
+/***/ 1001:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"wrapper\">\r\n    <!-- Top Navbar -->\r\n    <app-top-navbar class=\"topnavbar-wrapper\"></app-top-navbar>\r\n    <!-- Child Routing -->\r\n    <router-outlet></router-outlet>\r\n    \r\n</div>\r\n<!-- Page footer-->\r\n<footer app-footer></footer>"
+
+/***/ }),
+
 /***/ 900:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9,22 +23,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_shared_module__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_menu_menu_service__ = __webpack_require__(916);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_menu_menu_service__ = __webpack_require__(919);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_settings_settings_service__ = __webpack_require__(901);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__menu__ = __webpack_require__(941);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_routing_module__ = __webpack_require__(940);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__home_component__ = __webpack_require__(915);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_top_navbar_top_navbar_component__ = __webpack_require__(939);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_top_navbar_navsearch_navsearch_component__ = __webpack_require__(938);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_side_navbar_side_navbar_component__ = __webpack_require__(937);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_product_catalog_product_catalog_component__ = __webpack_require__(914);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_portal_home_portal_home_component__ = __webpack_require__(913);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_portal_home_carousal_carousal_component__ = __webpack_require__(934);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_portal_home_products_products_component__ = __webpack_require__(936);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_portal_home_categories_categories_component__ = __webpack_require__(935);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_characteristics_characteristics_component__ = __webpack_require__(911);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_orders_orders_component__ = __webpack_require__(912);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_footer_footer_component__ = __webpack_require__(933);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__menu__ = __webpack_require__(945);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_routing_module__ = __webpack_require__(944);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__home_component__ = __webpack_require__(918);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_top_navbar_top_navbar_component__ = __webpack_require__(943);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_top_navbar_navsearch_navsearch_component__ = __webpack_require__(942);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_side_navbar_side_navbar_component__ = __webpack_require__(941);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_product_catalog_product_catalog_component__ = __webpack_require__(917);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_portal_home_portal_home_component__ = __webpack_require__(916);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_portal_home_carousal_carousal_component__ = __webpack_require__(938);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_portal_home_products_products_component__ = __webpack_require__(940);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_portal_home_categories_categories_component__ = __webpack_require__(939);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_characteristics_characteristics_component__ = __webpack_require__(914);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_orders_orders_component__ = __webpack_require__(915);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_footer_footer_component__ = __webpack_require__(937);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeModule", function() { return HomeModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -194,7 +208,7 @@ SettingsService = __decorate([
 
 /***/ }),
 
-/***/ 911:
+/***/ 914:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -293,8 +307,8 @@ var CharacteristicsComponent = (function () {
 CharacteristicsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-characteristics',
-        template: __webpack_require__(978),
-        styles: [__webpack_require__(949)]
+        template: __webpack_require__(990),
+        styles: [__webpack_require__(957)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object])
 ], CharacteristicsComponent);
@@ -304,7 +318,7 @@ var _a;
 
 /***/ }),
 
-/***/ 912:
+/***/ 915:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -340,8 +354,8 @@ var OrdersComponent = (function () {
 OrdersComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-orders',
-        template: __webpack_require__(980),
-        styles: [__webpack_require__(951)]
+        template: __webpack_require__(992),
+        styles: [__webpack_require__(959)]
     }),
     __metadata("design:paramtypes", [])
 ], OrdersComponent);
@@ -350,7 +364,7 @@ OrdersComponent = __decorate([
 
 /***/ }),
 
-/***/ 913:
+/***/ 916:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -376,8 +390,8 @@ var PortalHomeComponent = (function () {
 PortalHomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-portal-home',
-        template: __webpack_require__(983),
-        styles: [__webpack_require__(954)]
+        template: __webpack_require__(995),
+        styles: [__webpack_require__(962)]
     }),
     __metadata("design:paramtypes", [])
 ], PortalHomeComponent);
@@ -386,7 +400,7 @@ PortalHomeComponent = __decorate([
 
 /***/ }),
 
-/***/ 914:
+/***/ 917:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -516,8 +530,8 @@ var ProductCatalogComponent = (function () {
 ProductCatalogComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-product-catalog',
-        template: __webpack_require__(985),
-        styles: [__webpack_require__(956)]
+        template: __webpack_require__(997),
+        styles: [__webpack_require__(964)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormBuilder"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormBuilder"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_settings_settings_service__["a" /* SettingsService */]) === "function" && _b || Object])
 ], ProductCatalogComponent);
@@ -527,7 +541,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 915:
+/***/ 918:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -553,8 +567,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-home',
-        template: __webpack_require__(989),
-        styles: [__webpack_require__(960)]
+        template: __webpack_require__(1001),
+        styles: [__webpack_require__(968)]
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
@@ -563,7 +577,7 @@ HomeComponent = __decorate([
 
 /***/ }),
 
-/***/ 916:
+/***/ 919:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -603,7 +617,7 @@ MenuService = __decorate([
 
 /***/ }),
 
-/***/ 933:
+/***/ 937:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -629,8 +643,8 @@ var FooterComponent = (function () {
 FooterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-footer',
-        template: __webpack_require__(979),
-        styles: [__webpack_require__(950)]
+        template: __webpack_require__(991),
+        styles: [__webpack_require__(958)]
     }),
     __metadata("design:paramtypes", [])
 ], FooterComponent);
@@ -639,7 +653,7 @@ FooterComponent = __decorate([
 
 /***/ }),
 
-/***/ 934:
+/***/ 938:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -678,8 +692,8 @@ var CarousalComponent = (function () {
 CarousalComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-carousal',
-        template: __webpack_require__(981),
-        styles: [__webpack_require__(952)]
+        template: __webpack_require__(993),
+        styles: [__webpack_require__(960)]
     }),
     __metadata("design:paramtypes", [])
 ], CarousalComponent);
@@ -688,7 +702,7 @@ CarousalComponent = __decorate([
 
 /***/ }),
 
-/***/ 935:
+/***/ 939:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -714,8 +728,8 @@ var CategoriesComponent = (function () {
 CategoriesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-categories',
-        template: __webpack_require__(982),
-        styles: [__webpack_require__(953)]
+        template: __webpack_require__(994),
+        styles: [__webpack_require__(961)]
     }),
     __metadata("design:paramtypes", [])
 ], CategoriesComponent);
@@ -724,7 +738,7 @@ CategoriesComponent = __decorate([
 
 /***/ }),
 
-/***/ 936:
+/***/ 940:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -750,8 +764,8 @@ var ProductsComponent = (function () {
 ProductsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-products',
-        template: __webpack_require__(984),
-        styles: [__webpack_require__(955)]
+        template: __webpack_require__(996),
+        styles: [__webpack_require__(963)]
     }),
     __metadata("design:paramtypes", [])
 ], ProductsComponent);
@@ -760,14 +774,14 @@ ProductsComponent = __decorate([
 
 /***/ }),
 
-/***/ 937:
+/***/ 941:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_settings_settings_service__ = __webpack_require__(901);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_menu_menu_service__ = __webpack_require__(916);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_menu_menu_service__ = __webpack_require__(919);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SideNavbarComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -914,8 +928,8 @@ var SideNavbarComponent = (function () {
 SideNavbarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-side-navbar',
-        template: __webpack_require__(986),
-        styles: [__webpack_require__(957)]
+        template: __webpack_require__(998),
+        styles: [__webpack_require__(965)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_settings_settings_service__["a" /* SettingsService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"]) === "function" && _c || Object])
 ], SideNavbarComponent);
@@ -925,7 +939,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 938:
+/***/ 942:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -986,8 +1000,8 @@ __decorate([
 NavsearchComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-navsearch',
-        template: __webpack_require__(987),
-        styles: [__webpack_require__(958)]
+        template: __webpack_require__(999),
+        styles: [__webpack_require__(966)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object])
 ], NavsearchComponent);
@@ -997,7 +1011,7 @@ var _a;
 
 /***/ }),
 
-/***/ 939:
+/***/ 943:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1032,12 +1046,18 @@ var TopNavbarComponent = (function () {
         this.menuItems = []; // for horizontal layout
     }
     TopNavbarComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.topNavbarService.url = 'http://localhost:4200/src/app/shared/data.json';
-        this.topNavbarService.getData().subscribe(function (res) {
-            _this.logo = res[0].logo.src;
-            _this.themes.setTheme(res[0].default);
-        });
+        if (localStorage.getItem('currentTheme')) {
+            this.themes.setTheme(localStorage.getItem('currentTheme'));
+        }
+        if (localStorage.getItem('logo')) {
+            this.logo = localStorage.getItem('logo');
+        }
+        // this.topNavbarService.url  = 'http://localhost:4200/src/app/shared/data.json';
+        // this.topNavbarService.getData().subscribe(res => {
+        //     console.log(res);
+        //     this.logo = res[0].logo.src;
+        //     this.themes.setTheme(res[0].default);
+        // });
         this.isNavSearchVisible = false;
         if (browser.msie) {
             this.fsbutton.nativeElement.style.display = 'none';
@@ -1090,8 +1110,8 @@ __decorate([
 TopNavbarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-top-navbar',
-        template: __webpack_require__(988),
-        styles: [__webpack_require__(959)]
+        template: __webpack_require__(1000),
+        styles: [__webpack_require__(967)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__core_themes_themes_service__["a" /* ThemesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_themes_themes_service__["a" /* ThemesService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__app_service__["a" /* AppService */]) === "function" && _c || Object])
 ], TopNavbarComponent);
@@ -1101,17 +1121,17 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 940:
+/***/ 944:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_component__ = __webpack_require__(915);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_portal_home_portal_home_component__ = __webpack_require__(913);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_product_catalog_product_catalog_component__ = __webpack_require__(914);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_characteristics_characteristics_component__ = __webpack_require__(911);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_orders_orders_component__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_component__ = __webpack_require__(918);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_portal_home_portal_home_component__ = __webpack_require__(916);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_product_catalog_product_catalog_component__ = __webpack_require__(917);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_characteristics_characteristics_component__ = __webpack_require__(914);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_orders_orders_component__ = __webpack_require__(915);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1154,7 +1174,7 @@ HomeRoutingModule = __decorate([
 
 /***/ }),
 
-/***/ 941:
+/***/ 945:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1556,150 +1576,6 @@ var menu = [
 
 /***/ }),
 
-/***/ 949:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, ".contentWrapperTopMargin {\n  margin-top: 0px; }\n\n@media only screen and (max-width: 767px) {\n  .contentWrapperTopMargin {\n    margin-top: 128px; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 950:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 951:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, ".contentWrapperTopMargin {\n  margin-top: 55px; }\n\n@media only screen and (max-width: 767px) {\n  .contentWrapperTopMargin {\n    margin-top: 128px; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 952:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, ".carousel-images {\n  width: 100%;\n  height: 500px;\n  margin-top: 4%; }\n\n.carousel-caption {\n  padding-bottom: 20% !important; }\n\n.btn-primary-outline {\n  background-color: transparent;\n  border-color: #ccc;\n  color: #ccc; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 953:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 954:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, ".carousel-images {\n  width: 100%;\n  height: 400px; }\n\n.carousel-main {\n  padding: 0px; }\n\n.thumbnail {\n  position: relative; }\n\n.caption {\n  position: absolute;\n  top: 45%;\n  left: 0;\n  width: 100%;\n  color: white; }\n\n.btn-primary-outline {\n  background-color: transparent;\n  border-color: #ccc; }\n\ndiv .horizontal {\n  height: 272px; }\n\n.img-responsive {\n  width: 100%; }\n\nimg.horizontal {\n  height: 272px !important; }\n\nimg.img-responsive.vertical {\n  height: 200px !important; }\n\na#product-details {\n  color: white; }\n\nspan.details {\n  margin-left: 2%; }\n\n.half-float {\n  margin-bottom: 0px !important; }\n\n@media only screen and (min-width: 1185px) {\n  .catageoryTopMargin {\n    margin-top: -230px; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 955:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, ".thumbnail {\n  position: relative; }\n\n.caption {\n  position: absolute;\n  top: 50%;\n  left: 15%;\n  width: 90%;\n  color: white; }\n\n.products-main {\n  margin-top: 2%; }\n\nh2 {\n  color: #656565; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 956:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "/* ========================================================================\r\n     Component: media-queries\r\n ========================================================================== */\n.home-container {\n  margin: 0 auto;\n  max-width: 970px; }\n  .home-container .home-logo {\n    width: 240px; }\n  @media only screen and (max-width: 768px) {\n    .home-container .home-text {\n      text-align: center; } }\n\n.currentColor {\n  border: 3px solid rgba(255, 255, 255, 0.5); }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 957:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1708,7 +1584,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".contentWrapperTopMargin {\n  margin-top: 0px; }\n\n@media only screen and (max-width: 767px) {\n  .contentWrapperTopMargin {\n    margin-top: 128px; } }\n", ""]);
 
 // exports
 
@@ -1744,7 +1620,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, ".btn-primary-outline {\n  background-color: transparent;\n  border-color: #ccc;\n  color: #ccc; }\n\n.brand {\n  font-size: 30px;\n  font-weight: 900;\n  color: white;\n  font-family: inherit;\n  padding-top: 7% !important; }\n", ""]);
+exports.push([module.i, ".contentWrapperTopMargin {\n  margin-top: 55px; }\n\n@media only screen and (max-width: 767px) {\n  .contentWrapperTopMargin {\n    margin-top: 128px; } }\n", ""]);
 
 // exports
 
@@ -1762,6 +1638,24 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
+exports.push([module.i, ".carousel-images {\n  width: 100%;\n  height: 500px;\n  margin-top: 4%; }\n\n.carousel-caption {\n  padding-bottom: 20% !important; }\n\n.btn-primary-outline {\n  background-color: transparent;\n  border-color: #ccc;\n  color: #ccc; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 961:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
 exports.push([module.i, "", ""]);
 
 // exports
@@ -1772,87 +1666,199 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 978:
+/***/ 962:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, ".carousel-images {\n  width: 100%;\n  height: 400px; }\n\n.carousel-main {\n  padding: 0px; }\n\n.thumbnail {\n  position: relative; }\n\n.caption {\n  position: absolute;\n  top: 45%;\n  left: 0;\n  width: 100%;\n  color: white; }\n\n.btn-primary-outline {\n  background-color: transparent;\n  border-color: #ccc; }\n\ndiv .horizontal {\n  height: 272px; }\n\n.img-responsive {\n  width: 100%; }\n\nimg.horizontal {\n  height: 272px !important; }\n\nimg.img-responsive.vertical {\n  height: 200px !important; }\n\na#product-details {\n  color: white; }\n\nspan.details {\n  margin-left: 2%; }\n\n.half-float {\n  margin-bottom: 0px !important; }\n\n@media only screen and (min-width: 1185px) {\n  .catageoryTopMargin {\n    margin-top: -230px; } }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 963:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, ".thumbnail {\n  position: relative; }\n\n.caption {\n  position: absolute;\n  top: 50%;\n  left: 15%;\n  width: 90%;\n  color: white; }\n\n.products-main {\n  margin-top: 2%; }\n\nh2 {\n  color: #656565; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 964:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "/* ========================================================================\r\n     Component: media-queries\r\n ========================================================================== */\n.home-container {\n  margin: 0 auto;\n  max-width: 970px; }\n  .home-container .home-logo {\n    width: 240px; }\n  @media only screen and (max-width: 768px) {\n    .home-container .home-text {\n      text-align: center; } }\n\n.currentColor {\n  border: 3px solid rgba(255, 255, 255, 0.5); }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 965:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 966:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 967:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, ".btn-primary-outline {\n  background-color: transparent;\n  border-color: #ccc;\n  color: #ccc; }\n\n.brand {\n  font-size: 30px;\n  font-weight: 900;\n  color: white;\n  font-family: inherit;\n  padding-top: 7% !important; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 968:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 990:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"layout-h\">\r\n    <div class=\"wrapper\">\r\n        <section>\r\n            <!-- Page content-->\r\n            <div class=\"content-wrapper contentWrapperTopMargin\" >\r\n                <!-- START panel-->\r\n                <div class=\"panel widget\">\r\n                    <div class=\"panel-body\">\r\n                        <div class=\"row row-table\">\r\n                            <div class=\"col-xs-2 \">\r\n                                <img class=\"img-thumbnail img-circle img-responsive thumb96\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"col-xs-7\">\r\n                                \r\n                                <h3 class=\"mt0\">Product Name</h3>\r\n                                <p class=\"text-muted\">Our award-winning steel roofing offers timeless \r\n                                    beauty and an unmatched quality.</p>\r\n                                    <p class=\"text-muted\" *ngIf=\"showProductDetails\"> Engineered to withstand the most extreme weather conditions \r\n                                     - hail, wind, snow and ice, while maintaining its original look for years to come.\r\n                                    Home and business owners alike will have peace of mind knowing their products are\r\n                                    backed with a lifetime, non-prorated warranty. </p>\r\n                                <a><small (click)=\"toggleShowProductDetails()\" *ngIf=\"!showProductDetails\" class=\"pull-right\">View Details</small></a>\r\n                                <a><small (click)=\"toggleShowProductDetails()\" *ngIf=\"showProductDetails\" class=\"pull-right\">Close</small></a>\r\n                            </div>\r\n                            <div class=\"col-xs-2\">\r\n                                <div ><a class=\"btn btn-success\" [routerLink]=\"'/home/products'\">Change Product</a>\r\n                                </div>    \r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"panel panel-default\">\r\n                    <div class=\"panel-heading\">Customize this product</div>\r\n                    <div class=\"table-responsive\">\r\n                        <table class=\"table table-bordered table-hover\" id=\"table-ext-3\">\r\n                            <thead>\r\n                                <tr>\r\n                                    <th>ID</th>\r\n                                    <th>Description</th>\r\n                                    <th>Chosen option</th>\r\n                                    <th>List of Values</th>\r\n                                    <th>Description of chosen option</th>\r\n                                    <th>Price</th>\r\n                                </tr>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let characteristic of characteristics; let i = 'index'\">\r\n                                    <td>{{characteristic.id}}</td>\r\n                                    <td>{{characteristic.description}}</td>\r\n                                    <td>{{findSelectedCharacteristicValue(i)}}</td>\r\n                                    <td><a class=\"label label-danger\" (click)=showVlaues($event,i) data-toggle=\"modal\" data-target=\"#characteristicModal\" *ngIf=\"characteristic.value.length\">Select</a></td>\r\n                                    <td>{{findSelectedCharacteristicDesc(i)}}</td>\r\n                                    <td>{{findSelectedCharacteristicPricing(i)}}</td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                    <!-- END table-responsive-->\r\n                    \r\n                </div>\r\n                <!-- Characteristic Modal -->\r\n                  <div class=\"modal fade\" id=\"characteristicModal\" role=\"dialog\">\r\n                    <div class=\"modal-dialog\">\r\n                    \r\n                      <!-- Modal content-->\r\n                      <div class=\"modal-content\">\r\n                        <div class=\"modal-header\">\r\n                          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n                          <h4 class=\"modal-title\">Select Value for Characteristic</h4>\r\n                        </div>\r\n                        <div class=\"modal-body\">\r\n                            <table class=\"table table-bordered table-hover\" id=\"table-ext-3\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th>Characteristic value</th>\r\n                                        <th>Value Description</th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr>\r\n                                        <td>\r\n                                            <select class=\"form-control\" [(ngModel)]=\"selectedCharacteristic\">\r\n                                                <option *ngFor=\"let characteristic of characteristics[currentCharacteristicId].value; let i = 'index'\" value={{i}}>{{characteristic.charValu}}</option>\r\n                                            </select>\r\n                                        </td>\r\n                                        <td><span *ngIf=\"selectedCharacteristic\">{{characteristics[currentCharacteristicId].value[selectedCharacteristic].valueDesc}}</span></td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                        <div class=\"modal-footer\">\r\n                          <button type=\"button\" class=\"btn btn-default\" (click)=\"selectCharacteristic()\" data-dismiss=\"modal\">Submit</button>\r\n                        </div>\r\n                      </div>\r\n                      \r\n                    </div>\r\n                  </div>\r\n                <!-- End of Characteristic Modal -->\r\n            </div>\r\n        </section>\r\n\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 979:
+/***/ 991:
 /***/ (function(module, exports) {
 
 module.exports = "<span>&copy; nayo</span>"
 
 /***/ }),
 
-/***/ 980:
+/***/ 992:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"layout-h\">\r\n  <div class=\"wrapper\">\r\n      <!-- <section> -->\r\n          <!-- Page content-->\r\n          <div class=\"content-wrapper contentWrapperTopMargin\" >\r\n            <div class=\"content-heading\">Search\r\n                <small>Search and filter results</small>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col-lg-9\">\r\n                    <div class=\"form-group mb-xl\">\r\n                        <input class=\"form-control mb\" type=\"text\" placeholder=\"Search products, people, apps, etc.\" />\r\n                        <div class=\"clearfix\">\r\n                            <button class=\"pull-left btn btn-default\" type=\"button\">Search</button>\r\n                            <!-- <div class=\"pull-right\">\r\n                                <label class=\"checkbox-inline c-checkbox\">\r\n                                    <input id=\"inlineCheckbox10\" type=\"checkbox\" value=\"option1\" />\r\n                                    <span class=\"fa fa-check\"></span>Products</label>\r\n                                <label class=\"checkbox-inline c-checkbox\">\r\n                                    <input id=\"inlineCheckbox20\" type=\"checkbox\" value=\"option2\" />\r\n                                    <span class=\"fa fa-check\"></span>People</label>\r\n                                <label class=\"checkbox-inline c-checkbox\">\r\n                                    <input id=\"inlineCheckbox30\" type=\"checkbox\" value=\"option3\" />\r\n                                    <span class=\"fa fa-check\"></span>Apps</label>\r\n                            </div> -->\r\n                        </div>\r\n                    </div>\r\n                    <!-- START panel-->\r\n                    <div class=\"panel panel-default\">\r\n                        <div class=\"panel-heading\">Recent Orders\r\n                        </div>\r\n                        <!-- START table-responsive-->\r\n                        <div class=\"table-responsive\">\r\n                            <table class=\"table table-striped table-bordered table-hover\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <!-- <th checkAll>\r\n                                            <div class=\"checkbox c-checkbox\" tooltip=\"Check All\">\r\n                                                <label>\r\n                                                    <input type=\"checkbox\" />\r\n                                                    <span class=\"fa fa-check\"></span>\r\n                                                </label>\r\n                                            </div>\r\n                                        </th>\r\n                                        <th>Description</th> -->\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr>\r\n                                        <td>\r\n                                            <!-- <div class=\"checkbox c-checkbox\">\r\n                                                <label>\r\n                                                    <input type=\"checkbox\" />\r\n                                                    <span class=\"fa fa-check\"></span>\r\n                                                </label>\r\n                                            </div> -->\r\n                                        </td>\r\n                                        <td>\r\n                                            <div class=\"media-box\">\r\n                                                <a class=\"pull-left\" href=\"#\">\r\n                                                    <img class=\"media-box-object img-responsive img-rounded thumb64\" src=\"assets/img/dummy.png\" alt=\"\" />\r\n                                                </a>\r\n                                                <div class=\"media-box-body\">\r\n                                                    <div class=\"pull-right btn btn-info btn-sm\">View</div>\r\n                                                    <h4 class=\"media-box-heading\">Product 1</h4>\r\n                                                    <small class=\"text-muted\">Category1, Category2</small>\r\n                                                    <p>Sed gravida auctor odio. Sed viverra rutrum hendrerit. Praesent dapibus justo dolor. Suspendisse rhoncus consectetur eros vehicula accumsan.</p>\r\n                                                </div>\r\n                                            </div>\r\n                                        </td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>\r\n                                            <!-- <div class=\"checkbox c-checkbox\">\r\n                                                <label>\r\n                                                    <input type=\"checkbox\" />\r\n                                                    <span class=\"fa fa-check\"></span>\r\n                                                </label>\r\n                                            </div> -->\r\n                                        </td>\r\n                                        <td>\r\n                                            <div class=\"media-box\">\r\n                                                <a class=\"pull-left\" href=\"#\">\r\n                                                    <img class=\"media-box-object img-responsive img-rounded thumb64\" src=\"assets/img/dummy.png\" alt=\"\" />\r\n                                                </a>\r\n                                                <div class=\"media-box-body\">\r\n                                                    <div class=\"pull-right btn btn-info btn-sm\">View</div>\r\n                                                    <h4 class=\"media-box-heading\">Product 2</h4>\r\n                                                    <small class=\"text-muted\">Category1, Category2</small>\r\n                                                    <p>Sed gravida auctor odio. Sed viverra rutrum hendrerit. Praesent dapibus justo dolor. Suspendisse rhoncus consectetur eros vehicula accumsan.</p>\r\n                                                </div>\r\n                                            </div>\r\n                                        </td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>\r\n                                            <!-- <div class=\"checkbox c-checkbox\">\r\n                                                <label>\r\n                                                    <input type=\"checkbox\" />\r\n                                                    <span class=\"fa fa-check\"></span>\r\n                                                </label>\r\n                                            </div> -->\r\n                                        </td>\r\n                                        <td>\r\n                                            <div class=\"media-box\">\r\n                                                <a class=\"pull-left\" href=\"#\">\r\n                                                    <img class=\"media-box-object img-responsive img-rounded thumb64\" src=\"assets/img/dummy.png\" alt=\"\" />\r\n                                                </a>\r\n                                                <div class=\"media-box-body\">\r\n                                                    <div class=\"pull-right btn btn-info btn-sm\">View</div>\r\n                                                    <h4 class=\"media-box-heading\">Product 3</h4>\r\n                                                    <small class=\"text-muted\">Category1, Category2</small>\r\n                                                    <p>Sed gravida auctor odio. Sed viverra rutrum hendrerit. Praesent dapibus justo dolor. Suspendisse rhoncus consectetur eros vehicula accumsan.</p>\r\n                                                </div>\r\n                                            </div>\r\n                                        </td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>\r\n                                            <!-- <div class=\"checkbox c-checkbox\">\r\n                                                <label>\r\n                                                    <input type=\"checkbox\" />\r\n                                                    <span class=\"fa fa-check\"></span>\r\n                                                </label>\r\n                                            </div> -->\r\n                                        </td>\r\n                                        <td>\r\n                                            <div class=\"media-box\">\r\n                                                <a class=\"pull-left\" href=\"#\">\r\n                                                    <img class=\"media-box-object img-responsive img-rounded thumb64\" src=\"assets/img/dummy.png\" alt=\"\" />\r\n                                                </a>\r\n                                                <div class=\"media-box-body\">\r\n                                                    <div class=\"pull-right btn btn-info btn-sm\">View</div>\r\n                                                    <h4 class=\"media-box-heading\">Product 4</h4>\r\n                                                    <small class=\"text-muted\">Category1, Category2</small>\r\n                                                    <p>Sed gravida auctor odio. Sed viverra rutrum hendrerit. Praesent dapibus justo dolor. Suspendisse rhoncus consectetur eros vehicula accumsan.</p>\r\n                                                </div>\r\n                                            </div>\r\n                                        </td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>\r\n                                            <!-- <div class=\"checkbox c-checkbox\">\r\n                                                <label>\r\n                                                    <input type=\"checkbox\" />\r\n                                                    <span class=\"fa fa-check\"></span>\r\n                                                </label>\r\n                                            </div> -->\r\n                                        </td>\r\n                                        <td>\r\n                                            <div class=\"media-box\">\r\n                                                <a class=\"pull-left\" href=\"#\">\r\n                                                    <img class=\"media-box-object img-responsive img-rounded thumb64\" src=\"assets/img/dummy.png\" alt=\"\" />\r\n                                                </a>\r\n                                                <div class=\"media-box-body\">\r\n                                                    <div class=\"pull-right btn btn-info btn-sm\">View</div>\r\n                                                    <h4 class=\"media-box-heading\">Product 5</h4>\r\n                                                    <small class=\"text-muted\">Category1, Category2</small>\r\n                                                    <p>Sed gravida auctor odio. Sed viverra rutrum hendrerit. Praesent dapibus justo dolor. Suspendisse rhoncus consectetur eros vehicula accumsan.</p>\r\n                                                </div>\r\n                                            </div>\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                        <!-- END table-responsive-->\r\n                        <div class=\"panel-footer\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-lg-2\">\r\n                                    <!-- <button class=\"btn btn-sm btn-default\">Clear</button> -->\r\n                                </div>\r\n                                <div class=\"col-lg-8\"></div>\r\n                                <div class=\"col-lg-2 text-right\">\r\n                                    <ul class=\"pagination pagination-sm\">\r\n                                        <li class=\"active\"><a href=\"#\">1</a>\r\n                                        </li>\r\n                                        <li><a href=\"#\">2</a>\r\n                                        </li>\r\n                                        <li><a href=\"#\">3</a>\r\n                                        </li>\r\n                                        <li><a href=\"#\">»</a>\r\n                                        </li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <!-- END panel-->\r\n                </div>\r\n                <div class=\"col-lg-3\">\r\n                    <h3 class=\"m0 pb-lg\">Filters</h3>\r\n                    <!-- <div class=\"form-group mb-xl\">\r\n                        <label class=\"control-label mb\">by Text</label>\r\n                        <br/>\r\n                        <ng-select [allowClear]=\"true\" [items]=\"items\" placeholder=\"Nothing selected\"></ng-select>\r\n                    </div> -->\r\n                    <div class=\"form-group mb-xl\">\r\n                        <label class=\"control-label mb\">From Date</label>\r\n                        <br/>\r\n                        <p class=\"input-group\">\r\n                            <input class=\"form-control\" type=\"date\" />\r\n                            <span class=\"input-group-btn\">\r\n                            <button class=\"btn btn-default\" type=\"button\">\r\n                                <em class=\"fa fa-calendar\"></em>\r\n                            </button>\r\n                        </span>\r\n                        </p>\r\n                    </div>\r\n                    <div class=\"form-group mb-xl\">\r\n                        <label class=\"control-label mb\">To Date</label>\r\n                        <br/>\r\n                        <p class=\"input-group\">\r\n                            <input class=\"form-control\" type=\"date\" />\r\n                            <span class=\"input-group-btn\">\r\n                            <button class=\"btn btn-default\" type=\"button\">\r\n                                <em class=\"fa fa-calendar\"></em>\r\n                            </button>\r\n                        </span>\r\n                        </p>\r\n                    </div>\r\n                    <!-- <div class=\"form-group mb-xl\">\r\n                        <label class=\"control-label mb\">by Date</label>\r\n                        <br/>\r\n                        <p class=\"input-group\">\r\n                            <input class=\"form-control\" type=\"date\" />\r\n                            <span class=\"input-group-btn\">\r\n                            <button class=\"btn btn-default\" type=\"button\">\r\n                                <em class=\"fa fa-calendar\"></em>\r\n                            </button>\r\n                        </span>\r\n                        </p>\r\n                    </div> -->\r\n                    <div class=\"form-group mb-xl\">\r\n                      <label class=\"control-label mb\">by Range</label>\r\n                      <br>\r\n                      <input type=\"text\" class=\"slider slider-lg form-control\">\r\n                    </div>\r\n                    <button class=\"btn btn-default btn-lg\">Apply</button>\r\n                </div>\r\n            </div>\r\n            \r\n          </div>\r\n      <!-- </section> -->\r\n\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
-/***/ 981:
+/***/ 993:
 /***/ (function(module, exports) {
 
 module.exports = "<!--<div class=\"panel panel-default\">-->\r\n<div class=\"carousel-main\">\r\n  <carousel [interval]=\"2000\" [noWrap]=\"false\">\r\n    <slide *ngFor=\"let slidez of slides; let index=index\" [active]=\"slidez.active\">\r\n      <img [src]=\"slidez.image\" class=\"img-responsive carousel-images\">\r\n      <div class=\"carousel-caption\">\r\n        <h1>Excellence in exterior building products</h1>\r\n        <button class=\"mb-sm btn btn-primary-outline\" [routerLink]=\"'/home/products'\" type=\"button\">View Products</button>\r\n      </div>\r\n    </slide>\r\n  </carousel>\r\n</div>\r\n<!--</div>-->\r\n"
 
 /***/ }),
 
-/***/ 982:
+/***/ 994:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"col-lg-6\">\r\n  <!-- START widget-->\r\n  <div class=\"panel widget\">\r\n    <div class=\"row row-table row-flush\">\r\n      <div class=\"col-xs-5\">\r\n        <picture class=\"lateral-picture\">\r\n          <img src=\"assets/img/bg10.jpg\" alt=\"\" />\r\n        </picture>\r\n      </div>\r\n      <div class=\"col-xs-7 align-middle p-lg\">\r\n        <p>\r\n          <span class=\"text-lg\">16</span>Aug</p>\r\n        <p>\r\n          <strong>EVENT INVITATION</strong>\r\n        </p>\r\n        <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at lobortis.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <!-- END widget-->\r\n</div>\r\n    <div class=\"col-lg-6\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body text-center bg-center\">\r\n                <!--<div class=\"row row-table\">-->\r\n                    <div class=\"col-xs-12\">\r\n                        <img class=\"img img-responsive\" src=\"assets/img/bg4.jpg\" alt=\"Image\" />\r\n                    </div>\r\n                <!--</div>-->\r\n            </div>\r\n            <div class=\"panel-body text-center bg-gray-darker\">\r\n                <div class=\"row row-table\">\r\n                    <div class=\"col-xs-4\">\r\n                        <a class=\"text-white\" href=\"#\">\r\n                            <em class=\"fa fa-twitter fa-2x\"></em>\r\n                        </a>\r\n                    </div>\r\n                    <div class=\"col-xs-4\">\r\n                        <a class=\"text-white\" href=\"#\">\r\n                            <em class=\"fa fa-facebook fa-2x\"></em>\r\n                        </a>\r\n                    </div>\r\n                    <div class=\"col-xs-4\">\r\n                        <a class=\"text-white\" href=\"#\">\r\n                            <em class=\"fa fa-comments fa-2x\"></em>\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"list-group\">\r\n                <a class=\"list-group-item\" href=\"#\">\r\n                    <span class=\"label label-primary pull-right\">15</span>\r\n                    <em class=\"fa fa-fw fa-clock-o text-muted\"></em>Recent Activity</a>\r\n                <a class=\"list-group-item\" href=\"#\">\r\n                    <span class=\"label label-primary pull-right\">100</span>\r\n                    <em class=\"fa fa-fw fa-user text-muted\"></em>Following</a>\r\n                <a class=\"list-group-item\" href=\"#\">\r\n                    <span class=\"label label-primary pull-right\">300</span>\r\n                    <em class=\"fa fa-fw fa-folder-open-o text-muted\"></em>Photos</a>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>"
 
 /***/ }),
 
-/***/ 983:
+/***/ 995:
 /***/ (function(module, exports) {
 
 module.exports = "<!--Carousal Selector-->\r\n\r\n<app-carousal></app-carousal>\r\n\r\n<!--Products Selector-->\r\n<!-- <app-products></app-products> -->\r\n<!--Categoriees Selector-->\r\n<!-- <app-categories></app-categories> -->\r\n<section>\r\n\r\n    <!-- Page content-->\r\n    <div class=\"content-wrapper\">\r\n        <div class=\"content-heading\">Products Avilable \r\n            <small>these are our top selling products</small>\r\n        </div>\r\n    </div>\r\n</section>\r\n<div class=\"container-fluid\" style=\"background:transparent;\">\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-12\">\r\n            <!-- START widget-->\r\n            <!--<div class=\"panel widget horizontal\">\r\n                <div class=\"row row-table row-flush\">\r\n                    <div class=\"col-xs-8 col-lg-8 col-md-8 col-sm-8\">\r\n                        <img class=\"img-responsive horizontal\" src=\"assets/img/product2.PNG\" alt=\"\" />\r\n                    </div>\r\n                    <div class=\"col-xs-4 col-sm-4 col-md-4col-lg-4  bg-info\">\r\n                        <span class=\"details\"> Some details about this product.</span><br>\r\n                        <a [routerLink]=\"''\" id=\"product-details\">For more......</a>\r\n                    </div>\r\n                </div>\r\n            </div>-->\r\n             <div class=\"panel widget\">\r\n                <img class=\"img-responsive vertical\" src=\"assets/img/product8.png\" alt=\"Image\" />\r\n                <div class=\"panel-body\">\r\n                    <div class=\"row row-table text-center\">\r\n                        <!-- <span> Some details about this product.</span><br> -->\r\n                        <h3 class=\"m0\">Roofing</h3>\r\n                        <a [routerLink]=\"'/home/products'\"><small>View details</small></a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <!-- END widget-->\r\n        </div>\r\n        <div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-12\">\r\n            <!-- START widget-->\r\n            <div class=\"panel widget\">\r\n                <img class=\"img-responsive vertical\" src=\"assets/img/product10.png\" alt=\"Image\" />\r\n                <div class=\"panel-body\">\r\n                    <div class=\"row row-table text-center\">\r\n                            <h3 class=\"m0\">Sliding</h3>\r\n                            <a [routerLink]=\"'/home/products'\"><small>View details</small></a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <!-- END widget-->\r\n        </div>\r\n        <div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-12\">\r\n            <!-- START widget-->\r\n            <div class=\"panel widget\">\r\n                <img class=\"img-responsive vertical\" src=\"assets/img/product9.png\" alt=\"Image\" />\r\n                <div class=\"panel-body\">\r\n                    <div class=\"row row-table text-center\">\r\n                            <h3 class=\"m0\">Soffit</h3>\r\n                            <a [routerLink]=\"'/home/products'\"><small>View details</small></a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n                <!-- END widget-->\r\n            </div> \r\n             <div class=\"col-lg-3 col-md-6 col-sm-6 col-xs-12\">\r\n            <!-- START widget-->\r\n            <div class=\"panel widget\">\r\n                <img class=\"img-responsive vertical\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                <div class=\"panel-body\">\r\n                    <div class=\"row row-table text-center\">\r\n                            <h3 class=\"m0\">Rain Ware</h3>\r\n                            <a [routerLink]=\"'/home/products'\"><small>View details</small></a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <!-- END widget-->\r\n        </div>    \r\n</div>\r\n</div>\r\n<!-- <section> -->\r\n<div class=\"content-wrapper\">\r\n    <div class=\"content-heading\">Categories\r\n        <small>Categories of procuts avilable</small>\r\n    </div>\r\n</div>\r\n<div class=\"container-fluid\" style=\"background:transparent;\">\r\n\r\n    <div class=\"col-lg-6\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6\">\r\n                    <picture class=\"lateral-picture\">\r\n                        <img src=\"assets/img/product8.png\" alt=\"\" />\r\n                    </picture>\r\n                </div>\r\n                <div class=\"col-xs-6 align-middle p-lg\">\r\n                    <!--<div class=\"pull-right\"><a class=\"btn btn-primary btn-sm\" href=\"#\">Register</a>\r\n                    </div>\r\n                    <p>\r\n                        <span class=\"text-lg\">16</span>Aug</p>\r\n                    <p>\r\n                        <strong>EVENT INVITATION</strong>\r\n                    </p>-->\r\n                     <h3 class=\"m0\">Siding</h3>\r\n                    <p class=\"text-muted\">Some tag</p>\r\n                    <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at lobortis.</p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-6\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"half-float\">\r\n                <img class=\"img-responsive second-catageroies\" src=\"assets/img/product8.png\" alt=\"\" />\r\n                <div class=\"half-float-bottom\">\r\n                    <!-- <img class=\"img-thumbnail img-circle thumb128\" src=\"assets/img/user/09.jpg\" alt=\"Image\" /> -->\r\n                </div>\r\n            </div>\r\n            <div class=\"panel-body text-center\">\r\n                <h3 class=\"m0\">Roofing</h3>\r\n                <p class=\"text-muted\">Some tag</p>\r\n                <p>Proin metus justo, commodo in ultrices at, lobortis sit amet dui. Fusce dolor purus, adipiscing a tempus\r\n                    at, gravida vel purus.</p>\r\n            </div>\r\n            <!--<div class=\"panel-body text-center bg-gray-dark\">\r\n                <div class=\"row row-table\">\r\n                    <div class=\"col-xs-4\">\r\n                        <h3 class=\"m0\">400</h3>\r\n                        <p class=\"m0\">Photos</p>\r\n                    </div>\r\n                    <div class=\"col-xs-4\">\r\n                        <h3 class=\"m0\">2000</h3>\r\n                        <p class=\"m0\">Likes</p>\r\n                    </div>\r\n                    <div class=\"col-xs-4\">\r\n                        <h3 class=\"m0\">500</h3>\r\n                        <p class=\"m0\">Following</p>\r\n                    </div>\r\n                </div>\r\n            </div>-->\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-6 catageoryTopMargin\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"half-float\">\r\n                <img class=\"img-responsive\" src=\"assets/img/product10.png\" alt=\"\" />\r\n                <div class=\"half-float-bottom\">\r\n                    <!-- <img class=\"img-thumbnail img-circle thumb128\" src=\"assets/img/user/09.jpg\" alt=\"Image\" /> -->\r\n                </div>\r\n            </div>\r\n            <div class=\"panel-body text-center\">\r\n                <h3 class=\"m0\">Rainware</h3>\r\n                <p class=\"text-muted\">Some tag</p>\r\n                <p>Proin metus justo, commodo in ultrices at, lobortis sit amet dui. Fusce dolor purus, adipiscing a tempus\r\n                    at, gravida vel purus.</p>\r\n            </div>\r\n            <!--<div class=\"panel-body text-center bg-gray-dark\">\r\n                <div class=\"row row-table\">\r\n                    <div class=\"col-xs-4\">\r\n                        <h3 class=\"m0\">400</h3>\r\n                        <p class=\"m0\">Photos</p>\r\n                    </div>\r\n                    <div class=\"col-xs-4\">\r\n                        <h3 class=\"m0\">2000</h3>\r\n                        <p class=\"m0\">Likes</p>\r\n                    </div>\r\n                    <div class=\"col-xs-4\">\r\n                        <h3 class=\"m0\">500</h3>\r\n                        <p class=\"m0\">Following</p>\r\n                    </div>\r\n                </div>\r\n            </div>-->\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-6\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6\">\r\n                    <picture class=\"lateral-picture\">\r\n                        <img src=\"assets/img/product9.png\" alt=\"\" />\r\n                    </picture>\r\n                </div>\r\n                <div class=\"col-xs-6 align-middle p-lg\">\r\n                    <!--<div class=\"pull-right\"><a class=\"btn btn-primary btn-sm\" href=\"#\">Register</a>\r\n                    </div>\r\n                    <p>\r\n                        <span class=\"text-lg\">16</span>Aug</p>\r\n                    <p>\r\n                        <strong>EVENT INVITATION</strong>\r\n                    </p>-->\r\n                    <h3 class=\"m0\">Saffit,Fascia&Trim</h3>\r\n                    <p class=\"text-muted\">Some tag</p>\r\n                    <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at lobortis.</p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 984:
+/***/ 996:
 /***/ (function(module, exports) {
 
 module.exports = "<!-- START panel-->\r\n<div class=\"col-md-12 products-main\">\r\n  <div class=\"panel panel-default\">\r\n    <div class=\"panel-heading\">\r\n      <h2>New Arrivals</h2>\r\n    </div>\r\n    <div class=\"panel-body\">\r\n      <!--<div class=\"row\">-->\r\n        <div class=\"col-lg-3\">\r\n          <!-- START widget-->\r\n          <div class=\"panel widget\">\r\n            <img class=\"img-responsive\" src=\"assets/img/product1.PNG\" alt=\"Image\" />\r\n            <div class=\"panel-body\">\r\n              <div class=\"row row-table text-center\">\r\n                <a>View details <span class=\"fa fa-angle-double-right\"></span></a>\r\n              </div>\r\n            </div>\r\n            <div class=\"caption\">\r\n              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>\r\n            </div>\r\n          </div>\r\n          <!-- END widget-->\r\n        </div>\r\n        <div class=\"col-lg-3\">\r\n          <!-- START widget-->\r\n          <div class=\"panel widget\">\r\n            <img class=\"img-responsive\" src=\"assets/img/bg1.jpg\" alt=\"Image\" />\r\n            <div class=\"panel-body\">\r\n              <div class=\"row row-table text-center\">\r\n                <a>View details <span class=\"fa fa-angle-double-right\"></span></a>\r\n              </div>\r\n            </div>\r\n            <div class=\"caption\">\r\n              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>\r\n            </div>\r\n          </div>\r\n          <!-- END widget-->\r\n        </div>\r\n        <div class=\"col-lg-3\">\r\n          <!-- START widget-->\r\n          <div class=\"panel widget\">\r\n            <img class=\"img-responsive\" src=\"assets/img/bg1.jpg\" alt=\"Image\" />\r\n            <div class=\"panel-body\">\r\n              <div class=\"row row-table text-center\">\r\n                <a>View details <span class=\"fa fa-angle-double-right\"></span></a>\r\n              </div>\r\n            </div>\r\n            <div class=\"caption\">\r\n              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>\r\n            </div>\r\n          </div>\r\n          <!-- END widget-->\r\n        </div>\r\n        <div class=\"col-lg-3\">\r\n          <!-- START widget-->\r\n          <div class=\"panel widget\">\r\n            <img class=\"img-responsive\" src=\"assets/img/bg1.jpg\" alt=\"Image\" />\r\n            <div class=\"panel-body\">\r\n              <div class=\"row row-table text-center\">\r\n                <a>View details <span class=\"fa fa-angle-double-right\"></span></a>\r\n              </div>\r\n            </div>\r\n            <div class=\"caption\">\r\n              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>\r\n            </div>\r\n          </div>\r\n          <!-- END widget-->\r\n        </div>\r\n      <!--</div>-->\r\n    </div>\r\n  </div>\r\n</div>\r\n<!-- END panel-->"
 
 /***/ }),
 
-/***/ 985:
+/***/ 997:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"wrapper\">\r\n    <!-- <div class=\"row product-catalog-main\"> -->\r\n    <!-- <div class=\"col-lg-3 col-md-3 col-sm-3 col-xs-6\"> -->\r\n    <div class=\"aside\">\r\n        <!-- START Sidebar (left)-->\r\n        <div class=\"aside-inner\">\r\n            <nav class=\"sidebar\" sidebar-anyclick-close=\"\" [class.show-scrollbar]=\"settings.layout.asideScrollbar\">\r\n                <br>\r\n                <div class=\"container-fluid\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-md-12\">\r\n                            <form [formGroup]=\"valForm\" class=\"form-validate form-horizontal\" (submit)=\"submitForm($event, valForm.value)\" novalidate=\"\">\r\n                                <!-- START sidebar nav-->\r\n                                <div class=\"form-group\">\r\n                                    <label class=\"col-sm-2 control-label float-left pull-left\">Style</label>\r\n                                    <div class=\"col-sm-12\">\r\n                                        <select class=\"form-control\" formControlName=\"style\" [formControl]=\"valForm.controls['style']\" (change)=\"styleSelected($event)\">\r\n                                                    <option *ngFor=\"let style of styles\" value={{style.id}}>{{style.name}}</option>\r\n                                            </select>\r\n                                        <span class=\"text-danger\" *ngIf=\"valForm.controls['style'].hasError('required') && (valForm.controls['style'].dirty || valForm.controls['style'].touched)\">This field is required</span>\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"form-group\">\r\n                                    <label class=\"col-sm-2 control-label pull-left\">Color</label>\r\n                                    <div class=\"col-sm-12\">\r\n                                        <div class=\"panel-body\">\r\n\r\n                                            <ul class=\"list-inline external-event-color-selector\">\r\n                                                <li *ngFor=\"let color of colors\" class=\"p0\">\r\n                                                    <a class=\"circle circle-{{color.name}} circle-xl\" (click)=\"colorSelected(color.id)\" [ngClass]=\"{'currentColor':currentColor == color.id}\"></a>\r\n                                                </li>\r\n                                            </ul>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"form-group\">\r\n                                    <label class=\"col-sm-2 control-label pull-left\">Brand</label>\r\n                                    <div class=\"col-sm-12\">\r\n                                        <select class=\"form-control\" formControlName=\"brand\" [formControl]=\"valForm.controls['brand']\" (change)=\"brandSelected($event)\">\r\n                                                    <option *ngFor=\"let brand of brands\" value={{brand.id}}>{{brand.name}}</option>\r\n                                                </select>\r\n                                        <span class=\"text-danger\" *ngIf=\"valForm.controls['brand'].hasError('required') && (valForm.controls['brand'].dirty || valForm.controls['brand'].touched)\">This field is required</span>\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"form-group\">\r\n                                    <label class=\"col-sm-2 control-label pull-left\">Model</label>\r\n                                    <div class=\"col-sm-12\">\r\n                                        <select class=\"form-control\" formControlName=\"model\" [formControl]=\"valForm.controls['model']\" (change)=\"modelSelected($event)\">\r\n                                                    <option *ngFor=\"let model of models\" value={{model.id}}>{{model.name}}</option>\r\n                                                </select>\r\n                                        <span class=\"text-danger\" *ngIf=\"valForm.controls['model'].hasError('required') && (valForm.controls['model'].dirty || valForm.controls['model'].touched)\">This field is required</span>\r\n                                    </div>\r\n                                </div>\r\n                                <!-- END sidebar nav-->\r\n                            </form>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </nav>\r\n        </div>\r\n        <!-- END Sidebar (left)-->\r\n    </div>\r\n    <!-- </div> -->\r\n    <!-- offsidebar-->\r\n    <!--<app-offsidebar class=\"offsidebar\"></app-offsidebar>-->\r\n    <!-- Main section-->\r\n    <!-- <div class=\"col-lg-9 col-md-9 col-sm-9 col-xs-6\"> -->\r\n    <section>\r\n        <!-- Page content-->\r\n        <div class=\"content-wrapper\">\r\n            <div class=\"content-heading\">Product Catalog\r\n                <small>Search for the product you wish to have</small>\r\n            </div>\r\n            <div *ngFor=\"let product of products\">\r\n                <div class=\"col-lg-4\">\r\n                    <!-- START widget-->\r\n                    <div class=\"panel widget\">\r\n                        <div class=\"panel-body text-center bg-center\" style=\"background-image: url('assets/img/bg4.jpg')\">\r\n                            <div class=\"row row-table\">\r\n                                <div class=\"col-xs-12 text-white\">\r\n                                    <br><br><br>\r\n                                    <!-- <img class=\"img-thumbnail img-circle thumb128\" src=\"assets/img/user/06.jpg\" alt=\"Image\" /> -->\r\n                                    <h3 class=\"m0\">{{product.name}}</h3>\r\n                                    <p class=\"m0\">\r\n                                        <em></em>some info</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"panel-body text-center bg-gray-lighter\">\r\n                            <div class=\"row row-table\">\r\n                                <div class=\"col-xs-12\">\r\n                                    <a class=\"text-{{product.color}}\" [routerLink]=\"'/home/characteristics'\">\r\n                                        product name\r\n                                    </a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <!-- END widget-->\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </section>\r\n    <!-- </div> -->\r\n    <!-- </div> -->\r\n</div>"
 
 /***/ }),
 
-/***/ 986:
+/***/ 998:
 /***/ (function(module, exports) {
 
 module.exports = "<!-- START Sidebar (left)-->\n<div class=\"aside-inner\">\n    <nav class=\"sidebar\" sidebar-anyclick-close=\"\" [class.show-scrollbar]=\"settings.layout.asideScrollbar\">\n\n        <!-- START sidebar nav-->\n        <ul class=\"nav\">\n\n\n            <li *ngFor='let item of menuItems' [ngClass]=\"{'nav-heading': item.heading}\" [routerLinkActive]=\"['active']\">\n                <!-- menu heading -->\n                <span *ngIf=\"item.heading\">{{(item.translate | translate) || item.text}}</span>\n                <!-- external links -->\n                <a *ngIf=\"!item.heading && !item.submenu && item.elink\" [attr.target]=\"item.target\" [attr.href]=\"item.elink\" title=\"{{item.text}}\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- single menu item -->\n                <a *ngIf=\"!item.heading && !item.submenu && !item.elink\" [routerLink]=\"item.link\" [attr.route]=\"item.link\" title=\"{{item.text}}\"\n                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- has submenu -->\n                <a *ngIf=\"!item.heading && item.submenu\" title=\"{{item.text}}\"\n                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                        <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                        <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                        <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- SUBLEVEL -->\n                <ul *ngIf=\"item.submenu\" class=\"nav sidebar-subnav\" [routerLinkActive]=\"['opening']\">\n                    <li class=\"sidebar-subnav-header\">{{(item.translate | translate) || item.text}}</li>\n                    <li *ngFor='let subitem of item.submenu' [routerLinkActive]=\"['active']\">\n                        <!-- sublevel: external links -->\n                        <a *ngIf=\"!subitem.heading && !subitem.submenu && subitem.elink\" [attr.target]=\"subitem.target\" [attr.href]=\"subitem.elink\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: single menu item  -->\n                        <a *ngIf=\"!subitem.submenu && !subitem.elink\" [routerLink]=\"subitem.link\" [attr.route]=\"subitem.link\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: has submenu -->\n                        <a *ngIf=\"subitem.submenu\" title=\"{{subitem.text}}\"\n                            (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                                <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                                <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- SUBLEVEL 2 -->\n                        <ul *ngIf=\"subitem.submenu\" class=\"nav sidebar-subnav level2\" [routerLinkActive]=\"['opening']\">\n                            <li *ngFor='let subitem2 of subitem.submenu' [routerLinkActive]=\"['active']\">\n                                <!-- sublevel 2: single menu item  -->\n                                <a *ngIf=\"!subitem2.submenu\" [routerLink]=\"subitem2.link\" [attr.route]=\"subitem2.link\" title=\"{{subitem2.text}}\">\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- sublevel2: has submenu -->\n                                <a *ngIf=\"subitem2.submenu\" title=\"{{subitem2.text}}\"\n                                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                        <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                        <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                        <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- SUBLEVEL 3 -->\n                                <ul *ngIf=\"subitem2.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                    <li *ngFor='let subitem3 of subitem2.submenu' [routerLinkActive]=\"['active']\">\n                                        <!-- sublevel 2: single menu item  -->\n                                        <a *ngIf=\"!subitem3.submenu\" [routerLink]=\"subitem3.link\" [attr.route]=\"subitem3.link\" title=\"{{subitem3.text}}\">\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- sublevel3: has submenu -->\n                                        <a *ngIf=\"subitem3.submenu\" title=\"{{subitem3.text}}\"\n                                            (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                                <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                                <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                                <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- SUBLEVEL 4 -->\n                                        <ul *ngIf=\"subitem3.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                            <li *ngFor='let subitem4 of subitem3.submenu' [routerLinkActive]=\"['active']\">\n                                                <!-- sublevel 2: single menu item  -->\n                                                <a *ngIf=\"!subitem4.submenu\" [routerLink]=\"subitem4.link\" [attr.route]=\"subitem4.link\" title=\"{{subitem4.text}}\">\n                                                    <span class=\"pull-right\" *ngIf=\"subitem4.alert\" [ngClass]=\"subitem4.label || 'label label-success'\">{{subitem4.alert}}</span>\n                                                    <em class=\"{{subitem4.icon}}\" *ngIf=\"subitem4.icon\"></em>\n                                                    <span>{{(subitem4.translate | translate) || subitem4.text}}</span>\n                                                </a>\n                                            </li>\n                                        </ul>\n                                    </li>\n                                </ul>\n                            <li>\n                        </ul>\n                    <li>\n                </ul>\n            </li>\n\n        </ul>\n        <!-- END sidebar nav-->\n\n    </nav>\n</div>\n<!-- END Sidebar (left)-->\n\n"
 
 /***/ }),
 
-/***/ 987:
+/***/ 999:
 /***/ (function(module, exports) {
 
 module.exports = "<!-- START Search form-->\r\n<form class=\"navbar-form\" role=\"search\" action=\"search.html\" [class.open]=\"visible\" (submit)=\"handleForm()\">\r\n    <div class=\"form-group has-feedback\">\r\n        <input [(ngModel)]=\"term\" name=\"term\" class=\"form-control\" type=\"text\" placeholder=\"{{'header.search.PLACEHOLDER' | translate}}\" />\r\n        <div class=\"fa fa-times form-control-feedback\" (click)=\"closeNavSearch()\"></div>\r\n    </div>\r\n    <button class=\"hidden btn btn-default\" type=\"submit\">Submit</button>\r\n</form>\r\n<!-- END Search form-->\r\n"
-
-/***/ }),
-
-/***/ 988:
-/***/ (function(module, exports) {
-
-module.exports = "<!-- START Top Navbar-->\r\n<nav class=\"navbar topnavbar\" role=\"navigation\">\r\n    <!-- START navbar header-->\r\n    <div class=\"navbar-header\">\r\n        <a class=\"navbar-brand\" [routerLink]=\"'/home'\">\r\n            <div class=\"brand-logo\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\" />\r\n            </div>\r\n            <div class=\"brand-logo-collapsed\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\" />\r\n            </div>\r\n            <!-- <a class=\"navbar-brand brand\" [routerLink]=\"'/home'\">\r\n                nayo\r\n            </a> -->\r\n        </a>\r\n    </div>\r\n    <!-- END navbar header-->\r\n    <!-- START Nav wrapper-->\r\n    <div class=\"nav-wrapper\">\r\n        <!-- START Left navbar-->\r\n        <ul class=\"nav navbar-nav\">\r\n            <li>\r\n                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n                <!--<a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>-->\r\n                <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\r\n                <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n            </li>\r\n            <!-- START User avatar toggle-->\r\n            <!--<li>-->\r\n                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n                <!--<a (click)=\"toggleUserBlock($event)\">\r\n                    <em class=\"icon-user\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END User avatar toggle-->\r\n            <!-- START lock screen-->\r\n            <!--<li>\r\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\r\n                    <em class=\"icon-lock\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END lock screen-->\r\n        </ul>\r\n        <!-- END Left navbar-->\r\n        <!-- START Right Navbar-->\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <!-- Search icon-->\r\n            <li>\r\n                <a (click)=\"openNavSearch($event)\">\r\n                    <em class=\"icon-magnifier\"></em>\r\n                </a>\r\n            </li>\r\n            <!-- Fullscreen (only desktops)-->\r\n            <!-- <li class=\"visible-lg\">\r\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\r\n                    <em class=\"fa fa-expand\"></em>\r\n                </a>\r\n            </li> -->\r\n            <li class=\"visible-lg\">\r\n                <a #fsbutton [routerLink]=\"'/login'\">Login\r\n                </a>\r\n            </li>\r\n            <li class=\"visible-lg\">\r\n                <a #fsbutton [routerLink]=\"'/register'\">Signup\r\n                </a>\r\n            </li>\r\n            <!-- START Alert menu-->\r\n            <li class=\"dropdown dropdown-list\" dropdown>\r\n                <a dropdownToggle>\r\n                    <em class=\"icon-bell\"></em>\r\n                    <div class=\"label label-danger\">11</div>\r\n                </a>\r\n                <!-- START Dropdown menu-->\r\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\r\n                    <li>\r\n                        <!-- START list group-->\r\n                        <div class=\"list-group\">\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New followers</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>1 new follower</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New e-mails</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>You have 10 new emails</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">Pending Tasks</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>11 pending task</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- last list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\r\n                                <span class=\"label label-danger pull-right\">14</span>\r\n                            </a>\r\n                        </div>\r\n                        <!-- END list group-->\r\n                    </li>\r\n                </ul>\r\n                <!-- END Dropdown menu-->\r\n            </li>\r\n            <!-- END Alert menu-->\r\n            <!-- START Offsidebar button-->\r\n            <!--<li>\r\n                <a (click)=\"toggleOffsidebar()\">\r\n                    <em class=\"icon-notebook\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END Offsidebar menu-->\r\n        </ul>\r\n        <!-- END Right Navbar-->\r\n    </div>\r\n    <!-- END Nav wrapper-->\r\n\r\n    <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch>\r\n\r\n</nav>\r\n<!-- END Top Navbar-->\r\n"
-
-/***/ }),
-
-/***/ 989:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"wrapper\">\r\n    <!-- Top Navbar -->\r\n    <app-top-navbar class=\"topnavbar-wrapper\"></app-top-navbar>\r\n    <!-- Child Routing -->\r\n    <router-outlet></router-outlet>\r\n    \r\n</div>\r\n<!-- Page footer-->\r\n<footer app-footer></footer>"
 
 /***/ })
 
