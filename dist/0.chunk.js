@@ -8,25 +8,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__ = __webpack_require__(923);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__ = __webpack_require__(980);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_img_cropper__ = __webpack_require__(971);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_shared_module__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dashboard_routing_module__ = __webpack_require__(931);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dashboard_component__ = __webpack_require__(912);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_home_home_component__ = __webpack_require__(930);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__top_navbar_top_navbar_component__ = __webpack_require__(936);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__top_navbar_navsearch_navsearch_component__ = __webpack_require__(935);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__side_navbar_side_navbar_component__ = __webpack_require__(933);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__side_navbar_userblock_userblock_component__ = __webpack_require__(934);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_theme_settings_theme_settings_component__ = __webpack_require__(911);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__core_menu_menu_service__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__side_navbar_userblock_userblock_service__ = __webpack_require__(913);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__menu__ = __webpack_require__(932);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_sales_reports_sales_reports_component__ = __webpack_require__(910);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_activity_reports_activity_reports_component__ = __webpack_require__(907);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_dasboard_dasboard_component__ = __webpack_require__(908);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_home_page_home_page_component__ = __webpack_require__(909);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_img_cropper__ = __webpack_require__(981);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_charts_ng2_charts__ = __webpack_require__(977);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_charts_ng2_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_ng2_charts_ng2_charts__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_shared_module__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dashboard_routing_module__ = __webpack_require__(934);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dashboard_component__ = __webpack_require__(913);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__ = __webpack_require__(933);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__top_navbar_top_navbar_component__ = __webpack_require__(939);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__top_navbar_navsearch_navsearch_component__ = __webpack_require__(938);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__side_navbar_side_navbar_component__ = __webpack_require__(936);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__side_navbar_userblock_userblock_component__ = __webpack_require__(937);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_theme_settings_theme_settings_component__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__core_menu_menu_service__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__side_navbar_userblock_userblock_service__ = __webpack_require__(914);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__menu__ = __webpack_require__(935);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_sales_reports_sales_reports_component__ = __webpack_require__(911);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_activity_reports_activity_reports_component__ = __webpack_require__(908);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_dasboard_dasboard_component__ = __webpack_require__(909);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_home_page_home_page_component__ = __webpack_require__(910);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardModule", function() { return DashboardModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -37,6 +39,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -68,7 +71,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var DashboardModule = (function () {
     function DashboardModule(menuService) {
         this.menuService = menuService;
-        menuService.addMenu(__WEBPACK_IMPORTED_MODULE_16__menu__["a" /* menu */]);
+        menuService.addMenu(__WEBPACK_IMPORTED_MODULE_17__menu__["a" /* menu */]);
     }
     return DashboardModule;
 }());
@@ -78,28 +81,29 @@ DashboardModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormsModule"],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["ReactiveFormsModule"],
-            __WEBPACK_IMPORTED_MODULE_6__dashboard_routing_module__["a" /* DashboardRoutingModule */],
-            __WEBPACK_IMPORTED_MODULE_5__shared_shared_module__["a" /* SharedModule */],
+            __WEBPACK_IMPORTED_MODULE_7__dashboard_routing_module__["a" /* DashboardRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_6__shared_shared_module__["a" /* SharedModule */],
             __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__["FileUploadModule"],
-            __WEBPACK_IMPORTED_MODULE_4_ng2_img_cropper__["a" /* ImageCropperModule */]
+            __WEBPACK_IMPORTED_MODULE_4_ng2_img_cropper__["a" /* ImageCropperModule */],
+            __WEBPACK_IMPORTED_MODULE_5_ng2_charts_ng2_charts__["ChartsModule"]
         ],
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_7__dashboard_component__["a" /* DashboardComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__components_home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_13__components_theme_settings_theme_settings_component__["a" /* ThemeSettingsComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__top_navbar_top_navbar_component__["a" /* TopNavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__side_navbar_side_navbar_component__["a" /* SideNavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__top_navbar_navsearch_navsearch_component__["a" /* NavsearchComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__side_navbar_userblock_userblock_component__["a" /* UserblockComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__components_sales_reports_sales_reports_component__["a" /* SalesReportsComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__components_activity_reports_activity_reports_component__["a" /* ActivityReportsComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__components_dasboard_dasboard_component__["a" /* DasboardComponent */],
-            __WEBPACK_IMPORTED_MODULE_20__components_home_page_home_page_component__["a" /* HomePageComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__dashboard_component__["a" /* DashboardComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_14__components_theme_settings_theme_settings_component__["a" /* ThemeSettingsComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__top_navbar_top_navbar_component__["a" /* TopNavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__side_navbar_side_navbar_component__["a" /* SideNavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__top_navbar_navsearch_navsearch_component__["a" /* NavsearchComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__side_navbar_userblock_userblock_component__["a" /* UserblockComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__components_sales_reports_sales_reports_component__["a" /* SalesReportsComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__components_activity_reports_activity_reports_component__["a" /* ActivityReportsComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__components_dasboard_dasboard_component__["a" /* DasboardComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__components_home_page_home_page_component__["a" /* HomePageComponent */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_15__side_navbar_userblock_userblock_service__["a" /* UserblockService */]
+            __WEBPACK_IMPORTED_MODULE_16__side_navbar_userblock_userblock_service__["a" /* UserblockService */]
         ]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_14__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_14__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_15__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_15__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object])
 ], DashboardModule);
 
 var _a;
@@ -107,7 +111,7 @@ var _a;
 
 /***/ }),
 
-/***/ 902:
+/***/ 903:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -142,14 +146,14 @@ exports.FileLikeObject = FileLikeObject;
 
 /***/ }),
 
-/***/ 903:
+/***/ 904:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var file_like_object_class_1 = __webpack_require__(902);
-var file_item_class_1 = __webpack_require__(921);
-var file_type_class_1 = __webpack_require__(969);
+var file_like_object_class_1 = __webpack_require__(903);
+var file_item_class_1 = __webpack_require__(924);
+var file_type_class_1 = __webpack_require__(978);
 function isFile(value) {
     return (File && value instanceof File);
 }
@@ -555,11 +559,11 @@ exports.FileUploader = FileUploader;
 
 /***/ }),
 
-/***/ 904:
+/***/ 905:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cropperDrawSettings__ = __webpack_require__(924);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cropperDrawSettings__ = __webpack_require__(926);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CropperSettings; });
 
 var CropperSettings = (function () {
@@ -617,11 +621,11 @@ var CropperSettings = (function () {
 
 /***/ }),
 
-/***/ 905:
+/***/ 906:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pointPool__ = __webpack_require__(906);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pointPool__ = __webpack_require__(907);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Bounds; });
 
 var Bounds = (function () {
@@ -672,11 +676,11 @@ var Bounds = (function () {
 
 /***/ }),
 
-/***/ 906:
+/***/ 907:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(929);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(931);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PointPool; });
 
 var PointPool = (function () {
@@ -723,11 +727,12 @@ var PointPool = (function () {
 
 /***/ }),
 
-/***/ 907:
+/***/ 908:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_colors_colors_service__ = __webpack_require__(450);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivityReportsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -739,33 +744,104 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var ActivityReportsComponent = (function () {
-    function ActivityReportsComponent() {
+    function ActivityReportsComponent(colors) {
+        this.colors = colors;
+        this.lat = 33.790807;
+        this.lng = -117.835734;
+        this.zoom = 14;
+        this.scrollwheel = false;
+        this.sparkOptions1 = {
+            barColor: this.colors.byName('primary'),
+            height: 20,
+            barWidth: 3,
+            barSpacing: 2
+        };
+        this.sparkOptions2 = {
+            type: 'line',
+            height: 80,
+            width: '100%',
+            lineWidth: 2,
+            lineColor: '#dddddd',
+            spotColor: '#bbbbbb',
+            fillColor: '',
+            highlightLineColor: '#fff',
+            spotRadius: 3,
+            resize: true
+        };
+        this.sparkOptions3 = {
+            barColor: '#fff',
+            height: 50,
+            barWidth: 6,
+            barSpacing: 6
+        };
+        this.sparkOptions4 = {
+            barColor: this.colors.byName('primary'),
+            height: 30,
+            barWidth: 6,
+            barSpacing: 6
+        };
+        // Bar chart
+        // -----------------------------------
+        this.barData = {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [
+                {
+                    data: [this.rFactor(), this.rFactor(), this.rFactor(), this.rFactor(), this.rFactor(), this.rFactor(), this.rFactor()]
+                }, {
+                    data: [this.rFactor(), this.rFactor(), this.rFactor(), this.rFactor(), this.rFactor(), this.rFactor(), this.rFactor()]
+                }
+            ]
+        };
+        this.barColors = [
+            {
+                backgroundColor: this.colors.byName('info'),
+                borderColor: this.colors.byName('info'),
+                pointHoverBackgroundColor: this.colors.byName('info'),
+                pointHoverBorderColor: this.colors.byName('info')
+            }, {
+                backgroundColor: this.colors.byName('primary'),
+                borderColor: this.colors.byName('primary'),
+                pointHoverBackgroundColor: this.colors.byName('primary'),
+                pointHoverBorderColor: this.colors.byName('primary')
+            }
+        ];
+        this.barOptions = {
+            scaleShowVerticalLines: false,
+            responsive: true
+        };
     }
     ActivityReportsComponent.prototype.ngOnInit = function () {
     };
+    // random values for demo
+    ActivityReportsComponent.prototype.rFactor = function () {
+        return Math.round(Math.random() * 100);
+    };
+    ;
     return ActivityReportsComponent;
 }());
 ActivityReportsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-activity-reports',
-        template: __webpack_require__(979),
-        styles: [__webpack_require__(946)]
+        template: __webpack_require__(989),
+        styles: [__webpack_require__(951)]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_colors_colors_service__["a" /* ColorsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_colors_colors_service__["a" /* ColorsService */]) === "function" && _a || Object])
 ], ActivityReportsComponent);
 
+var _a;
 //# sourceMappingURL=activity-reports.component.js.map
 
 /***/ }),
 
-/***/ 908:
+/***/ 909:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_colors_colors_service__ = __webpack_require__(452);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_colors_colors_service__ = __webpack_require__(450);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DasboardComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -870,8 +946,8 @@ var DasboardComponent = (function () {
 DasboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-dasboard',
-        template: __webpack_require__(980),
-        styles: [__webpack_require__(947)]
+        template: __webpack_require__(990),
+        styles: [__webpack_require__(952)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_colors_colors_service__["a" /* ColorsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_colors_colors_service__["a" /* ColorsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _b || Object])
 ], DasboardComponent);
@@ -881,7 +957,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 909:
+/***/ 910:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -907,8 +983,8 @@ var HomePageComponent = (function () {
 HomePageComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-home-page',
-        template: __webpack_require__(981),
-        styles: [__webpack_require__(948)]
+        template: __webpack_require__(991),
+        styles: [__webpack_require__(953)]
     }),
     __metadata("design:paramtypes", [])
 ], HomePageComponent);
@@ -917,11 +993,12 @@ HomePageComponent = __decorate([
 
 /***/ }),
 
-/***/ 910:
+/***/ 911:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_colors_colors_service__ = __webpack_require__(450);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SalesReportsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -933,8 +1010,44 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SalesReportsComponent = (function () {
-    function SalesReportsComponent() {
+    function SalesReportsComponent(colors) {
+        this.colors = colors;
+        this.lat = 33.790807;
+        this.lng = -117.835734;
+        this.zoom = 14;
+        this.scrollwheel = false;
+        this.sparkOptions1 = {
+            barColor: this.colors.byName('primary'),
+            height: 20,
+            barWidth: 3,
+            barSpacing: 2
+        };
+        this.sparkOptions2 = {
+            type: 'line',
+            height: 80,
+            width: '100%',
+            lineWidth: 2,
+            lineColor: '#dddddd',
+            spotColor: '#bbbbbb',
+            fillColor: '',
+            highlightLineColor: '#fff',
+            spotRadius: 3,
+            resize: true
+        };
+        this.sparkOptions3 = {
+            barColor: '#fff',
+            height: 50,
+            barWidth: 6,
+            barSpacing: 6
+        };
+        this.sparkOptions4 = {
+            barColor: this.colors.byName('primary'),
+            height: 30,
+            barWidth: 6,
+            barSpacing: 6
+        };
     }
     SalesReportsComponent.prototype.ngOnInit = function () {
     };
@@ -943,27 +1056,28 @@ var SalesReportsComponent = (function () {
 SalesReportsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-sales-reports',
-        template: __webpack_require__(983),
-        styles: [__webpack_require__(950)]
+        template: __webpack_require__(993),
+        styles: [__webpack_require__(955)]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_colors_colors_service__["a" /* ColorsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_colors_colors_service__["a" /* ColorsService */]) === "function" && _a || Object])
 ], SalesReportsComponent);
 
+var _a;
 //# sourceMappingURL=sales-reports.component.js.map
 
 /***/ }),
 
-/***/ 911:
+/***/ 912:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_file_upload__ = __webpack_require__(923);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_file_upload___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ng2_file_upload__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_service__ = __webpack_require__(449);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__ = __webpack_require__(156);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ThemeSettingsComponent; });
+/* unused harmony export appNameInterface */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -978,24 +1092,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
 var ThemeSettingsComponent = (function () {
-    function ThemeSettingsComponent(settings, themes, SettingService) {
+    function ThemeSettingsComponent(settings, themes, SettingService, router) {
         this.settings = settings;
         this.themes = themes;
         this.SettingService = SettingService;
-        this.uploader = new __WEBPACK_IMPORTED_MODULE_1_ng2_file_upload__["FileUploader"]({ url: URL });
-        this.hasBaseDropZoneOver = false;
-        this.hasAnotherDropZoneOver = false;
+        this.router = router;
         this.image = {};
+        this.data = {
+            name: ''
+        };
         // this.selectedLanguage = this.getLangs()[0].code;
     }
-    ThemeSettingsComponent.prototype.fileOverBase = function (e) {
-        this.hasBaseDropZoneOver = e;
-    };
-    ThemeSettingsComponent.prototype.fileOverAnother = function (e) {
-        this.hasAnotherDropZoneOver = e;
-    };
     ThemeSettingsComponent.prototype.ngOnInit = function () {
     };
     ThemeSettingsComponent.prototype.setTheme = function () {
@@ -1019,24 +1127,36 @@ var ThemeSettingsComponent = (function () {
     };
     ThemeSettingsComponent.prototype.saveLogo = function () {
         localStorage.setItem('logo', this.image.src);
+        //this.themes.setLogo(this.image.src);
+        this.router.navigate(['/dashboard']);
+    };
+    ThemeSettingsComponent.prototype.saveAppName = function (data) {
+        localStorage.setItem('appName', data.name);
+        // data.resetForm();
     };
     return ThemeSettingsComponent;
 }());
 ThemeSettingsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-theme-settings',
-        template: __webpack_require__(984),
-        styles: [__webpack_require__(951)]
+        template: __webpack_require__(994),
+        styles: [__webpack_require__(956)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__app_service__["a" /* AppService */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__app_service__["a" /* AppService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _d || Object])
 ], ThemeSettingsComponent);
 
-var _a, _b, _c;
+var appNameInterface = (function () {
+    function appNameInterface() {
+    }
+    return appNameInterface;
+}());
+
+var _a, _b, _c, _d;
 //# sourceMappingURL=theme-settings.component.js.map
 
 /***/ }),
 
-/***/ 912:
+/***/ 913:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1062,8 +1182,8 @@ var DashboardComponent = (function () {
 DashboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-dashboard',
-        template: __webpack_require__(985),
-        styles: [__webpack_require__(952)]
+        template: __webpack_require__(995),
+        styles: [__webpack_require__(957)]
     }),
     __metadata("design:paramtypes", [])
 ], DashboardComponent);
@@ -1072,7 +1192,7 @@ DashboardComponent = __decorate([
 
 /***/ }),
 
-/***/ 913:
+/***/ 914:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1114,7 +1234,7 @@ UserblockService = __decorate([
 
 /***/ }),
 
-/***/ 920:
+/***/ 923:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1129,7 +1249,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(0);
-var file_uploader_class_1 = __webpack_require__(903);
+var file_uploader_class_1 = __webpack_require__(904);
 var FileDropDirective = (function () {
     function FileDropDirective(element) {
         this.fileOver = new core_1.EventEmitter();
@@ -1234,12 +1354,12 @@ exports.FileDropDirective = FileDropDirective;
 
 /***/ }),
 
-/***/ 921:
+/***/ 924:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var file_like_object_class_1 = __webpack_require__(902);
+var file_like_object_class_1 = __webpack_require__(903);
 var FileItem = (function () {
     function FileItem(uploader, some, options) {
         this.url = '/';
@@ -1368,7 +1488,7 @@ exports.FileItem = FileItem;
 
 /***/ }),
 
-/***/ 922:
+/***/ 925:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1383,7 +1503,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(0);
-var file_uploader_class_1 = __webpack_require__(903);
+var file_uploader_class_1 = __webpack_require__(904);
 // todo: filters
 var FileSelectDirective = (function () {
     function FileSelectDirective(element) {
@@ -1431,26 +1551,7 @@ exports.FileSelectDirective = FileSelectDirective;
 
 /***/ }),
 
-/***/ 923:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-__export(__webpack_require__(922));
-__export(__webpack_require__(920));
-__export(__webpack_require__(903));
-__export(__webpack_require__(921));
-__export(__webpack_require__(902));
-var file_upload_module_1 = __webpack_require__(970);
-exports.FileUploadModule = file_upload_module_1.FileUploadModule;
-
-
-/***/ }),
-
-/***/ 924:
+/***/ 926:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1470,17 +1571,17 @@ var CropperDrawSettings = (function () {
 
 /***/ }),
 
-/***/ 925:
+/***/ 927:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__model_bounds__ = __webpack_require__(905);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_cornerMarker__ = __webpack_require__(975);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_cropTouch__ = __webpack_require__(976);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__model_dragMarker__ = __webpack_require__(977);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_imageCropperModel__ = __webpack_require__(978);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__imageCropperDataShare__ = __webpack_require__(973);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_pointPool__ = __webpack_require__(906);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__model_bounds__ = __webpack_require__(906);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_cornerMarker__ = __webpack_require__(985);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_cropTouch__ = __webpack_require__(986);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__model_dragMarker__ = __webpack_require__(987);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_imageCropperModel__ = __webpack_require__(988);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__imageCropperDataShare__ = __webpack_require__(983);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_pointPool__ = __webpack_require__(907);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropper; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -2483,15 +2584,15 @@ var ImageCropper = (function (_super) {
 
 /***/ }),
 
-/***/ 926:
+/***/ 928:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__imageCropper__ = __webpack_require__(925);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cropperSettings__ = __webpack_require__(904);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exif__ = __webpack_require__(972);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_cropPosition__ = __webpack_require__(927);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__imageCropper__ = __webpack_require__(927);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cropperSettings__ = __webpack_require__(905);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exif__ = __webpack_require__(982);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_cropPosition__ = __webpack_require__(929);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropperComponent; });
 
 
@@ -2707,11 +2808,11 @@ ImageCropperComponent.propDecorators = {
 
 /***/ }),
 
-/***/ 927:
+/***/ 929:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bounds__ = __webpack_require__(905);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bounds__ = __webpack_require__(906);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CropPosition; });
 
 var CropPosition = (function () {
@@ -2738,12 +2839,12 @@ var CropPosition = (function () {
 
 /***/ }),
 
-/***/ 928:
+/***/ 930:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(929);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cropperSettings__ = __webpack_require__(904);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(931);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cropperSettings__ = __webpack_require__(905);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Handle; });
 
 
@@ -2791,7 +2892,7 @@ var Handle = (function () {
 
 /***/ }),
 
-/***/ 929:
+/***/ 931:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2830,7 +2931,7 @@ var Point = (function () {
 
 /***/ }),
 
-/***/ 930:
+/***/ 933:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2856,8 +2957,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-home',
-        template: __webpack_require__(982),
-        styles: [__webpack_require__(949)]
+        template: __webpack_require__(992),
+        styles: [__webpack_require__(954)]
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
@@ -2866,18 +2967,18 @@ HomeComponent = __decorate([
 
 /***/ }),
 
-/***/ 931:
+/***/ 934:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(912);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_theme_settings_theme_settings_component__ = __webpack_require__(911);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_sales_reports_sales_reports_component__ = __webpack_require__(910);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_activity_reports_activity_reports_component__ = __webpack_require__(907);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_dasboard_dasboard_component__ = __webpack_require__(908);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_page_home_page_component__ = __webpack_require__(909);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(913);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_theme_settings_theme_settings_component__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_sales_reports_sales_reports_component__ = __webpack_require__(911);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_activity_reports_activity_reports_component__ = __webpack_require__(908);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_dasboard_dasboard_component__ = __webpack_require__(909);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_page_home_page_component__ = __webpack_require__(910);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2898,7 +2999,7 @@ var routes = [
         path: '',
         component: __WEBPACK_IMPORTED_MODULE_2__dashboard_component__["a" /* DashboardComponent */],
         children: [
-            //{ path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+            { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
             { path: '', component: __WEBPACK_IMPORTED_MODULE_6__components_dasboard_dasboard_component__["a" /* DasboardComponent */] },
             { path: 'themesettings', component: __WEBPACK_IMPORTED_MODULE_3__components_theme_settings_theme_settings_component__["a" /* ThemeSettingsComponent */] },
             { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_6__components_dasboard_dasboard_component__["a" /* DasboardComponent */] },
@@ -2924,415 +3025,415 @@ DashboardRoutingModule = __decorate([
 
 /***/ }),
 
-/***/ 932:
+/***/ 935:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return menu; });
-var Home = {
-    text: 'Home',
-    link: '/home',
-    icon: 'icon-home'
-};
 var site = {
     text: 'Site Settings',
     link: '/dashboard/themesettings',
     icon: 'icon-settings'
 };
-var Dashboard = {
+var Home = {
     text: 'Dashboard',
-    link: '/dashboard',
-    icon: 'icon-speedometer',
-    submenu: [
-        {
-            text: 'Dashbord v1',
-            link: '/dashboard/v1'
-        },
-        {
-            text: 'Dashbord v2',
-            link: '/dashboard/v2'
-        },
-        {
-            text: 'Dashbord v3',
-            link: '/dashboard/v3'
-        }
-    ]
+    link: '/dashboard/dashboard',
+    icon: 'icon-home'
 };
-var Widgets = {
-    text: 'Widgets',
-    link: '/widgets',
-    icon: 'icon-grid'
+var Sales = {
+    text: 'Sales Reports',
+    link: '/dashboard/salesreports',
+    icon: 'fa fa-inr'
 };
-var Elements = {
-    text: 'Elements',
-    link: '/elements',
-    icon: 'icon-chemistry',
-    submenu: [
-        {
-            text: 'Buttons',
-            link: '/elements/buttons'
-        },
-        {
-            text: 'Interaction',
-            link: '/elements/interaction'
-        },
-        {
-            text: 'Notification',
-            link: '/elements/notification'
-        },
-        {
-            text: 'SweetAlert',
-            link: '/elements/sweetalert'
-        },
-        {
-            text: 'Spinners',
-            link: '/elements/spinners'
-        },
-        {
-            text: 'Dropdown',
-            link: '/elements/dropdown'
-        },
-        {
-            text: 'Nav Tree',
-            link: '/elements/navtree'
-        },
-        {
-            text: 'Sortable',
-            link: '/elements/sortable'
-        },
-        {
-            text: 'Grid',
-            link: '/elements/grid'
-        },
-        {
-            text: 'Grid Masonry',
-            link: '/elements/gridmasonry'
-        },
-        {
-            text: 'Typography',
-            link: '/elements/typography'
-        },
-        {
-            text: 'Font Icons',
-            link: '/elements/iconsfont'
-        },
-        {
-            text: 'Weahter Icons',
-            link: '/elements/iconsweather'
-        },
-        {
-            text: 'Colors',
-            link: '/elements/colors'
-        },
-        {
-            text: 'Infinite Scroll',
-            link: '/elements/infinitescroll'
-        }
-    ]
+var activityreports = {
+    text: 'Activity Reports',
+    link: '/dashboard/activityreports',
+    icon: 'fa fa-bar-chart'
 };
-var Forms = {
-    text: 'Forms',
-    link: '/forms',
-    icon: 'icon-note',
-    submenu: [
-        {
-            text: 'Standard',
-            link: '/forms/standard'
-        },
-        {
-            text: 'Extended',
-            link: '/forms/extended'
-        },
-        {
-            text: 'Validation',
-            link: '/forms/validation'
-        },
-        {
-            text: 'Upload',
-            link: '/forms/upload'
-        },
-        {
-            text: 'Image Crop',
-            link: '/forms/cropper'
-        }
-    ]
-};
-var Charts = {
-    text: 'Charts',
-    link: '/charts',
-    icon: 'icon-graph',
-    submenu: [
-        {
-            text: 'Flot',
-            link: '/charts/flot'
-        },
-        {
-            text: 'Radial',
-            link: '/charts/radial'
-        },
-        {
-            text: 'ChartJS',
-            link: '/charts/chartjs'
-        }
-    ]
-};
-var Tables = {
-    text: 'Tables',
-    link: '/tables',
-    icon: 'icon-grid',
-    submenu: [
-        {
-            text: 'Standard',
-            link: '/tables/standard'
-        },
-        {
-            text: 'Extended',
-            link: '/tables/extended'
-        },
-        {
-            text: 'Data-Tables',
-            link: '/tables/datatable'
-        },
-        {
-            text: 'Angular Grid',
-            link: '/tables/aggrid'
-        }
-    ]
-};
-var Maps = {
-    text: 'Maps',
-    link: '/maps',
-    icon: 'icon-map',
-    submenu: [
-        {
-            text: 'Google',
-            link: '/maps/google'
-        },
-        {
-            text: 'Vector',
-            link: '/maps/vector'
-        }
-    ]
-};
-var Pages = {
-    text: 'Pages',
-    link: '/pages',
-    icon: 'icon-doc',
-    submenu: [
-        {
-            text: 'Login',
-            link: '/login'
-        },
-        {
-            text: 'Register',
-            link: '/register'
-        },
-        {
-            text: 'Recover',
-            link: '/recover'
-        },
-        {
-            text: 'Lock',
-            link: '/lock'
-        },
-        {
-            text: '404',
-            link: '/404'
-        },
-        {
-            text: '500',
-            link: '/500'
-        },
-        {
-            text: 'Maintenance',
-            link: '/maintenance'
-        }
-    ]
-};
-var Blog = {
-    text: 'Blog',
-    link: '/blog',
-    icon: 'icon-notebook',
-    submenu: [
-        {
-            text: 'List',
-            link: '/blog/list'
-        },
-        {
-            text: 'Post',
-            link: '/blog/post'
-        },
-        {
-            text: 'Articles',
-            link: '/blog/articles'
-        },
-        {
-            text: 'Article View',
-            link: '/blog/articleview'
-        }
-    ]
-};
-var Ecommerce = {
-    text: 'Ecommerce',
-    link: '/ecommerce',
-    icon: 'icon-basket-loaded',
-    submenu: [
-        {
-            text: 'Orders',
-            link: '/ecommerce/orders'
-        },
-        {
-            text: 'Order View',
-            link: '/ecommerce/orderview'
-        },
-        {
-            text: 'Products',
-            link: '/ecommerce/products'
-        },
-        {
-            text: 'Product View',
-            link: '/ecommerce/productview'
-        },
-        {
-            text: 'Checkout',
-            link: '/ecommerce/checkout'
-        }
-    ]
-};
-var Extras = {
-    text: 'Extras',
-    link: '/extras',
-    icon: 'icon-cup',
-    submenu: [
-        {
-            text: 'Contacts',
-            link: '/extras/contacts'
-        },
-        {
-            text: 'Contact details',
-            link: '/extras/contactdetails'
-        },
-        {
-            text: 'Projects',
-            link: '/extras/projects'
-        },
-        {
-            text: 'Projects details',
-            link: '/extras/projectsdetails'
-        },
-        {
-            text: 'Team Viewer',
-            link: '/extras/teamviewer'
-        },
-        {
-            text: 'Social Board',
-            link: '/extras/socialboard'
-        },
-        {
-            text: 'Vote links',
-            link: '/extras/votelinks'
-        },
-        {
-            text: 'Bug tracker',
-            link: '/extras/bugtracker'
-        },
-        {
-            text: 'Faq',
-            link: '/extras/faq'
-        },
-        {
-            text: 'Help center',
-            link: '/extras/helpcenter'
-        },
-        {
-            text: 'Followers',
-            link: '/extras/followers'
-        },
-        {
-            text: 'Settings',
-            link: '/extras/settings'
-        },
-        {
-            text: 'Plans',
-            link: '/extras/plans'
-        },
-        {
-            text: 'File manager',
-            link: '/extras/filemanager'
-        },
-        {
-            text: 'Forum',
-            link: '/extras/forum'
-        },
-        {
-            text: 'Mailbox',
-            link: '/extras/mailbox'
-        },
-        {
-            text: 'Timeline',
-            link: '/extras/timeline'
-        },
-        {
-            text: 'Calendar',
-            link: '/extras/calendar'
-        },
-        {
-            text: 'Invoice',
-            link: '/extras/invoice'
-        },
-        {
-            text: 'Search',
-            link: '/extras/search'
-        },
-        {
-            text: 'Todo list',
-            link: '/extras/todolist'
-        },
-        {
-            text: 'Profile',
-            link: '/extras/profile'
-        },
-        {
-            text: 'Code editor',
-            link: '/extras/codeeditor'
-        }
-    ]
-};
-var headingMain = {
-    text: 'Main Navigation',
-    heading: true
-};
-var headingComponents = {
-    text: 'Components',
-    heading: true
-};
-var headingMore = {
-    text: 'More',
-    heading: true
-};
+// const Dashboard = {
+//     text: 'Dashboard',
+//     link: '/dashboard',
+//     icon: 'icon-speedometer',
+//     submenu: [
+//         {
+//             text: 'Dashbord v1',
+//             link: '/dashboard/v1'
+//         },
+//         {
+//             text: 'Dashbord v2',
+//             link: '/dashboard/v2'
+//         },
+//         {
+//             text: 'Dashbord v3',
+//             link: '/dashboard/v3'
+//         }
+//     ]
+// };
+// const Widgets = {
+//     text: 'Widgets',
+//     link: '/widgets',
+//     icon: 'icon-grid'
+// };
+// const Elements = {
+//     text: 'Elements',
+//     link: '/elements',
+//     icon: 'icon-chemistry',
+//     submenu: [
+//         {
+//             text: 'Buttons',
+//             link: '/elements/buttons'
+//         },
+//         {
+//             text: 'Interaction',
+//             link: '/elements/interaction'
+//         },
+//         {
+//             text: 'Notification',
+//             link: '/elements/notification'
+//         },
+//         {
+//             text: 'SweetAlert',
+//             link: '/elements/sweetalert'
+//         },
+//         {
+//             text: 'Spinners',
+//             link: '/elements/spinners'
+//         },
+//         {
+//             text: 'Dropdown',
+//             link: '/elements/dropdown'
+//         },
+//         {
+//             text: 'Nav Tree',
+//             link: '/elements/navtree'
+//         },
+//         {
+//             text: 'Sortable',
+//             link: '/elements/sortable'
+//         },
+//         {
+//             text: 'Grid',
+//             link: '/elements/grid'
+//         },
+//         {
+//             text: 'Grid Masonry',
+//             link: '/elements/gridmasonry'
+//         },
+//         {
+//             text: 'Typography',
+//             link: '/elements/typography'
+//         },
+//         {
+//             text: 'Font Icons',
+//             link: '/elements/iconsfont'
+//         },
+//         {
+//             text: 'Weahter Icons',
+//             link: '/elements/iconsweather'
+//         },
+//         {
+//             text: 'Colors',
+//             link: '/elements/colors'
+//         },
+//         {
+//             text: 'Infinite Scroll',
+//             link: '/elements/infinitescroll'
+//         }
+//     ]
+// };
+// const Forms = {
+//     text: 'Forms',
+//     link: '/forms',
+//     icon: 'icon-note',
+//     submenu: [
+//         {
+//             text: 'Standard',
+//             link: '/forms/standard'
+//         },
+//         {
+//             text: 'Extended',
+//             link: '/forms/extended'
+//         },
+//         {
+//             text: 'Validation',
+//             link: '/forms/validation'
+//         },
+//         {
+//             text: 'Upload',
+//             link: '/forms/upload'
+//         },
+//         {
+//             text: 'Image Crop',
+//             link: '/forms/cropper'
+//         }
+//     ]
+// };
+// const Charts = {
+//     text: 'Charts',
+//     link: '/charts',
+//     icon: 'icon-graph',
+//     submenu: [
+//         {
+//             text: 'Flot',
+//             link: '/charts/flot'
+//         },
+//         {
+//             text: 'Radial',
+//             link: '/charts/radial'
+//         },
+//         {
+//             text: 'ChartJS',
+//             link: '/charts/chartjs'
+//         }
+//     ]
+// };
+// const Tables = {
+//     text: 'Tables',
+//     link: '/tables',
+//     icon: 'icon-grid',
+//     submenu: [
+//         {
+//             text: 'Standard',
+//             link: '/tables/standard'
+//         },
+//         {
+//             text: 'Extended',
+//             link: '/tables/extended'
+//         },
+//         {
+//             text: 'Data-Tables',
+//             link: '/tables/datatable'
+//         },
+//         {
+//             text: 'Angular Grid',
+//             link: '/tables/aggrid'
+//         }
+//     ]
+// };
+// const Maps = {
+//     text: 'Maps',
+//     link: '/maps',
+//     icon: 'icon-map',
+//     submenu: [
+//         {
+//             text: 'Google',
+//             link: '/maps/google'
+//         },
+//         {
+//             text: 'Vector',
+//             link: '/maps/vector'
+//         }
+//     ]
+// };
+// const Pages = {
+//     text: 'Pages',
+//     link: '/pages',
+//     icon: 'icon-doc',
+//     submenu: [
+//         {
+//             text: 'Login',
+//             link: '/login'
+//         },
+//         {
+//             text: 'Register',
+//             link: '/register'
+//         },
+//         {
+//             text: 'Recover',
+//             link: '/recover'
+//         },
+//         {
+//             text: 'Lock',
+//             link: '/lock'
+//         },
+//         {
+//             text: '404',
+//             link: '/404'
+//         },
+//         {
+//             text: '500',
+//             link: '/500'
+//         },
+//         {
+//             text: 'Maintenance',
+//             link: '/maintenance'
+//         }
+//     ]
+// };
+// const Blog = {
+//     text: 'Blog',
+//     link: '/blog',
+//     icon: 'icon-notebook',
+//     submenu: [
+//         {
+//             text: 'List',
+//             link: '/blog/list'
+//         },
+//         {
+//             text: 'Post',
+//             link: '/blog/post'
+//         },
+//         {
+//             text: 'Articles',
+//             link: '/blog/articles'
+//         },
+//         {
+//             text: 'Article View',
+//             link: '/blog/articleview'
+//         }
+//     ]
+// }
+// const Ecommerce = {
+//     text: 'Ecommerce',
+//     link: '/ecommerce',
+//     icon: 'icon-basket-loaded',
+//     submenu: [
+//         {
+//             text: 'Orders',
+//             link: '/ecommerce/orders'
+//         },
+//         {
+//             text: 'Order View',
+//             link: '/ecommerce/orderview'
+//         },
+//         {
+//             text: 'Products',
+//             link: '/ecommerce/products'
+//         },
+//         {
+//             text: 'Product View',
+//             link: '/ecommerce/productview'
+//         },
+//         {
+//             text: 'Checkout',
+//             link: '/ecommerce/checkout'
+//         }
+//     ]
+// }
+// const Extras = {
+//     text: 'Extras',
+//     link: '/extras',
+//     icon: 'icon-cup',
+//     submenu: [
+//         {
+//             text: 'Contacts',
+//             link: '/extras/contacts'
+//         },
+//         {
+//             text: 'Contact details',
+//             link: '/extras/contactdetails'
+//         },
+//         {
+//             text: 'Projects',
+//             link: '/extras/projects'
+//         },
+//         {
+//             text: 'Projects details',
+//             link: '/extras/projectsdetails'
+//         },
+//         {
+//             text: 'Team Viewer',
+//             link: '/extras/teamviewer'
+//         },
+//         {
+//             text: 'Social Board',
+//             link: '/extras/socialboard'
+//         },
+//         {
+//             text: 'Vote links',
+//             link: '/extras/votelinks'
+//         },
+//         {
+//             text: 'Bug tracker',
+//             link: '/extras/bugtracker'
+//         },
+//         {
+//             text: 'Faq',
+//             link: '/extras/faq'
+//         },
+//         {
+//             text: 'Help center',
+//             link: '/extras/helpcenter'
+//         },
+//         {
+//             text: 'Followers',
+//             link: '/extras/followers'
+//         },
+//         {
+//             text: 'Settings',
+//             link: '/extras/settings'
+//         },
+//         {
+//             text: 'Plans',
+//             link: '/extras/plans'
+//         },
+//         {
+//             text: 'File manager',
+//             link: '/extras/filemanager'
+//         },
+//         {
+//             text: 'Forum',
+//             link: '/extras/forum'
+//         },
+//         {
+//             text: 'Mailbox',
+//             link: '/extras/mailbox'
+//         },
+//         {
+//             text: 'Timeline',
+//             link: '/extras/timeline'
+//         },
+//         {
+//             text: 'Calendar',
+//             link: '/extras/calendar'
+//         },
+//         {
+//             text: 'Invoice',
+//             link: '/extras/invoice'
+//         },
+//         {
+//             text: 'Search',
+//             link: '/extras/search'
+//         },
+//         {
+//             text: 'Todo list',
+//             link: '/extras/todolist'
+//         },
+//         {
+//             text: 'Profile',
+//             link: '/extras/profile'
+//         },
+//         {
+//             text: 'Code editor',
+//             link: '/extras/codeeditor'
+//         }
+//     ]
+// }
+// const headingMain = {
+//     text: 'Main Navigation',
+//     heading: true
+// };
+// const headingComponents = {
+//     text: 'Components',
+//     heading: true
+// };
+// const headingMore = {
+//     text: 'More',
+//     heading: true
+// };
 var menu = [
-    headingMain,
+    // headingMain,
+    // Home,
     Home,
     site,
-    Dashboard,
-    Widgets,
-    headingComponents,
-    Elements,
-    Forms,
-    Charts,
-    Tables,
-    Maps,
-    headingMore,
-    Pages,
-    Blog,
-    Ecommerce,
-    Extras
+    Sales,
+    activityreports
 ];
 //# sourceMappingURL=menu.js.map
 
 /***/ }),
 
-/***/ 933:
+/***/ 936:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3486,8 +3587,8 @@ var SideNavbarComponent = (function () {
 SideNavbarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-side-navbar',
-        template: __webpack_require__(986),
-        styles: [__webpack_require__(953)]
+        template: __webpack_require__(996),
+        styles: [__webpack_require__(958)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"]) === "function" && _c || Object])
 ], SideNavbarComponent);
@@ -3497,12 +3598,12 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 934:
+/***/ 937:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__userblock_service__ = __webpack_require__(913);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__userblock_service__ = __webpack_require__(914);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserblockComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3532,8 +3633,8 @@ var UserblockComponent = (function () {
 UserblockComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-userblock',
-        template: __webpack_require__(987),
-        styles: [__webpack_require__(954)]
+        template: __webpack_require__(997),
+        styles: [__webpack_require__(959)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__userblock_service__["a" /* UserblockService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__userblock_service__["a" /* UserblockService */]) === "function" && _a || Object])
 ], UserblockComponent);
@@ -3543,7 +3644,7 @@ var _a;
 
 /***/ }),
 
-/***/ 935:
+/***/ 938:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3604,8 +3705,8 @@ __decorate([
 NavsearchComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-navsearch',
-        template: __webpack_require__(988),
-        styles: [__webpack_require__(955)]
+        template: __webpack_require__(998),
+        styles: [__webpack_require__(960)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object])
 ], NavsearchComponent);
@@ -3615,7 +3716,7 @@ var _a;
 
 /***/ }),
 
-/***/ 936:
+/***/ 939:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3635,8 +3736,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var screenfull = __webpack_require__(451);
-var browser = __webpack_require__(450);
+var screenfull = __webpack_require__(452);
+var browser = __webpack_require__(451);
 
 
 
@@ -3664,6 +3765,9 @@ var TopNavbarComponent = (function () {
         }
         if (localStorage.getItem('logo')) {
             this.logo = localStorage.getItem('logo');
+        }
+        else {
+            this.logo = 'assets/img/logo.png';
         }
         this.isNavSearchVisible = false;
         if (browser.msie) {
@@ -3717,104 +3821,14 @@ __decorate([
 TopNavbarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-top-navbar',
-        template: __webpack_require__(989),
-        styles: [__webpack_require__(956)]
+        template: __webpack_require__(999),
+        styles: [__webpack_require__(961)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__app_service__["a" /* AppService */]) === "function" && _d || Object])
 ], TopNavbarComponent);
 
 var _a, _b, _c, _d;
 //# sourceMappingURL=top-navbar.component.js.map
-
-/***/ }),
-
-/***/ 946:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 947:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 948:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 949:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 950:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -3916,6 +3930,96 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 957:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 958:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 959:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 960:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 961:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
 exports.push([module.i, ".btn-primary-outline {\n  background-color: transparent;\n  border-color: #ccc;\n  color: #ccc; }\n\n.brand {\n  font-size: 30px;\n  font-weight: 900;\n  color: white;\n  font-family: inherit;\n  padding-top: 7% !important; }\n", ""]);
 
 // exports
@@ -3926,7 +4030,315 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 969:
+/***/ 975:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var core_1 = __webpack_require__(0);
+/* tslint:disable-next-line */
+var BaseChartDirective = (function () {
+    function BaseChartDirective(element) {
+        this.labels = [];
+        this.options = {};
+        this.chartClick = new core_1.EventEmitter();
+        this.chartHover = new core_1.EventEmitter();
+        this.initFlag = false;
+        this.element = element;
+    }
+    BaseChartDirective.prototype.ngOnInit = function () {
+        this.ctx = this.element.nativeElement.getContext('2d');
+        this.cvs = this.element.nativeElement;
+        this.initFlag = true;
+        if (this.data || this.datasets) {
+            this.refresh();
+        }
+    };
+    BaseChartDirective.prototype.ngOnChanges = function (changes) {
+        if (this.initFlag) {
+            // Check if the changes are in the data or datasets
+            if (changes.hasOwnProperty('data') || changes.hasOwnProperty('datasets')) {
+                if (changes['data']) {
+                    this.updateChartData(changes['data'].currentValue);
+                }
+                else {
+                    this.updateChartData(changes['datasets'].currentValue);
+                }
+                this.chart.update();
+            }
+            else {
+                // otherwise rebuild the chart
+                this.refresh();
+            }
+        }
+    };
+    BaseChartDirective.prototype.ngOnDestroy = function () {
+        if (this.chart) {
+            this.chart.destroy();
+            this.chart = void 0;
+        }
+    };
+    BaseChartDirective.prototype.getChartBuilder = function (ctx /*, data:Array<any>, options:any*/) {
+        var _this = this;
+        var datasets = this.getDatasets();
+        var options = Object.assign({}, this.options);
+        if (this.legend === false) {
+            options.legend = { display: false };
+        }
+        // hock for onHover and onClick events
+        options.hover = options.hover || {};
+        if (!options.hover.onHover) {
+            options.hover.onHover = function (active) {
+                if (active && !active.length) {
+                    return;
+                }
+                _this.chartHover.emit({ active: active });
+            };
+        }
+        if (!options.onClick) {
+            options.onClick = function (event, active) {
+                _this.chartClick.emit({ event: event, active: active });
+            };
+        }
+        var opts = {
+            type: this.chartType,
+            data: {
+                labels: this.labels,
+                datasets: datasets
+            },
+            options: options
+        };
+        if (typeof Chart === 'undefined') {
+            throw new Error('ng2-charts configuration issue: Embedding Chart.js lib is mandatory');
+        }
+        return new Chart(ctx, opts);
+    };
+    BaseChartDirective.prototype.updateChartData = function (newDataValues) {
+        if (Array.isArray(newDataValues[0].data)) {
+            this.chart.data.datasets.forEach(function (dataset, i) {
+                dataset.data = newDataValues[i].data;
+                if (newDataValues[i].label) {
+                    dataset.label = newDataValues[i].label;
+                }
+            });
+        }
+        else {
+            this.chart.data.datasets[0].data = newDataValues;
+        }
+    };
+    BaseChartDirective.prototype.getDatasets = function () {
+        var _this = this;
+        var datasets = void 0;
+        // in case if datasets is not provided, but data is present
+        if (!this.datasets || !this.datasets.length && (this.data && this.data.length)) {
+            if (Array.isArray(this.data[0])) {
+                datasets = this.data.map(function (data, index) {
+                    return { data: data, label: _this.labels[index] || "Label " + index };
+                });
+            }
+            else {
+                datasets = [{ data: this.data, label: "Label 0" }];
+            }
+        }
+        if (this.datasets && this.datasets.length ||
+            (datasets && datasets.length)) {
+            datasets = (this.datasets || datasets)
+                .map(function (elm, index) {
+                var newElm = Object.assign({}, elm);
+                if (_this.colors && _this.colors.length) {
+                    Object.assign(newElm, _this.colors[index]);
+                }
+                else {
+                    Object.assign(newElm, getColors(_this.chartType, index, newElm.data.length));
+                }
+                return newElm;
+            });
+        }
+        if (!datasets) {
+            throw new Error("ng-charts configuration error,\n      data or datasets field are required to render char " + this.chartType);
+        }
+        return datasets;
+    };
+    BaseChartDirective.prototype.refresh = function () {
+        // if (this.options && this.options.responsive) {
+        //   setTimeout(() => this.refresh(), 50);
+        // }
+        // todo: remove this line, it is producing flickering
+        this.ngOnDestroy();
+        this.chart = this.getChartBuilder(this.ctx /*, data, this.options*/);
+    };
+    BaseChartDirective.defaultColors = [
+        [255, 99, 132],
+        [54, 162, 235],
+        [255, 206, 86],
+        [231, 233, 237],
+        [75, 192, 192],
+        [151, 187, 205],
+        [220, 220, 220],
+        [247, 70, 74],
+        [70, 191, 189],
+        [253, 180, 92],
+        [148, 159, 177],
+        [77, 83, 96]
+    ];
+    BaseChartDirective.decorators = [
+        { type: core_1.Directive, args: [{ selector: 'canvas[baseChart]', exportAs: 'base-chart' },] },
+    ];
+    /** @nocollapse */
+    BaseChartDirective.ctorParameters = function () { return [
+        { type: core_1.ElementRef, },
+    ]; };
+    BaseChartDirective.propDecorators = {
+        'data': [{ type: core_1.Input },],
+        'datasets': [{ type: core_1.Input },],
+        'labels': [{ type: core_1.Input },],
+        'options': [{ type: core_1.Input },],
+        'chartType': [{ type: core_1.Input },],
+        'colors': [{ type: core_1.Input },],
+        'legend': [{ type: core_1.Input },],
+        'chartClick': [{ type: core_1.Output },],
+        'chartHover': [{ type: core_1.Output },],
+    };
+    return BaseChartDirective;
+}());
+exports.BaseChartDirective = BaseChartDirective;
+function rgba(colour, alpha) {
+    return 'rgba(' + colour.concat(alpha).join(',') + ')';
+}
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function formatLineColor(colors) {
+    return {
+        backgroundColor: rgba(colors, 0.4),
+        borderColor: rgba(colors, 1),
+        pointBackgroundColor: rgba(colors, 1),
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: rgba(colors, 0.8)
+    };
+}
+function formatBarColor(colors) {
+    return {
+        backgroundColor: rgba(colors, 0.6),
+        borderColor: rgba(colors, 1),
+        hoverBackgroundColor: rgba(colors, 0.8),
+        hoverBorderColor: rgba(colors, 1)
+    };
+}
+function formatPieColors(colors) {
+    return {
+        backgroundColor: colors.map(function (color) { return rgba(color, 0.6); }),
+        borderColor: colors.map(function () { return '#fff'; }),
+        pointBackgroundColor: colors.map(function (color) { return rgba(color, 1); }),
+        pointBorderColor: colors.map(function () { return '#fff'; }),
+        pointHoverBackgroundColor: colors.map(function (color) { return rgba(color, 1); }),
+        pointHoverBorderColor: colors.map(function (color) { return rgba(color, 1); })
+    };
+}
+function formatPolarAreaColors(colors) {
+    return {
+        backgroundColor: colors.map(function (color) { return rgba(color, 0.6); }),
+        borderColor: colors.map(function (color) { return rgba(color, 1); }),
+        hoverBackgroundColor: colors.map(function (color) { return rgba(color, 0.8); }),
+        hoverBorderColor: colors.map(function (color) { return rgba(color, 1); })
+    };
+}
+function getRandomColor() {
+    return [getRandomInt(0, 255), getRandomInt(0, 255), getRandomInt(0, 255)];
+}
+/**
+ * Generate colors for line|bar charts
+ * @param index
+ * @returns {number[]|Color}
+ */
+function generateColor(index) {
+    return BaseChartDirective.defaultColors[index] || getRandomColor();
+}
+/**
+ * Generate colors for pie|doughnut charts
+ * @param count
+ * @returns {Colors}
+ */
+function generateColors(count) {
+    var colorsArr = new Array(count);
+    for (var i = 0; i < count; i++) {
+        colorsArr[i] = BaseChartDirective.defaultColors[i] || getRandomColor();
+    }
+    return colorsArr;
+}
+/**
+ * Generate colors by chart type
+ * @param chartType
+ * @param index
+ * @param count
+ * @returns {Color}
+ */
+function getColors(chartType, index, count) {
+    if (chartType === 'pie' || chartType === 'doughnut') {
+        return formatPieColors(generateColors(count));
+    }
+    if (chartType === 'polarArea') {
+        return formatPolarAreaColors(generateColors(count));
+    }
+    if (chartType === 'line' || chartType === 'radar') {
+        return formatLineColor(generateColor(index));
+    }
+    if (chartType === 'bar' || chartType === 'horizontalBar') {
+        return formatBarColor(generateColor(index));
+    }
+    return generateColor(index);
+}
+var ChartsModule = (function () {
+    function ChartsModule() {
+    }
+    ChartsModule.decorators = [
+        { type: core_1.NgModule, args: [{
+                    declarations: [
+                        BaseChartDirective
+                    ],
+                    exports: [
+                        BaseChartDirective
+                    ],
+                    imports: []
+                },] },
+    ];
+    /** @nocollapse */
+    ChartsModule.ctorParameters = function () { return []; };
+    return ChartsModule;
+}());
+exports.ChartsModule = ChartsModule;
+
+
+/***/ }),
+
+/***/ 976:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+__export(__webpack_require__(975));
+
+
+/***/ }),
+
+/***/ 977:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+__export(__webpack_require__(976));
+
+
+/***/ }),
+
+/***/ 978:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4096,7 +4508,7 @@ exports.FileType = FileType;
 
 /***/ }),
 
-/***/ 970:
+/***/ 979:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4109,8 +4521,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var common_1 = __webpack_require__(15);
 var core_1 = __webpack_require__(0);
-var file_drop_directive_1 = __webpack_require__(920);
-var file_select_directive_1 = __webpack_require__(922);
+var file_drop_directive_1 = __webpack_require__(923);
+var file_select_directive_1 = __webpack_require__(925);
 var FileUploadModule = (function () {
     function FileUploadModule() {
     }
@@ -4128,23 +4540,42 @@ exports.FileUploadModule = FileUploadModule;
 
 /***/ }),
 
-/***/ 971:
+/***/ 980:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+__export(__webpack_require__(925));
+__export(__webpack_require__(923));
+__export(__webpack_require__(904));
+__export(__webpack_require__(924));
+__export(__webpack_require__(903));
+var file_upload_module_1 = __webpack_require__(979);
+exports.FileUploadModule = file_upload_module_1.FileUploadModule;
+
+
+/***/ }),
+
+/***/ 981:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__ = __webpack_require__(974);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__ = __webpack_require__(984);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_imageCropperComponent__ = __webpack_require__(926);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_imageCropperComponent__ = __webpack_require__(928);
 /* unused harmony reexport ImageCropperComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_imageCropper__ = __webpack_require__(925);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_imageCropper__ = __webpack_require__(927);
 /* unused harmony reexport ImageCropper */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_cropperSettings__ = __webpack_require__(904);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_cropperSettings__ = __webpack_require__(905);
 /* unused harmony reexport CropperSettings */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_cropperDrawSettings__ = __webpack_require__(924);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_cropperDrawSettings__ = __webpack_require__(926);
 /* unused harmony reexport CropperDrawSettings */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_model_bounds__ = __webpack_require__(905);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_model_bounds__ = __webpack_require__(906);
 /* unused harmony reexport Bounds */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_model_cropPosition__ = __webpack_require__(927);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_model_cropPosition__ = __webpack_require__(929);
 /* unused harmony reexport CropPosition */
 // core
 
@@ -4160,7 +4591,7 @@ exports.FileUploadModule = FileUploadModule;
 
 /***/ }),
 
-/***/ 972:
+/***/ 982:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4895,7 +5326,7 @@ Exif.StringValues = {
 
 /***/ }),
 
-/***/ 973:
+/***/ 983:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4940,13 +5371,13 @@ ImageCropperDataShare.share = {};
 
 /***/ }),
 
-/***/ 974:
+/***/ 984:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__imageCropperComponent__ = __webpack_require__(926);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__imageCropperComponent__ = __webpack_require__(928);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropperModule; });
 
 
@@ -4970,11 +5401,11 @@ ImageCropperModule.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 975:
+/***/ 985:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(928);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(930);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CornerMarker; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -5088,7 +5519,7 @@ var CornerMarker = (function (_super) {
 
 /***/ }),
 
-/***/ 976:
+/***/ 986:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5109,12 +5540,12 @@ var CropTouch = (function () {
 
 /***/ }),
 
-/***/ 977:
+/***/ 987:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(928);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pointPool__ = __webpack_require__(906);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(930);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pointPool__ = __webpack_require__(907);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DragMarker; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -5202,7 +5633,7 @@ var DragMarker = (function (_super) {
 
 /***/ }),
 
-/***/ 978:
+/***/ 988:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5217,77 +5648,77 @@ var ImageCropperModel = (function () {
 
 /***/ }),
 
-/***/ 979:
+/***/ 989:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  activity-reports works!\r\n</p>\r\n"
+module.exports = "<div class=\"content-heading\">Activity Reports</div>\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-retweet fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">99.999</h3>\r\n                <p class=\"text-muted\">Returning Users</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-warning progress-60\" role=\"progressbar\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"70\">\r\n                        <span class=\"sr-only\">60% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-angle-double-left fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">300</h3>\r\n                <p class=\"text-muted\">Orders Returned</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-green progress-80\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\r\n                        <span class=\"sr-only\">80% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-exclamation fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">1000</h3>\r\n                <p class=\"text-muted\">Failed to orders</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-info progress-40\" role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\">\r\n                        <span class=\"sr-only\">40% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n</div>\r\n<!-- END row-->\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 bb br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-info\">\r\n                            <em class=\"fa fa-users fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">10k</h4>\r\n                                <p class=\"mb0 text-muted\">VISITORS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6 bb\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-success\">\r\n                            <em class=\"fa fa-sign-in fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">7K</h4>\r\n                                <p class=\"mb0 text-muted\">Logins</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-inverse\">\r\n                            <em class=\"fa fa-registered fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">2K</h4>\r\n                                <p class=\"mb0 text-muted\">Registered</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-danger\">\r\n                            <em class=\"fa fa-exclamation-triangle fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">500</h4>\r\n                                <p class=\"mb0 text-muted\">Failed</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 bb br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-info\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\"  values=\"5,9,4,1,3,4,7,5\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">10k</h4>\r\n                                <p class=\"mb0 text-muted\">ORDERS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6 bb\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-danger\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,2,3,4,5,6,7,8,9\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">1K</h4>\r\n                                <p class=\"mb0 text-muted\">RETURNS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-inverse\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,0,4,9,5,7,8,4,7\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">2K</h4>\r\n                                <p class=\"mb0 text-muted\">IN CART</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-success\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,5,2,2,8,4,4,8\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">9k</h4>\r\n                                <p class=\"mb0 text-muted\">DELIVERED</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-8\">\r\n        <h4>Bar Chart</h4>\r\n        <div>\r\n           <canvas baseChart [chartType]=\"'bar'\" [options]=\"barOptions\" [datasets]=\"barData.datasets\" [colors]=\"barColors\" [labels]=\"barData.labels\" [legend]=\"false\" height=\"120\"></canvas>\r\n        </div>\r\n     </div>\r\n</div>\r\n<!-- END row-->\r\n\r\n\r\n"
 
 /***/ }),
 
-/***/ 980:
+/***/ 990:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"content-heading\">\r\n  Dashboard\r\n  <small>{{ 'dashboard.WELCOME' | translate }} !</small>\r\n</div>\r\n<!-- START widgets box-->\r\n<div class=\"row\">\r\n  <div class=\"col-lg-3 col-sm-6\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-primary\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-primary-dark pv-lg\">\r\n                  <em class=\"fa fa-truck fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">1700\r\n                    <!-- <small>total</small> -->\r\n                  </div>\r\n                  <div class=\"text-uppercase\">Orders</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-sm-6\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-purple\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-purple-dark pv-lg\">\r\n                  <em class=\"fa fa-user fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">700\r\n                  </div>\r\n                  <div class=\"text-uppercase\">Users</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-green\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\r\n                  <em class=\"fa fa-eye fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">5000</div>\r\n                  <div class=\"text-uppercase\">Visitors</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\r\n      <!-- START date widget-->\r\n      <div class=\"panel widget bg-green\">\r\n        <div class=\"row row-table\">\r\n            <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\r\n                <em class=\"fa fa-money fa-3x\"></em>\r\n            </div>\r\n            <div class=\"col-xs-8 pv-lg\">\r\n                <div class=\"h2 mt0\">$ 90000</div>\r\n                <div class=\"text-uppercase\">Sales</div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n      <!-- END date widget    -->\r\n  </div>\r\n</div>\r\n<!-- END widgets box-->\r\n<div class=\"row\">\r\n  <!-- START dashboard main content-->\r\n  <div class=\"col-lg-9\">\r\n      <!-- START chart-->\r\n      <div class=\"row\">\r\n          <div class=\"col-lg-12\">\r\n              <!-- START widget-->\r\n              <div class=\"panel panel-default\">\r\n                  <div class=\"panel-heading\">\r\n                      <div class=\"panel-title\">Inbound visitor statistics</div>\r\n                  </div>\r\n                  <div class=\"panel-body\">\r\n                      <div flot [dataset]=\"splineData\" [options]=\"splineOptions\" height=\"260\"></div>\r\n                  </div>\r\n              </div>\r\n              <!-- END widget-->\r\n          </div>\r\n      </div>\r\n      <!-- END chart-->\r\n      \r\n      <div class=\"row\">\r\n          <div class=\"col-lg-4\">\r\n              <!-- START widget-->\r\n              <div class=\"panel widget\">\r\n                  <div class=\"panel-body\">\r\n                      <div class=\"clearfix\">\r\n                          <h3 class=\"pull-left text-muted mt0\">300</h3>\r\n                          <em class=\"pull-right text-muted fa fa-shopping-cart  fa-2x\"></em>\r\n                      </div>\r\n                      <div class=\"pv-lg\" [sparkline]=\"sparkOptions2\" values=\"1,3,4,7,5,9,4,4,7,5,9,6,4\"></div>\r\n                      <p>\r\n                          <small class=\"text-muted\">Cart to bag</small>\r\n                      </p>\r\n                      <progressbar class=\"progress-striped progress-xs\" value=\"80\" type=\"info\">80%</progressbar>\r\n                  </div>\r\n              </div>\r\n              <!-- END widget-->\r\n          </div>\r\n          <div class=\"col-lg-8\">\r\n              <div class=\"panel panel-default\">\r\n                  <div class=\"panel-heading\">\r\n                      <!-- <div class=\"pull-right label label-danger\">5</div>\r\n                      <div class=\"pull-right label label-success\">12</div> -->\r\n                      <div class=\"panel-title\">Top selling products</div>\r\n                  </div>\r\n                  <!-- START list group-->\r\n                  <scrollable class=\"list-group\" height=\"180\">\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                          <div class=\"media-box\">\r\n                              <div class=\"pull-left\">\r\n                                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                              </div>\r\n                              <div class=\"media-box-body clearfix\">\r\n                                  <small class=\"pull-right\">200</small>\r\n                                  <strong class=\"media-box-heading text-primary\">\r\n                            <span class=\"text-left\"></span>Product 1</strong>\r\n                                  <p class=\"mb-sm\">\r\n                                      <small>some description about the product</small>\r\n                                  </p>\r\n                              </div>\r\n                          </div>\r\n                      </a>\r\n                      <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product8.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">180</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 2</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product9.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">150</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 3</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product10.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">135</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 4</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">111</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 5</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->                      \r\n                  </scrollable>\r\n                  <!-- END list group-->\r\n                  <!-- START panel footer-->\r\n                  <div class=\"panel-footer clearfix\">\r\n                      <div class=\"input-group\">\r\n                          <input class=\"form-control input-sm\" type=\"text\" placeholder=\"Search message ..\" />\r\n                          <span class=\"input-group-btn\">\r\n                      <button class=\"btn btn-default btn-sm\" type=\"submit\"><i class=\"fa fa-search\"></i>\r\n                      </button>\r\n                   </span>\r\n                      </div>\r\n                  </div>\r\n                  <!-- END panel-footer-->\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <!-- END dashboard main content-->\r\n  <!-- START dashboard sidebar-->\r\n  <aside class=\"col-lg-3\">\r\n      <!-- START loader widget-->\r\n      <div class=\"panel panel-default\">\r\n          <div class=\"panel-body\">\r\n              <a class=\"text-muted pull-right\" href=\"\">\r\n                  <em class=\"fa fa-arrow-right\"></em>\r\n              </a>\r\n              <div class=\"text-info\">Average Monthly Orders</div>\r\n              <div class=\"text-center pv-xl\">\r\n                  <div class=\"easypie-chart easypie-chart-lg\" easypiechart [options]=\"pieOptions\" [percent]=\"easyPiePercent\">\r\n                      <span>{{easyPiePercent}}%</span>\r\n                  </div>\r\n              </div>\r\n              <div class=\"text-center\" [sparkline]=\"sparkOptions1\"  values=\"5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7\"></div>\r\n          </div>\r\n          <div class=\"panel-footer\">\r\n              <p class=\"text-muted\">\r\n                  <em class=\"fa fa-upload fa-fw\"></em>\r\n                  <span>This Month</span>\r\n                  <span class=\"text-dark\">300 orders</span>\r\n              </p>\r\n          </div>\r\n      </div>\r\n      <!-- END loader widget-->\r\n      <!-- START messages and activity-->\r\n      <div class=\"panel panel-default\">\r\n          <div class=\"panel-heading\">\r\n              <div class=\"panel-title\">Last orders</div>\r\n          </div>\r\n          <!-- START list group-->\r\n          <div class=\"list-group\">\r\n              \r\n              <!-- START list group item-->\r\n              <div class=\"list-group-item\">\r\n                  <div class=\"media-box\">\r\n                    <div class=\"pull-left\">\r\n                      <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                    </div>\r\n                    <div class=\"media-box-body clearfix\">\r\n                        <small class=\"text-muted pull-right ml\">15h</small>\r\n                        <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 1</a>\r\n                        </div>\r\n                        <p class=\"m0\">\r\n                            <small>On\r\n                        <em>10/08/2017 09:00 am</em>\r\n                    </small>\r\n                        </p>\r\n                    </div>\r\n                  </div>\r\n              </div>\r\n              <!-- END list group item-->\r\n              <!-- START list group item-->\r\n              <div class=\"list-group-item\">\r\n                <div class=\"media-box\">\r\n                  <div class=\"pull-left\">\r\n                    <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                  </div>\r\n                  <div class=\"media-box-body clearfix\">\r\n                      <small class=\"text-muted pull-right ml\">1D</small>\r\n                      <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 2</a>\r\n                      </div>\r\n                      <p class=\"m0\">\r\n                          <small>On\r\n                      <em>05/08/2017 09:00 am</em>\r\n                  </small>\r\n                      </p>\r\n                  </div>\r\n                </div>\r\n            </div>\r\n            <!-- END list group item-->\r\n            <!-- START list group item-->\r\n            <div class=\"list-group-item\">\r\n              <div class=\"media-box\">\r\n                <div class=\"pull-left\">\r\n                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                </div>\r\n                <div class=\"media-box-body clearfix\">\r\n                    <small class=\"text-muted pull-right ml\">15d</small>\r\n                    <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 3</a>\r\n                    </div>\r\n                    <p class=\"m0\">\r\n                        <small>On\r\n                    <em>2/7/2015 09:00 am</em>\r\n                </small>\r\n                    </p>\r\n                </div>\r\n              </div>\r\n          </div>\r\n          <!-- END list group item-->\r\n          <!-- START list group item-->\r\n          <div class=\"list-group-item\">\r\n            <div class=\"media-box\">\r\n              <div class=\"pull-left\">\r\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n              </div>\r\n              <div class=\"media-box-body clearfix\">\r\n                  <small class=\"text-muted pull-right ml\">21d</small>\r\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 4</a>\r\n                  </div>\r\n                  <p class=\"m0\">\r\n                      <small>On\r\n                  <em>23/06/2017 09:00 am</em>\r\n              </small>\r\n                  </p>\r\n              </div>\r\n            </div>\r\n        </div>\r\n        <!-- END list group item-->\r\n        <!-- START list group item-->\r\n        <div class=\"list-group-item\">\r\n          <div class=\"media-box\">\r\n              <div class=\"pull-left\">\r\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n              </div>\r\n              <div class=\"media-box-body clearfix\">\r\n                  <small class=\"text-muted pull-right ml\">45d</small>\r\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 5</a>\r\n                  </div>\r\n                  <p class=\"m0\">\r\n                      <small>On\r\n                 <em>10/05/2017 09:00 am</em>\r\n              </small>\r\n                  </p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n      <!-- END list group item-->\r\n      \r\n          </div>\r\n          <!-- END list group-->\r\n          <!-- START panel footer-->\r\n          <div class=\"panel-footer clearfix\">\r\n              <a class=\"pull-left\" href=\"\">\r\n                  <small>Load more</small>\r\n              </a>\r\n          </div>\r\n          <!-- END panel-footer-->\r\n      </div>\r\n      <!-- END messages and activity-->\r\n  </aside>\r\n  <!-- END dashboard sidebar-->\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 981:
+/***/ 991:
 /***/ (function(module, exports) {
 
 module.exports = "<p>\r\n  home-page works!\r\n</p>\r\n"
 
 /***/ }),
 
-/***/ 982:
+/***/ 992:
 /***/ (function(module, exports) {
 
 module.exports = "<p>\n  home works!\n</p>\n"
 
 /***/ }),
 
-/***/ 983:
+/***/ 993:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  sales-reports works!\r\n</p>\r\n"
+module.exports = "<div class=\"content-heading\">Sales Report</div>\r\n\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-info text-center\">\r\n                    <em class=\"fa fa-line-chart fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$ 13363534</h4>\r\n                        <p class=\"mb0 text-muted\">Total Sales</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-danger text-center\">\r\n                    <em class=\"fa fa-filter fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$56546</h4>\r\n                        <p class=\"mb0 text-muted\">Average Sales</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-inverse text-center\">\r\n                    <em class=\"fa fa-percent fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$234</h4>\r\n                        <p class=\"mb0 text-muted\">Total Tax</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-green text-center\">\r\n                    <em class=\"fa fa-gift fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$838</h4>\r\n                        <p class=\"mb0 text-muted\">Total C0upons</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n</div>\r\n<!-- END row-->\r\n<!-- START panel tab-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-9\">\r\n        <div class=\"form-group mb-xl\">\r\n            <input class=\"form-control mb\" type=\"text\" placeholder=\"Search products, products, etc.\" />\r\n        </div>\r\n        <div class=\"panel\">\r\n                \r\n            <tabset class=\"bg-white p0\" [justified]=\"true\">\r\n                \r\n                <tab>\r\n                    <ng-template tabHeading>\r\n                        <em class=\"fa fa-money fa-fw\"></em>Transactions Panel\r\n                    </ng-template>\r\n                    <div>\r\n                        <!-- START table responsive-->\r\n                        <div class=\"table-responsive\">\r\n                            <table class=\"table table-bordered table-hover table-striped\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th>Order #</th>\r\n                                        <th>Order Date</th>\r\n                                        <th>Order Time</th>\r\n                                        <th>Amount (USD)</th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr>\r\n                                        <td>3326</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:29 PM</td>\r\n                                        <td>$321.33</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3325</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:20 PM</td>\r\n                                        <td>$234.34</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3324</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:03 PM</td>\r\n                                        <td>$724.17</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3323</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:00 PM</td>\r\n                                        <td>$23.71</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3322</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:49 PM</td>\r\n                                        <td>$8345.23</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3321</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:23 PM</td>\r\n                                        <td>$245.12</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3320</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:15 PM</td>\r\n                                        <td>$5663.54</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3319</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:13 PM</td>\r\n                                        <td>$943.45</td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                        <!-- END table responsive-->\r\n                        <div class=\"panel-footer text-right\"><a class=\"btn btn-default btn-sm\" href=\"#\">View All Transactions</a>\r\n                        </div>\r\n                    </div>\r\n                </tab>\r\n            </tabset>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <h3 class=\"m0 pb-lg\">Search Orders</h3>\r\n        <!-- <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">by Text</label>\r\n            <br/>\r\n            <ng-select [allowClear]=\"true\" [items]=\"items\" placeholder=\"Nothing selected\"></ng-select>\r\n        </div> -->\r\n        <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">From Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div>\r\n        <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">To Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div>\r\n        <!-- <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">by Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div> -->\r\n        <div class=\"form-group mb-xl\">\r\n          <label class=\"control-label mb\">Order no:</label>\r\n          <br>\r\n          <input type=\"text\" class=\"slider slider-lg form-control\">\r\n        </div>\r\n        <button class=\"btn btn-default btn-lg\">Apply</button>\r\n    </div>\r\n</div>\r\n<!-- END panel tab-->\r\n"
 
 /***/ }),
 
-/***/ 984:
+/***/ 994:
 /***/ (function(module, exports) {
 
-module.exports = "<tabset [justified]=\"true\">\r\n    <tab>\r\n        <ng-template tabHeading>\r\n            <em class=\"icon-equalizer fa-lg\"></em>\r\n        </ng-template>\r\n        <!-- <h3 class=\"text-center text-thin\">Settings</h3> -->\r\n        <!-- Theme Settings -->\r\n        <div class=\"p\">\r\n            <h4 class=\"text-muted text-thin\">Themes</h4>\r\n            <p class=\"text-muted text-thin\">Select your theme :</p>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"A\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info\"></span>\r\n                          <span class=\"color bg-info-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"B\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green\"></span>\r\n                          <span class=\"color bg-green-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"C\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple\"></span>\r\n                          <span class=\"color bg-purple-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"D\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger\"></span>\r\n                          <span class=\"color bg-danger-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"E\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info-dark\"></span>\r\n                          <span class=\"color bg-info\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"F\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green-dark\"></span>\r\n                          <span class=\"color bg-green\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"G\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple-dark\"></span>\r\n                          <span class=\"color bg-purple\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"H\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger-dark\"></span>\r\n                          <span class=\"color bg-danger\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </tab>\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n\r\n                    <h4>Select file : </h4>\r\n                    <!-- <div ng-show=\"form.uploader.isHTML5\" class=\"\"> -->\r\n                    <!-- 3. nv-file-over uploader=\"link\" over-class=\"className\"-->\r\n                    <!-- <div ng2FileDrop [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\" (fileOver)=\"fileOverBase($event)\" [uploader]=\"uploader\" class=\"box-placeholder my-drop-zone\">\r\n                        Base drop zone\r\n                    </div> -->\r\n                    <!-- Example: nv-file-drop=\"\" uploader=\"{Object}\" options=\"{Object}\" filters=\"{String}\"-->\r\n                    <!-- <div nv-file-drop=\"\" uploader=\"form.uploader\" options=\"{ url: '/foo' }\">\r\n                    <div nv-file-over=\"\" uploader=\"form.uploader\" over-class=\"bg-purple\" class=\"box-placeholder my-drop-zone\">Another drop zone with its own settings</div>\r\n                </div> -->\r\n                    <!-- </div> -->\r\n                    <!-- Example: nv-file-select=\"\" uploader=\"{Object}\" options=\"{Object}\" filters=\"{String}\"-->\r\n                    <!-- <hr> -->\r\n                    <!-- <input filestyle=\"\" type=\"file\" data-button-text=\"Multiple\" data-class-button=\"btn btn-default\" data-class-input=\"form-control inline\"\r\n                nv-file-select=\"\" uploader=\"form.uploader\" multiple=\"\" class=\"form-control\" id=\"filestyle-0\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\">\r\n            <div class=\"bootstrap-filestyle input-group\"><input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\"> \r\n                <span class=\"group-span-filestyle input-group-btn\"\r\n                    tabindex=\"0\"><label for=\"filestyle-0\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>                <span class=\"buttonText\">Multiple</span></label>\r\n                </span>\r\n            </div><br> -->\r\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\"\r\n                        nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-1\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\r\n                        (change)=\"fileChangeListener($event)\">\r\n                    <div class=\"bootstrap-filestyle input-group\">\r\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\r\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\r\n                    <label for=\"filestyle-1\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\r\n                        <span\r\n                            class=\"buttonText\">Upload Logo</span>\r\n                            </label>\r\n                            </span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-6\" *ngIf=\"image.src\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo Preview</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <div class=\"text-center\">\r\n                        <img  src={{image.src}} height=\"42px\" width=\"300px\"><br>\r\n                        <button class=\"btn btn-primary pull-right\" (click)='saveLogo()'>Save Logo</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</tabset>"
+module.exports = "<tabset [justified]=\"true\">\r\n    <tab>\r\n        <ng-template tabHeading>\r\n            <em class=\"icon-equalizer fa-lg\"></em>\r\n        </ng-template>\r\n        <!-- <h3 class=\"text-center text-thin\">Settings</h3> -->\r\n        <!-- Theme Settings -->\r\n        <div class=\"p\">\r\n            <h4 class=\"text-muted text-thin\">Themes</h4>\r\n            <p class=\"text-muted text-thin\">Select your theme :</p>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"A\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info\"></span>\r\n                          <span class=\"color bg-info-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"B\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green\"></span>\r\n                          <span class=\"color bg-green-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"C\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple\"></span>\r\n                          <span class=\"color bg-purple-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"D\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger\"></span>\r\n                          <span class=\"color bg-danger-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"E\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info-dark\"></span>\r\n                          <span class=\"color bg-info\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"F\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green-dark\"></span>\r\n                          <span class=\"color bg-green\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"G\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple-dark\"></span>\r\n                          <span class=\"color bg-purple\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"H\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger-dark\"></span>\r\n                          <span class=\"color bg-danger\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </tab>\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <p class=\"text-muted text-thin\">*Note: Please upload Logo of width 100px and height 40px.</p>\r\n                    <h4>Select file : </h4>\r\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\"\r\n                        nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-1\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\r\n                        (change)=\"fileChangeListener($event)\">\r\n                    <div class=\"bootstrap-filestyle input-group\">\r\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\r\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\r\n                    <label for=\"filestyle-1\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\r\n                        <span class=\"buttonText\">Upload Logo</span>\r\n                        </label>\r\n                        </span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-6\" *ngIf=\"image.src\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo Preview</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <div class=\"text-center\">\r\n                        <img src={{image.src}} height=\"40px\" width=\"100px\"><br>\r\n                        <button class=\"btn btn-primary pull-right\" (click)='saveLogo()'>Save Logo</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">App name</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <form novalidate #appNameForm = 'ngForm'>\r\n                        <div class=\"form-group\">\r\n                            <label for=\"appName\">App name:</label>\r\n                            <input type=\"text\" class=\"form-control\" id=\"usr\" name=\"name\" placeholder=\"Please enter our app name here\" [(ngModel)]='data.name' #name='ngModel' minlength=\"3\" required>\r\n                            <div *ngIf=\"name.errors && (name.dirty || name.touched)\" class=\"error\">\r\n                                <span class=\"text-danger\" [hidden]=\"!name.errors.required\">Please Enter the app name </span>\r\n                                <span class=\"text-danger\" [hidden]=\"!name.errors.minlength\">app name should be more than 3 characters.</span>\r\n                            </div>\r\n                        </div>\r\n                        <button class=\"btn btn-primary pull-right\" [disabled]=\"!appNameForm.form.valid\"  (click)='saveAppName(data); appNameForm.reset()'>Save</button>\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</tabset>"
 
 /***/ }),
 
-/***/ 985:
+/***/ 995:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"wrapper\">\r\n    <!-- top navbar-->\r\n    <app-top-navbar class=\"topnavbar-wrapper\"></app-top-navbar>\r\n    <!-- sidebar-->\r\n    <app-side-navbar class=\"aside\"></app-side-navbar>\r\n    <!-- offsidebar-->\r\n    <!--<app-offsidebar class=\"offsidebar\"></app-offsidebar>-->\r\n    <!-- Main section-->\r\n    <section>\r\n        <!-- Page content-->\r\n        <div class=\"content-wrapper\">\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </section>\r\n    <!-- Page footer-->\r\n    <!--<footer app-footer></footer>-->\r\n</div>"
 
 /***/ }),
 
-/***/ 986:
+/***/ 996:
 /***/ (function(module, exports) {
 
 module.exports = "<!-- START Sidebar (left)-->\n<div class=\"aside-inner\">\n    <nav class=\"sidebar\" sidebar-anyclick-close=\"\" [class.show-scrollbar]=\"settings.layout.asideScrollbar\">\n\n        <!-- START sidebar nav-->\n        <ul class=\"nav\">\n\n            <!-- START user info-->\n            <li class=\"has-user-block\">\n                <app-userblock></app-userblock>\n            </li>\n            <!-- END user info-->\n\n            <li *ngFor='let item of menuItems' [ngClass]=\"{'nav-heading': item.heading}\" [routerLinkActive]=\"['active']\">\n                <!-- menu heading -->\n                <span *ngIf=\"item.heading\">{{(item.translate | translate) || item.text}}</span>\n                <!-- external links -->\n                <a *ngIf=\"!item.heading && !item.submenu && item.elink\" [attr.target]=\"item.target\" [attr.href]=\"item.elink\" title=\"{{item.text}}\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- single menu item -->\n                <a *ngIf=\"!item.heading && !item.submenu && !item.elink\" [routerLink]=\"item.link\" [attr.route]=\"item.link\" title=\"{{item.text}}\"\n                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- has submenu -->\n                <a *ngIf=\"!item.heading && item.submenu\" title=\"{{item.text}}\"\n                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                        <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                        <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                        <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- SUBLEVEL -->\n                <ul *ngIf=\"item.submenu\" class=\"nav sidebar-subnav\" [routerLinkActive]=\"['opening']\">\n                    <li class=\"sidebar-subnav-header\">{{(item.translate | translate) || item.text}}</li>\n                    <li *ngFor='let subitem of item.submenu' [routerLinkActive]=\"['active']\">\n                        <!-- sublevel: external links -->\n                        <a *ngIf=\"!subitem.heading && !subitem.submenu && subitem.elink\" [attr.target]=\"subitem.target\" [attr.href]=\"subitem.elink\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: single menu item  -->\n                        <a *ngIf=\"!subitem.submenu && !subitem.elink\" [routerLink]=\"subitem.link\" [attr.route]=\"subitem.link\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: has submenu -->\n                        <a *ngIf=\"subitem.submenu\" title=\"{{subitem.text}}\"\n                            (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                                <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                                <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- SUBLEVEL 2 -->\n                        <ul *ngIf=\"subitem.submenu\" class=\"nav sidebar-subnav level2\" [routerLinkActive]=\"['opening']\">\n                            <li *ngFor='let subitem2 of subitem.submenu' [routerLinkActive]=\"['active']\">\n                                <!-- sublevel 2: single menu item  -->\n                                <a *ngIf=\"!subitem2.submenu\" [routerLink]=\"subitem2.link\" [attr.route]=\"subitem2.link\" title=\"{{subitem2.text}}\">\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- sublevel2: has submenu -->\n                                <a *ngIf=\"subitem2.submenu\" title=\"{{subitem2.text}}\"\n                                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                        <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                        <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                        <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- SUBLEVEL 3 -->\n                                <ul *ngIf=\"subitem2.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                    <li *ngFor='let subitem3 of subitem2.submenu' [routerLinkActive]=\"['active']\">\n                                        <!-- sublevel 2: single menu item  -->\n                                        <a *ngIf=\"!subitem3.submenu\" [routerLink]=\"subitem3.link\" [attr.route]=\"subitem3.link\" title=\"{{subitem3.text}}\">\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- sublevel3: has submenu -->\n                                        <a *ngIf=\"subitem3.submenu\" title=\"{{subitem3.text}}\"\n                                            (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                                <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                                <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                                <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- SUBLEVEL 4 -->\n                                        <ul *ngIf=\"subitem3.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                            <li *ngFor='let subitem4 of subitem3.submenu' [routerLinkActive]=\"['active']\">\n                                                <!-- sublevel 2: single menu item  -->\n                                                <a *ngIf=\"!subitem4.submenu\" [routerLink]=\"subitem4.link\" [attr.route]=\"subitem4.link\" title=\"{{subitem4.text}}\">\n                                                    <span class=\"pull-right\" *ngIf=\"subitem4.alert\" [ngClass]=\"subitem4.label || 'label label-success'\">{{subitem4.alert}}</span>\n                                                    <em class=\"{{subitem4.icon}}\" *ngIf=\"subitem4.icon\"></em>\n                                                    <span>{{(subitem4.translate | translate) || subitem4.text}}</span>\n                                                </a>\n                                            </li>\n                                        </ul>\n                                    </li>\n                                </ul>\n                            <li>\n                        </ul>\n                    <li>\n                </ul>\n            </li>\n\n        </ul>\n        <!-- END sidebar nav-->\n\n    </nav>\n</div>\n<!-- END Sidebar (left)-->\n"
 
 /***/ }),
 
-/***/ 987:
+/***/ 997:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"item user-block\" *ngIf=\"userBlockIsVisible()\">\r\n    <!-- User picture-->\r\n    <div class=\"user-block-picture\">\r\n        <div class=\"user-block-status\">\r\n            <img class=\"img-thumbnail img-circle\" [src]=\"user.picture\" alt=\"Avatar\" />\r\n            <div class=\"circle circle-success circle-lg\"></div>\r\n        </div>\r\n    </div>\r\n    <!-- Name and Job-->\r\n    <div class=\"user-block-info\">\r\n        <span class=\"user-block-name\">Welcome Ashok</span>\r\n        <span class=\"user-block-role\">Programmer</span>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 988:
+/***/ 998:
 /***/ (function(module, exports) {
 
 module.exports = "<!-- START Search form-->\r\n<form class=\"navbar-form\" role=\"search\" action=\"search.html\" [class.open]=\"visible\" (submit)=\"handleForm()\">\r\n    <div class=\"form-group has-feedback\">\r\n        <input [(ngModel)]=\"term\" name=\"term\" class=\"form-control\" type=\"text\" placeholder=\"{{'header.search.PLACEHOLDER' | translate}}\" />\r\n        <div class=\"fa fa-times form-control-feedback\" (click)=\"closeNavSearch()\"></div>\r\n    </div>\r\n    <button class=\"hidden btn btn-default\" type=\"submit\">Submit</button>\r\n</form>\r\n<!-- END Search form-->\r\n"
 
 /***/ }),
 
-/***/ 989:
+/***/ 999:
 /***/ (function(module, exports) {
 
 module.exports = "<!-- START Top Navbar-->\r\n<nav class=\"navbar topnavbar\" role=\"navigation\">\r\n    <!-- START navbar header-->\r\n    <div class=\"navbar-header\">\r\n        <a class=\"navbar-brand\" [routerLink]=\"'/'\">\r\n            <div class=\"brand-logo\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\"  style=\"height:40px;width:100px;\"/>\r\n            </div>\r\n            <div class=\"brand-logo-collapsed\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\" />\r\n            </div>\r\n        </a>\r\n            <!-- <a class=\"navbar-brand brand\" [routerLink]=\"'/home'\"> -->\r\n                <!--<svg viewbox=\"0 0 220 44\" width=\"220\" height=\"44\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <title>EDCO Products, Steel Roofing and Siding</title>\r\n                    <g class=\"logoMark\">\r\n                        <path d=\"M1.4,2.4h38v39.2h-38V2.4z\" fill=\"#fff\"> </path>\r\n                        <path d=\"M0.1,1v42h40.6V1H0.1z M3.5,37.4V8.1l10.3,14.4L3.5,37.4z M15.2,39.7V5.2l12.1,17.6L15.2,39.7z M28.8,37.4 L29,7.8L38.9,23L28.8,37.4z\"\r\n                            fill=\"#c6202c\"> </path>\r\n                    </g>-->\r\n                    <!--<path class=\"logoType\" d=\"M46.092.98h37.793v10.11h-21.43v5.963h20.5V27.18h-20.5v5.716H84.32V43.02H46.092V.98m40.03 0h24.537c12.48 0 21.29 4.1 21.29 21.144 0 15.903-9.48 20.897-21.97 20.897H86.13zm16.734 31.555h4.162c6.063 0 7.43-3.85 7.43-10.833 0-7.23-1.49-10.97-7.48-10.97h-4.1zm68.542 9.517a49.372 49.372 0 0 1-12 1.69c-14.475 0-26.09-7.33-26.09-22.338 0-14.1 12.112-21.145 26.09-21.145a60.752 60.752 0 0 1 11.876 1.31v11.11a28.947 28.947 0 0 0-8.36-1.59c-7.12 0-12.5 3.68-12.5 10.56 0 7.2 4.995 10.89 11.927 10.89a28.078 28.078 0 0 0 9.07-1.655zm24.252 1.69c-15.232 0-24.165-7.405-24.165-21.742 0-14.088 8.945-21.74 24.165-21.74C210.893.257 220 7.91 220 22c0 14.337-9.107 21.742-24.35 21.742m0-10.126c6.62 0 6.808-7.106 6.882-11.616-.074-3.913-.497-11.63-6.883-11.63-6.18 0-6.68 7.704-6.68 11.63 0 4.51.69 11.616 6.68 11.616\">\r\n                    </path>-->\r\n                <!--</svg>-->\r\n                <!-- nayo\r\n            </a> -->\r\n    </div>\r\n    <!-- END navbar header-->\r\n    <!-- START Nav wrapper-->\r\n    <div class=\"nav-wrapper\">\r\n        <!-- START Left navbar-->\r\n        <ul class=\"nav navbar-nav\">\r\n            <li>\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\r\n        <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        </li>\r\n        <!-- START User avatar toggle-->\r\n        <!--<li>-->\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <!--<a (click)=\"toggleUserBlock($event)\">\r\n                    <em class=\"icon-user\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END User avatar toggle-->\r\n        <!-- START lock screen-->\r\n        <!--<li>\r\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\r\n                    <em class=\"icon-lock\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END lock screen-->\r\n        </ul>\r\n        <!-- END Left navbar-->\r\n        <!-- START Right Navbar-->\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <!-- Search icon-->\r\n            <li>\r\n                <a (click)=\"openNavSearch($event)\">\r\n                    <em class=\"icon-magnifier\"></em>\r\n                </a>\r\n            </li>\r\n            <!-- Fullscreen (only desktops)-->\r\n            <!-- <li class=\"visible-lg\">\r\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\r\n                    <em class=\"fa fa-expand\"></em>\r\n                </a>\r\n            </li> -->\r\n            <!--<li class=\"visible-lg\">\r\n                <a #fsbutton [routerLink]=\"'/login'\">Login\r\n                </a>\r\n            </li>-->\r\n            <!-- START Alert menu-->\r\n            <li class=\"dropdown dropdown-list\" dropdown>\r\n                <a dropdownToggle>\r\n                    <em class=\"icon-bell\"></em>\r\n                    <div class=\"label label-danger\">11</div>\r\n                </a>\r\n                <!-- START Dropdown menu-->\r\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\r\n                    <li>\r\n                        <!-- START list group-->\r\n                        <div class=\"list-group\">\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New followers</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>1 new follower</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New e-mails</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>You have 10 new emails</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">Pending Tasks</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>11 pending task</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- last list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\r\n                                <span class=\"label label-danger pull-right\">14</span>\r\n                            </a>\r\n                        </div>\r\n                        <!-- END list group-->\r\n                    </li>\r\n                </ul>\r\n                <!-- END Dropdown menu-->\r\n            </li>\r\n            <!-- END Alert menu-->\r\n            <!-- START Offsidebar button-->\r\n            <!--<li>\r\n                <a (click)=\"toggleOffsidebar()\">\r\n                    <em class=\"icon-notebook\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END Offsidebar menu-->\r\n        </ul>\r\n        <!-- END Right Navbar-->\r\n    </div>\r\n    <!-- END Nav wrapper-->\r\n\r\n    <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch>\r\n\r\n</nav>\r\n<!-- END Top Navbar-->"
