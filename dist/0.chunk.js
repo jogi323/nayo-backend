@@ -1,23 +1,155 @@
 webpackJsonp([0,7],{
 
 /***/ 1000:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<div class=\"item user-block\" *ngIf=\"userBlockIsVisible()\">\r\n    <!-- User picture-->\r\n    <div class=\"user-block-picture\">\r\n        <div class=\"user-block-status\">\r\n            <img class=\"img-thumbnail img-circle\" [src]=\"user.picture\" alt=\"Avatar\" />\r\n            <div class=\"circle circle-success circle-lg\"></div>\r\n        </div>\r\n    </div>\r\n    <!-- Name and Job-->\r\n    <div class=\"user-block-info\">\r\n        <span class=\"user-block-name\">Welcome Ashok<i class=\"fa fa-pencil-square-o profileEdit\" aria-hidden=\"true\" (click)=\"callParent()\"></i></span>\r\n        <span class=\"user-block-role\">Programmer</span>\r\n    </div>\r\n</div>"
+"use strict";
+
+var core_1 = __webpack_require__(0);
+var common_1 = __webpack_require__(15);
+var ng_table_component_1 = __webpack_require__(905);
+var ng_table_filtering_directive_1 = __webpack_require__(902);
+var ng_table_paging_directive_1 = __webpack_require__(903);
+var ng_table_sorting_directive_1 = __webpack_require__(904);
+var Ng2TableModule = (function () {
+    function Ng2TableModule() {
+    }
+    Ng2TableModule.decorators = [
+        { type: core_1.NgModule, args: [{
+                    imports: [common_1.CommonModule],
+                    declarations: [ng_table_component_1.NgTableComponent, ng_table_filtering_directive_1.NgTableFilteringDirective, ng_table_paging_directive_1.NgTablePagingDirective, ng_table_sorting_directive_1.NgTableSortingDirective],
+                    exports: [ng_table_component_1.NgTableComponent, ng_table_filtering_directive_1.NgTableFilteringDirective, ng_table_paging_directive_1.NgTablePagingDirective, ng_table_sorting_directive_1.NgTableSortingDirective]
+                },] },
+    ];
+    /** @nocollapse */
+    Ng2TableModule.ctorParameters = [];
+    return Ng2TableModule;
+}());
+exports.Ng2TableModule = Ng2TableModule;
+
 
 /***/ }),
 
 /***/ 1001:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<!-- START Search form-->\r\n<form class=\"navbar-form\" role=\"search\" action=\"search.html\" [class.open]=\"visible\" (submit)=\"handleForm()\">\r\n    <div class=\"form-group has-feedback\">\r\n        <input [(ngModel)]=\"term\" name=\"term\" class=\"form-control\" type=\"text\" placeholder=\"{{'header.search.PLACEHOLDER' | translate}}\" />\r\n        <div class=\"fa fa-times form-control-feedback\" (click)=\"closeNavSearch()\"></div>\r\n    </div>\r\n    <button class=\"hidden btn btn-default\" type=\"submit\">Submit</button>\r\n</form>\r\n<!-- END Search form-->\r\n"
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+var ng_table_component_1 = __webpack_require__(905);
+var ng_table_filtering_directive_1 = __webpack_require__(902);
+var ng_table_paging_directive_1 = __webpack_require__(903);
+var ng_table_sorting_directive_1 = __webpack_require__(904);
+__export(__webpack_require__(905));
+__export(__webpack_require__(902));
+__export(__webpack_require__(903));
+__export(__webpack_require__(904));
+__export(__webpack_require__(999));
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = {
+    directives: [
+        ng_table_component_1.NgTableComponent,
+        ng_table_filtering_directive_1.NgTableFilteringDirective,
+        ng_table_sorting_directive_1.NgTableSortingDirective,
+        ng_table_paging_directive_1.NgTablePagingDirective
+    ]
+};
+var ng_table_module_1 = __webpack_require__(1000);
+exports.Ng2TableModule = ng_table_module_1.Ng2TableModule;
+
 
 /***/ }),
 
 /***/ 1002:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- START Top Navbar-->\r\n<nav class=\"navbar topnavbar\" role=\"navigation\">\r\n    <!-- START navbar header-->\r\n    <div class=\"navbar-header\">\r\n        <a class=\"navbar-brand\" [routerLink]=\"'/'\">\r\n            <div class=\"brand-logo\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\"  style=\"height:40px;width:100px;\"/>\r\n            </div>\r\n            <div class=\"brand-logo-collapsed\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\" />\r\n            </div>\r\n        </a>\r\n            <!-- <a class=\"navbar-brand brand\" [routerLink]=\"'/home'\"> -->\r\n                <!--<svg viewbox=\"0 0 220 44\" width=\"220\" height=\"44\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <title>EDCO Products, Steel Roofing and Siding</title>\r\n                    <g class=\"logoMark\">\r\n                        <path d=\"M1.4,2.4h38v39.2h-38V2.4z\" fill=\"#fff\"> </path>\r\n                        <path d=\"M0.1,1v42h40.6V1H0.1z M3.5,37.4V8.1l10.3,14.4L3.5,37.4z M15.2,39.7V5.2l12.1,17.6L15.2,39.7z M28.8,37.4 L29,7.8L38.9,23L28.8,37.4z\"\r\n                            fill=\"#c6202c\"> </path>\r\n                    </g>-->\r\n                    <!--<path class=\"logoType\" d=\"M46.092.98h37.793v10.11h-21.43v5.963h20.5V27.18h-20.5v5.716H84.32V43.02H46.092V.98m40.03 0h24.537c12.48 0 21.29 4.1 21.29 21.144 0 15.903-9.48 20.897-21.97 20.897H86.13zm16.734 31.555h4.162c6.063 0 7.43-3.85 7.43-10.833 0-7.23-1.49-10.97-7.48-10.97h-4.1zm68.542 9.517a49.372 49.372 0 0 1-12 1.69c-14.475 0-26.09-7.33-26.09-22.338 0-14.1 12.112-21.145 26.09-21.145a60.752 60.752 0 0 1 11.876 1.31v11.11a28.947 28.947 0 0 0-8.36-1.59c-7.12 0-12.5 3.68-12.5 10.56 0 7.2 4.995 10.89 11.927 10.89a28.078 28.078 0 0 0 9.07-1.655zm24.252 1.69c-15.232 0-24.165-7.405-24.165-21.742 0-14.088 8.945-21.74 24.165-21.74C210.893.257 220 7.91 220 22c0 14.337-9.107 21.742-24.35 21.742m0-10.126c6.62 0 6.808-7.106 6.882-11.616-.074-3.913-.497-11.63-6.883-11.63-6.18 0-6.68 7.704-6.68 11.63 0 4.51.69 11.616 6.68 11.616\">\r\n                    </path>-->\r\n                <!--</svg>-->\r\n                <!-- nayo\r\n            </a> -->\r\n    </div>\r\n    <!-- END navbar header-->\r\n    <!-- START Nav wrapper-->\r\n    <div class=\"nav-wrapper\">\r\n        <!-- START Left navbar-->\r\n        <ul class=\"nav navbar-nav\">\r\n            <li>\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\r\n        <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        </li>\r\n        <!-- START User avatar toggle-->\r\n        <!--<li>-->\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <!--<a (click)=\"toggleUserBlock($event)\">\r\n                    <em class=\"icon-user\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END User avatar toggle-->\r\n        <!-- START lock screen-->\r\n        <!--<li>\r\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\r\n                    <em class=\"icon-lock\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END lock screen-->\r\n        </ul>\r\n        <!-- END Left navbar-->\r\n        <!-- START Right Navbar-->\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <!-- Search icon-->\r\n            <li>\r\n                <a (click)=\"openNavSearch($event)\">\r\n                    <em class=\"icon-magnifier\"></em>\r\n                </a>\r\n            </li>\r\n            <!-- Fullscreen (only desktops)-->\r\n            <!-- <li class=\"visible-lg\">\r\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\r\n                    <em class=\"fa fa-expand\"></em>\r\n                </a>\r\n            </li> -->\r\n            <!--<li class=\"visible-lg\">\r\n                <a #fsbutton [routerLink]=\"'/login'\">Login\r\n                </a>\r\n            </li>-->\r\n            <!-- START Alert menu-->\r\n            <li class=\"dropdown dropdown-list\" dropdown>\r\n                <a dropdownToggle>\r\n                    <em class=\"icon-bell\"></em>\r\n                    <div class=\"label label-danger\">11</div>\r\n                </a>\r\n                <!-- START Dropdown menu-->\r\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\r\n                    <li>\r\n                        <!-- START list group-->\r\n                        <div class=\"list-group\">\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New followers</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>1 new follower</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New e-mails</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>You have 10 new emails</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">Pending Tasks</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>11 pending task</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- last list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\r\n                                <span class=\"label label-danger pull-right\">14</span>\r\n                            </a>\r\n                        </div>\r\n                        <!-- END list group-->\r\n                    </li>\r\n                </ul>\r\n                <!-- END Dropdown menu-->\r\n            </li>\r\n            <!-- END Alert menu-->\r\n            <!-- START Offsidebar button-->\r\n            <!--<li>\r\n                <a (click)=\"toggleOffsidebar()\">\r\n                    <em class=\"icon-notebook\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END Offsidebar menu-->\r\n        </ul>\r\n        <!-- END Right Navbar-->\r\n    </div>\r\n    <!-- END Nav wrapper-->\r\n\r\n    <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch>\r\n\r\n</nav>\r\n<!-- END Top Navbar-->"
+module.exports = "<div class=\"content-heading\">Activity Reports</div>\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-retweet fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">99.999</h3>\r\n                <p class=\"text-muted\">Returning Users</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-warning progress-60\" role=\"progressbar\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"70\">\r\n                        <span class=\"sr-only\">60% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-angle-double-left fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">300</h3>\r\n                <p class=\"text-muted\">Orders Returned</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-green progress-80\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\r\n                        <span class=\"sr-only\">80% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-exclamation fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">1000</h3>\r\n                <p class=\"text-muted\">Failed to orders</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-info progress-40\" role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\">\r\n                        <span class=\"sr-only\">40% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n</div>\r\n<!-- END row-->\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 bb br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-info\">\r\n                            <em class=\"fa fa-users fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">10k</h4>\r\n                                <p class=\"mb0 text-muted\">VISITORS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6 bb\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-success\">\r\n                            <em class=\"fa fa-sign-in fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">7K</h4>\r\n                                <p class=\"mb0 text-muted\">Logins</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-inverse\">\r\n                            <em class=\"fa fa-registered fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">2K</h4>\r\n                                <p class=\"mb0 text-muted\">Registered</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-danger\">\r\n                            <em class=\"fa fa-exclamation-triangle fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">500</h4>\r\n                                <p class=\"mb0 text-muted\">Failed</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 bb br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-info\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\"  values=\"5,9,4,1,3,4,7,5\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">10k</h4>\r\n                                <p class=\"mb0 text-muted\">ORDERS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6 bb\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-danger\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,2,3,4,5,6,7,8,9\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">1K</h4>\r\n                                <p class=\"mb0 text-muted\">RETURNS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-inverse\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,0,4,9,5,7,8,4,7\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">2K</h4>\r\n                                <p class=\"mb0 text-muted\">IN CART</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-success\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,5,2,2,8,4,4,8\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">9k</h4>\r\n                                <p class=\"mb0 text-muted\">DELIVERED</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-8\">\r\n        <h4>Bar Chart</h4>\r\n        <div>\r\n           <canvas baseChart [chartType]=\"'bar'\" [options]=\"barOptions\" [datasets]=\"barData.datasets\" [colors]=\"barColors\" [labels]=\"barData.labels\" [legend]=\"false\" height=\"120\"></canvas>\r\n        </div>\r\n     </div>\r\n</div>\r\n<!-- END row-->\r\n\r\n\r\n"
+
+/***/ }),
+
+/***/ 1003:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content-heading\">\r\n  Dashboard\r\n  <small>{{ 'dashboard.WELCOME' | translate }} !</small>\r\n</div>\r\n<!-- START widgets box-->\r\n<div class=\"row\">\r\n  <div class=\"col-lg-3 col-sm-6\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-primary\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-primary-dark pv-lg\">\r\n                  <em class=\"fa fa-truck fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">1700\r\n                    <!-- <small>total</small> -->\r\n                  </div>\r\n                  <div class=\"text-uppercase\">Orders</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-sm-6\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-purple\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-purple-dark pv-lg\">\r\n                  <em class=\"fa fa-user fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">700\r\n                  </div>\r\n                  <div class=\"text-uppercase\">Users</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-green\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\r\n                  <em class=\"fa fa-eye fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">5000</div>\r\n                  <div class=\"text-uppercase\">Visitors</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\r\n      <!-- START date widget-->\r\n      <div class=\"panel widget bg-green\">\r\n        <div class=\"row row-table\">\r\n            <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\r\n                <em class=\"fa fa-money fa-3x\"></em>\r\n            </div>\r\n            <div class=\"col-xs-8 pv-lg\">\r\n                <div class=\"h2 mt0\">$ 90000</div>\r\n                <div class=\"text-uppercase\">Sales</div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n      <!-- END date widget    -->\r\n  </div>\r\n</div>\r\n<!-- END widgets box-->\r\n<div class=\"row\">\r\n  <!-- START dashboard main content-->\r\n  <div class=\"col-lg-9\">\r\n      <!-- START chart-->\r\n      <div class=\"row\">\r\n          <div class=\"col-lg-12\">\r\n              <!-- START widget-->\r\n              <div class=\"panel panel-default\">\r\n                  <div class=\"panel-heading\">\r\n                      <div class=\"panel-title\">Inbound visitor statistics</div>\r\n                  </div>\r\n                  <div class=\"panel-body\">\r\n                      <div flot [dataset]=\"splineData\" [options]=\"splineOptions\" height=\"260\"></div>\r\n                  </div>\r\n              </div>\r\n              <!-- END widget-->\r\n          </div>\r\n      </div>\r\n      <!-- END chart-->\r\n      \r\n      <div class=\"row\">\r\n          <div class=\"col-lg-4\">\r\n              <!-- START widget-->\r\n              <div class=\"panel widget\">\r\n                  <div class=\"panel-body\">\r\n                      <div class=\"clearfix\">\r\n                          <h3 class=\"pull-left text-muted mt0\">300</h3>\r\n                          <em class=\"pull-right text-muted fa fa-shopping-cart  fa-2x\"></em>\r\n                      </div>\r\n                      <div class=\"pv-lg\" [sparkline]=\"sparkOptions2\" values=\"1,3,4,7,5,9,4,4,7,5,9,6,4\"></div>\r\n                      <p>\r\n                          <small class=\"text-muted\">Cart to bag</small>\r\n                      </p>\r\n                      <progressbar class=\"progress-striped progress-xs\" value=\"80\" type=\"info\">80%</progressbar>\r\n                  </div>\r\n              </div>\r\n              <!-- END widget-->\r\n          </div>\r\n          <div class=\"col-lg-8\">\r\n              <div class=\"panel panel-default\">\r\n                  <div class=\"panel-heading\">\r\n                      <!-- <div class=\"pull-right label label-danger\">5</div>\r\n                      <div class=\"pull-right label label-success\">12</div> -->\r\n                      <div class=\"panel-title\">Top selling products</div>\r\n                  </div>\r\n                  <!-- START list group-->\r\n                  <scrollable class=\"list-group\" height=\"180\">\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                          <div class=\"media-box\">\r\n                              <div class=\"pull-left\">\r\n                                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                              </div>\r\n                              <div class=\"media-box-body clearfix\">\r\n                                  <small class=\"pull-right\">200</small>\r\n                                  <strong class=\"media-box-heading text-primary\">\r\n                            <span class=\"text-left\"></span>Product 1</strong>\r\n                                  <p class=\"mb-sm\">\r\n                                      <small>some description about the product</small>\r\n                                  </p>\r\n                              </div>\r\n                          </div>\r\n                      </a>\r\n                      <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product8.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">180</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 2</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product9.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">150</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 3</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product10.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">135</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 4</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">111</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 5</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->                      \r\n                  </scrollable>\r\n                  <!-- END list group-->\r\n                  <!-- START panel footer-->\r\n                  <div class=\"panel-footer clearfix\">\r\n                      <div class=\"input-group\">\r\n                          <input class=\"form-control input-sm\" type=\"text\" placeholder=\"Search message ..\" />\r\n                          <span class=\"input-group-btn\">\r\n                      <button class=\"btn btn-default btn-sm\" type=\"submit\"><i class=\"fa fa-search\"></i>\r\n                      </button>\r\n                   </span>\r\n                      </div>\r\n                  </div>\r\n                  <!-- END panel-footer-->\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <!-- END dashboard main content-->\r\n  <!-- START dashboard sidebar-->\r\n  <aside class=\"col-lg-3\">\r\n      <!-- START loader widget-->\r\n      <div class=\"panel panel-default\">\r\n          <div class=\"panel-body\">\r\n              <a class=\"text-muted pull-right\" href=\"\">\r\n                  <em class=\"fa fa-arrow-right\"></em>\r\n              </a>\r\n              <div class=\"text-info\">Average Monthly Orders</div>\r\n              <div class=\"text-center pv-xl\">\r\n                  <div class=\"easypie-chart easypie-chart-lg\" easypiechart [options]=\"pieOptions\" [percent]=\"easyPiePercent\">\r\n                      <span>{{easyPiePercent}}%</span>\r\n                  </div>\r\n              </div>\r\n              <div class=\"text-center\" [sparkline]=\"sparkOptions1\"  values=\"5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7\"></div>\r\n          </div>\r\n          <div class=\"panel-footer\">\r\n              <p class=\"text-muted\">\r\n                  <em class=\"fa fa-upload fa-fw\"></em>\r\n                  <span>This Month</span>\r\n                  <span class=\"text-dark\">300 orders</span>\r\n              </p>\r\n          </div>\r\n      </div>\r\n      <!-- END loader widget-->\r\n      <!-- START messages and activity-->\r\n      <div class=\"panel panel-default\">\r\n          <div class=\"panel-heading\">\r\n              <div class=\"panel-title\">Last orders</div>\r\n          </div>\r\n          <!-- START list group-->\r\n          <div class=\"list-group\">\r\n              \r\n              <!-- START list group item-->\r\n              <div class=\"list-group-item\">\r\n                  <div class=\"media-box\">\r\n                    <div class=\"pull-left\">\r\n                      <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                    </div>\r\n                    <div class=\"media-box-body clearfix\">\r\n                        <small class=\"text-muted pull-right ml\">15h</small>\r\n                        <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 1</a>\r\n                        </div>\r\n                        <p class=\"m0\">\r\n                            <small>On\r\n                        <em>10/08/2017 09:00 am</em>\r\n                    </small>\r\n                        </p>\r\n                    </div>\r\n                  </div>\r\n              </div>\r\n              <!-- END list group item-->\r\n              <!-- START list group item-->\r\n              <div class=\"list-group-item\">\r\n                <div class=\"media-box\">\r\n                  <div class=\"pull-left\">\r\n                    <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                  </div>\r\n                  <div class=\"media-box-body clearfix\">\r\n                      <small class=\"text-muted pull-right ml\">1D</small>\r\n                      <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 2</a>\r\n                      </div>\r\n                      <p class=\"m0\">\r\n                          <small>On\r\n                      <em>05/08/2017 09:00 am</em>\r\n                  </small>\r\n                      </p>\r\n                  </div>\r\n                </div>\r\n            </div>\r\n            <!-- END list group item-->\r\n            <!-- START list group item-->\r\n            <div class=\"list-group-item\">\r\n              <div class=\"media-box\">\r\n                <div class=\"pull-left\">\r\n                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                </div>\r\n                <div class=\"media-box-body clearfix\">\r\n                    <small class=\"text-muted pull-right ml\">15d</small>\r\n                    <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 3</a>\r\n                    </div>\r\n                    <p class=\"m0\">\r\n                        <small>On\r\n                    <em>2/7/2015 09:00 am</em>\r\n                </small>\r\n                    </p>\r\n                </div>\r\n              </div>\r\n          </div>\r\n          <!-- END list group item-->\r\n          <!-- START list group item-->\r\n          <div class=\"list-group-item\">\r\n            <div class=\"media-box\">\r\n              <div class=\"pull-left\">\r\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n              </div>\r\n              <div class=\"media-box-body clearfix\">\r\n                  <small class=\"text-muted pull-right ml\">21d</small>\r\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 4</a>\r\n                  </div>\r\n                  <p class=\"m0\">\r\n                      <small>On\r\n                  <em>23/06/2017 09:00 am</em>\r\n              </small>\r\n                  </p>\r\n              </div>\r\n            </div>\r\n        </div>\r\n        <!-- END list group item-->\r\n        <!-- START list group item-->\r\n        <div class=\"list-group-item\">\r\n          <div class=\"media-box\">\r\n              <div class=\"pull-left\">\r\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n              </div>\r\n              <div class=\"media-box-body clearfix\">\r\n                  <small class=\"text-muted pull-right ml\">45d</small>\r\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 5</a>\r\n                  </div>\r\n                  <p class=\"m0\">\r\n                      <small>On\r\n                 <em>10/05/2017 09:00 am</em>\r\n              </small>\r\n                  </p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n      <!-- END list group item-->\r\n      \r\n          </div>\r\n          <!-- END list group-->\r\n          <!-- START panel footer-->\r\n          <div class=\"panel-footer clearfix\">\r\n              <a class=\"pull-left\" href=\"\">\r\n                  <small>Load more</small>\r\n              </a>\r\n          </div>\r\n          <!-- END panel-footer-->\r\n      </div>\r\n      <!-- END messages and activity-->\r\n  </aside>\r\n  <!-- END dashboard sidebar-->\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ 1004:
+/***/ (function(module, exports) {
+
+module.exports = "<tabset [justified]=\"true\">\n  <tab>\n    <ng-template tabHeading>\n      <h4 class=\"text-muted text-thin\">Products <i class=\"fa fa-upload fa-lg\" aria-hidden=\"true\"></i></h4>\n    </ng-template>\n    <div class=\"row\">\n      <div class=\"col-md-3\">\n        <div class=\"panel panel-default\">\n          <div class=\"panel-heading\">\n            <h4 class=\"text-muted text-thin\">Product 1</h4>\n          </div>\n          <hr>\n          <div class=\"panel-body\">\n            <form novalidate #product1Form = 'ngForm'>\n              <div class=\"form-group\">\n              <label class=\"text-muted text-thin\">Select your product image</label>\n              <label for=\"image-input\" class=\"file-upload\">\n                  <button class=\"btn btn-default btn-block\">Upload Image</button>\n                  <input  type=\"file\" name=\"product1Image\" (change)=\"product1ImageUpload($event)\" >\n              </label>\n            </div>\n              <div class=\"result\" *ngIf='image1.src'>\n                  <label class=\"text-muted text-thin\">Image Preview</label>\n                  <img src=\"{{image1.src}}\" width=\"200px\" height=\"200px\">\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"productName\" class=\"text-muted text-thin\">Product name</label>\n                  <input type=\"text\" name=\"product1name\" class=\"form-control\" [(ngModel)] = 'product1Data.product1name' #product1name = 'ngModel'>\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"productDesc\" class=\"text-muted text-thin\">Product description</label>\n                  <!-- <input type=\"text\" name=\"product1desc\" class=\"form-control\"> -->\n                  <textarea class=\"form-control\" rows=\"3\"  name=\"product1desc\" [(ngModel)] = 'product1Data.product1desc' #product1desc = 'ngModel'></textarea>\n              </div>\n              <button class=\"btn btn-primary pull-right\" [disabled]=\"!product1Form.form.valid\"  (click)='saveProduct1Data(product1Data); product1Form.reset()'>Save</button>\n            </form>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-3\">\n          <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">\n              <h4 class=\"text-muted text-thin\">Product 2</h4>\n            </div>\n            <hr>\n            <div class=\"panel-body\">\n              <form novalidate #product2Form = 'ngForm'>\n                <div class=\"form-group\">\n                <label class=\"text-muted text-thin\">Select your product image</label>\n                <label for=\"image-input\" class=\"file-upload\">\n                    <button class=\"btn btn-default btn-block\">Upload Image</button>\n                    <input  type=\"file\" name=\"product2Image\" (change)=\"product2ImageUpload($event)\" >\n                </label>\n              </div>\n                <div class=\"result\" *ngIf='image2.src'>\n                    <label class=\"text-muted text-thin\">Image Preview</label>\n                    <img src=\"{{image2.src}}\" width=\"200px\" height=\"200px\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"productName\" class=\"text-muted text-thin\">Product name</label>\n                    <input type=\"text\" name=\"product2name\" class=\"form-control\" [(ngModel)] = 'product2Data.product2name' #product2name = 'ngModel'>\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"productDesc\" class=\"text-muted text-thin\">Product description</label>\n                    <!-- <input type=\"text\" name=\"product2desc\" class=\"form-control\"> -->\n                    <textarea class=\"form-control\" rows=\"3\"  name=\"product2desc\" [(ngModel)] = 'product2Data.product2desc' #product2desc = 'ngModel'></textarea>\n                </div>\n                <button class=\"btn btn-primary pull-right\" [disabled]=\"!product2Form.form.valid\"  (click)='saveProduct2Data(product2Data); product2Form.reset()'>Save</button>\n              </form>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-3\">\n            <div class=\"panel panel-default\">\n              <div class=\"panel-heading\">\n                <h4 class=\"text-muted text-thin\">Product 3</h4>\n              </div>\n              <hr>\n              <div class=\"panel-body\">\n                <form novalidate #product3Form = 'ngForm'>\n                  <div class=\"form-group\">\n                  <label class=\"text-muted text-thin\">Select your product image</label>\n                  <label for=\"image-input\" class=\"file-upload\">\n                      <button class=\"btn btn-default btn-block\">Upload Image</button>\n                      <input  type=\"file\" name=\"product3Image\" (change)=\"product3ImageUpload($event)\" >\n                  </label>\n                </div>\n                  <div class=\"result\" *ngIf='image3.src'>\n                      <label class=\"text-muted text-thin\">Image Preview</label>\n                      <img src=\"{{image3.src}}\" width=\"200px\" height=\"200px\">\n                  </div>\n                  <div class=\"form-group\">\n                      <label for=\"productName\" class=\"text-muted text-thin\">Product name</label>\n                      <input type=\"text\" name=\"product3name\" class=\"form-control\" [(ngModel)] = 'product3Data.product3name' #product3name = 'ngModel'>\n                  </div>\n                  <div class=\"form-group\">\n                      <label for=\"productDesc\" class=\"text-muted text-thin\">Product description</label>\n                      <!-- <input type=\"text\" name=\"product3desc\" class=\"form-control\"> -->\n                      <textarea class=\"form-control\" rows=\"3\"  name=\"product3desc\" [(ngModel)] = 'product3Data.product3desc' #product3desc = 'ngModel'></textarea>\n                  </div>\n                  <button class=\"btn btn-primary pull-right\" [disabled]=\"!product3Form.form.valid\"  (click)='saveProduct3Data(product3Data); product3Form.reset()'>Save</button>\n                </form>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-md-3\">\n              <div class=\"panel panel-default\">\n                <div class=\"panel-heading\">\n                  <h4 class=\"text-muted text-thin\">Product 4</h4>\n                </div>\n                <hr>\n                <div class=\"panel-body\">\n                  <form novalidate #product4Form = 'ngForm'>\n                    <div class=\"form-group\">\n                    <label class=\"text-muted text-thin\">Select your product image</label>\n                    <label for=\"image-input\" class=\"file-upload\">\n                        <button class=\"btn btn-default btn-block\">Upload Image</button>\n                        <input  type=\"file\" name=\"product4Image\" (change)=\"product4ImageUpload($event)\" >\n                    </label>\n                  </div>\n                    <div class=\"result\" *ngIf='image4.src'>\n                        <label class=\"text-muted text-thin\">Image Preview</label>\n                        <img src=\"{{image4.src}}\" width=\"200px\" height=\"200px\">\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"productName\" class=\"text-muted text-thin\">Product name</label>\n                        <input type=\"text\" name=\"product4name\" class=\"form-control\" [(ngModel)] = 'product4Data.product4name' #product4name = 'ngModel'>\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"productDesc\" class=\"text-muted text-thin\">Product description</label>\n                        <!-- <input type=\"text\" name=\"product4desc\" class=\"form-control\"> -->\n                        <textarea class=\"form-control\" rows=\"3\"  name=\"product4desc\" [(ngModel)] = 'product4Data.product4desc' #product4desc = 'ngModel'></textarea>\n                    </div>\n                    <button class=\"btn btn-primary pull-right\" [disabled]=\"!product4Form.form.valid\"  (click)='saveProduct4Data(product4Data); product4Form.reset()'>Save</button>\n                  </form>\n                </div>\n              </div>\n            </div>\n    </div>\n  </tab>\n  <tab>\n    <ng-template tabHeading>\n      <h4 class=\"text-muted text-thin\">Banners <i class=\"fa fa-upload fa-lg\" aria-hidden=\"true\"></i></h4>\n    </ng-template>\n    <div class=\"row\">\n      <div class=\"col-md-3\">\n        <div class=\"panel panel-default\">\n          <div class=\"panel-heading\">\n            <h4 class=\"text-muted text-thin\">Banners 1</h4>\n          </div>\n          <hr>\n          <div class=\"panel-body\">\n            <form novalidate #banner1Form = 'ngForm'>\n              <div class=\"form-group\">\n              <label class=\"text-muted text-thin\">Select your Banner image</label>\n              <label for=\"image-input\" class=\"file-upload\">\n                  <button class=\"btn btn-default btn-block\">Upload Image</button>\n                  <input  type=\"file\" name=\"banner1Image\" (change)=\"banner1ImageUpload($event)\" >\n              </label>\n            </div>\n              <div class=\"result\" *ngIf='banner1.src'>\n                  <label class=\"text-muted text-thin\">Banner Preview</label>\n                  <img src=\"{{banner1.src}}\" width=\"200px\" height=\"200px\">\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"bannerName\" class=\"text-muted text-thin\">Name</label>\n                  <input type=\"text\" name=\"banner1name\" class=\"form-control\" [(ngModel)] = 'banner1Data.banner1name' #banner1name = 'ngModel'>\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"bannerDesc\" class=\"text-muted text-thin\">Banner description</label>\n                  <!-- <input type=\"text\" name=\"product1desc\" class=\"form-control\"> -->\n                  <textarea class=\"form-control\" rows=\"3\"  name=\"banner1desc\" [(ngModel)] = 'banner1Data.banner1desc' #banner1desc = 'ngModel'></textarea>\n              </div>\n              <button class=\"btn btn-primary pull-right\" [disabled]=\"!banner1Form.form.valid\"  (click)='saveBanner1Data(banner1Data); banner1Form.reset()'>Save</button>\n            </form>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-3\">\n        <div class=\"panel panel-default\">\n          <div class=\"panel-heading\">\n            <h4 class=\"text-muted text-thin\">Banners 2</h4>\n          </div>\n          <hr>\n          <div class=\"panel-body\">\n            <form novalidate #banner2Form = 'ngForm'>\n              <div class=\"form-group\">\n              <label class=\"text-muted text-thin\">Select your Banner image</label>\n              <label for=\"image-input\" class=\"file-upload\">\n                  <button class=\"btn btn-default btn-block\">Upload Image</button>\n                  <input  type=\"file\" name=\"banner2Image\" (change)=\"banner2ImageUpload($event)\" >\n              </label>\n            </div>\n              <div class=\"result\" *ngIf='banner2.src'>\n                  <label class=\"text-muted text-thin\">Banner Preview</label>\n                  <img src=\"{{banner2.src}}\" width=\"200px\" height=\"200px\">\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"bannerName\" class=\"text-muted text-thin\">Name</label>\n                  <input type=\"text\" name=\"banner2name\" class=\"form-control\" [(ngModel)] = 'banner2Data.banner2name' #banner2name = 'ngModel'>\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"bannerDesc\" class=\"text-muted text-thin\">Banner description</label>\n                  <!-- <input type=\"text\" name=\"product2desc\" class=\"form-control\"> -->\n                  <textarea class=\"form-control\" rows=\"3\"  name=\"banner2desc\" [(ngModel)] = 'banner2Data.banner2desc' #banner2desc = 'ngModel'></textarea>\n              </div>\n              <button class=\"btn btn-primary pull-right\" [disabled]=\"!banner2Form.form.valid\"  (click)='saveBanner2Data(banner2Data); banner2Form.reset()'>Save</button>\n            </form>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-3\">\n        <div class=\"panel panel-default\">\n          <div class=\"panel-heading\">\n            <h4 class=\"text-muted text-thin\">Banners 3</h4>\n          </div>\n          <hr>\n          <div class=\"panel-body\">\n            <form novalidate #banner3Form = 'ngForm'>\n              <div class=\"form-group\">\n              <label class=\"text-muted text-thin\">Select your Banner image</label>\n              <label for=\"image-input\" class=\"file-upload\">\n                  <button class=\"btn btn-default btn-block\">Upload Image</button>\n                  <input  type=\"file\" name=\"banner3Image\" (change)=\"banner3ImageUpload($event)\" >\n              </label>\n            </div>\n              <div class=\"result\" *ngIf='banner3.src'>\n                  <label class=\"text-muted text-thin\">Banner Preview</label>\n                  <img src=\"{{banner3.src}}\" width=\"200px\" height=\"200px\">\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"bannerName\" class=\"text-muted text-thin\">Name</label>\n                  <input type=\"text\" name=\"banner3name\" class=\"form-control\" [(ngModel)] = 'banner3Data.banner3name' #banner3name = 'ngModel'>\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"bannerDesc\" class=\"text-muted text-thin\">Banner description</label>\n                  <textarea class=\"form-control\" rows=\"3\"  name=\"banner3desc\" [(ngModel)] = 'banner3Data.banner3desc' #banner3desc = 'ngModel'></textarea>\n              </div>\n              <button class=\"btn btn-primary pull-right\" [disabled]=\"!banner3Form.form.valid\"  (click)='saveBanner3Data(banner3Data); banner3Form.reset()'>Save</button>\n            </form>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-3\">\n        <div class=\"panel panel-default\">\n          <div class=\"panel-heading\">\n            <h4 class=\"text-muted text-thin\">Banners 4</h4>\n          </div>\n          <hr>\n          <div class=\"panel-body\">\n            <form novalidate #banner4Form = 'ngForm'>\n              <div class=\"form-group\">\n              <label class=\"text-muted text-thin\">Select your Banner image</label>\n              <label for=\"image-input\" class=\"file-upload\">\n                  <button class=\"btn btn-default btn-block\">Upload Image</button>\n                  <input  type=\"file\" name=\"banner4Image\" (change)=\"banner4ImageUpload($event)\" >\n              </label>\n            </div>\n              <div class=\"result\" *ngIf='banner4.src'>\n                  <label class=\"text-muted text-thin\">Banner Preview</label>\n                  <img src=\"{{banner4.src}}\" width=\"200px\" height=\"200px\">\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"bannerName\" class=\"text-muted text-thin\">Name</label>\n                  <input type=\"text\" name=\"banner4name\" class=\"form-control\" [(ngModel)] = 'banner4Data.banner4name' #banner4name = 'ngModel'>\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"bannerDesc\" class=\"text-muted text-thin\">Banner description</label>\n                  <textarea class=\"form-control\" rows=\"4\"  name=\"banner4desc\" [(ngModel)] = 'banner4Data.banner4desc' #banner4desc = 'ngModel'></textarea>\n              </div>\n              <button class=\"btn btn-primary pull-right\" [disabled]=\"!banner4Form.form.valid\"  (click)='saveBanner4Data(banner4Data); banner4Form.reset()'>Save</button>\n            </form>\n          </div>\n        </div>\n      </div>\n    </div>\n  </tab>\n  <tab>\n    <ng-template tabHeading>\n      <h4 class=\"text-muted text-thin\">Catagories <i class=\"fa fa-upload fa-lg\" aria-hidden=\"true\"></i></h4>\n    </ng-template>\n    <div class=\"row\">\n      <div class=\"col-md-3\">\n        <div class=\"panel panel-default\">\n          <div class=\"panel-heading\">\n            <h4 class=\"text-muted text-thin\">Catagory 1</h4>\n          </div>\n          <hr>\n          <div class=\"panel-body\">\n            <form novalidate #catagory1Form = 'ngForm'>\n              <div class=\"form-group\">\n              <label class=\"text-muted text-thin\">Select your catagory image</label>\n              <label for=\"image-input\" class=\"file-upload\">\n                  <button class=\"btn btn-default btn-block\">Upload Image</button>\n                  <input  type=\"file\" name=\"catagory1Image\" (change)=\"catagory1ImageUpload($event)\" >\n              </label>\n            </div>\n              <div class=\"result\" *ngIf='catagory1.src'>\n                  <label class=\"text-muted text-thin\">Catagory Preview</label>\n                  <img src=\"{{catagory1.src}}\" width=\"200px\" height=\"200px\">\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"catagoryName\" class=\"text-muted text-thin\">catagory name</label>\n                  <input type=\"text\" name=\"catagory1name\" class=\"form-control\" [(ngModel)] = 'catagory1Data.catagory1name' #catagory1name = 'ngModel'>\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"catagoryDesc\" class=\"text-muted text-thin\">catagory description</label>\n                  <textarea class=\"form-control\" rows=\"3\"  name=\"catagory1desc\" [(ngModel)] = 'catagory1Data.catagory1desc' #catagory1desc = 'ngModel'></textarea>\n              </div>\n              <button class=\"btn btn-primary pull-right\" [disabled]=\"!catagory1Form.form.valid\"  (click)='savecatagory1Data(catagory1Data); catagory1Form.reset()'>Save</button>\n            </form>\n          </div>\n        </div>\n      </div>\n        <div class=\"col-md-3\">\n          <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">\n              <h4 class=\"text-muted text-thin\">Catagory 2</h4>\n            </div>\n            <hr>\n            <div class=\"panel-body\">\n              <form novalidate #catagory2Form = 'ngForm'>\n                <div class=\"form-group\">\n                <label class=\"text-muted text-thin\">Select your catagory image</label>\n                <label for=\"image-input\" class=\"file-upload\">\n                    <button class=\"btn btn-default btn-block\">Upload Image</button>\n                    <input  type=\"file\" name=\"catagory2Image\" (change)=\"catagory2ImageUpload($event)\" >\n                </label>\n              </div>\n                <div class=\"result\" *ngIf='catagory2.src'>\n                    <label class=\"text-muted text-thin\">Catagory Preview</label>\n                    <img src=\"{{catagory2.src}}\" width=\"200px\" height=\"200px\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"catagoryName\" class=\"text-muted text-thin\">catagory name</label>\n                    <input type=\"text\" name=\"catagory2name\" class=\"form-control\" [(ngModel)] = 'catagory2Data.catagory2name' #catagory2name = 'ngModel'>\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"catagoryDesc\" class=\"text-muted text-thin\">catagory description</label>\n                    <textarea class=\"form-control\" rows=\"3\"  name=\"catagory2desc\" [(ngModel)] = 'catagory2Data.catagory2desc' #catagory2desc = 'ngModel'></textarea>\n                </div>\n                <button class=\"btn btn-primary pull-right\" [disabled]=\"!catagory2Form.form.valid\"  (click)='savecatagory2Data(catagory2Data); catagory2Form.reset()'>Save</button>\n              </form>\n            </div>\n          </div>\n        </div>\n          <div class=\"col-md-3\">\n            <div class=\"panel panel-default\">\n              <div class=\"panel-heading\">\n                <h4 class=\"text-muted text-thin\">Catagory 3</h4>\n              </div>\n              <hr>\n              <div class=\"panel-body\">\n                <form novalidate #catagory3Form = 'ngForm'>\n                  <div class=\"form-group\">\n                  <label class=\"text-muted text-thin\">Select your catagory image</label>\n                  <label for=\"image-input\" class=\"file-upload\">\n                      <button class=\"btn btn-default btn-block\">Upload Image</button>\n                      <input  type=\"file\" name=\"catagory3Image\" (change)=\"catagory3ImageUpload($event)\" >\n                  </label>\n                </div>\n                  <div class=\"result\" *ngIf='catagory3.src'>\n                      <label class=\"text-muted text-thin\">Catagory Preview</label>\n                      <img src=\"{{catagory3.src}}\" width=\"200px\" height=\"200px\">\n                  </div>\n                  <div class=\"form-group\">\n                      <label for=\"catagoryName\" class=\"text-muted text-thin\">catagory name</label>\n                      <input type=\"text\" name=\"catagory3name\" class=\"form-control\" [(ngModel)] = 'catagory3Data.catagory3name' #catagory3name = 'ngModel'>\n                  </div>\n                  <div class=\"form-group\">\n                      <label for=\"catagoryDesc\" class=\"text-muted text-thin\">catagory description</label>\n                      <textarea class=\"form-control\" rows=\"3\"  name=\"catagory3desc\" [(ngModel)] = 'catagory3Data.catagory3desc' #catagory3desc = 'ngModel'></textarea>\n                  </div>\n                  <button class=\"btn btn-primary pull-right\" [disabled]=\"!catagory3Form.form.valid\"  (click)='savecatagory3Data(catagory3Data); catagory3Form.reset()'>Save</button>\n                </form>\n              </div>\n            </div>\n          </div>\n            <div class=\"col-md-3\">\n              <div class=\"panel panel-default\">\n                <div class=\"panel-heading\">\n                  <h4 class=\"text-muted text-thin\">Catagory 4</h4>\n                </div>\n                <hr>\n                <div class=\"panel-body\">\n                  <form novalidate #catagory4Form = 'ngForm'>\n                    <div class=\"form-group\">\n                    <label class=\"text-muted text-thin\">Select your catagory image</label>\n                    <label for=\"image-input\" class=\"file-upload\">\n                        <button class=\"btn btn-default btn-block\">Upload Image</button>\n                        <input  type=\"file\" name=\"catagory4Image\" (change)=\"catagory4ImageUpload($event)\" >\n                    </label>\n                  </div>\n                    <div class=\"result\" *ngIf='catagory4.src'>\n                        <label class=\"text-muted text-thin\">Catagory Preview</label>\n                        <img src=\"{{catagory4.src}}\" width=\"200px\" height=\"200px\">\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"catagoryName\" class=\"text-muted text-thin\">catagory name</label>\n                        <input type=\"text\" name=\"catagory4name\" class=\"form-control\" [(ngModel)] = 'catagory4Data.catagory4name' #catagory4name = 'ngModel'>\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"catagoryDesc\" class=\"text-muted text-thin\">catagory description</label>\n                        <textarea class=\"form-control\" rows=\"3\"  name=\"catagory4desc\" [(ngModel)] = 'catagory4Data.catagory4desc' #catagory4desc = 'ngModel'></textarea>\n                    </div>\n                    <button class=\"btn btn-primary pull-right\" [disabled]=\"!catagory4Form.form.valid\"  (click)='savecatagory4Data(catagory4Data); catagory4Form.reset()'>Save</button>\n                  </form>\n                </div>\n              </div>\n            </div>\n      \n    </div>\n  </tab>\n</tabset>"
+
+/***/ }),
+
+/***/ 1005:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  home-page works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ 1006:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  home works!\n</p>\n"
+
+/***/ }),
+
+/***/ 1007:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content-heading\">Sales Report</div>\r\n\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-info text-center\">\r\n                    <em class=\"fa fa-line-chart fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$ 13363534</h4>\r\n                        <p class=\"mb0 text-muted\">Total Sales</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-danger text-center\">\r\n                    <em class=\"fa fa-filter fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$56546</h4>\r\n                        <p class=\"mb0 text-muted\">Average Sales</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-inverse text-center\">\r\n                    <em class=\"fa fa-percent fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$234</h4>\r\n                        <p class=\"mb0 text-muted\">Total Tax</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-green text-center\">\r\n                    <em class=\"fa fa-gift fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$838</h4>\r\n                        <p class=\"mb0 text-muted\">Total C0upons</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n</div>\r\n<!-- END row-->\r\n<!-- START panel tab-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-9\">\r\n        <div class=\"form-group mb-xl\">\r\n            <input class=\"form-control mb\" type=\"text\" placeholder=\"Search products, products, etc.\" />\r\n        </div>\r\n        <div class=\"panel\">\r\n                \r\n            <tabset class=\"bg-white p0\" [justified]=\"true\">\r\n                \r\n                <tab>\r\n                    <ng-template tabHeading>\r\n                        <em class=\"fa fa-money fa-fw\"></em>Transactions Panel\r\n                    </ng-template>\r\n                    <div>\r\n                        <!-- START table responsive-->\r\n                        <div class=\"table-responsive\">\r\n                            <table class=\"table table-bordered table-hover table-striped\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th>Order #</th>\r\n                                        <th>Order Date</th>\r\n                                        <th>Order Time</th>\r\n                                        <th>Amount (USD)</th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr>\r\n                                        <td>3326</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:29 PM</td>\r\n                                        <td>$321.33</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3325</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:20 PM</td>\r\n                                        <td>$234.34</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3324</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:03 PM</td>\r\n                                        <td>$724.17</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3323</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:00 PM</td>\r\n                                        <td>$23.71</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3322</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:49 PM</td>\r\n                                        <td>$8345.23</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3321</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:23 PM</td>\r\n                                        <td>$245.12</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3320</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:15 PM</td>\r\n                                        <td>$5663.54</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3319</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:13 PM</td>\r\n                                        <td>$943.45</td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                        <!-- END table responsive-->\r\n                        <div class=\"panel-footer text-right\"><a class=\"btn btn-default btn-sm\" href=\"#\">View All Transactions</a>\r\n                        </div>\r\n                    </div>\r\n                </tab>\r\n            </tabset>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <h3 class=\"m0 pb-lg\">Search Orders</h3>\r\n        <!-- <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">by Text</label>\r\n            <br/>\r\n            <ng-select [allowClear]=\"true\" [items]=\"items\" placeholder=\"Nothing selected\"></ng-select>\r\n        </div> -->\r\n        <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">From Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div>\r\n        <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">To Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div>\r\n        <!-- <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">by Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div> -->\r\n        <div class=\"form-group mb-xl\">\r\n          <label class=\"control-label mb\">Order no:</label>\r\n          <br>\r\n          <input type=\"text\" class=\"slider slider-lg form-control\">\r\n        </div>\r\n        <button class=\"btn btn-default btn-lg\">Apply</button>\r\n    </div>\r\n</div>\r\n<!-- END panel tab-->\r\n"
+
+/***/ }),
+
+/***/ 1008:
+/***/ (function(module, exports) {
+
+module.exports = "<tabset [justified]=\"true\">\r\n    <tab>\r\n        <ng-template tabHeading>\r\n            <em class=\"icon-equalizer fa-lg\"></em>\r\n        </ng-template>\r\n        <!-- <h3 class=\"text-center text-thin\">Settings</h3> -->\r\n        <!-- Theme Settings -->\r\n        <div class=\"p\">\r\n            <h4 class=\"text-muted text-thin\">Themes</h4>\r\n            <p class=\"text-muted text-thin\">Select your theme :</p>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"A\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info\"></span>\r\n                          <span class=\"color bg-info-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"B\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green\"></span>\r\n                          <span class=\"color bg-green-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"C\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple\"></span>\r\n                          <span class=\"color bg-purple-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"D\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger\"></span>\r\n                          <span class=\"color bg-danger-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"E\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info-dark\"></span>\r\n                          <span class=\"color bg-info\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"F\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green-dark\"></span>\r\n                          <span class=\"color bg-green\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"G\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple-dark\"></span>\r\n                          <span class=\"color bg-purple\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"H\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger-dark\"></span>\r\n                          <span class=\"color bg-danger\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </tab>\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <p class=\"text-muted text-thin\">*Note: Please upload Logo of width 100px and height 40px.</p>\r\n                    <h4 class=\"text-muted text-thin\">Select file : </h4>\r\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\" nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-1\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\r\n                        (change)=\"logoUploadBase64($event)\">\r\n                    <div class=\"bootstrap-filestyle input-group\">\r\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\r\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\r\n                    <label for=\"filestyle-1\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\r\n                        <span class=\"buttonText\">Upload Logo</span>\r\n                        </label>\r\n                        </span>\r\n                    </div>\r\n                    <div class=\"result\" *ngIf='image.src'>\r\n                        <h4 class=\"text-muted text-thin\">Logo Preview</h4><br>\r\n                        <div class=\"text-center\">\r\n                            <img src={{image.src}} height=\"40px\" width=\"100px\"><br>\r\n                            <button class=\"btn btn-primary pull-right\" (click)='saveLogo()'>Save Logo</button>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-6\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo Icon</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <p class=\"text-muted text-thin\">*Note: Please upload Logo of width 42px and height 44px.</p>\r\n                    <h4 class=\"text-muted text-thin\">Select file : </h4>\r\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\" nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-2\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\r\n                        (change)=\"IconUploadBase64($event)\">\r\n                    <div class=\"bootstrap-filestyle input-group\">\r\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\r\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\r\n                                <label for=\"filestyle-2\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\r\n                        <span class=\"buttonText\">Upload Logo Icon</span>\r\n                        </label>\r\n                        </span>\r\n                    </div>\r\n                    <div class=\"result\" *ngIf='icon.src'>\r\n                        <h4 class=\"text-muted text-thin\">Logo Icon Preview</h4><br>\r\n                        <div class=\"text-center\">\r\n                            <img src={{icon.src}} height=\"42px\" width=\"44px\"><br>\r\n                            <button class=\"btn btn-primary pull-right\" (click)='saveLogoIcon()'>Save Logo</button>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">App name</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <form novalidate #appNameForm='ngForm'>\r\n                        <div class=\"form-group\">\r\n                            <label for=\"appName\">App name:</label>\r\n                            <input type=\"text\" class=\"form-control\" id=\"usr\" name=\"name\" placeholder=\"Please enter our app name here\" [(ngModel)]='data.name' #name='ngModel' minlength=\"3\" required>\r\n                            <div *ngIf=\"name.errors && (name.dirty || name.touched)\" class=\"error\">\r\n                                <span class=\"text-danger\" [hidden]=\"!name.errors.required\">Please Enter the app name </span>\r\n                                <span class=\"text-danger\" [hidden]=\"!name.errors.minlength\">app name should be more than 3 characters.</span>\r\n                            </div>\r\n                        </div>\r\n                        <button class=\"btn btn-primary pull-right\" [disabled]=\"!appNameForm.form.valid\" (click)='saveAppName(data); appNameForm.reset()'>Save</button>\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</tabset>"
+
+/***/ }),
+
+/***/ 1009:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content-heading\">\n  Users List\n  <!-- <small>Native and not wrapped angular2 based data-tables</small> -->\n</div>\n<!-- <alert [type]=\"'info'\">None of this examples are based on the official jQuery-Datatables</alert> -->\n<!-- <h4 class=\"page-header\">ng2 Table\n  <small>Simple table extension with sorting, filtering, paging... for Angular2 apps by ValorSoftware</small>\n</h4> -->\n<div class=\"mb-lg clearfix\">\n  <div class=\"pull-let wd-md\">\n      <input *ngIf=\"config.filtering\" placeholder=\"Filter all columns\" [ngTableFiltering]=\"config.filtering\" class=\"form-control\" (tableChanged)=\"onChangeTable(config)\" />\n  </div>\n</div>\n<div class=\"panel panel-default\">\n  <ng-table [config]=\"config\" (tableChanged)=\"onChangeTable(config)\" (cellClicked)=\"onCellClick($event)\" [rows]=\"rows\" [columns]=\"columns\">\n  </ng-table>\n</div>\n<div class=\"text-right\">\n  <pagination *ngIf=\"config.paging\" class=\"pagination-sm\" [(ngModel)]=\"page\" [totalItems]=\"length\" [itemsPerPage]=\"itemsPerPage\" [maxSize]=\"maxSize\" [boundaryLinks]=\"true\" [rotate]=\"false\" (pageChanged)=\"onChangeTable(config, $event)\" (numPages)=\"numPages = $event\">\n  </pagination>\n</div>\n"
+
+/***/ }),
+
+/***/ 1010:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"wrapper\">\r\n    <!-- top navbar-->\r\n    <app-top-navbar class=\"topnavbar-wrapper\"></app-top-navbar>\r\n    <!-- sidebar-->\r\n    <app-side-navbar class=\"aside\" (openModal)=\"showModal($event)\"></app-side-navbar>\r\n    <!-- offsidebar-->\r\n    <!--<app-offsidebar class=\"offsidebar\"></app-offsidebar>-->\r\n    <!-- Main section-->\r\n    <section>\r\n        <!-- Page content-->\r\n        <div class=\"content-wrapper\">\r\n            <div bsModal #lgModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myLargeModalLabel\" aria-hidden=\"true\">\r\n                <div class=\"modal-dialog modal-lg\">\r\n                    <div class=\"modal-content\">\r\n                        <div class=\"modal-header\">\r\n                            <h4 class=\"modal-title pull-left\">Large modal</h4>\r\n                            <button type=\"button\" class=\"close pull-right\" (click)=\"lgModal.hide()\" aria-label=\"Close\">\r\n                                <span aria-hidden=\"true\">&times;</span>\r\n                            </button>\r\n                        </div>\r\n                        <div class=\"modal-body\">\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </section>\r\n    <!-- Page footer-->\r\n    <!--<footer app-footer></footer>-->\r\n</div>"
+
+/***/ }),
+
+/***/ 1011:
+/***/ (function(module, exports) {
+
+module.exports = "<!-- START Sidebar (left)-->\r\n<div class=\"aside-inner\">\r\n    <nav class=\"sidebar\" sidebar-anyclick-close=\"\" [class.show-scrollbar]=\"settings.layout.asideScrollbar\">\r\n\r\n        <!-- START sidebar nav-->\r\n        <ul class=\"nav\">\r\n\r\n            <!-- START user info-->\r\n            <li class=\"has-user-block\">\r\n                <app-userblock (someEvent)=\"test($event)\"></app-userblock>\r\n            </li>\r\n            <!-- END user info-->\r\n\r\n            <li *ngFor='let item of menuItems' [ngClass]=\"{'nav-heading': item.heading}\" [routerLinkActive]=\"['active']\">\r\n                <!-- menu heading -->\r\n                <span *ngIf=\"item.heading\">{{(item.translate | translate) || item.text}}</span>\r\n                <!-- external links -->\r\n                <a *ngIf=\"!item.heading && !item.submenu && item.elink\" [attr.target]=\"item.target\" [attr.href]=\"item.elink\" title=\"{{item.text}}\">\r\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\r\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\r\n                    <span>{{(item.translate | translate) || item.text}}</span>\r\n                </a>\r\n                <!-- single menu item -->\r\n                <a *ngIf=\"!item.heading && !item.submenu && !item.elink\" [routerLink]=\"item.link\" [attr.route]=\"item.link\" title=\"{{item.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\r\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\r\n                    <span>{{(item.translate | translate) || item.text}}</span>\r\n                </a>\r\n                <!-- has submenu -->\r\n                <a *ngIf=\"!item.heading && item.submenu\" title=\"{{item.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\r\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\r\n                    <span>{{(item.translate | translate) || item.text}}</span>\r\n                </a>\r\n                <!-- SUBLEVEL -->\r\n                <ul *ngIf=\"item.submenu\" class=\"nav sidebar-subnav\" [routerLinkActive]=\"['opening']\">\r\n                    <li class=\"sidebar-subnav-header\">{{(item.translate | translate) || item.text}}</li>\r\n                    <li *ngFor='let subitem of item.submenu' [routerLinkActive]=\"['active']\">\r\n                        <!-- sublevel: external links -->\r\n                        <a *ngIf=\"!subitem.heading && !subitem.submenu && subitem.elink\" [attr.target]=\"subitem.target\" [attr.href]=\"subitem.elink\" title=\"{{subitem.text}}\">\r\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\r\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\r\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\r\n                        </a>\r\n                        <!-- sublevel: single menu item  -->\r\n                        <a *ngIf=\"!subitem.submenu && !subitem.elink\" [routerLink]=\"subitem.link\" [attr.route]=\"subitem.link\" title=\"{{subitem.text}}\">\r\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\r\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\r\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\r\n                        </a>\r\n                        <!-- sublevel: has submenu -->\r\n                        <a *ngIf=\"subitem.submenu\" title=\"{{subitem.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\r\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\r\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\r\n                        </a>\r\n                        <!-- SUBLEVEL 2 -->\r\n                        <ul *ngIf=\"subitem.submenu\" class=\"nav sidebar-subnav level2\" [routerLinkActive]=\"['opening']\">\r\n                            <li *ngFor='let subitem2 of subitem.submenu' [routerLinkActive]=\"['active']\">\r\n                                <!-- sublevel 2: single menu item  -->\r\n                                <a *ngIf=\"!subitem2.submenu\" [routerLink]=\"subitem2.link\" [attr.route]=\"subitem2.link\" title=\"{{subitem2.text}}\">\r\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\r\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\r\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\r\n                                </a>\r\n                                <!-- sublevel2: has submenu -->\r\n                                <a *ngIf=\"subitem2.submenu\" title=\"{{subitem2.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\r\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\r\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\r\n                                </a>\r\n                                <!-- SUBLEVEL 3 -->\r\n                                <ul *ngIf=\"subitem2.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\r\n                                    <li *ngFor='let subitem3 of subitem2.submenu' [routerLinkActive]=\"['active']\">\r\n                                        <!-- sublevel 2: single menu item  -->\r\n                                        <a *ngIf=\"!subitem3.submenu\" [routerLink]=\"subitem3.link\" [attr.route]=\"subitem3.link\" title=\"{{subitem3.text}}\">\r\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\r\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\r\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\r\n                                        </a>\r\n                                        <!-- sublevel3: has submenu -->\r\n                                        <a *ngIf=\"subitem3.submenu\" title=\"{{subitem3.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\r\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\r\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\r\n                                        </a>\r\n                                        <!-- SUBLEVEL 4 -->\r\n                                        <ul *ngIf=\"subitem3.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\r\n                                            <li *ngFor='let subitem4 of subitem3.submenu' [routerLinkActive]=\"['active']\">\r\n                                                <!-- sublevel 2: single menu item  -->\r\n                                                <a *ngIf=\"!subitem4.submenu\" [routerLink]=\"subitem4.link\" [attr.route]=\"subitem4.link\" title=\"{{subitem4.text}}\">\r\n                                                    <span class=\"pull-right\" *ngIf=\"subitem4.alert\" [ngClass]=\"subitem4.label || 'label label-success'\">{{subitem4.alert}}</span>\r\n                                                    <em class=\"{{subitem4.icon}}\" *ngIf=\"subitem4.icon\"></em>\r\n                                                    <span>{{(subitem4.translate | translate) || subitem4.text}}</span>\r\n                                                </a>\r\n                                            </li>\r\n                                        </ul>\r\n                                    </li>\r\n                                </ul>\r\n                                <li>\r\n                        </ul>\r\n                        <li>\r\n                </ul>\r\n                </li>\r\n\r\n        </ul>\r\n        <!-- END sidebar nav-->\r\n\r\n    </nav>\r\n</div>\r\n<!-- END Sidebar (left)-->"
+
+/***/ }),
+
+/***/ 1012:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"item user-block\" *ngIf=\"userBlockIsVisible()\">\r\n    <!-- User picture-->\r\n    <div class=\"user-block-picture\">\r\n        <div class=\"user-block-status\">\r\n            <img class=\"img-thumbnail img-circle\" [src]=\"user.picture\" alt=\"Avatar\" />\r\n            <div class=\"circle circle-success circle-lg\"></div>\r\n        </div>\r\n    </div>\r\n    <!-- Name and Job-->\r\n    <div class=\"user-block-info\">\r\n        <span class=\"user-block-name\">Welcome Ashok\r\n            <!--<i class=\"fa fa-pencil-square-o profileEdit\" aria-hidden=\"true\" (click)=\"callParent()\"></i>-->\r\n            </span>\r\n        <span class=\"user-block-role\">Programmer</span>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ 1013:
+/***/ (function(module, exports) {
+
+module.exports = "<!-- START Search form-->\r\n<form class=\"navbar-form\" role=\"search\" action=\"search.html\" [class.open]=\"visible\" (submit)=\"handleForm()\">\r\n    <div class=\"form-group has-feedback\">\r\n        <input [(ngModel)]=\"term\" name=\"term\" class=\"form-control\" type=\"text\" placeholder=\"{{'header.search.PLACEHOLDER' | translate}}\" />\r\n        <div class=\"fa fa-times form-control-feedback\" (click)=\"closeNavSearch()\"></div>\r\n    </div>\r\n    <button class=\"hidden btn btn-default\" type=\"submit\">Submit</button>\r\n</form>\r\n<!-- END Search form-->\r\n"
+
+/***/ }),
+
+/***/ 1014:
+/***/ (function(module, exports) {
+
+module.exports = "<!-- START Top Navbar-->\r\n<nav class=\"navbar topnavbar\" role=\"navigation\">\r\n    <!-- START navbar header-->\r\n    <div class=\"navbar-header\">\r\n        <a class=\"navbar-brand\" [routerLink]=\"'/'\">\r\n            <div class=\"brand-logo\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\"  style=\"height:40px;width:100px;\"/>\r\n            </div>\r\n            <div class=\"brand-logo-collapsed\">\r\n                <img class=\"img-responsive\" src=\"{{logoIcon}}\" alt=\"App Logo\" />\r\n            </div>\r\n        </a>\r\n            <!-- <a class=\"navbar-brand brand\" [routerLink]=\"'/home'\"> -->\r\n                <!--<svg viewbox=\"0 0 220 44\" width=\"220\" height=\"44\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <title>EDCO Products, Steel Roofing and Siding</title>\r\n                    <g class=\"logoMark\">\r\n                        <path d=\"M1.4,2.4h38v39.2h-38V2.4z\" fill=\"#fff\"> </path>\r\n                        <path d=\"M0.1,1v42h40.6V1H0.1z M3.5,37.4V8.1l10.3,14.4L3.5,37.4z M15.2,39.7V5.2l12.1,17.6L15.2,39.7z M28.8,37.4 L29,7.8L38.9,23L28.8,37.4z\"\r\n                            fill=\"#c6202c\"> </path>\r\n                    </g>-->\r\n                    <!--<path class=\"logoType\" d=\"M46.092.98h37.793v10.11h-21.43v5.963h20.5V27.18h-20.5v5.716H84.32V43.02H46.092V.98m40.03 0h24.537c12.48 0 21.29 4.1 21.29 21.144 0 15.903-9.48 20.897-21.97 20.897H86.13zm16.734 31.555h4.162c6.063 0 7.43-3.85 7.43-10.833 0-7.23-1.49-10.97-7.48-10.97h-4.1zm68.542 9.517a49.372 49.372 0 0 1-12 1.69c-14.475 0-26.09-7.33-26.09-22.338 0-14.1 12.112-21.145 26.09-21.145a60.752 60.752 0 0 1 11.876 1.31v11.11a28.947 28.947 0 0 0-8.36-1.59c-7.12 0-12.5 3.68-12.5 10.56 0 7.2 4.995 10.89 11.927 10.89a28.078 28.078 0 0 0 9.07-1.655zm24.252 1.69c-15.232 0-24.165-7.405-24.165-21.742 0-14.088 8.945-21.74 24.165-21.74C210.893.257 220 7.91 220 22c0 14.337-9.107 21.742-24.35 21.742m0-10.126c6.62 0 6.808-7.106 6.882-11.616-.074-3.913-.497-11.63-6.883-11.63-6.18 0-6.68 7.704-6.68 11.63 0 4.51.69 11.616 6.68 11.616\">\r\n                    </path>-->\r\n                <!--</svg>-->\r\n                <!-- nayo\r\n            </a> -->\r\n    </div>\r\n    <!-- END navbar header-->\r\n    <!-- START Nav wrapper-->\r\n    <div class=\"nav-wrapper\">\r\n        <!-- START Left navbar-->\r\n        <ul class=\"nav navbar-nav\">\r\n            <li>\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\r\n        <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        </li>\r\n        <!-- START User avatar toggle-->\r\n        <!--<li>-->\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <!--<a (click)=\"toggleUserBlock($event)\">\r\n                    <em class=\"icon-user\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END User avatar toggle-->\r\n        <!-- START lock screen-->\r\n        <!--<li>\r\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\r\n                    <em class=\"icon-lock\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END lock screen-->\r\n        </ul>\r\n        <!-- END Left navbar-->\r\n        <!-- START Right Navbar-->\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <!-- Search icon-->\r\n            <li>\r\n                <a (click)=\"openNavSearch($event)\">\r\n                    <em class=\"icon-magnifier\"></em>\r\n                </a>\r\n            </li>\r\n            <!-- Fullscreen (only desktops)-->\r\n            <!-- <li class=\"visible-lg\">\r\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\r\n                    <em class=\"fa fa-expand\"></em>\r\n                </a>\r\n            </li> -->\r\n            <!--<li class=\"visible-lg\">\r\n                <a #fsbutton [routerLink]=\"'/login'\">Login\r\n                </a>\r\n            </li>-->\r\n            <!-- START Alert menu-->\r\n            <li class=\"dropdown dropdown-list\" dropdown>\r\n                <a dropdownToggle>\r\n                    <em class=\"icon-bell\"></em>\r\n                    <div class=\"label label-danger\">11</div>\r\n                </a>\r\n                <!-- START Dropdown menu-->\r\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\r\n                    <li>\r\n                        <!-- START list group-->\r\n                        <div class=\"list-group\">\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New followers</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>1 new follower</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New e-mails</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>You have 10 new emails</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">Pending Tasks</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>11 pending task</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- last list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\r\n                                <span class=\"label label-danger pull-right\">14</span>\r\n                            </a>\r\n                        </div>\r\n                        <!-- END list group-->\r\n                    </li>\r\n                </ul>\r\n                <!-- END Dropdown menu-->\r\n            </li>\r\n            <!-- END Alert menu-->\r\n            <!-- START Offsidebar button-->\r\n            <!--<li>\r\n                <a (click)=\"toggleOffsidebar()\">\r\n                    <em class=\"icon-notebook\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END Offsidebar menu-->\r\n        </ul>\r\n        <!-- END Right Navbar-->\r\n    </div>\r\n    <!-- END Nav wrapper-->\r\n\r\n    <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch>\r\n\r\n</nav>\r\n<!-- END Top Navbar-->"
 
 /***/ }),
 
@@ -29,28 +161,31 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__ = __webpack_require__(982);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__ = __webpack_require__(990);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_img_cropper__ = __webpack_require__(983);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_charts_ng2_charts__ = __webpack_require__(979);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_img_cropper__ = __webpack_require__(991);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_charts_ng2_charts__ = __webpack_require__(987);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_charts_ng2_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_ng2_charts_ng2_charts__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_shared_module__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dashboard_routing_module__ = __webpack_require__(935);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dashboard_component__ = __webpack_require__(914);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__ = __webpack_require__(934);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__top_navbar_top_navbar_component__ = __webpack_require__(940);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__top_navbar_navsearch_navsearch_component__ = __webpack_require__(939);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__side_navbar_side_navbar_component__ = __webpack_require__(937);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__side_navbar_userblock_userblock_component__ = __webpack_require__(938);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_theme_settings_theme_settings_component__ = __webpack_require__(913);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__core_menu_menu_service__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__side_navbar_userblock_userblock_service__ = __webpack_require__(915);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__menu__ = __webpack_require__(936);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_sales_reports_sales_reports_component__ = __webpack_require__(912);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_activity_reports_activity_reports_component__ = __webpack_require__(908);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_dasboard_dasboard_component__ = __webpack_require__(909);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_home_page_home_page_component__ = __webpack_require__(911);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_featured_products_featured_products_component__ = __webpack_require__(910);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_table_ng2_table__ = __webpack_require__(1001);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_table_ng2_table___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_ng2_table_ng2_table__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dashboard_routing_module__ = __webpack_require__(941);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dashboard_component__ = __webpack_require__(918);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_home_home_component__ = __webpack_require__(939);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__top_navbar_top_navbar_component__ = __webpack_require__(946);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__top_navbar_navsearch_navsearch_component__ = __webpack_require__(945);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__side_navbar_side_navbar_component__ = __webpack_require__(943);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__side_navbar_userblock_userblock_component__ = __webpack_require__(944);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_theme_settings_theme_settings_component__ = __webpack_require__(916);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__core_menu_menu_service__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__side_navbar_userblock_userblock_service__ = __webpack_require__(919);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__menu__ = __webpack_require__(942);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_sales_reports_sales_reports_component__ = __webpack_require__(915);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_activity_reports_activity_reports_component__ = __webpack_require__(911);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_dasboard_dasboard_component__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_home_page_home_page_component__ = __webpack_require__(914);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_featured_products_featured_products_component__ = __webpack_require__(913);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_users_list_users_list_component__ = __webpack_require__(917);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardModule", function() { return DashboardModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -68,6 +203,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 // Shared module
+
 
 // Dashoard Routing
 
@@ -91,10 +227,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var DashboardModule = (function () {
     function DashboardModule(menuService) {
         this.menuService = menuService;
-        menuService.addMenu(__WEBPACK_IMPORTED_MODULE_17__menu__["a" /* menu */]);
+        menuService.addMenu(__WEBPACK_IMPORTED_MODULE_18__menu__["a" /* menu */]);
     }
     return DashboardModule;
 }());
@@ -104,30 +241,32 @@ DashboardModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormsModule"],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["ReactiveFormsModule"],
-            __WEBPACK_IMPORTED_MODULE_7__dashboard_routing_module__["a" /* DashboardRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_8__dashboard_routing_module__["a" /* DashboardRoutingModule */],
             __WEBPACK_IMPORTED_MODULE_6__shared_shared_module__["a" /* SharedModule */],
             __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload__["FileUploadModule"],
             __WEBPACK_IMPORTED_MODULE_4_ng2_img_cropper__["a" /* ImageCropperModule */],
-            __WEBPACK_IMPORTED_MODULE_5_ng2_charts_ng2_charts__["ChartsModule"]
+            __WEBPACK_IMPORTED_MODULE_5_ng2_charts_ng2_charts__["ChartsModule"],
+            __WEBPACK_IMPORTED_MODULE_7_ng2_table_ng2_table__["Ng2TableModule"]
         ],
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_8__dashboard_component__["a" /* DashboardComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_14__components_theme_settings_theme_settings_component__["a" /* ThemeSettingsComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__top_navbar_top_navbar_component__["a" /* TopNavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__side_navbar_side_navbar_component__["a" /* SideNavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__top_navbar_navsearch_navsearch_component__["a" /* NavsearchComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__side_navbar_userblock_userblock_component__["a" /* UserblockComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__components_sales_reports_sales_reports_component__["a" /* SalesReportsComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__components_activity_reports_activity_reports_component__["a" /* ActivityReportsComponent */],
-            __WEBPACK_IMPORTED_MODULE_20__components_dasboard_dasboard_component__["a" /* DasboardComponent */],
-            __WEBPACK_IMPORTED_MODULE_21__components_home_page_home_page_component__["a" /* HomePageComponent */],
-            __WEBPACK_IMPORTED_MODULE_22__components_featured_products_featured_products_component__["a" /* FeaturedProductsComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__dashboard_component__["a" /* DashboardComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__components_home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_15__components_theme_settings_theme_settings_component__["a" /* ThemeSettingsComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__top_navbar_top_navbar_component__["a" /* TopNavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__side_navbar_side_navbar_component__["a" /* SideNavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__top_navbar_navsearch_navsearch_component__["a" /* NavsearchComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__side_navbar_userblock_userblock_component__["a" /* UserblockComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__components_sales_reports_sales_reports_component__["a" /* SalesReportsComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__components_activity_reports_activity_reports_component__["a" /* ActivityReportsComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__components_dasboard_dasboard_component__["a" /* DasboardComponent */],
+            __WEBPACK_IMPORTED_MODULE_22__components_home_page_home_page_component__["a" /* HomePageComponent */],
+            __WEBPACK_IMPORTED_MODULE_23__components_featured_products_featured_products_component__["a" /* FeaturedProductsComponent */],
+            __WEBPACK_IMPORTED_MODULE_24__components_users_list_users_list_component__["a" /* UsersListComponent */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_16__side_navbar_userblock_userblock_service__["a" /* UserblockService */]
+            __WEBPACK_IMPORTED_MODULE_17__side_navbar_userblock_userblock_service__["a" /* UserblockService */]
         ]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_15__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_15__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_16__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_16__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object])
 ], DashboardModule);
 
 var _a;
@@ -135,7 +274,281 @@ var _a;
 
 /***/ }),
 
+/***/ 902:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var core_1 = __webpack_require__(0);
+// import {setProperty} from 'angular2/ts/src/core/forms/directives/shared';
+function setProperty(renderer, elementRef, propName, propValue) {
+    renderer.setElementProperty(elementRef, propName, propValue);
+}
+var NgTableFilteringDirective = (function () {
+    function NgTableFilteringDirective(element, renderer) {
+        this.ngTableFiltering = {
+            filterString: '',
+            columnName: 'name'
+        };
+        this.tableChanged = new core_1.EventEmitter();
+        this.element = element;
+        this.renderer = renderer;
+        // Set default value for filter
+        setProperty(this.renderer, this.element, 'value', this.ngTableFiltering.filterString);
+    }
+    Object.defineProperty(NgTableFilteringDirective.prototype, "config", {
+        get: function () {
+            return this.ngTableFiltering;
+        },
+        set: function (value) {
+            this.ngTableFiltering = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    NgTableFilteringDirective.prototype.onChangeFilter = function (event) {
+        this.ngTableFiltering.filterString = event;
+        this.tableChanged.emit({ filtering: this.ngTableFiltering });
+    };
+    NgTableFilteringDirective.decorators = [
+        { type: core_1.Directive, args: [{ selector: '[ngTableFiltering]' },] },
+    ];
+    /** @nocollapse */
+    NgTableFilteringDirective.ctorParameters = [
+        { type: core_1.ElementRef, },
+        { type: core_1.Renderer, },
+    ];
+    NgTableFilteringDirective.propDecorators = {
+        'ngTableFiltering': [{ type: core_1.Input },],
+        'tableChanged': [{ type: core_1.Output },],
+        'config': [{ type: core_1.Input },],
+        'onChangeFilter': [{ type: core_1.HostListener, args: ['input', ['$event.target.value'],] },],
+    };
+    return NgTableFilteringDirective;
+}());
+exports.NgTableFilteringDirective = NgTableFilteringDirective;
+
+
+/***/ }),
+
 /***/ 903:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var core_1 = __webpack_require__(0);
+var NgTablePagingDirective = (function () {
+    function NgTablePagingDirective() {
+        this.ngTablePaging = true;
+        this.tableChanged = new core_1.EventEmitter();
+    }
+    Object.defineProperty(NgTablePagingDirective.prototype, "config", {
+        get: function () {
+            return this.ngTablePaging;
+        },
+        set: function (value) {
+            this.ngTablePaging = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    NgTablePagingDirective.prototype.onChangePage = function (event) {
+        // Object.assign(this.config, event);
+        if (this.ngTablePaging) {
+            this.tableChanged.emit({ paging: event });
+        }
+    };
+    NgTablePagingDirective.decorators = [
+        { type: core_1.Directive, args: [{ selector: '[ngTablePaging]' },] },
+    ];
+    /** @nocollapse */
+    NgTablePagingDirective.ctorParameters = [];
+    NgTablePagingDirective.propDecorators = {
+        'ngTablePaging': [{ type: core_1.Input },],
+        'tableChanged': [{ type: core_1.Output },],
+        'config': [{ type: core_1.Input },],
+        'onChangePage': [{ type: core_1.HostListener, args: ['pagechanged', ['$event'],] },],
+    };
+    return NgTablePagingDirective;
+}());
+exports.NgTablePagingDirective = NgTablePagingDirective;
+
+
+/***/ }),
+
+/***/ 904:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var core_1 = __webpack_require__(0);
+var NgTableSortingDirective = (function () {
+    function NgTableSortingDirective() {
+        this.sortChanged = new core_1.EventEmitter();
+    }
+    Object.defineProperty(NgTableSortingDirective.prototype, "config", {
+        get: function () {
+            return this.ngTableSorting;
+        },
+        set: function (value) {
+            this.ngTableSorting = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    NgTableSortingDirective.prototype.onToggleSort = function (event) {
+        if (event) {
+            event.preventDefault();
+        }
+        if (this.ngTableSorting && this.column && this.column.sort !== false) {
+            switch (this.column.sort) {
+                case 'asc':
+                    this.column.sort = 'desc';
+                    break;
+                case 'desc':
+                    this.column.sort = '';
+                    break;
+                default:
+                    this.column.sort = 'asc';
+                    break;
+            }
+            this.sortChanged.emit(this.column);
+        }
+    };
+    NgTableSortingDirective.decorators = [
+        { type: core_1.Directive, args: [{ selector: '[ngTableSorting]' },] },
+    ];
+    /** @nocollapse */
+    NgTableSortingDirective.ctorParameters = [];
+    NgTableSortingDirective.propDecorators = {
+        'ngTableSorting': [{ type: core_1.Input },],
+        'column': [{ type: core_1.Input },],
+        'sortChanged': [{ type: core_1.Output },],
+        'config': [{ type: core_1.Input },],
+        'onToggleSort': [{ type: core_1.HostListener, args: ['click', ['$event'],] },],
+    };
+    return NgTableSortingDirective;
+}());
+exports.NgTableSortingDirective = NgTableSortingDirective;
+
+
+/***/ }),
+
+/***/ 905:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var core_1 = __webpack_require__(0);
+var platform_browser_1 = __webpack_require__(41);
+var NgTableComponent = (function () {
+    function NgTableComponent(sanitizer) {
+        this.sanitizer = sanitizer;
+        // Table values
+        this.rows = [];
+        // Outputs (Events)
+        this.tableChanged = new core_1.EventEmitter();
+        this.cellClicked = new core_1.EventEmitter();
+        this.showFilterRow = false;
+        this._columns = [];
+        this._config = {};
+    }
+    Object.defineProperty(NgTableComponent.prototype, "config", {
+        get: function () {
+            return this._config;
+        },
+        set: function (conf) {
+            if (!conf.className) {
+                conf.className = 'table-striped table-bordered';
+            }
+            if (conf.className instanceof Array) {
+                conf.className = conf.className.join(' ');
+            }
+            this._config = conf;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgTableComponent.prototype, "columns", {
+        get: function () {
+            return this._columns;
+        },
+        set: function (values) {
+            var _this = this;
+            values.forEach(function (value) {
+                if (value.filtering) {
+                    _this.showFilterRow = true;
+                }
+                if (value.className && value.className instanceof Array) {
+                    value.className = value.className.join(' ');
+                }
+                var column = _this._columns.find(function (col) { return col.name === value.name; });
+                if (column) {
+                    Object.assign(column, value);
+                }
+                if (!column) {
+                    _this._columns.push(value);
+                }
+            });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    NgTableComponent.prototype.sanitize = function (html) {
+        return this.sanitizer.bypassSecurityTrustHtml(html);
+    };
+    Object.defineProperty(NgTableComponent.prototype, "configColumns", {
+        get: function () {
+            var sortColumns = [];
+            this.columns.forEach(function (column) {
+                if (column.sort) {
+                    sortColumns.push(column);
+                }
+            });
+            return { columns: sortColumns };
+        },
+        enumerable: true,
+        configurable: true
+    });
+    NgTableComponent.prototype.onChangeTable = function (column) {
+        this._columns.forEach(function (col) {
+            if (col.name !== column.name && col.sort !== false) {
+                col.sort = '';
+            }
+        });
+        this.tableChanged.emit({ sorting: this.configColumns });
+    };
+    NgTableComponent.prototype.getData = function (row, propertyName) {
+        return propertyName.split('.').reduce(function (prev, curr) { return prev[curr]; }, row);
+    };
+    NgTableComponent.prototype.cellClick = function (row, column) {
+        this.cellClicked.emit({ row: row, column: column });
+    };
+    NgTableComponent.decorators = [
+        { type: core_1.Component, args: [{
+                    selector: 'ng-table',
+                    template: "\n    <table class=\"table dataTable\" ngClass=\"{{config.className || ''}}\"\n           role=\"grid\" style=\"width: 100%;\">\n      <thead>\n        <tr role=\"row\">\n          <th *ngFor=\"let column of columns\" [ngTableSorting]=\"config\" [column]=\"column\" \n              (sortChanged)=\"onChangeTable($event)\" ngClass=\"{{column.className || ''}}\">\n            {{column.title}}\n            <i *ngIf=\"config && column.sort\" class=\"pull-right fa\"\n              [ngClass]=\"{'fa-chevron-down': column.sort === 'desc', 'fa-chevron-up': column.sort === 'asc'}\"></i>\n          </th>\n        </tr>\n      </thead>\n      <tbody>\n      <tr *ngIf=\"showFilterRow\">\n        <td *ngFor=\"let column of columns\">\n          <input *ngIf=\"column.filtering\" placeholder=\"{{column.filtering.placeholder}}\"\n                 [ngTableFiltering]=\"column.filtering\"\n                 class=\"form-control\"\n                 style=\"width: auto;\"\n                 (tableChanged)=\"onChangeTable(config)\"/>\n        </td>\n      </tr>\n        <tr *ngFor=\"let row of rows\">\n          <td (click)=\"cellClick(row, column.name)\" *ngFor=\"let column of columns\" [innerHtml]=\"sanitize(getData(row, column.name))\"></td>\n        </tr>\n      </tbody>\n    </table>\n  "
+                },] },
+    ];
+    /** @nocollapse */
+    NgTableComponent.ctorParameters = [
+        { type: platform_browser_1.DomSanitizer, },
+    ];
+    NgTableComponent.propDecorators = {
+        'rows': [{ type: core_1.Input },],
+        'config': [{ type: core_1.Input },],
+        'tableChanged': [{ type: core_1.Output },],
+        'cellClicked': [{ type: core_1.Output },],
+        'columns': [{ type: core_1.Input },],
+    };
+    return NgTableComponent;
+}());
+exports.NgTableComponent = NgTableComponent;
+
+
+/***/ }),
+
+/***/ 906:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -170,14 +583,14 @@ exports.FileLikeObject = FileLikeObject;
 
 /***/ }),
 
-/***/ 904:
+/***/ 907:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var file_like_object_class_1 = __webpack_require__(903);
-var file_item_class_1 = __webpack_require__(925);
-var file_type_class_1 = __webpack_require__(980);
+var file_like_object_class_1 = __webpack_require__(906);
+var file_item_class_1 = __webpack_require__(931);
+var file_type_class_1 = __webpack_require__(988);
 function isFile(value) {
     return (File && value instanceof File);
 }
@@ -583,11 +996,11 @@ exports.FileUploader = FileUploader;
 
 /***/ }),
 
-/***/ 905:
+/***/ 908:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cropperDrawSettings__ = __webpack_require__(927);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cropperDrawSettings__ = __webpack_require__(933);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CropperSettings; });
 
 var CropperSettings = (function () {
@@ -645,11 +1058,11 @@ var CropperSettings = (function () {
 
 /***/ }),
 
-/***/ 906:
+/***/ 909:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pointPool__ = __webpack_require__(907);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pointPool__ = __webpack_require__(910);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Bounds; });
 
 var Bounds = (function () {
@@ -700,11 +1113,11 @@ var Bounds = (function () {
 
 /***/ }),
 
-/***/ 907:
+/***/ 910:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(932);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(938);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PointPool; });
 
 var PointPool = (function () {
@@ -751,7 +1164,7 @@ var PointPool = (function () {
 
 /***/ }),
 
-/***/ 908:
+/***/ 911:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -848,8 +1261,8 @@ var ActivityReportsComponent = (function () {
 ActivityReportsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-activity-reports',
-        template: __webpack_require__(991),
-        styles: [__webpack_require__(952)]
+        template: __webpack_require__(1002),
+        styles: [__webpack_require__(959)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_colors_colors_service__["a" /* ColorsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_colors_colors_service__["a" /* ColorsService */]) === "function" && _a || Object])
 ], ActivityReportsComponent);
@@ -859,7 +1272,7 @@ var _a;
 
 /***/ }),
 
-/***/ 909:
+/***/ 912:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -970,8 +1383,8 @@ var DasboardComponent = (function () {
 DasboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-dasboard',
-        template: __webpack_require__(992),
-        styles: [__webpack_require__(953)]
+        template: __webpack_require__(1003),
+        styles: [__webpack_require__(960)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_colors_colors_service__["a" /* ColorsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_colors_colors_service__["a" /* ColorsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _b || Object])
 ], DasboardComponent);
@@ -981,7 +1394,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 910:
+/***/ 913:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1003,6 +1416,14 @@ var FeaturedProductsComponent = (function () {
         this.image2 = {};
         this.image3 = {};
         this.image4 = {};
+        this.banner1 = {};
+        this.banner2 = {};
+        this.banner3 = {};
+        this.banner4 = {};
+        this.catagory1 = {};
+        this.catagory2 = {};
+        this.catagory3 = {};
+        this.catagory4 = {};
         this.product1Data = {
             product1Image: '',
             product1name: '',
@@ -1022,6 +1443,46 @@ var FeaturedProductsComponent = (function () {
             product4Image: '',
             product4name: '',
             product4desc: ''
+        };
+        this.banner1Data = {
+            banner1Image: '',
+            banner1name: '',
+            banner1desc: ''
+        };
+        this.banner2Data = {
+            banner2Image: '',
+            banner2name: '',
+            banner2desc: ''
+        };
+        this.banner3Data = {
+            banner3Image: '',
+            banner3name: '',
+            banner3desc: ''
+        };
+        this.banner4Data = {
+            banner4Image: '',
+            banner4name: '',
+            banner4desc: ''
+        };
+        this.catagory1Data = {
+            catagory1Image: '',
+            catagory1name: '',
+            catagory1desc: ''
+        };
+        this.catagory2Data = {
+            catagory2Image: '',
+            catagory2name: '',
+            catagory2desc: ''
+        };
+        this.catagory3Data = {
+            catagory3Image: '',
+            catagory3name: '',
+            catagory3desc: ''
+        };
+        this.catagory4Data = {
+            catagory4Image: '',
+            catagory4name: '',
+            catagory4desc: ''
         };
     }
     FeaturedProductsComponent.prototype.ngOnInit = function () {
@@ -1078,13 +1539,118 @@ var FeaturedProductsComponent = (function () {
     FeaturedProductsComponent.prototype.saveProduct4Data = function () {
         this.product4Data.product4Image = this.image4.src;
     };
+    FeaturedProductsComponent.prototype.banner1ImageUpload = function ($event) {
+        //let image: any = new Image();
+        var file = $event.target.files[0];
+        var myReader = new FileReader();
+        var that = this;
+        myReader.onloadend = function (loadEvent) {
+            that.banner1.src = loadEvent.target.result;
+        };
+        myReader.readAsDataURL(file);
+    };
+    FeaturedProductsComponent.prototype.banner2ImageUpload = function ($event) {
+        //let image: any = new Image();
+        var file = $event.target.files[0];
+        var myReader = new FileReader();
+        var that = this;
+        myReader.onloadend = function (loadEvent) {
+            that.banner2.src = loadEvent.target.result;
+        };
+        myReader.readAsDataURL(file);
+    };
+    FeaturedProductsComponent.prototype.banner3ImageUpload = function ($event) {
+        //let image: any = new Image();
+        var file = $event.target.files[0];
+        var myReader = new FileReader();
+        var that = this;
+        myReader.onloadend = function (loadEvent) {
+            that.banner3.src = loadEvent.target.result;
+        };
+        myReader.readAsDataURL(file);
+    };
+    FeaturedProductsComponent.prototype.banner4ImageUpload = function ($event) {
+        //let image: any = new Image();
+        var file = $event.target.files[0];
+        var myReader = new FileReader();
+        var that = this;
+        myReader.onloadend = function (loadEvent) {
+            that.banner4.src = loadEvent.target.result;
+        };
+        myReader.readAsDataURL(file);
+    };
+    FeaturedProductsComponent.prototype.saveBanner1Data = function () {
+        this.banner1Data.banner1Image = this.banner1.src;
+    };
+    FeaturedProductsComponent.prototype.saveBanner2Data = function () {
+        this.banner2Data.banner2Image = this.banner2.src;
+    };
+    FeaturedProductsComponent.prototype.saveBanner3Data = function () {
+        this.banner3Data.banner3Image = this.banner3.src;
+    };
+    FeaturedProductsComponent.prototype.saveBanner4Data = function () {
+        this.banner4Data.banner4Image = this.banner4.src;
+    };
+    FeaturedProductsComponent.prototype.catagory1ImageUpload = function ($event) {
+        //let image: any = new Image();
+        var file = $event.target.files[0];
+        var myReader = new FileReader();
+        var that = this;
+        myReader.onloadend = function (loadEvent) {
+            that.catagory1.src = loadEvent.target.result;
+        };
+        myReader.readAsDataURL(file);
+    };
+    FeaturedProductsComponent.prototype.catagory2ImageUpload = function ($event) {
+        //let image: any = new Image();
+        var file = $event.target.files[0];
+        var myReader = new FileReader();
+        var that = this;
+        myReader.onloadend = function (loadEvent) {
+            that.catagory2.src = loadEvent.target.result;
+        };
+        myReader.readAsDataURL(file);
+    };
+    FeaturedProductsComponent.prototype.catagory3ImageUpload = function ($event) {
+        //let image: any = new Image();
+        var file = $event.target.files[0];
+        var myReader = new FileReader();
+        var that = this;
+        myReader.onloadend = function (loadEvent) {
+            that.catagory3.src = loadEvent.target.result;
+        };
+        myReader.readAsDataURL(file);
+    };
+    FeaturedProductsComponent.prototype.catagory4ImageUpload = function ($event) {
+        //let image: any = new Image();
+        var file = $event.target.files[0];
+        var myReader = new FileReader();
+        var that = this;
+        myReader.onloadend = function (loadEvent) {
+            that.catagory4.src = loadEvent.target.result;
+        };
+        myReader.readAsDataURL(file);
+    };
+    FeaturedProductsComponent.prototype.savecatagory1Data = function () {
+        this.catagory1Data.catagory1Image = this.catagory1.src;
+    };
+    FeaturedProductsComponent.prototype.savecatagory2Data = function () {
+        this.catagory2Data.catagory2Image = this.catagory2.src;
+    };
+    FeaturedProductsComponent.prototype.savecatagory3Data = function () {
+        this.catagory3Data.catagory3Image = this.catagory3.src;
+        console.log(this.catagory3Data);
+    };
+    FeaturedProductsComponent.prototype.savecatagory4Data = function () {
+        this.catagory4Data.catagory4Image = this.catagory4.src;
+    };
     return FeaturedProductsComponent;
 }());
 FeaturedProductsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-featured-products',
-        template: __webpack_require__(993),
-        styles: [__webpack_require__(954)]
+        template: __webpack_require__(1004),
+        styles: [__webpack_require__(961)]
     }),
     __metadata("design:paramtypes", [])
 ], FeaturedProductsComponent);
@@ -1093,7 +1659,7 @@ FeaturedProductsComponent = __decorate([
 
 /***/ }),
 
-/***/ 911:
+/***/ 914:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1119,8 +1685,8 @@ var HomePageComponent = (function () {
 HomePageComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-home-page',
-        template: __webpack_require__(994),
-        styles: [__webpack_require__(955)]
+        template: __webpack_require__(1005),
+        styles: [__webpack_require__(962)]
     }),
     __metadata("design:paramtypes", [])
 ], HomePageComponent);
@@ -1129,7 +1695,7 @@ HomePageComponent = __decorate([
 
 /***/ }),
 
-/***/ 912:
+/***/ 915:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1192,8 +1758,8 @@ var SalesReportsComponent = (function () {
 SalesReportsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-sales-reports',
-        template: __webpack_require__(996),
-        styles: [__webpack_require__(957)]
+        template: __webpack_require__(1007),
+        styles: [__webpack_require__(964)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_colors_colors_service__["a" /* ColorsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_colors_colors_service__["a" /* ColorsService */]) === "function" && _a || Object])
 ], SalesReportsComponent);
@@ -1203,7 +1769,7 @@ var _a;
 
 /***/ }),
 
-/***/ 913:
+/***/ 916:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1235,6 +1801,7 @@ var ThemeSettingsComponent = (function () {
         this.SettingService = SettingService;
         this.router = router;
         this.image = {};
+        this.icon = {};
         this.data = {
             name: ''
         };
@@ -1250,7 +1817,7 @@ var ThemeSettingsComponent = (function () {
         // this.SettingService.postData().subscribe(res => {
         // });    
     };
-    ThemeSettingsComponent.prototype.fileChangeListener = function ($event) {
+    ThemeSettingsComponent.prototype.logoUploadBase64 = function ($event) {
         // let image: any = new Image();
         var file = $event.target.files[0];
         var myReader = new FileReader();
@@ -1266,6 +1833,19 @@ var ThemeSettingsComponent = (function () {
         //this.themes.setLogo(this.image.src);
         this.router.navigate(['/dashboard']);
     };
+    ThemeSettingsComponent.prototype.IconUploadBase64 = function ($eve) {
+        var file = $eve.target.files[0];
+        var myReader = new FileReader();
+        var that = this;
+        myReader.onloadend = function (loadEvent) {
+            that.icon.src = loadEvent.target.result;
+        };
+        myReader.readAsDataURL(file);
+    };
+    ThemeSettingsComponent.prototype.saveLogoIcon = function () {
+        localStorage.setItem('logoIcon', this.icon.src);
+        console.log(this.icon.src);
+    };
     ThemeSettingsComponent.prototype.saveAppName = function (data) {
         localStorage.setItem('appName', data.name);
         // data.resetForm();
@@ -1275,8 +1855,8 @@ var ThemeSettingsComponent = (function () {
 ThemeSettingsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-theme-settings',
-        template: __webpack_require__(997),
-        styles: [__webpack_require__(958)]
+        template: __webpack_require__(1008),
+        styles: [__webpack_require__(965)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__app_service__["a" /* AppService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _d || Object])
 ], ThemeSettingsComponent);
@@ -1292,7 +1872,172 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 914:
+/***/ 917:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ng2_table_data__ = __webpack_require__(940);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersListComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var UsersListComponent = (function () {
+    function UsersListComponent() {
+        // angular2-datatable
+        // http.get('assets/server/datatable.json')
+        //     .subscribe((data) => {
+        //         setTimeout(() => {
+        //             this.singleData = data.json();
+        //         }, 1000);
+        //     });
+        // angular2-datatable
+        // public sortByWordLength = (a: any) => {
+        //     return a.name.length;
+        // }
+        // public removeItem(item: any) {
+        //     this.singleData = _.filter(this.singleData, (elem) => elem != item);
+        //     console.log('Remove: ', item.email);
+        // }
+        // ng2Table
+        this.rows = [];
+        this.columns = [
+            { title: 'Name', name: 'name', filtering: { filterString: '', placeholder: 'Filter by name' } },
+            {
+                title: 'Position',
+                name: 'position',
+                sort: false,
+                filtering: { filterString: '', placeholder: 'Filter by position' }
+            },
+            { title: 'Office', className: ['office-header', 'text-success'], name: 'office', sort: 'asc' },
+            { title: 'Extn.', name: 'ext', sort: '', filtering: { filterString: '', placeholder: 'Filter by extn.' } },
+            { title: 'Start date', className: 'text-warning', name: 'startDate' },
+            { title: 'Salary ($)', name: 'salary' }
+        ];
+        this.page = 1;
+        this.itemsPerPage = 10;
+        this.maxSize = 5;
+        this.numPages = 1;
+        this.length = 0;
+        this.config = {
+            paging: true,
+            sorting: { columns: this.columns },
+            filtering: { filterString: '' },
+            className: ['table-striped', 'table-bordered', 'mb0', 'd-table-fixed'] // mb0=remove margin -/- .d-table-fixed=fix column width
+        };
+        this.ng2TableData = __WEBPACK_IMPORTED_MODULE_1__ng2_table_data__["a" /* TableData */];
+        // ng2Table
+        this.length = this.ng2TableData.length;
+    }
+    UsersListComponent.prototype.ngOnInit = function () {
+        this.onChangeTable(this.config);
+    };
+    UsersListComponent.prototype.changePage = function (page, data) {
+        if (data === void 0) { data = this.ng2TableData; }
+        var start = (page.page - 1) * page.itemsPerPage;
+        var end = page.itemsPerPage > -1 ? (start + page.itemsPerPage) : data.length;
+        return data.slice(start, end);
+    };
+    UsersListComponent.prototype.changeSort = function (data, config) {
+        if (!config.sorting) {
+            return data;
+        }
+        var columns = this.config.sorting.columns || [];
+        var columnName = void 0;
+        var sort = void 0;
+        for (var i = 0; i < columns.length; i++) {
+            if (columns[i].sort !== '' && columns[i].sort !== false) {
+                columnName = columns[i].name;
+                sort = columns[i].sort;
+            }
+        }
+        if (!columnName) {
+            return data;
+        }
+        // simple sorting
+        return data.sort(function (previous, current) {
+            if (previous[columnName] > current[columnName]) {
+                return sort === 'desc' ? -1 : 1;
+            }
+            else if (previous[columnName] < current[columnName]) {
+                return sort === 'asc' ? -1 : 1;
+            }
+            return 0;
+        });
+    };
+    UsersListComponent.prototype.changeFilter = function (data, config) {
+        var _this = this;
+        var filteredData = data;
+        this.columns.forEach(function (column) {
+            if (column.filtering) {
+                filteredData = filteredData.filter(function (item) {
+                    return item[column.name].match(column.filtering.filterString);
+                });
+            }
+        });
+        if (!config.filtering) {
+            return filteredData;
+        }
+        if (config.filtering.columnName) {
+            return filteredData.filter(function (item) {
+                return item[config.filtering.columnName].match(_this.config.filtering.filterString);
+            });
+        }
+        var tempArray = [];
+        filteredData.forEach(function (item) {
+            var flag = false;
+            _this.columns.forEach(function (column) {
+                if (item[column.name].toString().match(_this.config.filtering.filterString)) {
+                    flag = true;
+                }
+            });
+            if (flag) {
+                tempArray.push(item);
+            }
+        });
+        filteredData = tempArray;
+        return filteredData;
+    };
+    UsersListComponent.prototype.onChangeTable = function (config, page) {
+        if (page === void 0) { page = { page: this.page, itemsPerPage: this.itemsPerPage }; }
+        if (config.filtering) {
+            Object.assign(this.config.filtering, config.filtering);
+        }
+        if (config.sorting) {
+            Object.assign(this.config.sorting, config.sorting);
+        }
+        var filteredData = this.changeFilter(this.ng2TableData, this.config);
+        var sortedData = this.changeSort(filteredData, this.config);
+        this.rows = page && config.paging ? this.changePage(page, sortedData) : sortedData;
+        this.length = sortedData.length;
+    };
+    UsersListComponent.prototype.onCellClick = function (data) {
+        console.log(data);
+    };
+    return UsersListComponent;
+}());
+UsersListComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-users-list',
+        template: __webpack_require__(1009),
+        styles: [__webpack_require__(966)]
+    }),
+    __metadata("design:paramtypes", [])
+], UsersListComponent);
+
+//# sourceMappingURL=users-list.component.js.map
+
+/***/ }),
+
+/***/ 918:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1315,8 +2060,7 @@ var DashboardComponent = (function () {
     };
     DashboardComponent.prototype.showModal = function (value) {
         console.log(value);
-        this.showmodal = true;
-        this.modal.show();
+        //this.modal.show();
     };
     return DashboardComponent;
 }());
@@ -1327,8 +2071,8 @@ __decorate([
 DashboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-dashboard',
-        template: __webpack_require__(998),
-        styles: [__webpack_require__(959)]
+        template: __webpack_require__(1010),
+        styles: [__webpack_require__(967)]
     }),
     __metadata("design:paramtypes", [])
 ], DashboardComponent);
@@ -1337,7 +2081,7 @@ DashboardComponent = __decorate([
 
 /***/ }),
 
-/***/ 915:
+/***/ 919:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1379,7 +2123,7 @@ UserblockService = __decorate([
 
 /***/ }),
 
-/***/ 924:
+/***/ 930:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1394,7 +2138,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(0);
-var file_uploader_class_1 = __webpack_require__(904);
+var file_uploader_class_1 = __webpack_require__(907);
 var FileDropDirective = (function () {
     function FileDropDirective(element) {
         this.fileOver = new core_1.EventEmitter();
@@ -1499,12 +2243,12 @@ exports.FileDropDirective = FileDropDirective;
 
 /***/ }),
 
-/***/ 925:
+/***/ 931:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var file_like_object_class_1 = __webpack_require__(903);
+var file_like_object_class_1 = __webpack_require__(906);
 var FileItem = (function () {
     function FileItem(uploader, some, options) {
         this.url = '/';
@@ -1633,7 +2377,7 @@ exports.FileItem = FileItem;
 
 /***/ }),
 
-/***/ 926:
+/***/ 932:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1648,7 +2392,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(0);
-var file_uploader_class_1 = __webpack_require__(904);
+var file_uploader_class_1 = __webpack_require__(907);
 // todo: filters
 var FileSelectDirective = (function () {
     function FileSelectDirective(element) {
@@ -1696,7 +2440,7 @@ exports.FileSelectDirective = FileSelectDirective;
 
 /***/ }),
 
-/***/ 927:
+/***/ 933:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1716,17 +2460,17 @@ var CropperDrawSettings = (function () {
 
 /***/ }),
 
-/***/ 928:
+/***/ 934:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__model_bounds__ = __webpack_require__(906);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_cornerMarker__ = __webpack_require__(987);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_cropTouch__ = __webpack_require__(988);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__model_dragMarker__ = __webpack_require__(989);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_imageCropperModel__ = __webpack_require__(990);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__imageCropperDataShare__ = __webpack_require__(985);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_pointPool__ = __webpack_require__(907);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__model_bounds__ = __webpack_require__(909);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_cornerMarker__ = __webpack_require__(995);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_cropTouch__ = __webpack_require__(996);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__model_dragMarker__ = __webpack_require__(997);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_imageCropperModel__ = __webpack_require__(998);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__imageCropperDataShare__ = __webpack_require__(993);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_pointPool__ = __webpack_require__(910);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropper; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -2729,15 +3473,15 @@ var ImageCropper = (function (_super) {
 
 /***/ }),
 
-/***/ 929:
+/***/ 935:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__imageCropper__ = __webpack_require__(928);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cropperSettings__ = __webpack_require__(905);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exif__ = __webpack_require__(984);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_cropPosition__ = __webpack_require__(930);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__imageCropper__ = __webpack_require__(934);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cropperSettings__ = __webpack_require__(908);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exif__ = __webpack_require__(992);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_cropPosition__ = __webpack_require__(936);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropperComponent; });
 
 
@@ -2953,11 +3697,11 @@ ImageCropperComponent.propDecorators = {
 
 /***/ }),
 
-/***/ 930:
+/***/ 936:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bounds__ = __webpack_require__(906);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bounds__ = __webpack_require__(909);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CropPosition; });
 
 var CropPosition = (function () {
@@ -2984,12 +3728,12 @@ var CropPosition = (function () {
 
 /***/ }),
 
-/***/ 931:
+/***/ 937:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(932);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cropperSettings__ = __webpack_require__(905);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__point__ = __webpack_require__(938);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cropperSettings__ = __webpack_require__(908);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Handle; });
 
 
@@ -3037,7 +3781,7 @@ var Handle = (function () {
 
 /***/ }),
 
-/***/ 932:
+/***/ 938:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3076,7 +3820,7 @@ var Point = (function () {
 
 /***/ }),
 
-/***/ 934:
+/***/ 939:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3102,8 +3846,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-home',
-        template: __webpack_require__(995),
-        styles: [__webpack_require__(956)]
+        template: __webpack_require__(1006),
+        styles: [__webpack_require__(963)]
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
@@ -3112,19 +3856,732 @@ HomeComponent = __decorate([
 
 /***/ }),
 
-/***/ 935:
+/***/ 940:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableData; });
+var TableData = [
+    {
+        'name': 'Victoria Cantrell',
+        'position': 'Integer Corporation',
+        'office': 'Croatia',
+        'ext': "<strong>0839</strong>",
+        'startDate': '2015/08/19',
+        'salary': 208.178
+    }, {
+        'name': 'Pearl Crosby',
+        'position': 'In PC',
+        'office': 'Cambodia',
+        'ext': "<strong>8262</strong>",
+        'startDate': '2014/10/08',
+        'salary': 114.367
+    }, {
+        'name': 'Colette Foley',
+        'position': 'Lorem Inc.',
+        'office': 'Korea, North',
+        'ext': '8968',
+        'startDate': '2015/07/19',
+        'salary': 721.473
+    }, {
+        'name': 'Anastasia Shaffer',
+        'position': 'Dolor Nulla Semper LLC',
+        'office': 'Suriname',
+        'ext': '7980',
+        'startDate': '2015/04/20',
+        'salary': 264.620
+    }, {
+        'name': 'Gabriel Castro',
+        'position': 'Sed Limited',
+        'office': 'Bahrain',
+        'ext': '0757',
+        'startDate': '2015/03/04',
+        'salary': 651.350
+    }, {
+        'name': 'Cherokee Ware',
+        'position': 'Tincidunt LLC',
+        'office': 'United Kingdom (Great Britain)',
+        'ext': '3995',
+        'startDate': '2015/06/17',
+        'salary': 666.259
+    }, {
+        'name': 'Barry Moss',
+        'position': 'Sociis Industries',
+        'office': 'Western Sahara',
+        'ext': '6697',
+        'startDate': '2015/08/13',
+        'salary': 541.631
+    }, {
+        'name': 'Maryam Tucker',
+        'position': 'Elit Pede Malesuada Inc.',
+        'office': 'Brazil',
+        'ext': '5203',
+        'startDate': '2014/10/02',
+        'salary': 182.294
+    }, {
+        'name': 'Constance Clayton',
+        'position': 'Auctor Velit Aliquam LLP',
+        'office': 'United Arab Emirates',
+        'ext': '4204',
+        'startDate': '2015/08/01',
+        'salary': 218.597
+    }, {
+        'name': 'Rogan Tucker',
+        'position': 'Arcu Vestibulum Ante Associates',
+        'office': 'Jersey',
+        'ext': '0885',
+        'startDate': '2015/01/04',
+        'salary': 861.632
+    }, {
+        'name': 'Emery Mcdowell',
+        'position': 'Gravida Company',
+        'office': 'New Zealand',
+        'ext': '3951',
+        'startDate': '2015/06/02',
+        'salary': 413.568
+    }, {
+        'name': 'Yael Greer',
+        'position': 'Orci Limited',
+        'office': 'Madagascar',
+        'ext': '1416',
+        'startDate': '2014/12/04',
+        'salary': 121.831
+    }, {
+        'name': 'Jared Burgess',
+        'position': 'Auctor Incorporated',
+        'office': 'Burundi',
+        'ext': '4673',
+        'startDate': '2015/01/12',
+        'salary': 62.243
+    }, {
+        'name': 'Sharon Campbell',
+        'position': 'Elit Curabitur Sed Consulting',
+        'office': 'Comoros',
+        'ext': '6274',
+        'startDate': '2014/09/14',
+        'salary': 200.854
+    }, {
+        'name': 'Yeo Church',
+        'position': 'Donec Vitae Erat PC',
+        'office': 'Saudi Arabia',
+        'ext': '0269',
+        'startDate': '2015/06/07',
+        'salary': 581.193
+    }, {
+        'name': 'Kylie Barlow',
+        'position': 'Fermentum Risus Corporation',
+        'office': 'Papua New Guinea',
+        'ext': '2010',
+        'startDate': '2014/12/03',
+        'salary': 418.115
+    }, {
+        'name': 'Nell Leonard',
+        'position': 'Vestibulum Consulting',
+        'office': 'Saudi Arabia',
+        'ext': '4839',
+        'startDate': '2015/05/29',
+        'salary': 466.201
+    }, {
+        'name': 'Brandon Fleming',
+        'position': 'Donec Egestas Associates',
+        'office': 'Poland',
+        'ext': '0622',
+        'startDate': '2015/01/22',
+        'salary': 800.011
+    }, {
+        'name': 'Inga Pena',
+        'position': 'Et Magnis Dis Limited',
+        'office': 'Belgium',
+        'ext': '8140',
+        'startDate': '2015/05/18',
+        'salary': 564.245
+    }, {
+        'name': 'Arden Russo',
+        'position': 'Est Tempor Bibendum Corp.',
+        'office': 'Dominican Republic',
+        'ext': '6774',
+        'startDate': '2015/07/23',
+        'salary': 357.222
+    }, {
+        'name': 'Liberty Gallegos',
+        'position': 'Nec Diam LLC',
+        'office': 'Ghana',
+        'ext': '9266',
+        'startDate': '2015/06/18',
+        'salary': 554.375
+    }, {
+        'name': 'Dennis York',
+        'position': 'Nullam Suscipit Foundation',
+        'office': 'Namibia',
+        'ext': '3133',
+        'startDate': '2015/03/20',
+        'salary': 90.417
+    }, {
+        'name': 'Petra Chandler',
+        'position': 'Pede Nonummy Inc.',
+        'office': 'Namibia',
+        'ext': '3367',
+        'startDate': '2015/03/26',
+        'salary': 598.915
+    }, {
+        'name': 'Aurelia Marshall',
+        'position': 'Donec Consulting',
+        'office': 'Nicaragua',
+        'ext': '2690',
+        'startDate': '2015/08/18',
+        'salary': 201.680
+    }, {
+        'name': 'Rose Carter',
+        'position': 'Enim Consequat Purus Industries',
+        'office': 'Morocco',
+        'ext': '0619',
+        'startDate': '2015/03/06',
+        'salary': 220.187
+    }, {
+        'name': 'Denton Atkins',
+        'position': 'Non Vestibulum PC',
+        'office': 'Mali',
+        'ext': '5806',
+        'startDate': '2015/04/19',
+        'salary': 324.588
+    }, {
+        'name': 'Germaine Osborn',
+        'position': 'Tristique Aliquet PC',
+        'office': 'Lesotho',
+        'ext': '4469',
+        'startDate': '2015/01/19',
+        'salary': 351.108
+    }, {
+        'name': 'Nell Butler',
+        'position': 'Sit Amet Dapibus Industries',
+        'office': 'Cuba',
+        'ext': '7860',
+        'startDate': '2015/01/06',
+        'salary': 230.072
+    }, {
+        'name': 'Brent Stein',
+        'position': 'Eu Augue Porttitor LLP',
+        'office': 'Cyprus',
+        'ext': '4697',
+        'startDate': '2014/11/02',
+        'salary': 853.413
+    }, {
+        'name': 'Alexandra Shaw',
+        'position': 'Aenean Gravida Limited',
+        'office': 'Uruguay',
+        'ext': '1140',
+        'startDate': '2015/05/16',
+        'salary': 401.970
+    }, {
+        'name': 'Veronica Allison',
+        'position': 'Aliquet Diam Sed Institute',
+        'office': 'Samoa',
+        'ext': '9966',
+        'startDate': '2015/05/17',
+        'salary': 79.193
+    }, {
+        'name': 'Katelyn Gamble',
+        'position': 'Sed Associates',
+        'office': 'Mauritius',
+        'ext': '4767',
+        'startDate': '2015/03/20',
+        'salary': 484.299
+    }, {
+        'name': 'James Greer',
+        'position': 'A Dui Incorporated',
+        'office': 'Norway',
+        'ext': '5517',
+        'startDate': '2015/02/21',
+        'salary': 333.518
+    }, {
+        'name': 'Cain Vasquez',
+        'position': 'Nulla Facilisis Suspendisse Institute',
+        'office': 'China',
+        'ext': '3179',
+        'startDate': '2015/05/27',
+        'salary': 651.761
+    }, {
+        'name': 'Shaeleigh Barr',
+        'position': 'Eleifend Cras Institute',
+        'office': 'Ghana',
+        'ext': '5904',
+        'startDate': '2015/04/01',
+        'salary': 627.095
+    }, {
+        'name': 'Baker Mckay',
+        'position': 'Ut Sagittis Associates',
+        'office': 'Isle of Man',
+        'ext': '9840',
+        'startDate': '2015/01/12',
+        'salary': 742.247
+    }, {
+        'name': 'Jayme Pace',
+        'position': 'Cras Eu Tellus Associates',
+        'office': 'Bouvet Island',
+        'ext': '4580',
+        'startDate': '2015/08/12',
+        'salary': 591.588
+    }, {
+        'name': 'Reuben Albert',
+        'position': 'Lobortis Institute',
+        'office': 'Zambia',
+        'ext': '8725',
+        'startDate': '2015/04/04',
+        'salary': 791.408
+    }, {
+        'name': 'Idola Burns',
+        'position': 'Non Industries',
+        'office': 'Myanmar',
+        'ext': '3201',
+        'startDate': '2015/06/24',
+        'salary': 142.906
+    }, {
+        'name': 'Laura Macias',
+        'position': 'Phasellus Inc.',
+        'office': 'Mauritania',
+        'ext': '2033',
+        'startDate': '2014/11/21',
+        'salary': 226.591
+    }, {
+        'name': 'Nichole Salas',
+        'position': 'Duis PC',
+        'office': 'Madagascar',
+        'ext': '4397',
+        'startDate': '2015/01/18',
+        'salary': 234.196
+    }, {
+        'name': 'Hunter Walter',
+        'position': 'Ullamcorper Duis Cursus Foundation',
+        'office': 'Brazil',
+        'ext': '2227',
+        'startDate': '2015/02/28',
+        'salary': 655.052
+    }, {
+        'name': 'Asher Rich',
+        'position': 'Mauris Ipsum LLP',
+        'office': 'Paraguay',
+        'ext': '7288',
+        'startDate': '2015/08/08',
+        'salary': 222.946
+    }, {
+        'name': 'Angela Carlson',
+        'position': 'Donec Tempor Institute',
+        'office': 'Papua New Guinea',
+        'ext': '5416',
+        'startDate': '2015/02/12',
+        'salary': 562.194
+    }, {
+        'name': 'James Dorsey',
+        'position': 'Ipsum Leo Associates',
+        'office': 'Congo (Brazzaville)',
+        'ext': '6019',
+        'startDate': '2015/01/10',
+        'salary': 629.925
+    }, {
+        'name': 'Wesley Cobb',
+        'position': 'Nunc Est Incorporated',
+        'office': 'Australia',
+        'ext': '6466',
+        'startDate': '2015/01/30',
+        'salary': 343.476
+    }, {
+        'name': 'Meghan Stephens',
+        'position': 'Interdum PC',
+        'office': 'Turkey',
+        'ext': '8001',
+        'startDate': '2014/10/11',
+        'salary': 469.305
+    }, {
+        'name': 'Bertha Herrera',
+        'position': 'Amet Limited',
+        'office': 'Kenya',
+        'ext': '4799',
+        'startDate': '2014/11/22',
+        'salary': 56.606
+    }, {
+        'name': 'Karina Key',
+        'position': 'Quisque Varius Nam Company',
+        'office': 'France',
+        'ext': '3907',
+        'startDate': '2015/03/26',
+        'salary': 314.260
+    }, {
+        'name': 'Uriel Carson',
+        'position': 'Penatibus PC',
+        'office': 'Venezuela',
+        'ext': '5902',
+        'startDate': '2015/01/07',
+        'salary': 106.335
+    }, {
+        'name': 'Mira Baird',
+        'position': 'Felis Orci PC',
+        'office': 'Niue',
+        'ext': '4189',
+        'startDate': '2015/08/25',
+        'salary': 515.671
+    }, {
+        'name': 'Ursula Parrish',
+        'position': 'Ac Corporation',
+        'office': 'Macao',
+        'ext': '4771',
+        'startDate': '2015/06/30',
+        'salary': 72.295
+    }, {
+        'name': 'Josephine Sykes',
+        'position': 'Blandit Congue Limited',
+        'office': 'Holy See (Vatican City State)',
+        'ext': '4684',
+        'startDate': '2014/12/22',
+        'salary': 694.656
+    }, {
+        'name': 'Maggie Sims',
+        'position': 'Vulputate Posuere Industries',
+        'office': 'Sudan',
+        'ext': '6482',
+        'startDate': '2014/11/22',
+        'salary': 363.743
+    }, {
+        'name': 'Rogan Fuentes',
+        'position': 'Vestibulum Accumsan Neque Company',
+        'office': 'Jersey',
+        'ext': '4837',
+        'startDate': '2015/07/29',
+        'salary': 606.004
+    }, {
+        'name': 'Maya Haney',
+        'position': 'Ac Foundation',
+        'office': 'Falkland Islands',
+        'ext': '5752',
+        'startDate': '2015/09/03',
+        'salary': 745.500
+    }, {
+        'name': 'Aquila Battle',
+        'position': 'Sociis Natoque Penatibus Foundation',
+        'office': 'Azerbaijan',
+        'ext': '8470',
+        'startDate': '2015/03/06',
+        'salary': 582.265
+    }, {
+        'name': 'Connor Coleman',
+        'position': 'Orci Lacus Vestibulum Foundation',
+        'office': 'Croatia',
+        'ext': '6217',
+        'startDate': '2014/10/21',
+        'salary': 416.958
+    }, {
+        'name': 'Charity Thomas',
+        'position': 'Convallis Ligula Donec Inc.',
+        'office': 'Benin',
+        'ext': '6240',
+        'startDate': '2015/07/12',
+        'salary': 540.999
+    }, {
+        'name': 'Blythe Powers',
+        'position': 'Amet Orci Limited',
+        'office': 'Falkland Islands',
+        'ext': '5608',
+        'startDate': '2015/01/23',
+        'salary': 480.067
+    }, {
+        'name': 'Adria Battle',
+        'position': 'Ornare Lectus Incorporated',
+        'office': 'British Indian Ocean Territory',
+        'ext': '7419',
+        'startDate': '2015/05/28',
+        'salary': 257.937
+    }, {
+        'name': 'Melanie Mcintyre',
+        'position': 'Nunc Corp.',
+        'office': 'Mongolia',
+        'ext': '4326',
+        'startDate': '2015/01/06',
+        'salary': 359.737
+    }, {
+        'name': 'Keely Bauer',
+        'position': 'Nec Tempus Institute',
+        'office': 'Somalia',
+        'ext': '8372',
+        'startDate': '2015/03/09',
+        'salary': 99.718
+    }, {
+        'name': 'Noelani Strong',
+        'position': 'Nec LLP',
+        'office': 'Iran',
+        'ext': '0049',
+        'startDate': '2015/08/24',
+        'salary': 480.718
+    }, {
+        'name': 'Jeanette Henderson',
+        'position': 'Eu Elit Nulla Corporation',
+        'office': 'Italy',
+        'ext': '7586',
+        'startDate': '2015/06/19',
+        'salary': 253.772
+    }, {
+        'name': 'Candace Huber',
+        'position': 'Sed Institute',
+        'office': 'Uganda',
+        'ext': '7183',
+        'startDate': '2015/06/16',
+        'salary': 388.879
+    }, {
+        'name': 'Bethany Potter',
+        'position': 'Vivamus Nibh Dolor Incorporated',
+        'office': 'Puerto Rico',
+        'ext': '3354',
+        'startDate': '2014/11/12',
+        'salary': 747.310
+    }, {
+        'name': 'Whoopi Burks',
+        'position': 'Justo Inc.',
+        'office': 'Fiji',
+        'ext': '2185',
+        'startDate': '2014/09/24',
+        'salary': 803.037
+    }, {
+        'name': 'Sheila Long',
+        'position': 'Diam Associates',
+        'office': 'Sao Tome and Principe',
+        'ext': '7760',
+        'startDate': '2014/12/21',
+        'salary': 674.379
+    }, {
+        'name': 'Sonya Church',
+        'position': 'Laoreet Institute',
+        'office': 'Grenada',
+        'ext': '8920',
+        'startDate': '2015/06/03',
+        'salary': 625.147
+    }, {
+        'name': 'Shaine Forbes',
+        'position': 'Eu Arcu LLP',
+        'office': 'Cyprus',
+        'ext': '2369',
+        'startDate': '2015/01/18',
+        'salary': 208.100
+    }, {
+        'name': 'Alexandra Patrick',
+        'position': 'Ligula Donec Inc.',
+        'office': 'Viet Nam',
+        'ext': '8531',
+        'startDate': '2015/04/09',
+        'salary': 104.063
+    }, {
+        'name': 'Patience Vincent',
+        'position': 'Sem Molestie Associates',
+        'office': 'Philippines',
+        'ext': '8888',
+        'startDate': '2015/07/04',
+        'salary': 673.556
+    }, {
+        'name': 'Evelyn Smith',
+        'position': 'Fusce Industries',
+        'office': 'Togo',
+        'ext': '5051',
+        'startDate': '2015/08/15',
+        'salary': 737.284
+    }, {
+        'name': 'Kieran Gonzalez',
+        'position': 'Non Corp.',
+        'office': 'Equatorial Guinea',
+        'ext': '4834',
+        'startDate': '2015/08/24',
+        'salary': 90.195
+    }, {
+        'name': 'Molly Oneil',
+        'position': 'Non Dui Consulting',
+        'office': 'Belize',
+        'ext': '7501',
+        'startDate': '2014/10/28',
+        'salary': 140.767
+    }, {
+        'name': 'Nigel Davenport',
+        'position': 'Ullamcorper Velit In Industries',
+        'office': 'Vanuatu',
+        'ext': '0976',
+        'startDate': '2015/03/16',
+        'salary': 70.536
+    }, {
+        'name': 'Thor Young',
+        'position': 'Malesuada Consulting',
+        'office': 'French Southern Territories',
+        'ext': '0211',
+        'startDate': '2015/01/28',
+        'salary': 75.501
+    }, {
+        'name': 'Finn Delacruz',
+        'position': 'Lorem Industries',
+        'office': 'Cocos (Keeling) Islands',
+        'ext': '2980',
+        'startDate': '2014/12/11',
+        'salary': 754.967
+    }, {
+        'name': 'Lane Henderson',
+        'position': 'Pede Foundation',
+        'office': 'Kazakhstan',
+        'ext': '1446',
+        'startDate': '2015/07/02',
+        'salary': 842.050
+    }, {
+        'name': 'Shea Potter',
+        'position': 'Curabitur Limited',
+        'office': 'Timor-Leste',
+        'ext': '4654',
+        'startDate': '2015/05/07',
+        'salary': 263.629
+    }, {
+        'name': 'Brynn Yang',
+        'position': 'Ut Limited',
+        'office': 'Mayotte',
+        'ext': '4668',
+        'startDate': '2015/01/17',
+        'salary': 74.292
+    }, {
+        'name': 'Kylan Fuentes',
+        'position': 'Sapien Aenean Associates',
+        'office': 'Brazil',
+        'ext': '6623',
+        'startDate': '2014/12/28',
+        'salary': 108.632
+    }, {
+        'name': 'Lionel Mcbride',
+        'position': 'Ipsum PC',
+        'office': 'Portugal',
+        'ext': '3978',
+        'startDate': '2015/07/11',
+        'salary': 34.244
+    }, {
+        'name': 'Paul Lucas',
+        'position': 'Eget LLP',
+        'office': 'Nicaragua',
+        'ext': '8890',
+        'startDate': '2014/09/30',
+        'salary': 690.834
+    }, {
+        'name': 'Lareina Williamson',
+        'position': 'Imperdiet Ullamcorper Ltd',
+        'office': 'Cocos (Keeling) Islands',
+        'ext': '9489',
+        'startDate': '2014/12/01',
+        'salary': 603.498
+    }, {
+        'name': 'Amy Acevedo',
+        'position': 'Id Institute',
+        'office': 'Cook Islands',
+        'ext': '5592',
+        'startDate': '2015/02/04',
+        'salary': 125.165
+    }, {
+        'name': 'Nomlanga Silva',
+        'position': 'Eget LLC',
+        'office': 'Belize',
+        'ext': '3110',
+        'startDate': '2015/01/31',
+        'salary': 268.509
+    }, {
+        'name': 'Amena Stone',
+        'position': 'Enim Incorporated',
+        'office': 'Guinea',
+        'ext': '1211',
+        'startDate': '2014/09/23',
+        'salary': 214.381
+    }, {
+        'name': 'Danielle Coffey',
+        'position': 'Feugiat Placerat Corp.',
+        'office': 'Sao Tome and Principe',
+        'ext': '8176',
+        'startDate': '2015/06/17',
+        'salary': 137.423
+    }, {
+        'name': 'Buffy Russell',
+        'position': 'Lacus Quisque Ltd',
+        'office': 'Ecuador',
+        'ext': '6741',
+        'startDate': '2014/10/17',
+        'salary': 612.184
+    }, {
+        'name': 'Kaitlin Lamb',
+        'position': 'Malesuada Fringilla Est Associates',
+        'office': 'Algeria',
+        'ext': '5054',
+        'startDate': '2014/10/18',
+        'salary': 327.367
+    }, {
+        'name': 'Leilani Yates',
+        'position': 'Mus Proin LLC',
+        'office': 'South Sudan',
+        'ext': '1550',
+        'startDate': '2015/05/27',
+        'salary': 743.493
+    }, {
+        'name': 'Jemima Moon',
+        'position': 'Phasellus Corp.',
+        'office': 'South Georgia and The South Sandwich Islands',
+        'ext': '7582',
+        'startDate': '2015/05/21',
+        'salary': 496.067
+    }, {
+        'name': 'Hiroko Schwartz',
+        'position': 'Neque Institute',
+        'office': 'Saint Vincent and The Grenadines',
+        'ext': '9368',
+        'startDate': '2015/03/13',
+        'salary': 178.782
+    }, {
+        'name': 'Nathaniel Jensen',
+        'position': 'Mi Tempor Limited',
+        'office': 'Dominica',
+        'ext': '8331',
+        'startDate': '2014/12/05',
+        'salary': 37.441
+    }, {
+        'name': 'Silas Sweeney',
+        'position': 'Ultrices Institute',
+        'office': 'Turkmenistan',
+        'ext': '0746',
+        'startDate': '2014/11/13',
+        'salary': 152.980
+    }, {
+        'name': 'Jermaine Barry',
+        'position': 'Dapibus Corporation',
+        'office': 'Uzbekistan',
+        'ext': '1545',
+        'startDate': '2015/03/06',
+        'salary': 409.463
+    }, {
+        'name': 'Tatiana Nichols',
+        'position': 'Nec Diam Industries',
+        'office': 'Cook Islands',
+        'ext': '4395',
+        'startDate': '2015/05/22',
+        'salary': 51.155
+    }, {
+        'name': 'Rama Waller',
+        'position': 'Sem Pellentesque LLC',
+        'office': 'Andorra',
+        'ext': '2973',
+        'startDate': '2014/12/01',
+        'salary': 223.227
+    }
+];
+//# sourceMappingURL=ng2-table-data.js.map
+
+/***/ }),
+
+/***/ 941:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(914);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_theme_settings_theme_settings_component__ = __webpack_require__(913);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_sales_reports_sales_reports_component__ = __webpack_require__(912);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_activity_reports_activity_reports_component__ = __webpack_require__(908);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_dasboard_dasboard_component__ = __webpack_require__(909);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_page_home_page_component__ = __webpack_require__(911);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_featured_products_featured_products_component__ = __webpack_require__(910);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(918);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_theme_settings_theme_settings_component__ = __webpack_require__(916);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_sales_reports_sales_reports_component__ = __webpack_require__(915);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_activity_reports_activity_reports_component__ = __webpack_require__(911);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_dasboard_dasboard_component__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_page_home_page_component__ = __webpack_require__(914);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_featured_products_featured_products_component__ = __webpack_require__(913);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_users_list_users_list_component__ = __webpack_require__(917);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3132,6 +4589,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -3154,6 +4612,7 @@ var routes = [
             { path: 'activityreports', component: __WEBPACK_IMPORTED_MODULE_5__components_activity_reports_activity_reports_component__["a" /* ActivityReportsComponent */] },
             { path: 'homepage', component: __WEBPACK_IMPORTED_MODULE_7__components_home_page_home_page_component__["a" /* HomePageComponent */] },
             { path: 'featuredproducts', component: __WEBPACK_IMPORTED_MODULE_8__components_featured_products_featured_products_component__["a" /* FeaturedProductsComponent */] },
+            { path: 'userslist', component: __WEBPACK_IMPORTED_MODULE_9__components_users_list_users_list_component__["a" /* UsersListComponent */] },
         ]
     },
 ];
@@ -3173,7 +4632,7 @@ DashboardRoutingModule = __decorate([
 
 /***/ }),
 
-/***/ 936:
+/***/ 942:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3202,6 +4661,11 @@ var featuredProducts = {
     text: 'Featured Products',
     link: '/dashboard/featuredproducts',
     icon: 'fa fa-product-hunt'
+};
+var userslist = {
+    text: 'Users List',
+    link: '/dashboard/userslist',
+    icon: 'fa fa-users'
 };
 // const Dashboard = {
 //     text: 'Dashboard',
@@ -3581,13 +5045,14 @@ var menu = [
     site,
     featuredProducts,
     Sales,
-    activityreports
+    activityreports,
+    userslist
 ];
 //# sourceMappingURL=menu.js.map
 
 /***/ }),
 
-/***/ 937:
+/***/ 943:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3750,8 +5215,8 @@ __decorate([
 SideNavbarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-side-navbar',
-        template: __webpack_require__(999),
-        styles: [__webpack_require__(960)]
+        template: __webpack_require__(1011),
+        styles: [__webpack_require__(968)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"]) === "function" && _c || Object])
 ], SideNavbarComponent);
@@ -3761,12 +5226,12 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 938:
+/***/ 944:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__userblock_service__ = __webpack_require__(915);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__userblock_service__ = __webpack_require__(919);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserblockComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3804,8 +5269,8 @@ __decorate([
 UserblockComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-userblock',
-        template: __webpack_require__(1000),
-        styles: [__webpack_require__(961)]
+        template: __webpack_require__(1012),
+        styles: [__webpack_require__(969)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__userblock_service__["a" /* UserblockService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__userblock_service__["a" /* UserblockService */]) === "function" && _a || Object])
 ], UserblockComponent);
@@ -3815,7 +5280,7 @@ var _a;
 
 /***/ }),
 
-/***/ 939:
+/***/ 945:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3876,8 +5341,8 @@ __decorate([
 NavsearchComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-navsearch',
-        template: __webpack_require__(1001),
-        styles: [__webpack_require__(962)]
+        template: __webpack_require__(1013),
+        styles: [__webpack_require__(970)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object])
 ], NavsearchComponent);
@@ -3887,7 +5352,7 @@ var _a;
 
 /***/ }),
 
-/***/ 940:
+/***/ 946:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3939,6 +5404,12 @@ var TopNavbarComponent = (function () {
         }
         else {
             this.logo = 'assets/img/logo.png';
+        }
+        if (localStorage.getItem('logoIcon')) {
+            this.logoIcon = localStorage.getItem('logoIcon');
+        }
+        else {
+            this.logoIcon = 'assets/img/logo-single.png';
         }
         this.isNavSearchVisible = false;
         if (browser.msie) {
@@ -3992,140 +5463,14 @@ __decorate([
 TopNavbarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-top-navbar',
-        template: __webpack_require__(1002),
-        styles: [__webpack_require__(963)]
+        template: __webpack_require__(1014),
+        styles: [__webpack_require__(971)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_themes_themes_service__["a" /* ThemesService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__app_service__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__app_service__["a" /* AppService */]) === "function" && _d || Object])
 ], TopNavbarComponent);
 
 var _a, _b, _c, _d;
 //# sourceMappingURL=top-navbar.component.js.map
-
-/***/ }),
-
-/***/ 952:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 953:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 954:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 955:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 956:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 957:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 958:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -4137,7 +5482,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, ".showMOdal {\n  display: block; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -4173,7 +5518,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, ".profileEdit {\n  padding-left: 3%; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -4209,6 +5554,150 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 964:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 965:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 966:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 967:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, ".showMOdal {\n  display: block; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 968:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 969:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, ".profileEdit {\n  padding-left: 3%; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 970:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 971:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
 exports.push([module.i, ".btn-primary-outline {\n  background-color: transparent;\n  border-color: #ccc;\n  color: #ccc; }\n\n.brand {\n  font-size: 30px;\n  font-weight: 900;\n  color: white;\n  font-family: inherit;\n  padding-top: 7% !important; }\n", ""]);
 
 // exports
@@ -4219,7 +5708,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 977:
+/***/ 985:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4501,7 +5990,7 @@ exports.ChartsModule = ChartsModule;
 
 /***/ }),
 
-/***/ 978:
+/***/ 986:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4509,12 +5998,12 @@ exports.ChartsModule = ChartsModule;
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(977));
+__export(__webpack_require__(985));
 
 
 /***/ }),
 
-/***/ 979:
+/***/ 987:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4522,12 +6011,12 @@ __export(__webpack_require__(977));
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(978));
+__export(__webpack_require__(986));
 
 
 /***/ }),
 
-/***/ 980:
+/***/ 988:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4697,7 +6186,7 @@ exports.FileType = FileType;
 
 /***/ }),
 
-/***/ 981:
+/***/ 989:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4710,8 +6199,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var common_1 = __webpack_require__(15);
 var core_1 = __webpack_require__(0);
-var file_drop_directive_1 = __webpack_require__(924);
-var file_select_directive_1 = __webpack_require__(926);
+var file_drop_directive_1 = __webpack_require__(930);
+var file_select_directive_1 = __webpack_require__(932);
 var FileUploadModule = (function () {
     function FileUploadModule() {
     }
@@ -4729,7 +6218,7 @@ exports.FileUploadModule = FileUploadModule;
 
 /***/ }),
 
-/***/ 982:
+/***/ 990:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4737,34 +6226,34 @@ exports.FileUploadModule = FileUploadModule;
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(926));
-__export(__webpack_require__(924));
-__export(__webpack_require__(904));
-__export(__webpack_require__(925));
-__export(__webpack_require__(903));
-var file_upload_module_1 = __webpack_require__(981);
+__export(__webpack_require__(932));
+__export(__webpack_require__(930));
+__export(__webpack_require__(907));
+__export(__webpack_require__(931));
+__export(__webpack_require__(906));
+var file_upload_module_1 = __webpack_require__(989);
 exports.FileUploadModule = file_upload_module_1.FileUploadModule;
 
 
 /***/ }),
 
-/***/ 983:
+/***/ 991:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__ = __webpack_require__(986);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__ = __webpack_require__(994);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__src_imageCropperModule__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_imageCropperComponent__ = __webpack_require__(929);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_imageCropperComponent__ = __webpack_require__(935);
 /* unused harmony reexport ImageCropperComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_imageCropper__ = __webpack_require__(928);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_imageCropper__ = __webpack_require__(934);
 /* unused harmony reexport ImageCropper */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_cropperSettings__ = __webpack_require__(905);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_cropperSettings__ = __webpack_require__(908);
 /* unused harmony reexport CropperSettings */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_cropperDrawSettings__ = __webpack_require__(927);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_cropperDrawSettings__ = __webpack_require__(933);
 /* unused harmony reexport CropperDrawSettings */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_model_bounds__ = __webpack_require__(906);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_model_bounds__ = __webpack_require__(909);
 /* unused harmony reexport Bounds */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_model_cropPosition__ = __webpack_require__(930);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_model_cropPosition__ = __webpack_require__(936);
 /* unused harmony reexport CropPosition */
 // core
 
@@ -4780,7 +6269,7 @@ exports.FileUploadModule = file_upload_module_1.FileUploadModule;
 
 /***/ }),
 
-/***/ 984:
+/***/ 992:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5515,7 +7004,7 @@ Exif.StringValues = {
 
 /***/ }),
 
-/***/ 985:
+/***/ 993:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5560,13 +7049,13 @@ ImageCropperDataShare.share = {};
 
 /***/ }),
 
-/***/ 986:
+/***/ 994:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__imageCropperComponent__ = __webpack_require__(929);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__imageCropperComponent__ = __webpack_require__(935);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageCropperModule; });
 
 
@@ -5590,11 +7079,11 @@ ImageCropperModule.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 987:
+/***/ 995:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(931);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(937);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CornerMarker; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -5708,7 +7197,7 @@ var CornerMarker = (function (_super) {
 
 /***/ }),
 
-/***/ 988:
+/***/ 996:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5729,12 +7218,12 @@ var CropTouch = (function () {
 
 /***/ }),
 
-/***/ 989:
+/***/ 997:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(931);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pointPool__ = __webpack_require__(907);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__handle__ = __webpack_require__(937);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pointPool__ = __webpack_require__(910);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DragMarker; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -5822,7 +7311,7 @@ var DragMarker = (function (_super) {
 
 /***/ }),
 
-/***/ 990:
+/***/ 998:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5837,66 +7326,17 @@ var ImageCropperModel = (function () {
 
 /***/ }),
 
-/***/ 991:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"content-heading\">Activity Reports</div>\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-retweet fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">99.999</h3>\r\n                <p class=\"text-muted\">Returning Users</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-warning progress-60\" role=\"progressbar\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"70\">\r\n                        <span class=\"sr-only\">60% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-angle-double-left fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">300</h3>\r\n                <p class=\"text-muted\">Orders Returned</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-green progress-80\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\r\n                        <span class=\"sr-only\">80% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-exclamation fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">1000</h3>\r\n                <p class=\"text-muted\">Failed to orders</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-info progress-40\" role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\">\r\n                        <span class=\"sr-only\">40% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n</div>\r\n<!-- END row-->\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 bb br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-info\">\r\n                            <em class=\"fa fa-users fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">10k</h4>\r\n                                <p class=\"mb0 text-muted\">VISITORS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6 bb\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-success\">\r\n                            <em class=\"fa fa-sign-in fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">7K</h4>\r\n                                <p class=\"mb0 text-muted\">Logins</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-inverse\">\r\n                            <em class=\"fa fa-registered fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">2K</h4>\r\n                                <p class=\"mb0 text-muted\">Registered</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-danger\">\r\n                            <em class=\"fa fa-exclamation-triangle fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">500</h4>\r\n                                <p class=\"mb0 text-muted\">Failed</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 bb br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-info\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\"  values=\"5,9,4,1,3,4,7,5\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">10k</h4>\r\n                                <p class=\"mb0 text-muted\">ORDERS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6 bb\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-danger\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,2,3,4,5,6,7,8,9\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">1K</h4>\r\n                                <p class=\"mb0 text-muted\">RETURNS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-inverse\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,0,4,9,5,7,8,4,7\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">2K</h4>\r\n                                <p class=\"mb0 text-muted\">IN CART</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-success\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,5,2,2,8,4,4,8\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">9k</h4>\r\n                                <p class=\"mb0 text-muted\">DELIVERED</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-8\">\r\n        <h4>Bar Chart</h4>\r\n        <div>\r\n           <canvas baseChart [chartType]=\"'bar'\" [options]=\"barOptions\" [datasets]=\"barData.datasets\" [colors]=\"barColors\" [labels]=\"barData.labels\" [legend]=\"false\" height=\"120\"></canvas>\r\n        </div>\r\n     </div>\r\n</div>\r\n<!-- END row-->\r\n\r\n\r\n"
-
-/***/ }),
-
-/***/ 992:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"content-heading\">\r\n  Dashboard\r\n  <small>{{ 'dashboard.WELCOME' | translate }} !</small>\r\n</div>\r\n<!-- START widgets box-->\r\n<div class=\"row\">\r\n  <div class=\"col-lg-3 col-sm-6\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-primary\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-primary-dark pv-lg\">\r\n                  <em class=\"fa fa-truck fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">1700\r\n                    <!-- <small>total</small> -->\r\n                  </div>\r\n                  <div class=\"text-uppercase\">Orders</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-sm-6\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-purple\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-purple-dark pv-lg\">\r\n                  <em class=\"fa fa-user fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">700\r\n                  </div>\r\n                  <div class=\"text-uppercase\">Users</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-green\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\r\n                  <em class=\"fa fa-eye fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">5000</div>\r\n                  <div class=\"text-uppercase\">Visitors</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\r\n      <!-- START date widget-->\r\n      <div class=\"panel widget bg-green\">\r\n        <div class=\"row row-table\">\r\n            <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\r\n                <em class=\"fa fa-money fa-3x\"></em>\r\n            </div>\r\n            <div class=\"col-xs-8 pv-lg\">\r\n                <div class=\"h2 mt0\">$ 90000</div>\r\n                <div class=\"text-uppercase\">Sales</div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n      <!-- END date widget    -->\r\n  </div>\r\n</div>\r\n<!-- END widgets box-->\r\n<div class=\"row\">\r\n  <!-- START dashboard main content-->\r\n  <div class=\"col-lg-9\">\r\n      <!-- START chart-->\r\n      <div class=\"row\">\r\n          <div class=\"col-lg-12\">\r\n              <!-- START widget-->\r\n              <div class=\"panel panel-default\">\r\n                  <div class=\"panel-heading\">\r\n                      <div class=\"panel-title\">Inbound visitor statistics</div>\r\n                  </div>\r\n                  <div class=\"panel-body\">\r\n                      <div flot [dataset]=\"splineData\" [options]=\"splineOptions\" height=\"260\"></div>\r\n                  </div>\r\n              </div>\r\n              <!-- END widget-->\r\n          </div>\r\n      </div>\r\n      <!-- END chart-->\r\n      \r\n      <div class=\"row\">\r\n          <div class=\"col-lg-4\">\r\n              <!-- START widget-->\r\n              <div class=\"panel widget\">\r\n                  <div class=\"panel-body\">\r\n                      <div class=\"clearfix\">\r\n                          <h3 class=\"pull-left text-muted mt0\">300</h3>\r\n                          <em class=\"pull-right text-muted fa fa-shopping-cart  fa-2x\"></em>\r\n                      </div>\r\n                      <div class=\"pv-lg\" [sparkline]=\"sparkOptions2\" values=\"1,3,4,7,5,9,4,4,7,5,9,6,4\"></div>\r\n                      <p>\r\n                          <small class=\"text-muted\">Cart to bag</small>\r\n                      </p>\r\n                      <progressbar class=\"progress-striped progress-xs\" value=\"80\" type=\"info\">80%</progressbar>\r\n                  </div>\r\n              </div>\r\n              <!-- END widget-->\r\n          </div>\r\n          <div class=\"col-lg-8\">\r\n              <div class=\"panel panel-default\">\r\n                  <div class=\"panel-heading\">\r\n                      <!-- <div class=\"pull-right label label-danger\">5</div>\r\n                      <div class=\"pull-right label label-success\">12</div> -->\r\n                      <div class=\"panel-title\">Top selling products</div>\r\n                  </div>\r\n                  <!-- START list group-->\r\n                  <scrollable class=\"list-group\" height=\"180\">\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                          <div class=\"media-box\">\r\n                              <div class=\"pull-left\">\r\n                                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                              </div>\r\n                              <div class=\"media-box-body clearfix\">\r\n                                  <small class=\"pull-right\">200</small>\r\n                                  <strong class=\"media-box-heading text-primary\">\r\n                            <span class=\"text-left\"></span>Product 1</strong>\r\n                                  <p class=\"mb-sm\">\r\n                                      <small>some description about the product</small>\r\n                                  </p>\r\n                              </div>\r\n                          </div>\r\n                      </a>\r\n                      <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product8.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">180</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 2</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product9.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">150</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 3</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product10.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">135</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 4</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">111</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 5</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->                      \r\n                  </scrollable>\r\n                  <!-- END list group-->\r\n                  <!-- START panel footer-->\r\n                  <div class=\"panel-footer clearfix\">\r\n                      <div class=\"input-group\">\r\n                          <input class=\"form-control input-sm\" type=\"text\" placeholder=\"Search message ..\" />\r\n                          <span class=\"input-group-btn\">\r\n                      <button class=\"btn btn-default btn-sm\" type=\"submit\"><i class=\"fa fa-search\"></i>\r\n                      </button>\r\n                   </span>\r\n                      </div>\r\n                  </div>\r\n                  <!-- END panel-footer-->\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <!-- END dashboard main content-->\r\n  <!-- START dashboard sidebar-->\r\n  <aside class=\"col-lg-3\">\r\n      <!-- START loader widget-->\r\n      <div class=\"panel panel-default\">\r\n          <div class=\"panel-body\">\r\n              <a class=\"text-muted pull-right\" href=\"\">\r\n                  <em class=\"fa fa-arrow-right\"></em>\r\n              </a>\r\n              <div class=\"text-info\">Average Monthly Orders</div>\r\n              <div class=\"text-center pv-xl\">\r\n                  <div class=\"easypie-chart easypie-chart-lg\" easypiechart [options]=\"pieOptions\" [percent]=\"easyPiePercent\">\r\n                      <span>{{easyPiePercent}}%</span>\r\n                  </div>\r\n              </div>\r\n              <div class=\"text-center\" [sparkline]=\"sparkOptions1\"  values=\"5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7\"></div>\r\n          </div>\r\n          <div class=\"panel-footer\">\r\n              <p class=\"text-muted\">\r\n                  <em class=\"fa fa-upload fa-fw\"></em>\r\n                  <span>This Month</span>\r\n                  <span class=\"text-dark\">300 orders</span>\r\n              </p>\r\n          </div>\r\n      </div>\r\n      <!-- END loader widget-->\r\n      <!-- START messages and activity-->\r\n      <div class=\"panel panel-default\">\r\n          <div class=\"panel-heading\">\r\n              <div class=\"panel-title\">Last orders</div>\r\n          </div>\r\n          <!-- START list group-->\r\n          <div class=\"list-group\">\r\n              \r\n              <!-- START list group item-->\r\n              <div class=\"list-group-item\">\r\n                  <div class=\"media-box\">\r\n                    <div class=\"pull-left\">\r\n                      <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                    </div>\r\n                    <div class=\"media-box-body clearfix\">\r\n                        <small class=\"text-muted pull-right ml\">15h</small>\r\n                        <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 1</a>\r\n                        </div>\r\n                        <p class=\"m0\">\r\n                            <small>On\r\n                        <em>10/08/2017 09:00 am</em>\r\n                    </small>\r\n                        </p>\r\n                    </div>\r\n                  </div>\r\n              </div>\r\n              <!-- END list group item-->\r\n              <!-- START list group item-->\r\n              <div class=\"list-group-item\">\r\n                <div class=\"media-box\">\r\n                  <div class=\"pull-left\">\r\n                    <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                  </div>\r\n                  <div class=\"media-box-body clearfix\">\r\n                      <small class=\"text-muted pull-right ml\">1D</small>\r\n                      <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 2</a>\r\n                      </div>\r\n                      <p class=\"m0\">\r\n                          <small>On\r\n                      <em>05/08/2017 09:00 am</em>\r\n                  </small>\r\n                      </p>\r\n                  </div>\r\n                </div>\r\n            </div>\r\n            <!-- END list group item-->\r\n            <!-- START list group item-->\r\n            <div class=\"list-group-item\">\r\n              <div class=\"media-box\">\r\n                <div class=\"pull-left\">\r\n                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                </div>\r\n                <div class=\"media-box-body clearfix\">\r\n                    <small class=\"text-muted pull-right ml\">15d</small>\r\n                    <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 3</a>\r\n                    </div>\r\n                    <p class=\"m0\">\r\n                        <small>On\r\n                    <em>2/7/2015 09:00 am</em>\r\n                </small>\r\n                    </p>\r\n                </div>\r\n              </div>\r\n          </div>\r\n          <!-- END list group item-->\r\n          <!-- START list group item-->\r\n          <div class=\"list-group-item\">\r\n            <div class=\"media-box\">\r\n              <div class=\"pull-left\">\r\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n              </div>\r\n              <div class=\"media-box-body clearfix\">\r\n                  <small class=\"text-muted pull-right ml\">21d</small>\r\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 4</a>\r\n                  </div>\r\n                  <p class=\"m0\">\r\n                      <small>On\r\n                  <em>23/06/2017 09:00 am</em>\r\n              </small>\r\n                  </p>\r\n              </div>\r\n            </div>\r\n        </div>\r\n        <!-- END list group item-->\r\n        <!-- START list group item-->\r\n        <div class=\"list-group-item\">\r\n          <div class=\"media-box\">\r\n              <div class=\"pull-left\">\r\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n              </div>\r\n              <div class=\"media-box-body clearfix\">\r\n                  <small class=\"text-muted pull-right ml\">45d</small>\r\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 5</a>\r\n                  </div>\r\n                  <p class=\"m0\">\r\n                      <small>On\r\n                 <em>10/05/2017 09:00 am</em>\r\n              </small>\r\n                  </p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n      <!-- END list group item-->\r\n      \r\n          </div>\r\n          <!-- END list group-->\r\n          <!-- START panel footer-->\r\n          <div class=\"panel-footer clearfix\">\r\n              <a class=\"pull-left\" href=\"\">\r\n                  <small>Load more</small>\r\n              </a>\r\n          </div>\r\n          <!-- END panel-footer-->\r\n      </div>\r\n      <!-- END messages and activity-->\r\n  </aside>\r\n  <!-- END dashboard sidebar-->\r\n</div>\r\n"
-
-/***/ }),
-
-/***/ 993:
-/***/ (function(module, exports) {
-
-module.exports = "<tabset [justified]=\"true\">\n  <tab>\n    <ng-template tabHeading>\n      <i class=\"fa fa-upload fa-2x\" aria-hidden=\"true\"></i>\n    </ng-template>\n    <div class=\"row\">\n      <div class=\"col-md-3\">\n        <div class=\"panel panel-default\">\n          <div class=\"panel-heading\">\n            <h4 class=\"text-muted text-thin\">Product 1</h4>\n          </div>\n          <hr>\n          <div class=\"panel-body\">\n            <form novalidate #product1Form = 'ngForm'>\n              <div class=\"form-group\">\n              <label class=\"text-muted text-thin\">Select your product image</label>\n              <label for=\"image-input\" class=\"file-upload\">\n                  <button class=\"btn btn-default btn-block\">Upload Image</button>\n                  <input  type=\"file\" name=\"product1Image\" (change)=\"product1ImageUpload($event)\" >\n              </label>\n            </div>\n              <div class=\"result\" *ngIf='image1.src'>\n                  <label class=\"text-muted text-thin\">Image Preview</label>\n                  <img src=\"{{image1.src}}\" width=\"200px\" height=\"200px\">\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"productName\" class=\"text-muted text-thin\">Product name</label>\n                  <input type=\"text\" name=\"product1name\" class=\"form-control\" [(ngModel)] = 'product1Data.product1name' #product1name = 'ngModel'>\n              </div>\n              <div class=\"form-group\">\n                  <label for=\"productDesc\" class=\"text-muted text-thin\">Product description</label>\n                  <!-- <input type=\"text\" name=\"product1desc\" class=\"form-control\"> -->\n                  <textarea class=\"form-control\" rows=\"3\"  name=\"product1desc\" [(ngModel)] = 'product1Data.product1desc' #product1desc = 'ngModel'></textarea>\n              </div>\n              <button class=\"btn btn-primary pull-right\" [disabled]=\"!product1Form.form.valid\"  (click)='saveProduct1Data(product1Data); product1Form.reset()'>Save</button>\n            </form>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-3\">\n          <div class=\"panel panel-default\">\n            <div class=\"panel-heading\">\n              <h4 class=\"text-muted text-thin\">Product 2</h4>\n            </div>\n            <hr>\n            <div class=\"panel-body\">\n              <form novalidate #product2Form = 'ngForm'>\n                <div class=\"form-group\">\n                <label class=\"text-muted text-thin\">Select your product image</label>\n                <label for=\"image-input\" class=\"file-upload\">\n                    <button class=\"btn btn-default btn-block\">Upload Image</button>\n                    <input  type=\"file\" name=\"product2Image\" (change)=\"product2ImageUpload($event)\" >\n                </label>\n              </div>\n                <div class=\"result\" *ngIf='image2.src'>\n                    <label class=\"text-muted text-thin\">Image Preview</label>\n                    <img src=\"{{image2.src}}\" width=\"200px\" height=\"200px\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"productName\" class=\"text-muted text-thin\">Product name</label>\n                    <input type=\"text\" name=\"product2name\" class=\"form-control\" [(ngModel)] = 'product2Data.product2name' #product2name = 'ngModel'>\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"productDesc\" class=\"text-muted text-thin\">Product description</label>\n                    <!-- <input type=\"text\" name=\"product2desc\" class=\"form-control\"> -->\n                    <textarea class=\"form-control\" rows=\"3\"  name=\"product2desc\" [(ngModel)] = 'product2Data.product2desc' #product2desc = 'ngModel'></textarea>\n                </div>\n                <button class=\"btn btn-primary pull-right\" [disabled]=\"!product2Form.form.valid\"  (click)='saveProduct2Data(product2Data); product2Form.reset()'>Save</button>\n              </form>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-3\">\n            <div class=\"panel panel-default\">\n              <div class=\"panel-heading\">\n                <h4 class=\"text-muted text-thin\">Product 3</h4>\n              </div>\n              <hr>\n              <div class=\"panel-body\">\n                <form novalidate #product3Form = 'ngForm'>\n                  <div class=\"form-group\">\n                  <label class=\"text-muted text-thin\">Select your product image</label>\n                  <label for=\"image-input\" class=\"file-upload\">\n                      <button class=\"btn btn-default btn-block\">Upload Image</button>\n                      <input  type=\"file\" name=\"product3Image\" (change)=\"product3ImageUpload($event)\" >\n                  </label>\n                </div>\n                  <div class=\"result\" *ngIf='image3.src'>\n                      <label class=\"text-muted text-thin\">Image Preview</label>\n                      <img src=\"{{image3.src}}\" width=\"200px\" height=\"200px\">\n                  </div>\n                  <div class=\"form-group\">\n                      <label for=\"productName\" class=\"text-muted text-thin\">Product name</label>\n                      <input type=\"text\" name=\"product3name\" class=\"form-control\" [(ngModel)] = 'product3Data.product3name' #product3name = 'ngModel'>\n                  </div>\n                  <div class=\"form-group\">\n                      <label for=\"productDesc\" class=\"text-muted text-thin\">Product description</label>\n                      <!-- <input type=\"text\" name=\"product3desc\" class=\"form-control\"> -->\n                      <textarea class=\"form-control\" rows=\"3\"  name=\"product3desc\" [(ngModel)] = 'product3Data.product3desc' #product3desc = 'ngModel'></textarea>\n                  </div>\n                  <button class=\"btn btn-primary pull-right\" [disabled]=\"!product3Form.form.valid\"  (click)='saveProduct3Data(product3Data); product3Form.reset()'>Save</button>\n                </form>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-md-3\">\n              <div class=\"panel panel-default\">\n                <div class=\"panel-heading\">\n                  <h4 class=\"text-muted text-thin\">Product 4</h4>\n                </div>\n                <hr>\n                <div class=\"panel-body\">\n                  <form novalidate #product4Form = 'ngForm'>\n                    <div class=\"form-group\">\n                    <label class=\"text-muted text-thin\">Select your product image</label>\n                    <label for=\"image-input\" class=\"file-upload\">\n                        <button class=\"btn btn-default btn-block\">Upload Image</button>\n                        <input  type=\"file\" name=\"product4Image\" (change)=\"product4ImageUpload($event)\" >\n                    </label>\n                  </div>\n                    <div class=\"result\" *ngIf='image4.src'>\n                        <label class=\"text-muted text-thin\">Image Preview</label>\n                        <img src=\"{{image4.src}}\" width=\"200px\" height=\"200px\">\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"productName\" class=\"text-muted text-thin\">Product name</label>\n                        <input type=\"text\" name=\"product4name\" class=\"form-control\" [(ngModel)] = 'product4Data.product4name' #product4name = 'ngModel'>\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"productDesc\" class=\"text-muted text-thin\">Product description</label>\n                        <!-- <input type=\"text\" name=\"product4desc\" class=\"form-control\"> -->\n                        <textarea class=\"form-control\" rows=\"3\"  name=\"product4desc\" [(ngModel)] = 'product4Data.product4desc' #product4desc = 'ngModel'></textarea>\n                    </div>\n                    <button class=\"btn btn-primary pull-right\" [disabled]=\"!product4Form.form.valid\"  (click)='saveProduct4Data(product4Data); product4Form.reset()'>Save</button>\n                  </form>\n                </div>\n              </div>\n            </div>\n    </div>\n  </tab>\n</tabset>"
-
-/***/ }),
-
-/***/ 994:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\r\n  home-page works!\r\n</p>\r\n"
-
-/***/ }),
-
-/***/ 995:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  home works!\n</p>\n"
-
-/***/ }),
-
-/***/ 996:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"content-heading\">Sales Report</div>\r\n\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-info text-center\">\r\n                    <em class=\"fa fa-line-chart fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$ 13363534</h4>\r\n                        <p class=\"mb0 text-muted\">Total Sales</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-danger text-center\">\r\n                    <em class=\"fa fa-filter fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$56546</h4>\r\n                        <p class=\"mb0 text-muted\">Average Sales</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-inverse text-center\">\r\n                    <em class=\"fa fa-percent fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$234</h4>\r\n                        <p class=\"mb0 text-muted\">Total Tax</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-green text-center\">\r\n                    <em class=\"fa fa-gift fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$838</h4>\r\n                        <p class=\"mb0 text-muted\">Total C0upons</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n</div>\r\n<!-- END row-->\r\n<!-- START panel tab-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-9\">\r\n        <div class=\"form-group mb-xl\">\r\n            <input class=\"form-control mb\" type=\"text\" placeholder=\"Search products, products, etc.\" />\r\n        </div>\r\n        <div class=\"panel\">\r\n                \r\n            <tabset class=\"bg-white p0\" [justified]=\"true\">\r\n                \r\n                <tab>\r\n                    <ng-template tabHeading>\r\n                        <em class=\"fa fa-money fa-fw\"></em>Transactions Panel\r\n                    </ng-template>\r\n                    <div>\r\n                        <!-- START table responsive-->\r\n                        <div class=\"table-responsive\">\r\n                            <table class=\"table table-bordered table-hover table-striped\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th>Order #</th>\r\n                                        <th>Order Date</th>\r\n                                        <th>Order Time</th>\r\n                                        <th>Amount (USD)</th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr>\r\n                                        <td>3326</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:29 PM</td>\r\n                                        <td>$321.33</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3325</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:20 PM</td>\r\n                                        <td>$234.34</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3324</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:03 PM</td>\r\n                                        <td>$724.17</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3323</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:00 PM</td>\r\n                                        <td>$23.71</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3322</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:49 PM</td>\r\n                                        <td>$8345.23</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3321</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:23 PM</td>\r\n                                        <td>$245.12</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3320</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:15 PM</td>\r\n                                        <td>$5663.54</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3319</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:13 PM</td>\r\n                                        <td>$943.45</td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                        <!-- END table responsive-->\r\n                        <div class=\"panel-footer text-right\"><a class=\"btn btn-default btn-sm\" href=\"#\">View All Transactions</a>\r\n                        </div>\r\n                    </div>\r\n                </tab>\r\n            </tabset>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <h3 class=\"m0 pb-lg\">Search Orders</h3>\r\n        <!-- <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">by Text</label>\r\n            <br/>\r\n            <ng-select [allowClear]=\"true\" [items]=\"items\" placeholder=\"Nothing selected\"></ng-select>\r\n        </div> -->\r\n        <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">From Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div>\r\n        <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">To Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div>\r\n        <!-- <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">by Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div> -->\r\n        <div class=\"form-group mb-xl\">\r\n          <label class=\"control-label mb\">Order no:</label>\r\n          <br>\r\n          <input type=\"text\" class=\"slider slider-lg form-control\">\r\n        </div>\r\n        <button class=\"btn btn-default btn-lg\">Apply</button>\r\n    </div>\r\n</div>\r\n<!-- END panel tab-->\r\n"
-
-/***/ }),
-
-/***/ 997:
-/***/ (function(module, exports) {
-
-module.exports = "<tabset [justified]=\"true\">\r\n    <tab>\r\n        <ng-template tabHeading>\r\n            <em class=\"icon-equalizer fa-lg\"></em>\r\n        </ng-template>\r\n        <!-- <h3 class=\"text-center text-thin\">Settings</h3> -->\r\n        <!-- Theme Settings -->\r\n        <div class=\"p\">\r\n            <h4 class=\"text-muted text-thin\">Themes</h4>\r\n            <p class=\"text-muted text-thin\">Select your theme :</p>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"A\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info\"></span>\r\n                          <span class=\"color bg-info-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"B\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green\"></span>\r\n                          <span class=\"color bg-green-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"C\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple\"></span>\r\n                          <span class=\"color bg-purple-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"D\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger\"></span>\r\n                          <span class=\"color bg-danger-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"E\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info-dark\"></span>\r\n                          <span class=\"color bg-info\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"F\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green-dark\"></span>\r\n                          <span class=\"color bg-green\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"G\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple-dark\"></span>\r\n                          <span class=\"color bg-purple\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"H\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger-dark\"></span>\r\n                          <span class=\"color bg-danger\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </tab>\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <p class=\"text-muted text-thin\">*Note: Please upload Logo of width 100px and height 40px.</p>\r\n                    <h4>Select file : </h4>\r\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\"\r\n                        nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-1\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\r\n                        (change)=\"fileChangeListener($event)\">\r\n                    <div class=\"bootstrap-filestyle input-group\">\r\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\r\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\r\n                    <label for=\"filestyle-1\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\r\n                        <span class=\"buttonText\">Upload Logo</span>\r\n                        </label>\r\n                        </span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-6\" *ngIf=\"image.src\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo Preview</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <div class=\"text-center\">\r\n                        <img src={{image.src}} height=\"40px\" width=\"100px\"><br>\r\n                        <button class=\"btn btn-primary pull-right\" (click)='saveLogo()'>Save Logo</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">App name</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <form novalidate #appNameForm = 'ngForm'>\r\n                        <div class=\"form-group\">\r\n                            <label for=\"appName\">App name:</label>\r\n                            <input type=\"text\" class=\"form-control\" id=\"usr\" name=\"name\" placeholder=\"Please enter our app name here\" [(ngModel)]='data.name' #name='ngModel' minlength=\"3\" required>\r\n                            <div *ngIf=\"name.errors && (name.dirty || name.touched)\" class=\"error\">\r\n                                <span class=\"text-danger\" [hidden]=\"!name.errors.required\">Please Enter the app name </span>\r\n                                <span class=\"text-danger\" [hidden]=\"!name.errors.minlength\">app name should be more than 3 characters.</span>\r\n                            </div>\r\n                        </div>\r\n                        <button class=\"btn btn-primary pull-right\" [disabled]=\"!appNameForm.form.valid\"  (click)='saveAppName(data); appNameForm.reset()'>Save</button>\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</tabset>"
-
-/***/ }),
-
-/***/ 998:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"wrapper\">\r\n    <!-- top navbar-->\r\n    <app-top-navbar class=\"topnavbar-wrapper\"></app-top-navbar>\r\n    <!-- sidebar-->\r\n    <app-side-navbar class=\"aside\" (openModal)=\"showModal($event)\"></app-side-navbar>\r\n    <!-- offsidebar-->\r\n    <!--<app-offsidebar class=\"offsidebar\"></app-offsidebar>-->\r\n    <!-- Main section-->\r\n    <section>\r\n        <!-- Page content-->\r\n        <div class=\"content-wrapper\">\r\n            <div bsModal #lgModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myLargeModalLabel\" aria-hidden=\"true\">\r\n                <div class=\"modal-dialog modal-lg\">\r\n                    <div class=\"modal-content\">\r\n                        <div class=\"modal-header\">\r\n                            <h4 class=\"modal-title pull-left\">Large modal</h4>\r\n                            <button type=\"button\" class=\"close pull-right\" (click)=\"lgModal.hide()\" aria-label=\"Close\">\r\n                                <span aria-hidden=\"true\">&times;</span>\r\n                            </button>\r\n                        </div>\r\n                        <div class=\"modal-body\">\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </section>\r\n    <!-- Page footer-->\r\n    <!--<footer app-footer></footer>-->\r\n</div>"
-
-/***/ }),
-
 /***/ 999:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<!-- START Sidebar (left)-->\r\n<div class=\"aside-inner\">\r\n    <nav class=\"sidebar\" sidebar-anyclick-close=\"\" [class.show-scrollbar]=\"settings.layout.asideScrollbar\">\r\n\r\n        <!-- START sidebar nav-->\r\n        <ul class=\"nav\">\r\n\r\n            <!-- START user info-->\r\n            <li class=\"has-user-block\">\r\n                <app-userblock (someEvent)=\"test($event)\"></app-userblock>\r\n            </li>\r\n            <!-- END user info-->\r\n\r\n            <li *ngFor='let item of menuItems' [ngClass]=\"{'nav-heading': item.heading}\" [routerLinkActive]=\"['active']\">\r\n                <!-- menu heading -->\r\n                <span *ngIf=\"item.heading\">{{(item.translate | translate) || item.text}}</span>\r\n                <!-- external links -->\r\n                <a *ngIf=\"!item.heading && !item.submenu && item.elink\" [attr.target]=\"item.target\" [attr.href]=\"item.elink\" title=\"{{item.text}}\">\r\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\r\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\r\n                    <span>{{(item.translate | translate) || item.text}}</span>\r\n                </a>\r\n                <!-- single menu item -->\r\n                <a *ngIf=\"!item.heading && !item.submenu && !item.elink\" [routerLink]=\"item.link\" [attr.route]=\"item.link\" title=\"{{item.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\r\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\r\n                    <span>{{(item.translate | translate) || item.text}}</span>\r\n                </a>\r\n                <!-- has submenu -->\r\n                <a *ngIf=\"!item.heading && item.submenu\" title=\"{{item.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\r\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\r\n                    <span>{{(item.translate | translate) || item.text}}</span>\r\n                </a>\r\n                <!-- SUBLEVEL -->\r\n                <ul *ngIf=\"item.submenu\" class=\"nav sidebar-subnav\" [routerLinkActive]=\"['opening']\">\r\n                    <li class=\"sidebar-subnav-header\">{{(item.translate | translate) || item.text}}</li>\r\n                    <li *ngFor='let subitem of item.submenu' [routerLinkActive]=\"['active']\">\r\n                        <!-- sublevel: external links -->\r\n                        <a *ngIf=\"!subitem.heading && !subitem.submenu && subitem.elink\" [attr.target]=\"subitem.target\" [attr.href]=\"subitem.elink\" title=\"{{subitem.text}}\">\r\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\r\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\r\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\r\n                        </a>\r\n                        <!-- sublevel: single menu item  -->\r\n                        <a *ngIf=\"!subitem.submenu && !subitem.elink\" [routerLink]=\"subitem.link\" [attr.route]=\"subitem.link\" title=\"{{subitem.text}}\">\r\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\r\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\r\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\r\n                        </a>\r\n                        <!-- sublevel: has submenu -->\r\n                        <a *ngIf=\"subitem.submenu\" title=\"{{subitem.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\r\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\r\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\r\n                        </a>\r\n                        <!-- SUBLEVEL 2 -->\r\n                        <ul *ngIf=\"subitem.submenu\" class=\"nav sidebar-subnav level2\" [routerLinkActive]=\"['opening']\">\r\n                            <li *ngFor='let subitem2 of subitem.submenu' [routerLinkActive]=\"['active']\">\r\n                                <!-- sublevel 2: single menu item  -->\r\n                                <a *ngIf=\"!subitem2.submenu\" [routerLink]=\"subitem2.link\" [attr.route]=\"subitem2.link\" title=\"{{subitem2.text}}\">\r\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\r\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\r\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\r\n                                </a>\r\n                                <!-- sublevel2: has submenu -->\r\n                                <a *ngIf=\"subitem2.submenu\" title=\"{{subitem2.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\r\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\r\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\r\n                                </a>\r\n                                <!-- SUBLEVEL 3 -->\r\n                                <ul *ngIf=\"subitem2.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\r\n                                    <li *ngFor='let subitem3 of subitem2.submenu' [routerLinkActive]=\"['active']\">\r\n                                        <!-- sublevel 2: single menu item  -->\r\n                                        <a *ngIf=\"!subitem3.submenu\" [routerLink]=\"subitem3.link\" [attr.route]=\"subitem3.link\" title=\"{{subitem3.text}}\">\r\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\r\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\r\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\r\n                                        </a>\r\n                                        <!-- sublevel3: has submenu -->\r\n                                        <a *ngIf=\"subitem3.submenu\" title=\"{{subitem3.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\r\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\r\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\r\n                                        </a>\r\n                                        <!-- SUBLEVEL 4 -->\r\n                                        <ul *ngIf=\"subitem3.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\r\n                                            <li *ngFor='let subitem4 of subitem3.submenu' [routerLinkActive]=\"['active']\">\r\n                                                <!-- sublevel 2: single menu item  -->\r\n                                                <a *ngIf=\"!subitem4.submenu\" [routerLink]=\"subitem4.link\" [attr.route]=\"subitem4.link\" title=\"{{subitem4.text}}\">\r\n                                                    <span class=\"pull-right\" *ngIf=\"subitem4.alert\" [ngClass]=\"subitem4.label || 'label label-success'\">{{subitem4.alert}}</span>\r\n                                                    <em class=\"{{subitem4.icon}}\" *ngIf=\"subitem4.icon\"></em>\r\n                                                    <span>{{(subitem4.translate | translate) || subitem4.text}}</span>\r\n                                                </a>\r\n                                            </li>\r\n                                        </ul>\r\n                                    </li>\r\n                                </ul>\r\n                                <li>\r\n                        </ul>\r\n                        <li>\r\n                </ul>\r\n                </li>\r\n\r\n        </ul>\r\n        <!-- END sidebar nav-->\r\n\r\n    </nav>\r\n</div>\r\n<!-- END Sidebar (left)-->"
+"use strict";
+
+var ng_table_component_1 = __webpack_require__(905);
+var ng_table_filtering_directive_1 = __webpack_require__(902);
+var ng_table_paging_directive_1 = __webpack_require__(903);
+var ng_table_sorting_directive_1 = __webpack_require__(904);
+exports.NG_TABLE_DIRECTIVES = [ng_table_component_1.NgTableComponent, ng_table_filtering_directive_1.NgTableFilteringDirective, ng_table_paging_directive_1.NgTablePagingDirective, ng_table_sorting_directive_1.NgTableSortingDirective];
+
 
 /***/ })
 
