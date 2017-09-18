@@ -5608,7 +5608,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "input.form-control {\n  width: 95% !important; }\n\n@media only screen and (min-width: 781px) {\n  input.form-control {\n    width: 100% !important; } }\n", ""]);
 
 // exports
 
