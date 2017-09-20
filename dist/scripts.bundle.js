@@ -8,10 +8,17 @@ webpackJsonp([5,7],{
 	Author Tobias Koppers @sokra
 */
 module.exports = function(src) {
-	if (typeof execScript !== "undefined")
-		execScript(src);
-	else
-		eval.call(null, src);
+	try {
+		if (typeof eval !== "undefined") {
+			eval.call(null, src);
+		} else if (typeof execScript !== "undefined") {
+			execScript(src);
+		} else {
+			console.error("[Script Loader] EvalError: No eval function available");
+		}
+	} catch (error) {
+		console.error("[Script Loader] ", error.message);
+	}
 }
 
 
@@ -272,7 +279,7 @@ module.exports = "!function(a,b){\"object\"==typeof exports&&\"undefined\"!=type
 /***/ 829:
 /***/ (function(module, exports) {
 
-module.exports = "(function(global) {\r\n\r\n    var counter = 0, timeout;\r\n    var preloader = document.querySelector('.preloader');\r\n    var progressBar = document.querySelector('.preloader-progress-bar');\r\n    var body = document.querySelector('body');\r\n\r\n    // disables scrollbar\r\n    body.style.overflow = 'hidden';\r\n\r\n    timeout = setTimeout(startCounter, 20);\r\n\r\n    // main.ts call this function once the app is boostrapped\r\n    global.appBootstrap = function() {\r\n        setTimeout(endCounter, 1000);\r\n    };\r\n\r\n    function startCounter() {\r\n        var remaining = 100 - counter;\r\n        counter = counter + (0.015 * Math.pow(1 - Math.sqrt(remaining), 2));\r\n\r\n        if(progressBar) progressBar.style.width = Math.round(counter)+'%';\r\n\r\n        timeout = setTimeout(startCounter, 20);\r\n    }\r\n\r\n    function endCounter() {\r\n\r\n        clearTimeout(timeout);\r\n\r\n        if(progressBar) progressBar.style.width = '100%';\r\n\r\n        setTimeout(function() {\r\n            // animate preloader hiding\r\n            removePreloader();\r\n            // retore scrollbar\r\n            body.style.overflow = '';\r\n        }, 300);\r\n    }\r\n\r\n    function removePreloader() {\r\n        preloader.addEventListener('transitionend', function() {\r\n            preloader.className = 'preloader-hidden';\r\n        });\r\n        preloader.className += ' preloader-hidden-add preloader-hidden-add-active';\r\n    };\r\n\r\n})(window);\r\n"
+module.exports = "(function(global) {\n\n    var counter = 0, timeout;\n    var preloader = document.querySelector('.preloader');\n    var progressBar = document.querySelector('.preloader-progress-bar');\n    var body = document.querySelector('body');\n\n    // disables scrollbar\n    body.style.overflow = 'hidden';\n\n    timeout = setTimeout(startCounter, 20);\n\n    // main.ts call this function once the app is boostrapped\n    global.appBootstrap = function() {\n        setTimeout(endCounter, 1000);\n    };\n\n    function startCounter() {\n        var remaining = 100 - counter;\n        counter = counter + (0.015 * Math.pow(1 - Math.sqrt(remaining), 2));\n\n        if(progressBar) progressBar.style.width = Math.round(counter)+'%';\n\n        timeout = setTimeout(startCounter, 20);\n    }\n\n    function endCounter() {\n\n        clearTimeout(timeout);\n\n        if(progressBar) progressBar.style.width = '100%';\n\n        setTimeout(function() {\n            // animate preloader hiding\n            removePreloader();\n            // retore scrollbar\n            body.style.overflow = '';\n        }, 300);\n    }\n\n    function removePreloader() {\n        preloader.addEventListener('transitionend', function() {\n            preloader.className = 'preloader-hidden';\n        });\n        preloader.className += ' preloader-hidden-add preloader-hidden-add-active';\n    };\n\n})(window);\n"
 
 /***/ }),
 

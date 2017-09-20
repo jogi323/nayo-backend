@@ -65,14 +65,14 @@ exports.Ng2TableModule = ng_table_module_1.Ng2TableModule;
 /***/ 1002:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content-heading\">Activity Reports</div>\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-retweet fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">99.999</h3>\r\n                <p class=\"text-muted\">Returning Users</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-warning progress-60\" role=\"progressbar\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"70\">\r\n                        <span class=\"sr-only\">60% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-angle-double-left fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">300</h3>\r\n                <p class=\"text-muted\">Orders Returned</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-green progress-80\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\r\n                        <span class=\"sr-only\">80% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"text-right text-muted\">\r\n                    <em class=\"fa fa-exclamation fa-2x\"></em>\r\n                </div>\r\n                <h3 class=\"mt0\">1000</h3>\r\n                <p class=\"text-muted\">Failed to orders</p>\r\n                <div class=\"progress progress-striped progress-xs\">\r\n                    <div class=\"progress-bar progress-bar-info progress-40\" role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\">\r\n                        <span class=\"sr-only\">40% Complete</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n</div>\r\n<!-- END row-->\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-4\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 bb br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-info\">\r\n                            <em class=\"fa fa-users fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">10k</h4>\r\n                                <p class=\"mb0 text-muted\">VISITORS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6 bb\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-success\">\r\n                            <em class=\"fa fa-sign-in fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">7K</h4>\r\n                                <p class=\"mb0 text-muted\">Logins</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-inverse\">\r\n                            <em class=\"fa fa-registered fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">2K</h4>\r\n                                <p class=\"mb0 text-muted\">Registered</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-danger\">\r\n                            <em class=\"fa fa-exclamation-triangle fa-2x\"></em>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">500</h4>\r\n                                <p class=\"mb0 text-muted\">Failed</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 bb br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-info\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\"  values=\"5,9,4,1,3,4,7,5\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">10k</h4>\r\n                                <p class=\"mb0 text-muted\">ORDERS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6 bb\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-danger\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,2,3,4,5,6,7,8,9\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">1K</h4>\r\n                                <p class=\"mb0 text-muted\">RETURNS</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-6 br\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-inverse\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,0,4,9,5,7,8,4,7\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">2K</h4>\r\n                                <p class=\"mb0 text-muted\">IN CART</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-xs-6\">\r\n                    <div class=\"row row-table row-flush\">\r\n                        <div class=\"col-xs-4 text-center text-success\">\r\n                            <!-- Bar chart-->\r\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,5,2,2,8,4,4,8\"></div>\r\n                        </div>\r\n                        <div class=\"col-xs-8\">\r\n                            <div class=\"panel-body text-center\">\r\n                                <h4 class=\"mt0\">9k</h4>\r\n                                <p class=\"mb0 text-muted\">DELIVERED</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-8\">\r\n        <h4>Bar Chart</h4>\r\n        <div>\r\n           <canvas baseChart [chartType]=\"'bar'\" [options]=\"barOptions\" [datasets]=\"barData.datasets\" [colors]=\"barColors\" [labels]=\"barData.labels\" [legend]=\"false\" height=\"120\"></canvas>\r\n        </div>\r\n     </div>\r\n</div>\r\n<!-- END row-->\r\n\r\n\r\n"
+module.exports = "<div class=\"content-heading\">Activity Reports</div>\n<!-- START row-->\n<div class=\"row\">\n    <div class=\"col-lg-4\">\n        <!-- START widget-->\n        <div class=\"panel widget\">\n            <div class=\"panel-body\">\n                <div class=\"text-right text-muted\">\n                    <em class=\"fa fa-retweet fa-2x\"></em>\n                </div>\n                <h3 class=\"mt0\">99.999</h3>\n                <p class=\"text-muted\">Repeat customers</p>\n                <div class=\"progress progress-striped progress-xs\">\n                    <div class=\"progress-bar progress-bar-warning progress-60\" role=\"progressbar\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"70\">\n                        <span class=\"sr-only\">60% Complete</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- END widget-->\n    </div>\n    <div class=\"col-lg-4\">\n        <!-- START widget-->\n        <div class=\"panel widget\">\n            <div class=\"panel-body\">\n                <div class=\"text-right text-muted\">\n                    <em class=\"fa fa-angle-double-left fa-2x\"></em>\n                </div>\n                <h3 class=\"mt0\">300</h3>\n                <p class=\"text-muted\">Fulfilled orders MTD</p>\n                <div class=\"progress progress-striped progress-xs\">\n                    <div class=\"progress-bar progress-bar-green progress-80\" role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n                        <span class=\"sr-only\">80% Complete</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- END widget-->\n    </div>\n    <div class=\"col-lg-4\">\n        <!-- START widget-->\n        <div class=\"panel widget\">\n            <div class=\"panel-body\">\n                <div class=\"text-right text-muted\">\n                    <em class=\"fa fa-exclamation fa-2x\"></em>\n                </div>\n                <h3 class=\"mt0\">1000</h3>\n                <p class=\"text-muted\">Abandoned carts</p>\n                <div class=\"progress progress-striped progress-xs\">\n                    <div class=\"progress-bar progress-bar-info progress-40\" role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n                        <span class=\"sr-only\">40% Complete</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- END widget-->\n    </div>\n</div>\n<!-- END row-->\n<!-- START row-->\n<div class=\"row\">\n    <div class=\"col-lg-4\">\n        <!-- START widget-->\n        <div class=\"panel widget\">\n            <div class=\"row row-table row-flush\">\n                <div class=\"col-xs-6 bb br\">\n                    <div class=\"row row-table row-flush\">\n                        <div class=\"col-xs-4 text-center text-info\">\n                            <em class=\"fa fa-users fa-2x\"></em>\n                        </div>\n                        <div class=\"col-xs-8\">\n                            <div class=\"panel-body text-center\">\n                                <h4 class=\"mt0\">3k</h4>\n                                <p class=\"mb0 text-muted\">VISITORS <small>/DAY</small></p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-xs-6 bb\">\n                    <div class=\"row row-table row-flush\">\n                        <div class=\"col-xs-4 text-center text-success\">\n                            <em class=\"fa fa-sign-in fa-2x\"></em>\n                        </div>\n                        <div class=\"col-xs-8\">\n                            <div class=\"panel-body text-center\">\n                                <h4 class=\"mt0\">2K</h4>\n                                <p class=\"mb0 text-muted\">Logins <small>/DAY</small></p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row row-table row-flush\">\n                <div class=\"col-xs-6 br\">\n                    <div class=\"row row-table row-flush\">\n                        <div class=\"col-xs-4 text-center text-inverse\">\n                            <em class=\"fa fa-registered fa-2x\"></em>\n                        </div>\n                        <div class=\"col-xs-8\">\n                            <div class=\"panel-body text-center\">\n                                <h4 class=\"mt0\">1K</h4>\n                                <p class=\"mb0 text-muted\">Registered <small>/DAY</small></p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-xs-6\">\n                    <div class=\"row row-table row-flush\">\n                        <div class=\"col-xs-4 text-center text-danger\">\n                            <em class=\"fa fa-exclamation-triangle fa-2x\"></em>\n                        </div>\n                        <div class=\"col-xs-8\">\n                            <div class=\"panel-body text-center\">\n                                <h4 class=\"mt0\">500</h4>\n                                <p class=\"mb0 text-muted\">Match failures</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- END widget-->\n        <!-- START widget-->\n        <div class=\"panel widget\">\n            <div class=\"row row-table row-flush\">\n                <div class=\"col-xs-6 bb br\">\n                    <div class=\"row row-table row-flush\">\n                        <div class=\"col-xs-4 text-center text-info\">\n                            <!-- Bar chart-->\n                            <div [sparkline]=\"sparkOptions1\"  values=\"5,9,4,1,3,4,7,5\"></div>\n                        </div>\n                        <div class=\"col-xs-8\">\n                            <div class=\"panel-body text-center\">\n                                <h4 class=\"mt0\">10k</h4>\n                                <p class=\"mb0 text-muted\">ORDERS</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-xs-6 bb\">\n                    <div class=\"row row-table row-flush\">\n                        <div class=\"col-xs-4 text-center text-danger\">\n                            <!-- Bar chart-->\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,2,3,4,5,6,7,8,9\"></div>\n                        </div>\n                        <div class=\"col-xs-8\">\n                            <div class=\"panel-body text-center\">\n                                <h4 class=\"mt0\">1K</h4>\n                                <p class=\"mb0 text-muted\">RETURNS</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row row-table row-flush\">\n                <div class=\"col-xs-6 br\">\n                    <div class=\"row row-table row-flush\">\n                        <div class=\"col-xs-4 text-center text-inverse\">\n                            <!-- Bar chart-->\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,0,4,9,5,7,8,4,7\"></div>\n                        </div>\n                        <div class=\"col-xs-8\">\n                            <div class=\"panel-body text-center\">\n                                <h4 class=\"mt0\">2K</h4>\n                                <p class=\"mb0 text-muted\">IN CART</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-xs-6\">\n                    <div class=\"row row-table row-flush\">\n                        <div class=\"col-xs-4 text-center text-success\">\n                            <!-- Bar chart-->\n                            <div [sparkline]=\"sparkOptions1\" values=\"1,5,2,2,8,4,4,8\"></div>\n                        </div>\n                        <div class=\"col-xs-8\">\n                            <div class=\"panel-body text-center\">\n                                <h4 class=\"mt0\">9k</h4>\n                                <p class=\"mb0 text-muted\">DELIVERED</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- END widget-->\n    </div>\n    <div class=\"col-lg-8\">\n        <h4>Bar Chart</h4>\n        <div>\n           <canvas baseChart [chartType]=\"'bar'\" [options]=\"barOptions\" [datasets]=\"barData.datasets\" [colors]=\"barColors\" [labels]=\"barData.labels\" [legend]=\"false\" height=\"120\"></canvas>\n        </div>\n     </div>\n</div>\n<!-- END row-->\n\n\n"
 
 /***/ }),
 
 /***/ 1003:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content-heading\">\r\n  Dashboard\r\n  <small>{{ 'dashboard.WELCOME' | translate }} !</small>\r\n</div>\r\n<!-- START widgets box-->\r\n<div class=\"row\">\r\n  <div class=\"col-lg-3 col-sm-6\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-primary\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-primary-dark pv-lg\">\r\n                  <em class=\"fa fa-truck fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">1700\r\n                    <!-- <small>total</small> -->\r\n                  </div>\r\n                  <div class=\"text-uppercase\">Orders</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-sm-6\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-purple\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-purple-dark pv-lg\">\r\n                  <em class=\"fa fa-user fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">700\r\n                  </div>\r\n                  <div class=\"text-uppercase\">Users</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\r\n      <!-- START widget-->\r\n      <div class=\"panel widget bg-green\">\r\n          <div class=\"row row-table\">\r\n              <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\r\n                  <em class=\"fa fa-eye fa-3x\"></em>\r\n              </div>\r\n              <div class=\"col-xs-8 pv-lg\">\r\n                  <div class=\"h2 mt0\">5000</div>\r\n                  <div class=\"text-uppercase\">Visitors</div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\r\n      <!-- START date widget-->\r\n      <div class=\"panel widget bg-green\">\r\n        <div class=\"row row-table\">\r\n            <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\r\n                <em class=\"fa fa-money fa-3x\"></em>\r\n            </div>\r\n            <div class=\"col-xs-8 pv-lg\">\r\n                <div class=\"h2 mt0\">$ 90000</div>\r\n                <div class=\"text-uppercase\">Sales</div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n      <!-- END date widget    -->\r\n  </div>\r\n</div>\r\n<!-- END widgets box-->\r\n<div class=\"row\">\r\n  <!-- START dashboard main content-->\r\n  <div class=\"col-lg-9\">\r\n      <!-- START chart-->\r\n      <div class=\"row\">\r\n          <div class=\"col-lg-12\">\r\n              <!-- START widget-->\r\n              <div class=\"panel panel-default\">\r\n                  <div class=\"panel-heading\">\r\n                      <div class=\"panel-title\">Inbound visitor statistics</div>\r\n                  </div>\r\n                  <div class=\"panel-body\">\r\n                      <div flot [dataset]=\"splineData\" [options]=\"splineOptions\" height=\"260\"></div>\r\n                  </div>\r\n              </div>\r\n              <!-- END widget-->\r\n          </div>\r\n      </div>\r\n      <!-- END chart-->\r\n      \r\n      <div class=\"row\">\r\n          <div class=\"col-lg-4\">\r\n              <!-- START widget-->\r\n              <div class=\"panel widget\">\r\n                  <div class=\"panel-body\">\r\n                      <div class=\"clearfix\">\r\n                          <h3 class=\"pull-left text-muted mt0\">300</h3>\r\n                          <em class=\"pull-right text-muted fa fa-shopping-cart  fa-2x\"></em>\r\n                      </div>\r\n                      <div class=\"pv-lg\" [sparkline]=\"sparkOptions2\" values=\"1,3,4,7,5,9,4,4,7,5,9,6,4\"></div>\r\n                      <p>\r\n                          <small class=\"text-muted\">Cart to bag</small>\r\n                      </p>\r\n                      <progressbar class=\"progress-striped progress-xs\" value=\"80\" type=\"info\">80%</progressbar>\r\n                  </div>\r\n              </div>\r\n              <!-- END widget-->\r\n          </div>\r\n          <div class=\"col-lg-8\">\r\n              <div class=\"panel panel-default\">\r\n                  <div class=\"panel-heading\">\r\n                      <!-- <div class=\"pull-right label label-danger\">5</div>\r\n                      <div class=\"pull-right label label-success\">12</div> -->\r\n                      <div class=\"panel-title\">Top selling products</div>\r\n                  </div>\r\n                  <!-- START list group-->\r\n                  <scrollable class=\"list-group\" height=\"180\">\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                          <div class=\"media-box\">\r\n                              <div class=\"pull-left\">\r\n                                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                              </div>\r\n                              <div class=\"media-box-body clearfix\">\r\n                                  <small class=\"pull-right\">200</small>\r\n                                  <strong class=\"media-box-heading text-primary\">\r\n                            <span class=\"text-left\"></span>Product 1</strong>\r\n                                  <p class=\"mb-sm\">\r\n                                      <small>some description about the product</small>\r\n                                  </p>\r\n                              </div>\r\n                          </div>\r\n                      </a>\r\n                      <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product8.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">180</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 2</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product9.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">150</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 3</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product10.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">135</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 4</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->\r\n                      <!-- START list group item-->\r\n                      <a class=\"list-group-item\" href=\"\">\r\n                        <div class=\"media-box\">\r\n                            <div class=\"pull-left\">\r\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                            </div>\r\n                            <div class=\"media-box-body clearfix\">\r\n                                <small class=\"pull-right\">111</small>\r\n                                <strong class=\"media-box-heading text-primary\">\r\n                          <span class=\"text-left\"></span>Product 5</strong>\r\n                                <p class=\"mb-sm\">\r\n                                    <small>some description about the product</small>\r\n                                </p>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                    <!-- END list group item-->                      \r\n                  </scrollable>\r\n                  <!-- END list group-->\r\n                  <!-- START panel footer-->\r\n                  <div class=\"panel-footer clearfix\">\r\n                      <div class=\"input-group\">\r\n                          <input class=\"form-control input-sm\" type=\"text\" placeholder=\"Search message ..\" />\r\n                          <span class=\"input-group-btn\">\r\n                      <button class=\"btn btn-default btn-sm\" type=\"submit\"><i class=\"fa fa-search\"></i>\r\n                      </button>\r\n                   </span>\r\n                      </div>\r\n                  </div>\r\n                  <!-- END panel-footer-->\r\n              </div>\r\n          </div>\r\n      </div>\r\n  </div>\r\n  <!-- END dashboard main content-->\r\n  <!-- START dashboard sidebar-->\r\n  <aside class=\"col-lg-3\">\r\n      <!-- START loader widget-->\r\n      <div class=\"panel panel-default\">\r\n          <div class=\"panel-body\">\r\n              <a class=\"text-muted pull-right\" href=\"\">\r\n                  <em class=\"fa fa-arrow-right\"></em>\r\n              </a>\r\n              <div class=\"text-info\">Average Monthly Orders</div>\r\n              <div class=\"text-center pv-xl\">\r\n                  <div class=\"easypie-chart easypie-chart-lg\" easypiechart [options]=\"pieOptions\" [percent]=\"easyPiePercent\">\r\n                      <span>{{easyPiePercent}}%</span>\r\n                  </div>\r\n              </div>\r\n              <div class=\"text-center\" [sparkline]=\"sparkOptions1\"  values=\"5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7\"></div>\r\n          </div>\r\n          <div class=\"panel-footer\">\r\n              <p class=\"text-muted\">\r\n                  <em class=\"fa fa-upload fa-fw\"></em>\r\n                  <span>This Month</span>\r\n                  <span class=\"text-dark\">300 orders</span>\r\n              </p>\r\n          </div>\r\n      </div>\r\n      <!-- END loader widget-->\r\n      <!-- START messages and activity-->\r\n      <div class=\"panel panel-default\">\r\n          <div class=\"panel-heading\">\r\n              <div class=\"panel-title\">Last orders</div>\r\n          </div>\r\n          <!-- START list group-->\r\n          <div class=\"list-group\">\r\n              \r\n              <!-- START list group item-->\r\n              <div class=\"list-group-item\">\r\n                  <div class=\"media-box\">\r\n                    <div class=\"pull-left\">\r\n                      <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                    </div>\r\n                    <div class=\"media-box-body clearfix\">\r\n                        <small class=\"text-muted pull-right ml\">15h</small>\r\n                        <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 1</a>\r\n                        </div>\r\n                        <p class=\"m0\">\r\n                            <small>On\r\n                        <em>10/08/2017 09:00 am</em>\r\n                    </small>\r\n                        </p>\r\n                    </div>\r\n                  </div>\r\n              </div>\r\n              <!-- END list group item-->\r\n              <!-- START list group item-->\r\n              <div class=\"list-group-item\">\r\n                <div class=\"media-box\">\r\n                  <div class=\"pull-left\">\r\n                    <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                  </div>\r\n                  <div class=\"media-box-body clearfix\">\r\n                      <small class=\"text-muted pull-right ml\">1D</small>\r\n                      <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 2</a>\r\n                      </div>\r\n                      <p class=\"m0\">\r\n                          <small>On\r\n                      <em>05/08/2017 09:00 am</em>\r\n                  </small>\r\n                      </p>\r\n                  </div>\r\n                </div>\r\n            </div>\r\n            <!-- END list group item-->\r\n            <!-- START list group item-->\r\n            <div class=\"list-group-item\">\r\n              <div class=\"media-box\">\r\n                <div class=\"pull-left\">\r\n                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n                </div>\r\n                <div class=\"media-box-body clearfix\">\r\n                    <small class=\"text-muted pull-right ml\">15d</small>\r\n                    <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 3</a>\r\n                    </div>\r\n                    <p class=\"m0\">\r\n                        <small>On\r\n                    <em>2/7/2015 09:00 am</em>\r\n                </small>\r\n                    </p>\r\n                </div>\r\n              </div>\r\n          </div>\r\n          <!-- END list group item-->\r\n          <!-- START list group item-->\r\n          <div class=\"list-group-item\">\r\n            <div class=\"media-box\">\r\n              <div class=\"pull-left\">\r\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n              </div>\r\n              <div class=\"media-box-body clearfix\">\r\n                  <small class=\"text-muted pull-right ml\">21d</small>\r\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 4</a>\r\n                  </div>\r\n                  <p class=\"m0\">\r\n                      <small>On\r\n                  <em>23/06/2017 09:00 am</em>\r\n              </small>\r\n                  </p>\r\n              </div>\r\n            </div>\r\n        </div>\r\n        <!-- END list group item-->\r\n        <!-- START list group item-->\r\n        <div class=\"list-group-item\">\r\n          <div class=\"media-box\">\r\n              <div class=\"pull-left\">\r\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\r\n              </div>\r\n              <div class=\"media-box-body clearfix\">\r\n                  <small class=\"text-muted pull-right ml\">45d</small>\r\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 5</a>\r\n                  </div>\r\n                  <p class=\"m0\">\r\n                      <small>On\r\n                 <em>10/05/2017 09:00 am</em>\r\n              </small>\r\n                  </p>\r\n              </div>\r\n          </div>\r\n      </div>\r\n      <!-- END list group item-->\r\n      \r\n          </div>\r\n          <!-- END list group-->\r\n          <!-- START panel footer-->\r\n          <div class=\"panel-footer clearfix\">\r\n              <a class=\"pull-left\" href=\"\">\r\n                  <small>Load more</small>\r\n              </a>\r\n          </div>\r\n          <!-- END panel-footer-->\r\n      </div>\r\n      <!-- END messages and activity-->\r\n  </aside>\r\n  <!-- END dashboard sidebar-->\r\n</div>\r\n"
+module.exports = "<div class=\"content-heading\">\n  Dashboard\n  <small>{{ 'dashboard.WELCOME' | translate }} !</small>\n</div>\n<!-- START widgets box-->\n<div class=\"row\">\n  <div class=\"col-lg-3 col-sm-6\">\n      <!-- START widget-->\n      <div class=\"panel widget bg-primary\">\n          <div class=\"row row-table\">\n              <div class=\"col-xs-4 text-center bg-primary-dark pv-lg\">\n                  <em class=\"fa fa-truck fa-3x\"></em>\n              </div>\n              <div class=\"col-xs-8 pv-lg\">\n                  <div class=\"h2 mt0\">1700\n                    <!-- <small>total</small> -->\n                  </div>\n                  <div class=\"text-uppercase\">Orders</div>\n              </div>\n          </div>\n      </div>\n  </div>\n  <div class=\"col-lg-3 col-sm-6\">\n      <!-- START widget-->\n      <div class=\"panel widget bg-purple\">\n          <div class=\"row row-table\">\n              <div class=\"col-xs-4 text-center bg-purple-dark pv-lg\">\n                  <em class=\"fa fa-user fa-3x\"></em>\n              </div>\n              <div class=\"col-xs-8 pv-lg\">\n                  <div class=\"h2 mt0\">700\n                  </div>\n                  <div class=\"text-uppercase\">Users</div>\n              </div>\n          </div>\n      </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\n      <!-- START widget-->\n      <div class=\"panel widget bg-green\">\n          <div class=\"row row-table\">\n              <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\n                  <em class=\"fa fa-eye fa-3x\"></em>\n              </div>\n              <div class=\"col-xs-8 pv-lg\">\n                  <div class=\"h2 mt0\">5000</div>\n                  <div class=\"text-uppercase\">Visitors</div>\n              </div>\n          </div>\n      </div>\n  </div>\n  <div class=\"col-lg-3 col-md-6 col-sm-12\">\n      <!-- START date widget-->\n      <div class=\"panel widget bg-green\">\n        <div class=\"row row-table\">\n            <div class=\"col-xs-4 text-center bg-green-dark pv-lg\">\n                <em class=\"fa fa-money fa-3x\"></em>\n            </div>\n            <div class=\"col-xs-8 pv-lg\">\n                <div class=\"h2 mt0\">$ 90000</div>\n                <div class=\"text-uppercase\">Sales</div>\n            </div>\n        </div>\n    </div>\n      <!-- END date widget    -->\n  </div>\n</div>\n<!-- END widgets box-->\n<div class=\"row\">\n  <!-- START dashboard main content-->\n  <div class=\"col-lg-9\">\n      <!-- START chart-->\n      <div class=\"row\">\n          <div class=\"col-lg-12\">\n              <!-- START widget-->\n              <div class=\"panel panel-default\">\n                  <div class=\"panel-heading\">\n                      <div class=\"panel-title\">Inbound visitor statistics</div>\n                  </div>\n                  <div class=\"panel-body\">\n                      <div flot [dataset]=\"splineData\" [options]=\"splineOptions\" height=\"260\"></div>\n                  </div>\n              </div>\n              <!-- END widget-->\n          </div>\n      </div>\n      <!-- END chart-->\n      \n      <div class=\"row\">\n          <div class=\"col-lg-4\">\n              <!-- START widget-->\n              <div class=\"panel widget\">\n                  <div class=\"panel-body\">\n                      <div class=\"clearfix\">\n                          <h3 class=\"pull-left text-muted mt0\">300</h3>\n                          <em class=\"pull-right text-muted fa fa-shopping-cart  fa-2x\"></em>\n                      </div>\n                      <div class=\"pv-lg\" [sparkline]=\"sparkOptions2\" values=\"1,3,4,7,5,9,4,4,7,5,9,6,4\"></div>\n                      <p>\n                          <small class=\"text-muted\">Cart to bag</small>\n                      </p>\n                      <progressbar class=\"progress-striped progress-xs\" value=\"80\" type=\"info\">80%</progressbar>\n                  </div>\n              </div>\n              <!-- END widget-->\n          </div>\n          <div class=\"col-lg-8\">\n              <div class=\"panel panel-default\">\n                  <div class=\"panel-heading\">\n                      <!-- <div class=\"pull-right label label-danger\">5</div>\n                      <div class=\"pull-right label label-success\">12</div> -->\n                      <div class=\"panel-title\">Top selling products</div>\n                  </div>\n                  <!-- START list group-->\n                  <scrollable class=\"list-group\" height=\"180\">\n                      <!-- START list group item-->\n                      <a class=\"list-group-item\" href=\"\">\n                          <div class=\"media-box\">\n                              <div class=\"pull-left\">\n                                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\n                              </div>\n                              <div class=\"media-box-body clearfix\">\n                                  <small class=\"pull-right\">200</small>\n                                  <strong class=\"media-box-heading text-primary\">\n                            <span class=\"text-left\"></span>Product 1</strong>\n                                  <p class=\"mb-sm\">\n                                      <small>some description about the product</small>\n                                  </p>\n                              </div>\n                          </div>\n                      </a>\n                      <!-- END list group item-->\n                      <!-- START list group item-->\n                      <a class=\"list-group-item\" href=\"\">\n                        <div class=\"media-box\">\n                            <div class=\"pull-left\">\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product8.png\" alt=\"Image\" />\n                            </div>\n                            <div class=\"media-box-body clearfix\">\n                                <small class=\"pull-right\">180</small>\n                                <strong class=\"media-box-heading text-primary\">\n                          <span class=\"text-left\"></span>Product 2</strong>\n                                <p class=\"mb-sm\">\n                                    <small>some description about the product</small>\n                                </p>\n                            </div>\n                        </div>\n                    </a>\n                    <!-- END list group item-->\n                      <!-- START list group item-->\n                      <a class=\"list-group-item\" href=\"\">\n                        <div class=\"media-box\">\n                            <div class=\"pull-left\">\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product9.png\" alt=\"Image\" />\n                            </div>\n                            <div class=\"media-box-body clearfix\">\n                                <small class=\"pull-right\">150</small>\n                                <strong class=\"media-box-heading text-primary\">\n                          <span class=\"text-left\"></span>Product 3</strong>\n                                <p class=\"mb-sm\">\n                                    <small>some description about the product</small>\n                                </p>\n                            </div>\n                        </div>\n                    </a>\n                    <!-- END list group item-->\n                      <!-- START list group item-->\n                      <a class=\"list-group-item\" href=\"\">\n                        <div class=\"media-box\">\n                            <div class=\"pull-left\">\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product10.png\" alt=\"Image\" />\n                            </div>\n                            <div class=\"media-box-body clearfix\">\n                                <small class=\"pull-right\">135</small>\n                                <strong class=\"media-box-heading text-primary\">\n                          <span class=\"text-left\"></span>Product 4</strong>\n                                <p class=\"mb-sm\">\n                                    <small>some description about the product</small>\n                                </p>\n                            </div>\n                        </div>\n                    </a>\n                    <!-- END list group item-->\n                      <!-- START list group item-->\n                      <a class=\"list-group-item\" href=\"\">\n                        <div class=\"media-box\">\n                            <div class=\"pull-left\">\n                                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\n                            </div>\n                            <div class=\"media-box-body clearfix\">\n                                <small class=\"pull-right\">111</small>\n                                <strong class=\"media-box-heading text-primary\">\n                          <span class=\"text-left\"></span>Product 5</strong>\n                                <p class=\"mb-sm\">\n                                    <small>some description about the product</small>\n                                </p>\n                            </div>\n                        </div>\n                    </a>\n                    <!-- END list group item-->                      \n                  </scrollable>\n                  <!-- END list group-->\n                  <!-- START panel footer-->\n                  <div class=\"panel-footer clearfix\">\n                      <div class=\"input-group\">\n                          <input class=\"form-control input-sm\" type=\"text\" placeholder=\"Search message ..\" />\n                          <span class=\"input-group-btn\">\n                      <button class=\"btn btn-default btn-sm\" type=\"submit\"><i class=\"fa fa-search\"></i>\n                      </button>\n                   </span>\n                      </div>\n                  </div>\n                  <!-- END panel-footer-->\n              </div>\n          </div>\n      </div>\n  </div>\n  <!-- END dashboard main content-->\n  <!-- START dashboard sidebar-->\n  <aside class=\"col-lg-3\">\n      <!-- START loader widget-->\n      <div class=\"panel panel-default\">\n          <div class=\"panel-body\">\n              <a class=\"text-muted pull-right\" href=\"\">\n                  <em class=\"fa fa-arrow-right\"></em>\n              </a>\n              <div class=\"text-info\">Average Monthly Orders</div>\n              <div class=\"text-center pv-xl\">\n                  <div class=\"easypie-chart easypie-chart-lg\" easypiechart [options]=\"pieOptions\" [percent]=\"easyPiePercent\">\n                      <span>{{easyPiePercent}}%</span>\n                  </div>\n              </div>\n              <div class=\"text-center\" [sparkline]=\"sparkOptions1\"  values=\"5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7\"></div>\n          </div>\n          <div class=\"panel-footer\">\n              <p class=\"text-muted\">\n                  <em class=\"fa fa-upload fa-fw\"></em>\n                  <span>This Month</span>\n                  <span class=\"text-dark\">300 orders</span>\n              </p>\n          </div>\n      </div>\n      <!-- END loader widget-->\n      <!-- START messages and activity-->\n      <div class=\"panel panel-default\">\n          <div class=\"panel-heading\">\n              <div class=\"panel-title\">Last orders</div>\n          </div>\n          <!-- START list group-->\n          <div class=\"list-group\">\n              \n              <!-- START list group item-->\n              <div class=\"list-group-item\">\n                  <div class=\"media-box\">\n                    <div class=\"pull-left\">\n                      <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\n                    </div>\n                    <div class=\"media-box-body clearfix\">\n                        <small class=\"text-muted pull-right ml\">15h</small>\n                        <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 1</a>\n                        </div>\n                        <p class=\"m0\">\n                            <small>On\n                        <em>10/08/2017 09:00 am</em>\n                    </small>\n                        </p>\n                    </div>\n                  </div>\n              </div>\n              <!-- END list group item-->\n              <!-- START list group item-->\n              <div class=\"list-group-item\">\n                <div class=\"media-box\">\n                  <div class=\"pull-left\">\n                    <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\n                  </div>\n                  <div class=\"media-box-body clearfix\">\n                      <small class=\"text-muted pull-right ml\">1D</small>\n                      <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 2</a>\n                      </div>\n                      <p class=\"m0\">\n                          <small>On\n                      <em>05/08/2017 09:00 am</em>\n                  </small>\n                      </p>\n                  </div>\n                </div>\n            </div>\n            <!-- END list group item-->\n            <!-- START list group item-->\n            <div class=\"list-group-item\">\n              <div class=\"media-box\">\n                <div class=\"pull-left\">\n                  <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\n                </div>\n                <div class=\"media-box-body clearfix\">\n                    <small class=\"text-muted pull-right ml\">15d</small>\n                    <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 3</a>\n                    </div>\n                    <p class=\"m0\">\n                        <small>On\n                    <em>2/7/2015 09:00 am</em>\n                </small>\n                    </p>\n                </div>\n              </div>\n          </div>\n          <!-- END list group item-->\n          <!-- START list group item-->\n          <div class=\"list-group-item\">\n            <div class=\"media-box\">\n              <div class=\"pull-left\">\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\n              </div>\n              <div class=\"media-box-body clearfix\">\n                  <small class=\"text-muted pull-right ml\">21d</small>\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 4</a>\n                  </div>\n                  <p class=\"m0\">\n                      <small>On\n                  <em>23/06/2017 09:00 am</em>\n              </small>\n                  </p>\n              </div>\n            </div>\n        </div>\n        <!-- END list group item-->\n        <!-- START list group item-->\n        <div class=\"list-group-item\">\n          <div class=\"media-box\">\n              <div class=\"pull-left\">\n                <img class=\"media-box-object img-circle thumb32\" src=\"assets/img/product7.png\" alt=\"Image\" />\n              </div>\n              <div class=\"media-box-body clearfix\">\n                  <small class=\"text-muted pull-right ml\">45d</small>\n                  <div class=\"media-box-heading\"><a class=\"text-success m0\" href=\"\">Product 5</a>\n                  </div>\n                  <p class=\"m0\">\n                      <small>On\n                 <em>10/05/2017 09:00 am</em>\n              </small>\n                  </p>\n              </div>\n          </div>\n      </div>\n      <!-- END list group item-->\n      \n          </div>\n          <!-- END list group-->\n          <!-- START panel footer-->\n          <div class=\"panel-footer clearfix\">\n              <a class=\"pull-left\" href=\"\">\n                  <small>Load more</small>\n              </a>\n          </div>\n          <!-- END panel-footer-->\n      </div>\n      <!-- END messages and activity-->\n  </aside>\n  <!-- END dashboard sidebar-->\n</div>\n"
 
 /***/ }),
 
@@ -86,7 +86,7 @@ module.exports = "<tabset [justified]=\"true\">\n  <tab>\n    <ng-template tabHe
 /***/ 1005:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  home-page works!\r\n</p>\r\n"
+module.exports = "<p>\n  home-page works!\n</p>\n"
 
 /***/ }),
 
@@ -100,14 +100,14 @@ module.exports = "<p>\n  home works!\n</p>\n"
 /***/ 1007:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content-heading\">Sales Report</div>\r\n\r\n<!-- START row-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-info text-center\">\r\n                    <em class=\"fa fa-line-chart fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$ 13363534</h4>\r\n                        <p class=\"mb0 text-muted\">Total Sales</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-danger text-center\">\r\n                    <em class=\"fa fa-filter fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$56546</h4>\r\n                        <p class=\"mb0 text-muted\">Average Sales</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-inverse text-center\">\r\n                    <em class=\"fa fa-percent fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$234</h4>\r\n                        <p class=\"mb0 text-muted\">Total Tax</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <!-- START widget-->\r\n        <div class=\"panel widget\">\r\n            <div class=\"row row-table row-flush\">\r\n                <div class=\"col-xs-4 bg-green text-center\">\r\n                    <em class=\"fa fa-gift fa-2x\"></em>\r\n                </div>\r\n                <div class=\"col-xs-8\">\r\n                    <div class=\"panel-body text-center\">\r\n                        <h4 class=\"mt0\">$838</h4>\r\n                        <p class=\"mb0 text-muted\">Total C0upons</p>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- END widget-->\r\n    </div>\r\n</div>\r\n<!-- END row-->\r\n<!-- START panel tab-->\r\n<div class=\"row\">\r\n    <div class=\"col-lg-9\">\r\n        <div class=\"form-group mb-xl\">\r\n            <input class=\"form-control mb\" type=\"text\" placeholder=\"Search products, products, etc.\" />\r\n        </div>\r\n        <div class=\"panel\">\r\n                \r\n            <tabset class=\"bg-white p0\" [justified]=\"true\">\r\n                \r\n                <tab>\r\n                    <ng-template tabHeading>\r\n                        <em class=\"fa fa-money fa-fw\"></em>Transactions Panel\r\n                    </ng-template>\r\n                    <div>\r\n                        <!-- START table responsive-->\r\n                        <div class=\"table-responsive\">\r\n                            <table class=\"table table-bordered table-hover table-striped\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th>Order #</th>\r\n                                        <th>Order Date</th>\r\n                                        <th>Order Time</th>\r\n                                        <th>Amount (USD)</th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr>\r\n                                        <td>3326</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:29 PM</td>\r\n                                        <td>$321.33</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3325</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:20 PM</td>\r\n                                        <td>$234.34</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3324</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:03 PM</td>\r\n                                        <td>$724.17</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3323</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>3:00 PM</td>\r\n                                        <td>$23.71</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3322</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:49 PM</td>\r\n                                        <td>$8345.23</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3321</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:23 PM</td>\r\n                                        <td>$245.12</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3320</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:15 PM</td>\r\n                                        <td>$5663.54</td>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <td>3319</td>\r\n                                        <td>10/21/2013</td>\r\n                                        <td>2:13 PM</td>\r\n                                        <td>$943.45</td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                        <!-- END table responsive-->\r\n                        <div class=\"panel-footer text-right\"><a class=\"btn btn-default btn-sm\" href=\"#\">View All Transactions</a>\r\n                        </div>\r\n                    </div>\r\n                </tab>\r\n            </tabset>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-lg-3\">\r\n        <h3 class=\"m0 pb-lg\">Search Orders</h3>\r\n        <!-- <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">by Text</label>\r\n            <br/>\r\n            <ng-select [allowClear]=\"true\" [items]=\"items\" placeholder=\"Nothing selected\"></ng-select>\r\n        </div> -->\r\n        <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">From Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div>\r\n        <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">To Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div>\r\n        <!-- <div class=\"form-group mb-xl\">\r\n            <label class=\"control-label mb\">by Date</label>\r\n            <br/>\r\n            <p class=\"input-group\">\r\n                <input class=\"form-control\" type=\"date\" />\r\n                <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-default\" type=\"button\">\r\n                    <em class=\"fa fa-calendar\"></em>\r\n                </button>\r\n            </span>\r\n            </p>\r\n        </div> -->\r\n        <div class=\"form-group mb-xl\">\r\n          <label class=\"control-label mb\">Order no:</label>\r\n          <br>\r\n          <input type=\"text\" class=\"slider slider-lg form-control\">\r\n        </div>\r\n        <button class=\"btn btn-default btn-lg\">Apply</button>\r\n    </div>\r\n</div>\r\n<!-- END panel tab-->\r\n"
+module.exports = "<div class=\"content-heading\">Sales Report</div>\n\n<!-- START row-->\n<div class=\"row\">\n    <div class=\"col-lg-3\">\n        <!-- START widget-->\n        <div class=\"panel widget\">\n            <div class=\"row row-table row-flush\">\n                <div class=\"col-xs-4 bg-info text-center\">\n                    <em class=\"fa fa-line-chart fa-2x\"></em>\n                </div>\n                <div class=\"col-xs-8\">\n                    <div class=\"panel-body text-center\">\n                        <h4 class=\"mt0\">$ 13363534</h4>\n                        <p class=\"mb0 text-muted\">Total sales YTD</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- END widget-->\n    </div>\n    <div class=\"col-lg-3\">\n        <!-- START widget-->\n        <div class=\"panel widget\">\n            <div class=\"row row-table row-flush\">\n                <div class=\"col-xs-4 bg-danger text-center\">\n                    <em class=\"fa fa-filter fa-2x\"></em>\n                </div>\n                <div class=\"col-xs-8\">\n                    <div class=\"panel-body text-center\">\n                        <h4 class=\"mt0\">$56546</h4>\n                        <p class=\"mb0 text-muted\">Current QTR</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- END widget-->\n    </div>\n    <div class=\"col-lg-3\">\n        <!-- START widget-->\n        <div class=\"panel widget\">\n            <div class=\"row row-table row-flush\">\n                <div class=\"col-xs-4 bg-inverse text-center\">\n                    <em class=\"fa fa-percent fa-2x\"></em>\n                </div>\n                <div class=\"col-xs-8\">\n                    <div class=\"panel-body text-center\">\n                        <h4 class=\"mt0\">$234</h4>\n                        <p class=\"mb0 text-muted\">Average sale value</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- END widget-->\n    </div>\n    <div class=\"col-lg-3\">\n        <!-- START widget-->\n        <div class=\"panel widget\">\n            <div class=\"row row-table row-flush\">\n                <div class=\"col-xs-4 bg-green text-center\">\n                    <em class=\"fa fa-gift fa-2x\"></em>\n                </div>\n                <div class=\"col-xs-8\">\n                    <div class=\"panel-body text-center\">\n                        <h4 class=\"mt0\">$838</h4>\n                        <p class=\"mb0 text-muted\">Average discount value</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- END widget-->\n    </div>\n</div>\n<!-- END row-->\n<!-- START panel tab-->\n<div class=\"row\">\n    <div class=\"col-lg-9\">\n        <div class=\"form-group mb-xl\">\n            <input class=\"form-control mb\" type=\"text\" placeholder=\"Search products, products, etc.\" />\n        </div>\n        <div class=\"panel\">\n                \n            <tabset class=\"bg-white p0\" [justified]=\"true\">\n                \n                <tab>\n                    <ng-template tabHeading>\n                        <em class=\"fa fa-money fa-fw\"></em>Transactions Panel\n                    </ng-template>\n                    <div>\n                        <!-- START table responsive-->\n                        <div class=\"table-responsive\">\n                            <table class=\"table table-bordered table-hover table-striped\">\n                                <thead>\n                                    <tr>\n                                        <th>Order #</th>\n                                        <th>Order Date</th>\n                                        <th>Order Time</th>\n                                        <th>Amount (USD)</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>3326</td>\n                                        <td>10/21/2013</td>\n                                        <td>3:29 PM</td>\n                                        <td>$321.33</td>\n                                    </tr>\n                                    <tr>\n                                        <td>3325</td>\n                                        <td>10/21/2013</td>\n                                        <td>3:20 PM</td>\n                                        <td>$234.34</td>\n                                    </tr>\n                                    <tr>\n                                        <td>3324</td>\n                                        <td>10/21/2013</td>\n                                        <td>3:03 PM</td>\n                                        <td>$724.17</td>\n                                    </tr>\n                                    <tr>\n                                        <td>3323</td>\n                                        <td>10/21/2013</td>\n                                        <td>3:00 PM</td>\n                                        <td>$23.71</td>\n                                    </tr>\n                                    <tr>\n                                        <td>3322</td>\n                                        <td>10/21/2013</td>\n                                        <td>2:49 PM</td>\n                                        <td>$8345.23</td>\n                                    </tr>\n                                    <tr>\n                                        <td>3321</td>\n                                        <td>10/21/2013</td>\n                                        <td>2:23 PM</td>\n                                        <td>$245.12</td>\n                                    </tr>\n                                    <tr>\n                                        <td>3320</td>\n                                        <td>10/21/2013</td>\n                                        <td>2:15 PM</td>\n                                        <td>$5663.54</td>\n                                    </tr>\n                                    <tr>\n                                        <td>3319</td>\n                                        <td>10/21/2013</td>\n                                        <td>2:13 PM</td>\n                                        <td>$943.45</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>\n                        <!-- END table responsive-->\n                        <div class=\"panel-footer text-right\"><a class=\"btn btn-default btn-sm\" href=\"#\">View All Transactions</a>\n                        </div>\n                    </div>\n                </tab>\n            </tabset>\n        </div>\n    </div>\n    <div class=\"col-lg-3\">\n        <h3 class=\"m0 pb-lg\">Search Orders</h3>\n        <!-- <div class=\"form-group mb-xl\">\n            <label class=\"control-label mb\">by Text</label>\n            <br/>\n            <ng-select [allowClear]=\"true\" [items]=\"items\" placeholder=\"Nothing selected\"></ng-select>\n        </div> -->\n        <div class=\"form-group mb-xl\">\n            <label class=\"control-label mb\">From Date</label>\n            <br/>\n            <p class=\"input-group\">\n                <input class=\"form-control\" type=\"date\" />\n                <span class=\"input-group-btn\">\n                <button class=\"btn btn-default\" type=\"button\">\n                    <em class=\"fa fa-calendar\"></em>\n                </button>\n            </span>\n            </p>\n        </div>\n        <div class=\"form-group mb-xl\">\n            <label class=\"control-label mb\">To Date</label>\n            <br/>\n            <p class=\"input-group\">\n                <input class=\"form-control\" type=\"date\" />\n                <span class=\"input-group-btn\">\n                <button class=\"btn btn-default\" type=\"button\">\n                    <em class=\"fa fa-calendar\"></em>\n                </button>\n            </span>\n            </p>\n        </div>\n        <!-- <div class=\"form-group mb-xl\">\n            <label class=\"control-label mb\">by Date</label>\n            <br/>\n            <p class=\"input-group\">\n                <input class=\"form-control\" type=\"date\" />\n                <span class=\"input-group-btn\">\n                <button class=\"btn btn-default\" type=\"button\">\n                    <em class=\"fa fa-calendar\"></em>\n                </button>\n            </span>\n            </p>\n        </div> -->\n        <div class=\"form-group mb-xl\">\n          <label class=\"control-label mb\">Order no:</label>\n          <br>\n          <input type=\"text\" class=\"slider slider-lg form-control\">\n        </div>\n        <button class=\"btn btn-default btn-lg\">Apply</button>\n    </div>\n</div>\n<!-- END panel tab-->\n"
 
 /***/ }),
 
 /***/ 1008:
 /***/ (function(module, exports) {
 
-module.exports = "<tabset [justified]=\"true\">\r\n    <tab>\r\n        <ng-template tabHeading>\r\n            <em class=\"icon-equalizer fa-lg\"></em>\r\n        </ng-template>\r\n        <!-- <h3 class=\"text-center text-thin\">Settings</h3> -->\r\n        <!-- Theme Settings -->\r\n        <div class=\"p\">\r\n            <h4 class=\"text-muted text-thin\">Themes</h4>\r\n            <p class=\"text-muted text-thin\">Select your theme :</p>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"A\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info\"></span>\r\n                          <span class=\"color bg-info-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"B\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green\"></span>\r\n                          <span class=\"color bg-green-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"C\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple\"></span>\r\n                          <span class=\"color bg-purple-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"D\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger\"></span>\r\n                          <span class=\"color bg-danger-light\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-white\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"table-grid mb\">\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"E\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-info-dark\"></span>\r\n                          <span class=\"color bg-info\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"F\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-green-dark\"></span>\r\n                          <span class=\"color bg-green\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"G\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-purple-dark\"></span>\r\n                          <span class=\"color bg-purple\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col mb\">\r\n                    <div class=\"setting-color\">\r\n                        <label>\r\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"H\" />\r\n                          <span class=\"icon-check\"></span>\r\n                          <span class=\"split\">\r\n                <span class=\"color bg-danger-dark\"></span>\r\n                          <span class=\"color bg-danger\"></span>\r\n                          </span>\r\n                          <span class=\"color bg-gray-dark\"></span>\r\n                      </label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </tab>\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <p class=\"text-muted text-thin\">*Note: Please upload Logo of width 100px and height 40px.</p>\r\n                    <h4 class=\"text-muted text-thin\">Select file : </h4>\r\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\" nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-1\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\r\n                        (change)=\"logoUploadBase64($event)\">\r\n                    <div class=\"bootstrap-filestyle input-group\">\r\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\r\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\r\n                    <label for=\"filestyle-1\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\r\n                        <span class=\"buttonText\">Upload Logo</span>\r\n                        </label>\r\n                        </span>\r\n                    </div>\r\n                    <div class=\"result\" *ngIf='image.src'>\r\n                        <h4 class=\"text-muted text-thin\">Logo Preview</h4><br>\r\n                        <div class=\"text-center\">\r\n                            <img src={{image.src}} height=\"40px\" width=\"100px\"><br>\r\n                            <button class=\"btn btn-primary pull-right\" (click)='saveLogo()'>Save Logo</button>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-6\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">Logo Icon</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <p class=\"text-muted text-thin\">*Note: Please upload Logo of width 42px and height 44px.</p>\r\n                    <h4 class=\"text-muted text-thin\">Select file : </h4>\r\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\" nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-2\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\r\n                        (change)=\"IconUploadBase64($event)\">\r\n                    <div class=\"bootstrap-filestyle input-group\">\r\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\r\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\r\n                                <label for=\"filestyle-2\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\r\n                        <span class=\"buttonText\">Upload Logo Icon</span>\r\n                        </label>\r\n                        </span>\r\n                    </div>\r\n                    <div class=\"result\" *ngIf='icon.src'>\r\n                        <h4 class=\"text-muted text-thin\">Logo Icon Preview</h4><br>\r\n                        <div class=\"text-center\">\r\n                            <img src={{icon.src}} height=\"42px\" width=\"44px\"><br>\r\n                            <button class=\"btn btn-primary pull-right\" (click)='saveLogoIcon()'>Save Logo</button>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</tabset>\r\n<tabset [justified]=\"true\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6\">\r\n            <div class=\"panel panel-default\">\r\n                <div class=\"panel-heading\">\r\n                    <h4 class=\"text-muted text-thin\">App name</h4>\r\n                </div>\r\n                <hr>\r\n                <div class=\"panel-body\">\r\n                    <form novalidate #appNameForm='ngForm'>\r\n                        <div class=\"form-group\">\r\n                            <label for=\"appName\">App name:</label>\r\n                            <input type=\"text\" class=\"form-control\" id=\"usr\" name=\"name\" placeholder=\"Please enter our app name here\" [(ngModel)]='data.name' #name='ngModel' minlength=\"3\" required>\r\n                            <div *ngIf=\"name.errors && (name.dirty || name.touched)\" class=\"error\">\r\n                                <span class=\"text-danger\" [hidden]=\"!name.errors.required\">Please Enter the app name </span>\r\n                                <span class=\"text-danger\" [hidden]=\"!name.errors.minlength\">app name should be more than 3 characters.</span>\r\n                            </div>\r\n                        </div>\r\n                        <button class=\"btn btn-primary pull-right\" [disabled]=\"!appNameForm.form.valid\" (click)='saveAppName(data); appNameForm.reset()'>Save</button>\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</tabset>"
+module.exports = "<tabset [justified]=\"true\">\n    <tab>\n        <ng-template tabHeading>\n            <em class=\"icon-equalizer fa-lg\"></em>\n        </ng-template>\n        <!-- <h3 class=\"text-center text-thin\">Settings</h3> -->\n        <!-- Theme Settings -->\n        <div class=\"p\">\n            <h4 class=\"text-muted text-thin\">Themes</h4>\n            <p class=\"text-muted text-thin\">Select your theme :</p>\n            <div class=\"table-grid mb\">\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"A\" />\n                          <span class=\"icon-check\"></span>\n                          <span class=\"split\">\n                <span class=\"color bg-info\"></span>\n                          <span class=\"color bg-info-light\"></span>\n                          </span>\n                          <span class=\"color bg-white\"></span>\n                      </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"B\" />\n                          <span class=\"icon-check\"></span>\n                          <span class=\"split\">\n                <span class=\"color bg-green\"></span>\n                          <span class=\"color bg-green-light\"></span>\n                          </span>\n                          <span class=\"color bg-white\"></span>\n                      </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"C\" />\n                          <span class=\"icon-check\"></span>\n                          <span class=\"split\">\n                <span class=\"color bg-purple\"></span>\n                          <span class=\"color bg-purple-light\"></span>\n                          </span>\n                          <span class=\"color bg-white\"></span>\n                      </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"D\" />\n                          <span class=\"icon-check\"></span>\n                          <span class=\"split\">\n                <span class=\"color bg-danger\"></span>\n                          <span class=\"color bg-danger-light\"></span>\n                          </span>\n                          <span class=\"color bg-white\"></span>\n                      </label>\n                    </div>\n                </div>\n            </div>\n            <div class=\"table-grid mb\">\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"E\" />\n                          <span class=\"icon-check\"></span>\n                          <span class=\"split\">\n                <span class=\"color bg-info-dark\"></span>\n                          <span class=\"color bg-info\"></span>\n                          </span>\n                          <span class=\"color bg-gray-dark\"></span>\n                      </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"F\" />\n                          <span class=\"icon-check\"></span>\n                          <span class=\"split\">\n                <span class=\"color bg-green-dark\"></span>\n                          <span class=\"color bg-green\"></span>\n                          </span>\n                          <span class=\"color bg-gray-dark\"></span>\n                      </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"G\" />\n                          <span class=\"icon-check\"></span>\n                          <span class=\"split\">\n                <span class=\"color bg-purple-dark\"></span>\n                          <span class=\"color bg-purple\"></span>\n                          </span>\n                          <span class=\"color bg-gray-dark\"></span>\n                      </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                          <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"H\" />\n                          <span class=\"icon-check\"></span>\n                          <span class=\"split\">\n                <span class=\"color bg-danger-dark\"></span>\n                          <span class=\"color bg-danger\"></span>\n                          </span>\n                          <span class=\"color bg-gray-dark\"></span>\n                      </label>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </tab>\n</tabset>\n<tabset [justified]=\"true\">\n    <div class=\"row\">\n        <div class=\"col-md-6\">\n\n            <div class=\"panel panel-default\">\n                <div class=\"panel-heading\">\n                    <h4 class=\"text-muted text-thin\">Logo</h4>\n                </div>\n                <hr>\n                <div class=\"panel-body\">\n                    <p class=\"text-muted text-thin\">*Note: Please upload Logo of width 100px and height 40px.</p>\n                    <h4 class=\"text-muted text-thin\">Select file : </h4>\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\" nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-1\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\n                        (change)=\"logoUploadBase64($event)\">\n                    <div class=\"bootstrap-filestyle input-group\">\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\n                    <label for=\"filestyle-1\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\n                        <span class=\"buttonText\">Upload Logo</span>\n                        </label>\n                        </span>\n                    </div>\n                    <div class=\"result\" *ngIf='image.src'>\n                        <h4 class=\"text-muted text-thin\">Logo Preview</h4><br>\n                        <div class=\"text-center\">\n                            <img src={{image.src}} height=\"40px\" width=\"100px\"><br>\n                            <button class=\"btn btn-primary pull-right\" (click)='saveLogo()'>Save Logo</button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-6\">\n            <div class=\"panel panel-default\">\n                <div class=\"panel-heading\">\n                    <h4 class=\"text-muted text-thin\">Logo Icon</h4>\n                </div>\n                <hr>\n                <div class=\"panel-body\">\n                    <p class=\"text-muted text-thin\">*Note: Please upload Logo of width 42px and height 44px.</p>\n                    <h4 class=\"text-muted text-thin\">Select file : </h4>\n                    <input filestyle=\"\" type=\"file\" data-button-text=\"Single\" data-class-button=\"btn btn-default\" data-classinput=\"form-control inline\" nv-file-select=\"\" uploader=\"form.uploader\" class=\"form-control\" id=\"filestyle-2\" tabindex=\"-1\" style=\"position: absolute; clip: rect(0px 0px 0px 0px);\"\n                        (change)=\"IconUploadBase64($event)\">\n                    <div class=\"bootstrap-filestyle input-group\">\n                        <input type=\"text\" class=\"form-control \" placeholder=\"\" disabled=\"\">\n                        <span class=\"group-span-filestyle input-group-btn\" tabindex=\"0\">\n                                <label for=\"filestyle-2\" class=\"btn btn-default \"><span class=\"icon-span-filestyle glyphicon glyphicon-folder-open\"></span>\n                        <span class=\"buttonText\">Upload Logo Icon</span>\n                        </label>\n                        </span>\n                    </div>\n                    <div class=\"result\" *ngIf='icon.src'>\n                        <h4 class=\"text-muted text-thin\">Logo Icon Preview</h4><br>\n                        <div class=\"text-center\">\n                            <img src={{icon.src}} height=\"42px\" width=\"44px\"><br>\n                            <button class=\"btn btn-primary pull-right\" (click)='saveLogoIcon()'>Save Logo</button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</tabset>\n<tabset [justified]=\"true\">\n    <div class=\"row\">\n        <div class=\"col-md-6\">\n            <div class=\"panel panel-default\">\n                <div class=\"panel-heading\">\n                    <h4 class=\"text-muted text-thin\">App name</h4>\n                </div>\n                <hr>\n                <div class=\"panel-body\">\n                    <form novalidate #appNameForm='ngForm'>\n                        <div class=\"form-group\">\n                            <label for=\"appName\">App name:</label>\n                            <input type=\"text\" class=\"form-control\" id=\"usr\" name=\"name\" placeholder=\"Please enter our app name here\" [(ngModel)]='data.name' #name='ngModel' minlength=\"3\" required>\n                            <div *ngIf=\"name.errors && (name.dirty || name.touched)\" class=\"error\">\n                                <span class=\"text-danger\" [hidden]=\"!name.errors.required\">Please Enter the app name </span>\n                                <span class=\"text-danger\" [hidden]=\"!name.errors.minlength\">app name should be more than 3 characters.</span>\n                            </div>\n                        </div>\n                        <button class=\"btn btn-primary pull-right\" [disabled]=\"!appNameForm.form.valid\" (click)='saveAppName(data); appNameForm.reset()'>Save</button>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</tabset>"
 
 /***/ }),
 
@@ -121,35 +121,35 @@ module.exports = "<div class=\"content-heading\">\n  Users List\n  <!-- <small>N
 /***/ 1010:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\r\n    <!-- top navbar-->\r\n    <app-top-navbar class=\"topnavbar-wrapper\"></app-top-navbar>\r\n    <!-- sidebar-->\r\n    <app-side-navbar class=\"aside\" (openModal)=\"showModal($event)\"></app-side-navbar>\r\n    <!-- offsidebar-->\r\n    <!--<app-offsidebar class=\"offsidebar\"></app-offsidebar>-->\r\n    <!-- Main section-->\r\n    <section>\r\n        <!-- Page content-->\r\n        <div class=\"content-wrapper\">\r\n            <div bsModal #lgModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myLargeModalLabel\" aria-hidden=\"true\">\r\n                <div class=\"modal-dialog modal-lg\">\r\n                    <div class=\"modal-content\">\r\n                        <div class=\"modal-header\">\r\n                            <h4 class=\"modal-title pull-left\">Large modal</h4>\r\n                            <button type=\"button\" class=\"close pull-right\" (click)=\"lgModal.hide()\" aria-label=\"Close\">\r\n                                <span aria-hidden=\"true\">&times;</span>\r\n                            </button>\r\n                        </div>\r\n                        <div class=\"modal-body\">\r\n\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </section>\r\n    <!-- Page footer-->\r\n    <!--<footer app-footer></footer>-->\r\n</div>"
+module.exports = "<div class=\"wrapper\">\n    <!-- top navbar-->\n    <app-top-navbar class=\"topnavbar-wrapper\"></app-top-navbar>\n    <!-- sidebar-->\n    <app-side-navbar class=\"aside\" (openModal)=\"showModal($event)\"></app-side-navbar>\n    <!-- offsidebar-->\n    <!--<app-offsidebar class=\"offsidebar\"></app-offsidebar>-->\n    <!-- Main section-->\n    <section>\n        <!-- Page content-->\n        <div class=\"content-wrapper\">\n            <div bsModal #lgModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myLargeModalLabel\" aria-hidden=\"true\">\n                <div class=\"modal-dialog modal-lg\">\n                    <div class=\"modal-content\">\n                        <div class=\"modal-header\">\n                            <h4 class=\"modal-title pull-left\">Large modal</h4>\n                            <button type=\"button\" class=\"close pull-right\" (click)=\"lgModal.hide()\" aria-label=\"Close\">\n                                <span aria-hidden=\"true\">&times;</span>\n                            </button>\n                        </div>\n                        <div class=\"modal-body\">\n\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <router-outlet></router-outlet>\n        </div>\n    </section>\n    <!-- Page footer-->\n    <!--<footer app-footer></footer>-->\n</div>"
 
 /***/ }),
 
 /***/ 1011:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- START Sidebar (left)-->\r\n<div class=\"aside-inner\">\r\n    <nav class=\"sidebar\" sidebar-anyclick-close=\"\" [class.show-scrollbar]=\"settings.layout.asideScrollbar\">\r\n\r\n        <!-- START sidebar nav-->\r\n        <ul class=\"nav\">\r\n\r\n            <!-- START user info-->\r\n            <li class=\"has-user-block\">\r\n                <app-userblock (someEvent)=\"test($event)\"></app-userblock>\r\n            </li>\r\n            <!-- END user info-->\r\n\r\n            <li *ngFor='let item of menuItems' [ngClass]=\"{'nav-heading': item.heading}\" [routerLinkActive]=\"['active']\">\r\n                <!-- menu heading -->\r\n                <span *ngIf=\"item.heading\">{{(item.translate | translate) || item.text}}</span>\r\n                <!-- external links -->\r\n                <a *ngIf=\"!item.heading && !item.submenu && item.elink\" [attr.target]=\"item.target\" [attr.href]=\"item.elink\" title=\"{{item.text}}\">\r\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\r\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\r\n                    <span>{{(item.translate | translate) || item.text}}</span>\r\n                </a>\r\n                <!-- single menu item -->\r\n                <a *ngIf=\"!item.heading && !item.submenu && !item.elink\" [routerLink]=\"item.link\" [attr.route]=\"item.link\" title=\"{{item.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\r\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\r\n                    <span>{{(item.translate | translate) || item.text}}</span>\r\n                </a>\r\n                <!-- has submenu -->\r\n                <a *ngIf=\"!item.heading && item.submenu\" title=\"{{item.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\r\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\r\n                    <span>{{(item.translate | translate) || item.text}}</span>\r\n                </a>\r\n                <!-- SUBLEVEL -->\r\n                <ul *ngIf=\"item.submenu\" class=\"nav sidebar-subnav\" [routerLinkActive]=\"['opening']\">\r\n                    <li class=\"sidebar-subnav-header\">{{(item.translate | translate) || item.text}}</li>\r\n                    <li *ngFor='let subitem of item.submenu' [routerLinkActive]=\"['active']\">\r\n                        <!-- sublevel: external links -->\r\n                        <a *ngIf=\"!subitem.heading && !subitem.submenu && subitem.elink\" [attr.target]=\"subitem.target\" [attr.href]=\"subitem.elink\" title=\"{{subitem.text}}\">\r\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\r\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\r\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\r\n                        </a>\r\n                        <!-- sublevel: single menu item  -->\r\n                        <a *ngIf=\"!subitem.submenu && !subitem.elink\" [routerLink]=\"subitem.link\" [attr.route]=\"subitem.link\" title=\"{{subitem.text}}\">\r\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\r\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\r\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\r\n                        </a>\r\n                        <!-- sublevel: has submenu -->\r\n                        <a *ngIf=\"subitem.submenu\" title=\"{{subitem.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\r\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\r\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\r\n                        </a>\r\n                        <!-- SUBLEVEL 2 -->\r\n                        <ul *ngIf=\"subitem.submenu\" class=\"nav sidebar-subnav level2\" [routerLinkActive]=\"['opening']\">\r\n                            <li *ngFor='let subitem2 of subitem.submenu' [routerLinkActive]=\"['active']\">\r\n                                <!-- sublevel 2: single menu item  -->\r\n                                <a *ngIf=\"!subitem2.submenu\" [routerLink]=\"subitem2.link\" [attr.route]=\"subitem2.link\" title=\"{{subitem2.text}}\">\r\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\r\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\r\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\r\n                                </a>\r\n                                <!-- sublevel2: has submenu -->\r\n                                <a *ngIf=\"subitem2.submenu\" title=\"{{subitem2.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\r\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\r\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\r\n                                </a>\r\n                                <!-- SUBLEVEL 3 -->\r\n                                <ul *ngIf=\"subitem2.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\r\n                                    <li *ngFor='let subitem3 of subitem2.submenu' [routerLinkActive]=\"['active']\">\r\n                                        <!-- sublevel 2: single menu item  -->\r\n                                        <a *ngIf=\"!subitem3.submenu\" [routerLink]=\"subitem3.link\" [attr.route]=\"subitem3.link\" title=\"{{subitem3.text}}\">\r\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\r\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\r\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\r\n                                        </a>\r\n                                        <!-- sublevel3: has submenu -->\r\n                                        <a *ngIf=\"subitem3.submenu\" title=\"{{subitem3.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\r\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\r\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\r\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\r\n                                        </a>\r\n                                        <!-- SUBLEVEL 4 -->\r\n                                        <ul *ngIf=\"subitem3.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\r\n                                            <li *ngFor='let subitem4 of subitem3.submenu' [routerLinkActive]=\"['active']\">\r\n                                                <!-- sublevel 2: single menu item  -->\r\n                                                <a *ngIf=\"!subitem4.submenu\" [routerLink]=\"subitem4.link\" [attr.route]=\"subitem4.link\" title=\"{{subitem4.text}}\">\r\n                                                    <span class=\"pull-right\" *ngIf=\"subitem4.alert\" [ngClass]=\"subitem4.label || 'label label-success'\">{{subitem4.alert}}</span>\r\n                                                    <em class=\"{{subitem4.icon}}\" *ngIf=\"subitem4.icon\"></em>\r\n                                                    <span>{{(subitem4.translate | translate) || subitem4.text}}</span>\r\n                                                </a>\r\n                                            </li>\r\n                                        </ul>\r\n                                    </li>\r\n                                </ul>\r\n                                <li>\r\n                        </ul>\r\n                        <li>\r\n                </ul>\r\n                </li>\r\n\r\n        </ul>\r\n        <!-- END sidebar nav-->\r\n\r\n    </nav>\r\n</div>\r\n<!-- END Sidebar (left)-->"
+module.exports = "<!-- START Sidebar (left)-->\n<div class=\"aside-inner\">\n    <nav class=\"sidebar\" sidebar-anyclick-close=\"\" [class.show-scrollbar]=\"settings.layout.asideScrollbar\">\n\n        <!-- START sidebar nav-->\n        <ul class=\"nav\">\n\n            <!-- START user info-->\n            <li class=\"has-user-block\">\n                <app-userblock (someEvent)=\"test($event)\"></app-userblock>\n            </li>\n            <!-- END user info-->\n\n            <li *ngFor='let item of menuItems' [ngClass]=\"{'nav-heading': item.heading}\" [routerLinkActive]=\"['active']\">\n                <!-- menu heading -->\n                <span *ngIf=\"item.heading\">{{(item.translate | translate) || item.text}}</span>\n                <!-- external links -->\n                <a *ngIf=\"!item.heading && !item.submenu && item.elink\" [attr.target]=\"item.target\" [attr.href]=\"item.elink\" title=\"{{item.text}}\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- single menu item -->\n                <a *ngIf=\"!item.heading && !item.submenu && !item.elink\" [routerLink]=\"item.link\" [attr.route]=\"item.link\" title=\"{{item.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- has submenu -->\n                <a *ngIf=\"!item.heading && item.submenu\" title=\"{{item.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- SUBLEVEL -->\n                <ul *ngIf=\"item.submenu\" class=\"nav sidebar-subnav\" [routerLinkActive]=\"['opening']\">\n                    <li class=\"sidebar-subnav-header\">{{(item.translate | translate) || item.text}}</li>\n                    <li *ngFor='let subitem of item.submenu' [routerLinkActive]=\"['active']\">\n                        <!-- sublevel: external links -->\n                        <a *ngIf=\"!subitem.heading && !subitem.submenu && subitem.elink\" [attr.target]=\"subitem.target\" [attr.href]=\"subitem.elink\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: single menu item  -->\n                        <a *ngIf=\"!subitem.submenu && !subitem.elink\" [routerLink]=\"subitem.link\" [attr.route]=\"subitem.link\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: has submenu -->\n                        <a *ngIf=\"subitem.submenu\" title=\"{{subitem.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- SUBLEVEL 2 -->\n                        <ul *ngIf=\"subitem.submenu\" class=\"nav sidebar-subnav level2\" [routerLinkActive]=\"['opening']\">\n                            <li *ngFor='let subitem2 of subitem.submenu' [routerLinkActive]=\"['active']\">\n                                <!-- sublevel 2: single menu item  -->\n                                <a *ngIf=\"!subitem2.submenu\" [routerLink]=\"subitem2.link\" [attr.route]=\"subitem2.link\" title=\"{{subitem2.text}}\">\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- sublevel2: has submenu -->\n                                <a *ngIf=\"subitem2.submenu\" title=\"{{subitem2.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- SUBLEVEL 3 -->\n                                <ul *ngIf=\"subitem2.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                    <li *ngFor='let subitem3 of subitem2.submenu' [routerLinkActive]=\"['active']\">\n                                        <!-- sublevel 2: single menu item  -->\n                                        <a *ngIf=\"!subitem3.submenu\" [routerLink]=\"subitem3.link\" [attr.route]=\"subitem3.link\" title=\"{{subitem3.text}}\">\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- sublevel3: has submenu -->\n                                        <a *ngIf=\"subitem3.submenu\" title=\"{{subitem3.text}}\" (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- SUBLEVEL 4 -->\n                                        <ul *ngIf=\"subitem3.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                            <li *ngFor='let subitem4 of subitem3.submenu' [routerLinkActive]=\"['active']\">\n                                                <!-- sublevel 2: single menu item  -->\n                                                <a *ngIf=\"!subitem4.submenu\" [routerLink]=\"subitem4.link\" [attr.route]=\"subitem4.link\" title=\"{{subitem4.text}}\">\n                                                    <span class=\"pull-right\" *ngIf=\"subitem4.alert\" [ngClass]=\"subitem4.label || 'label label-success'\">{{subitem4.alert}}</span>\n                                                    <em class=\"{{subitem4.icon}}\" *ngIf=\"subitem4.icon\"></em>\n                                                    <span>{{(subitem4.translate | translate) || subitem4.text}}</span>\n                                                </a>\n                                            </li>\n                                        </ul>\n                                    </li>\n                                </ul>\n                                <li>\n                        </ul>\n                        <li>\n                </ul>\n                </li>\n\n        </ul>\n        <!-- END sidebar nav-->\n\n    </nav>\n</div>\n<!-- END Sidebar (left)-->"
 
 /***/ }),
 
 /***/ 1012:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"item user-block\" *ngIf=\"userBlockIsVisible()\">\r\n    <!-- User picture-->\r\n    <div class=\"user-block-picture\">\r\n        <div class=\"user-block-status\">\r\n            <img class=\"img-thumbnail img-circle\" [src]=\"user.picture\" alt=\"Avatar\" />\r\n            <div class=\"circle circle-success circle-lg\"></div>\r\n        </div>\r\n    </div>\r\n    <!-- Name and Job-->\r\n    <div class=\"user-block-info\">\r\n        <span class=\"user-block-name\">Welcome Ashok\r\n            <!--<i class=\"fa fa-pencil-square-o profileEdit\" aria-hidden=\"true\" (click)=\"callParent()\"></i>-->\r\n            </span>\r\n        <span class=\"user-block-role\">Programmer</span>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"item user-block\" *ngIf=\"userBlockIsVisible()\">\n    <!-- User picture-->\n    <div class=\"user-block-picture\">\n        <div class=\"user-block-status\">\n            <img class=\"img-thumbnail img-circle\" [src]=\"user.picture\" alt=\"Avatar\" />\n            <div class=\"circle circle-success circle-lg\"></div>\n        </div>\n    </div>\n    <!-- Name and Job-->\n    <div class=\"user-block-info\">\n        <span class=\"user-block-name\">Welcome Ashok\n            <!--<i class=\"fa fa-pencil-square-o profileEdit\" aria-hidden=\"true\" (click)=\"callParent()\"></i>-->\n            </span>\n        <span class=\"user-block-role\">Programmer</span>\n    </div>\n</div>"
 
 /***/ }),
 
 /***/ 1013:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- START Search form-->\r\n<form class=\"navbar-form\" role=\"search\" action=\"search.html\" [class.open]=\"visible\" (submit)=\"handleForm()\">\r\n    <div class=\"form-group has-feedback\">\r\n        <input [(ngModel)]=\"term\" name=\"term\" class=\"form-control\" type=\"text\" placeholder=\"{{'header.search.PLACEHOLDER' | translate}}\" />\r\n        <div class=\"fa fa-times form-control-feedback\" (click)=\"closeNavSearch()\"></div>\r\n    </div>\r\n    <button class=\"hidden btn btn-default\" type=\"submit\">Submit</button>\r\n</form>\r\n<!-- END Search form-->\r\n"
+module.exports = "<!-- START Search form-->\n<form class=\"navbar-form\" role=\"search\" action=\"search.html\" [class.open]=\"visible\" (submit)=\"handleForm()\">\n    <div class=\"form-group has-feedback\">\n        <input [(ngModel)]=\"term\" name=\"term\" class=\"form-control\" type=\"text\" placeholder=\"{{'header.search.PLACEHOLDER' | translate}}\" />\n        <div class=\"fa fa-times form-control-feedback\" (click)=\"closeNavSearch()\"></div>\n    </div>\n    <button class=\"hidden btn btn-default\" type=\"submit\">Submit</button>\n</form>\n<!-- END Search form-->\n"
 
 /***/ }),
 
 /***/ 1014:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- START Top Navbar-->\r\n<nav class=\"navbar topnavbar\" role=\"navigation\">\r\n    <!-- START navbar header-->\r\n    <div class=\"navbar-header\">\r\n        <a class=\"navbar-brand\" [routerLink]=\"'/'\">\r\n            <div class=\"brand-logo\">\r\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\"  style=\"height:40px;width:100px;\"/>\r\n            </div>\r\n            <div class=\"brand-logo-collapsed\">\r\n                <img class=\"img-responsive\" src=\"{{logoIcon}}\" alt=\"App Logo\" />\r\n            </div>\r\n        </a>\r\n            <!-- <a class=\"navbar-brand brand\" [routerLink]=\"'/home'\"> -->\r\n                <!--<svg viewbox=\"0 0 220 44\" width=\"220\" height=\"44\" xmlns=\"http://www.w3.org/2000/svg\">\r\n                    <title>EDCO Products, Steel Roofing and Siding</title>\r\n                    <g class=\"logoMark\">\r\n                        <path d=\"M1.4,2.4h38v39.2h-38V2.4z\" fill=\"#fff\"> </path>\r\n                        <path d=\"M0.1,1v42h40.6V1H0.1z M3.5,37.4V8.1l10.3,14.4L3.5,37.4z M15.2,39.7V5.2l12.1,17.6L15.2,39.7z M28.8,37.4 L29,7.8L38.9,23L28.8,37.4z\"\r\n                            fill=\"#c6202c\"> </path>\r\n                    </g>-->\r\n                    <!--<path class=\"logoType\" d=\"M46.092.98h37.793v10.11h-21.43v5.963h20.5V27.18h-20.5v5.716H84.32V43.02H46.092V.98m40.03 0h24.537c12.48 0 21.29 4.1 21.29 21.144 0 15.903-9.48 20.897-21.97 20.897H86.13zm16.734 31.555h4.162c6.063 0 7.43-3.85 7.43-10.833 0-7.23-1.49-10.97-7.48-10.97h-4.1zm68.542 9.517a49.372 49.372 0 0 1-12 1.69c-14.475 0-26.09-7.33-26.09-22.338 0-14.1 12.112-21.145 26.09-21.145a60.752 60.752 0 0 1 11.876 1.31v11.11a28.947 28.947 0 0 0-8.36-1.59c-7.12 0-12.5 3.68-12.5 10.56 0 7.2 4.995 10.89 11.927 10.89a28.078 28.078 0 0 0 9.07-1.655zm24.252 1.69c-15.232 0-24.165-7.405-24.165-21.742 0-14.088 8.945-21.74 24.165-21.74C210.893.257 220 7.91 220 22c0 14.337-9.107 21.742-24.35 21.742m0-10.126c6.62 0 6.808-7.106 6.882-11.616-.074-3.913-.497-11.63-6.883-11.63-6.18 0-6.68 7.704-6.68 11.63 0 4.51.69 11.616 6.68 11.616\">\r\n                    </path>-->\r\n                <!--</svg>-->\r\n                <!-- nayo\r\n            </a> -->\r\n    </div>\r\n    <!-- END navbar header-->\r\n    <!-- START Nav wrapper-->\r\n    <div class=\"nav-wrapper\">\r\n        <!-- START Left navbar-->\r\n        <ul class=\"nav navbar-nav\">\r\n            <li>\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\r\n        <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\r\n                    <em class=\"fa fa-navicon\"></em>\r\n                </a>\r\n        </li>\r\n        <!-- START User avatar toggle-->\r\n        <!--<li>-->\r\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\r\n        <!--<a (click)=\"toggleUserBlock($event)\">\r\n                    <em class=\"icon-user\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END User avatar toggle-->\r\n        <!-- START lock screen-->\r\n        <!--<li>\r\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\r\n                    <em class=\"icon-lock\"></em>\r\n                </a>\r\n            </li>-->\r\n        <!-- END lock screen-->\r\n        </ul>\r\n        <!-- END Left navbar-->\r\n        <!-- START Right Navbar-->\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <!-- Search icon-->\r\n            <li>\r\n                <a (click)=\"openNavSearch($event)\">\r\n                    <em class=\"icon-magnifier\"></em>\r\n                </a>\r\n            </li>\r\n            <!-- Fullscreen (only desktops)-->\r\n            <!-- <li class=\"visible-lg\">\r\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\r\n                    <em class=\"fa fa-expand\"></em>\r\n                </a>\r\n            </li> -->\r\n            <!--<li class=\"visible-lg\">\r\n                <a #fsbutton [routerLink]=\"'/login'\">Login\r\n                </a>\r\n            </li>-->\r\n            <!-- START Alert menu-->\r\n            <li class=\"dropdown dropdown-list\" dropdown>\r\n                <a dropdownToggle>\r\n                    <em class=\"icon-bell\"></em>\r\n                    <div class=\"label label-danger\">11</div>\r\n                </a>\r\n                <!-- START Dropdown menu-->\r\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\r\n                    <li>\r\n                        <!-- START list group-->\r\n                        <div class=\"list-group\">\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New followers</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>1 new follower</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">New e-mails</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>You have 10 new emails</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <div class=\"media-box\">\r\n                                    <div class=\"pull-left\">\r\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\r\n                                    </div>\r\n                                    <div class=\"media-box-body clearfix\">\r\n                                        <p class=\"m0\">Pending Tasks</p>\r\n                                        <p class=\"m0 text-muted\">\r\n                                            <small>11 pending task</small>\r\n                                        </p>\r\n                                    </div>\r\n                                </div>\r\n                            </a>\r\n                            <!-- last list item-->\r\n                            <a class=\"list-group-item\">\r\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\r\n                                <span class=\"label label-danger pull-right\">14</span>\r\n                            </a>\r\n                        </div>\r\n                        <!-- END list group-->\r\n                    </li>\r\n                </ul>\r\n                <!-- END Dropdown menu-->\r\n            </li>\r\n            <!-- END Alert menu-->\r\n            <!-- START Offsidebar button-->\r\n            <!--<li>\r\n                <a (click)=\"toggleOffsidebar()\">\r\n                    <em class=\"icon-notebook\"></em>\r\n                </a>\r\n            </li>-->\r\n            <!-- END Offsidebar menu-->\r\n        </ul>\r\n        <!-- END Right Navbar-->\r\n    </div>\r\n    <!-- END Nav wrapper-->\r\n\r\n    <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch>\r\n\r\n</nav>\r\n<!-- END Top Navbar-->"
+module.exports = "<!-- START Top Navbar-->\n<nav class=\"navbar topnavbar\" role=\"navigation\">\n    <!-- START navbar header-->\n    <div class=\"navbar-header\">\n        <a class=\"navbar-brand\" [routerLink]=\"'/'\">\n            <div class=\"brand-logo\">\n                <img class=\"img-responsive\" src=\"{{logo}}\" alt=\"App Logo\"  style=\"height:40px;width:100px;\"/>\n            </div>\n            <div class=\"brand-logo-collapsed\">\n                <img class=\"img-responsive\" src=\"{{logoIcon}}\" alt=\"App Logo\" />\n            </div>\n        </a>\n            <!-- <a class=\"navbar-brand brand\" [routerLink]=\"'/home'\"> -->\n                <!--<svg viewbox=\"0 0 220 44\" width=\"220\" height=\"44\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <title>EDCO Products, Steel Roofing and Siding</title>\n                    <g class=\"logoMark\">\n                        <path d=\"M1.4,2.4h38v39.2h-38V2.4z\" fill=\"#fff\"> </path>\n                        <path d=\"M0.1,1v42h40.6V1H0.1z M3.5,37.4V8.1l10.3,14.4L3.5,37.4z M15.2,39.7V5.2l12.1,17.6L15.2,39.7z M28.8,37.4 L29,7.8L38.9,23L28.8,37.4z\"\n                            fill=\"#c6202c\"> </path>\n                    </g>-->\n                    <!--<path class=\"logoType\" d=\"M46.092.98h37.793v10.11h-21.43v5.963h20.5V27.18h-20.5v5.716H84.32V43.02H46.092V.98m40.03 0h24.537c12.48 0 21.29 4.1 21.29 21.144 0 15.903-9.48 20.897-21.97 20.897H86.13zm16.734 31.555h4.162c6.063 0 7.43-3.85 7.43-10.833 0-7.23-1.49-10.97-7.48-10.97h-4.1zm68.542 9.517a49.372 49.372 0 0 1-12 1.69c-14.475 0-26.09-7.33-26.09-22.338 0-14.1 12.112-21.145 26.09-21.145a60.752 60.752 0 0 1 11.876 1.31v11.11a28.947 28.947 0 0 0-8.36-1.59c-7.12 0-12.5 3.68-12.5 10.56 0 7.2 4.995 10.89 11.927 10.89a28.078 28.078 0 0 0 9.07-1.655zm24.252 1.69c-15.232 0-24.165-7.405-24.165-21.742 0-14.088 8.945-21.74 24.165-21.74C210.893.257 220 7.91 220 22c0 14.337-9.107 21.742-24.35 21.742m0-10.126c6.62 0 6.808-7.106 6.882-11.616-.074-3.913-.497-11.63-6.883-11.63-6.18 0-6.68 7.704-6.68 11.63 0 4.51.69 11.616 6.68 11.616\">\n                    </path>-->\n                <!--</svg>-->\n                <!-- nayo\n            </a> -->\n    </div>\n    <!-- END navbar header-->\n    <!-- START Nav wrapper-->\n    <div class=\"nav-wrapper\">\n        <!-- START Left navbar-->\n        <ul class=\"nav navbar-nav\">\n            <li>\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\n        <a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\n                    <em class=\"fa fa-navicon\"></em>\n                </a>\n        <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\n        <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\n                    <em class=\"fa fa-navicon\"></em>\n                </a>\n        </li>\n        <!-- START User avatar toggle-->\n        <!--<li>-->\n        <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\n        <!--<a (click)=\"toggleUserBlock($event)\">\n                    <em class=\"icon-user\"></em>\n                </a>\n            </li>-->\n        <!-- END User avatar toggle-->\n        <!-- START lock screen-->\n        <!--<li>\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\n                    <em class=\"icon-lock\"></em>\n                </a>\n            </li>-->\n        <!-- END lock screen-->\n        </ul>\n        <!-- END Left navbar-->\n        <!-- START Right Navbar-->\n        <ul class=\"nav navbar-nav navbar-right\">\n            <!-- Search icon-->\n            <li>\n                <a (click)=\"openNavSearch($event)\">\n                    <em class=\"icon-magnifier\"></em>\n                </a>\n            </li>\n            <!-- Fullscreen (only desktops)-->\n            <!-- <li class=\"visible-lg\">\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\n                    <em class=\"fa fa-expand\"></em>\n                </a>\n            </li> -->\n            <!--<li class=\"visible-lg\">\n                <a #fsbutton [routerLink]=\"'/login'\">Login\n                </a>\n            </li>-->\n            <!-- START Alert menu-->\n            <li class=\"dropdown dropdown-list\" dropdown>\n                <a dropdownToggle>\n                    <em class=\"icon-bell\"></em>\n                    <div class=\"label label-danger\">11</div>\n                </a>\n                <!-- START Dropdown menu-->\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\n                    <li>\n                        <!-- START list group-->\n                        <div class=\"list-group\">\n                            <!-- list item-->\n                            <a class=\"list-group-item\">\n                                <div class=\"media-box\">\n                                    <div class=\"pull-left\">\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\n                                    </div>\n                                    <div class=\"media-box-body clearfix\">\n                                        <p class=\"m0\">New followers</p>\n                                        <p class=\"m0 text-muted\">\n                                            <small>1 new follower</small>\n                                        </p>\n                                    </div>\n                                </div>\n                            </a>\n                            <!-- list item-->\n                            <a class=\"list-group-item\">\n                                <div class=\"media-box\">\n                                    <div class=\"pull-left\">\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\n                                    </div>\n                                    <div class=\"media-box-body clearfix\">\n                                        <p class=\"m0\">New e-mails</p>\n                                        <p class=\"m0 text-muted\">\n                                            <small>You have 10 new emails</small>\n                                        </p>\n                                    </div>\n                                </div>\n                            </a>\n                            <!-- list item-->\n                            <a class=\"list-group-item\">\n                                <div class=\"media-box\">\n                                    <div class=\"pull-left\">\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\n                                    </div>\n                                    <div class=\"media-box-body clearfix\">\n                                        <p class=\"m0\">Pending Tasks</p>\n                                        <p class=\"m0 text-muted\">\n                                            <small>11 pending task</small>\n                                        </p>\n                                    </div>\n                                </div>\n                            </a>\n                            <!-- last list item-->\n                            <a class=\"list-group-item\">\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\n                                <span class=\"label label-danger pull-right\">14</span>\n                            </a>\n                        </div>\n                        <!-- END list group-->\n                    </li>\n                </ul>\n                <!-- END Dropdown menu-->\n            </li>\n            <!-- END Alert menu-->\n            <!-- START Offsidebar button-->\n            <!--<li>\n                <a (click)=\"toggleOffsidebar()\">\n                    <em class=\"icon-notebook\"></em>\n                </a>\n            </li>-->\n            <!-- END Offsidebar menu-->\n        </ul>\n        <!-- END Right Navbar-->\n    </div>\n    <!-- END Nav wrapper-->\n\n    <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch>\n\n</nav>\n<!-- END Top Navbar-->"
 
 /***/ }),
 
@@ -1912,15 +1912,15 @@ var UsersListComponent = (function () {
         this.columns = [
             { title: 'Name', name: 'name', filtering: { filterString: '', placeholder: 'Filter by name' } },
             {
-                title: 'Position',
+                title: 'Company Name',
                 name: 'position',
                 sort: false,
-                filtering: { filterString: '', placeholder: 'Filter by position' }
+                filtering: { filterString: '', placeholder: 'Filter by Company' }
             },
-            { title: 'Office', className: ['office-header', 'text-success'], name: 'office', sort: 'asc' },
-            { title: 'Extn.', name: 'ext', sort: '', filtering: { filterString: '', placeholder: 'Filter by extn.' } },
-            { title: 'Start date', className: 'text-warning', name: 'startDate' },
-            { title: 'Salary ($)', name: 'salary' }
+            { title: 'location', className: ['office-header', 'text-success'], name: 'office', sort: 'asc' },
+            { title: 'Mobile', name: 'ext', sort: '', filtering: { filterString: '', placeholder: 'Filter by mobile.' } },
+            { title: 'Registered On', className: 'text-warning', name: 'startDate' },
+            { title: 'Pin Code', name: 'salary' }
         ];
         this.page = 1;
         this.itemsPerPage = 10;
@@ -3866,702 +3866,100 @@ var TableData = [
         'name': 'Victoria Cantrell',
         'position': 'Integer Corporation',
         'office': 'Croatia',
-        'ext': "<strong>0839</strong>",
+        'ext': "<strong>0839083923</strong>",
         'startDate': '2015/08/19',
-        'salary': 208.178
+        'salary': 208178
     }, {
         'name': 'Pearl Crosby',
         'position': 'In PC',
         'office': 'Cambodia',
-        'ext': "<strong>8262</strong>",
+        'ext': "<strong>8262826223</strong>",
         'startDate': '2014/10/08',
-        'salary': 114.367
+        'salary': 114367
     }, {
         'name': 'Colette Foley',
         'position': 'Lorem Inc.',
         'office': 'Korea, North',
-        'ext': '8968',
+        'ext': '8968896823',
         'startDate': '2015/07/19',
-        'salary': 721.473
+        'salary': 721473
     }, {
         'name': 'Anastasia Shaffer',
         'position': 'Dolor Nulla Semper LLC',
         'office': 'Suriname',
-        'ext': '7980',
+        'ext': '7980896823',
         'startDate': '2015/04/20',
-        'salary': 264.620
+        'salary': 264620
     }, {
         'name': 'Gabriel Castro',
         'position': 'Sed Limited',
         'office': 'Bahrain',
-        'ext': '0757',
+        'ext': '9757896834',
         'startDate': '2015/03/04',
-        'salary': 651.350
+        'salary': 651350
     }, {
         'name': 'Cherokee Ware',
         'position': 'Tincidunt LLC',
         'office': 'United Kingdom (Great Britain)',
-        'ext': '3995',
+        'ext': '9995896823',
         'startDate': '2015/06/17',
-        'salary': 666.259
+        'salary': 666259
     }, {
         'name': 'Barry Moss',
         'position': 'Sociis Industries',
         'office': 'Western Sahara',
-        'ext': '6697',
+        'ext': '9697896834',
         'startDate': '2015/08/13',
-        'salary': 541.631
+        'salary': 541631
     }, {
         'name': 'Maryam Tucker',
         'position': 'Elit Pede Malesuada Inc.',
         'office': 'Brazil',
-        'ext': '5203',
+        'ext': '9203896845',
         'startDate': '2014/10/02',
-        'salary': 182.294
+        'salary': 182294
     }, {
         'name': 'Constance Clayton',
         'position': 'Auctor Velit Aliquam LLP',
         'office': 'United Arab Emirates',
-        'ext': '4204',
+        'ext': '904896823',
         'startDate': '2015/08/01',
-        'salary': 218.597
+        'salary': 218597
     }, {
         'name': 'Rogan Tucker',
         'position': 'Arcu Vestibulum Ante Associates',
         'office': 'Jersey',
-        'ext': '0885',
+        'ext': '908858968',
         'startDate': '2015/01/04',
-        'salary': 861.632
+        'salary': 861632
     }, {
         'name': 'Emery Mcdowell',
         'position': 'Gravida Company',
         'office': 'New Zealand',
-        'ext': '3951',
+        'ext': '9351834968',
         'startDate': '2015/06/02',
-        'salary': 413.568
+        'salary': 413568
     }, {
         'name': 'Yael Greer',
         'position': 'Orci Limited',
         'office': 'Madagascar',
-        'ext': '1416',
+        'ext': '9929731416',
         'startDate': '2014/12/04',
-        'salary': 121.831
+        'salary': 121831
     }, {
         'name': 'Jared Burgess',
         'position': 'Auctor Incorporated',
         'office': 'Burundi',
-        'ext': '4673',
+        'ext': '9929734673',
         'startDate': '2015/01/12',
-        'salary': 62.243
-    }, {
-        'name': 'Sharon Campbell',
-        'position': 'Elit Curabitur Sed Consulting',
-        'office': 'Comoros',
-        'ext': '6274',
-        'startDate': '2014/09/14',
-        'salary': 200.854
-    }, {
-        'name': 'Yeo Church',
-        'position': 'Donec Vitae Erat PC',
-        'office': 'Saudi Arabia',
-        'ext': '0269',
-        'startDate': '2015/06/07',
-        'salary': 581.193
-    }, {
-        'name': 'Kylie Barlow',
-        'position': 'Fermentum Risus Corporation',
-        'office': 'Papua New Guinea',
-        'ext': '2010',
-        'startDate': '2014/12/03',
-        'salary': 418.115
-    }, {
-        'name': 'Nell Leonard',
-        'position': 'Vestibulum Consulting',
-        'office': 'Saudi Arabia',
-        'ext': '4839',
-        'startDate': '2015/05/29',
-        'salary': 466.201
-    }, {
-        'name': 'Brandon Fleming',
-        'position': 'Donec Egestas Associates',
-        'office': 'Poland',
-        'ext': '0622',
-        'startDate': '2015/01/22',
-        'salary': 800.011
-    }, {
-        'name': 'Inga Pena',
-        'position': 'Et Magnis Dis Limited',
-        'office': 'Belgium',
-        'ext': '8140',
-        'startDate': '2015/05/18',
-        'salary': 564.245
-    }, {
-        'name': 'Arden Russo',
-        'position': 'Est Tempor Bibendum Corp.',
-        'office': 'Dominican Republic',
-        'ext': '6774',
-        'startDate': '2015/07/23',
-        'salary': 357.222
-    }, {
-        'name': 'Liberty Gallegos',
-        'position': 'Nec Diam LLC',
-        'office': 'Ghana',
-        'ext': '9266',
-        'startDate': '2015/06/18',
-        'salary': 554.375
-    }, {
-        'name': 'Dennis York',
-        'position': 'Nullam Suscipit Foundation',
-        'office': 'Namibia',
-        'ext': '3133',
-        'startDate': '2015/03/20',
-        'salary': 90.417
-    }, {
-        'name': 'Petra Chandler',
-        'position': 'Pede Nonummy Inc.',
-        'office': 'Namibia',
-        'ext': '3367',
-        'startDate': '2015/03/26',
-        'salary': 598.915
-    }, {
-        'name': 'Aurelia Marshall',
-        'position': 'Donec Consulting',
-        'office': 'Nicaragua',
-        'ext': '2690',
-        'startDate': '2015/08/18',
-        'salary': 201.680
-    }, {
-        'name': 'Rose Carter',
-        'position': 'Enim Consequat Purus Industries',
-        'office': 'Morocco',
-        'ext': '0619',
-        'startDate': '2015/03/06',
-        'salary': 220.187
-    }, {
-        'name': 'Denton Atkins',
-        'position': 'Non Vestibulum PC',
-        'office': 'Mali',
-        'ext': '5806',
-        'startDate': '2015/04/19',
-        'salary': 324.588
-    }, {
-        'name': 'Germaine Osborn',
-        'position': 'Tristique Aliquet PC',
-        'office': 'Lesotho',
-        'ext': '4469',
-        'startDate': '2015/01/19',
-        'salary': 351.108
-    }, {
-        'name': 'Nell Butler',
-        'position': 'Sit Amet Dapibus Industries',
-        'office': 'Cuba',
-        'ext': '7860',
-        'startDate': '2015/01/06',
-        'salary': 230.072
-    }, {
-        'name': 'Brent Stein',
-        'position': 'Eu Augue Porttitor LLP',
-        'office': 'Cyprus',
-        'ext': '4697',
-        'startDate': '2014/11/02',
-        'salary': 853.413
-    }, {
-        'name': 'Alexandra Shaw',
-        'position': 'Aenean Gravida Limited',
-        'office': 'Uruguay',
-        'ext': '1140',
-        'startDate': '2015/05/16',
-        'salary': 401.970
-    }, {
-        'name': 'Veronica Allison',
-        'position': 'Aliquet Diam Sed Institute',
-        'office': 'Samoa',
-        'ext': '9966',
-        'startDate': '2015/05/17',
-        'salary': 79.193
-    }, {
-        'name': 'Katelyn Gamble',
-        'position': 'Sed Associates',
-        'office': 'Mauritius',
-        'ext': '4767',
-        'startDate': '2015/03/20',
-        'salary': 484.299
-    }, {
-        'name': 'James Greer',
-        'position': 'A Dui Incorporated',
-        'office': 'Norway',
-        'ext': '5517',
-        'startDate': '2015/02/21',
-        'salary': 333.518
-    }, {
-        'name': 'Cain Vasquez',
-        'position': 'Nulla Facilisis Suspendisse Institute',
-        'office': 'China',
-        'ext': '3179',
-        'startDate': '2015/05/27',
-        'salary': 651.761
-    }, {
-        'name': 'Shaeleigh Barr',
-        'position': 'Eleifend Cras Institute',
-        'office': 'Ghana',
-        'ext': '5904',
-        'startDate': '2015/04/01',
-        'salary': 627.095
-    }, {
-        'name': 'Baker Mckay',
-        'position': 'Ut Sagittis Associates',
-        'office': 'Isle of Man',
-        'ext': '9840',
-        'startDate': '2015/01/12',
-        'salary': 742.247
-    }, {
-        'name': 'Jayme Pace',
-        'position': 'Cras Eu Tellus Associates',
-        'office': 'Bouvet Island',
-        'ext': '4580',
-        'startDate': '2015/08/12',
-        'salary': 591.588
-    }, {
-        'name': 'Reuben Albert',
-        'position': 'Lobortis Institute',
-        'office': 'Zambia',
-        'ext': '8725',
-        'startDate': '2015/04/04',
-        'salary': 791.408
-    }, {
-        'name': 'Idola Burns',
-        'position': 'Non Industries',
-        'office': 'Myanmar',
-        'ext': '3201',
-        'startDate': '2015/06/24',
-        'salary': 142.906
-    }, {
-        'name': 'Laura Macias',
-        'position': 'Phasellus Inc.',
-        'office': 'Mauritania',
-        'ext': '2033',
-        'startDate': '2014/11/21',
-        'salary': 226.591
-    }, {
-        'name': 'Nichole Salas',
-        'position': 'Duis PC',
-        'office': 'Madagascar',
-        'ext': '4397',
-        'startDate': '2015/01/18',
-        'salary': 234.196
-    }, {
-        'name': 'Hunter Walter',
-        'position': 'Ullamcorper Duis Cursus Foundation',
-        'office': 'Brazil',
-        'ext': '2227',
-        'startDate': '2015/02/28',
-        'salary': 655.052
-    }, {
-        'name': 'Asher Rich',
-        'position': 'Mauris Ipsum LLP',
-        'office': 'Paraguay',
-        'ext': '7288',
-        'startDate': '2015/08/08',
-        'salary': 222.946
-    }, {
-        'name': 'Angela Carlson',
-        'position': 'Donec Tempor Institute',
-        'office': 'Papua New Guinea',
-        'ext': '5416',
-        'startDate': '2015/02/12',
-        'salary': 562.194
-    }, {
-        'name': 'James Dorsey',
-        'position': 'Ipsum Leo Associates',
-        'office': 'Congo (Brazzaville)',
-        'ext': '6019',
-        'startDate': '2015/01/10',
-        'salary': 629.925
-    }, {
-        'name': 'Wesley Cobb',
-        'position': 'Nunc Est Incorporated',
-        'office': 'Australia',
-        'ext': '6466',
-        'startDate': '2015/01/30',
-        'salary': 343.476
-    }, {
-        'name': 'Meghan Stephens',
-        'position': 'Interdum PC',
-        'office': 'Turkey',
-        'ext': '8001',
-        'startDate': '2014/10/11',
-        'salary': 469.305
-    }, {
-        'name': 'Bertha Herrera',
-        'position': 'Amet Limited',
-        'office': 'Kenya',
-        'ext': '4799',
-        'startDate': '2014/11/22',
-        'salary': 56.606
-    }, {
-        'name': 'Karina Key',
-        'position': 'Quisque Varius Nam Company',
-        'office': 'France',
-        'ext': '3907',
-        'startDate': '2015/03/26',
-        'salary': 314.260
-    }, {
-        'name': 'Uriel Carson',
-        'position': 'Penatibus PC',
-        'office': 'Venezuela',
-        'ext': '5902',
-        'startDate': '2015/01/07',
-        'salary': 106.335
-    }, {
-        'name': 'Mira Baird',
-        'position': 'Felis Orci PC',
-        'office': 'Niue',
-        'ext': '4189',
-        'startDate': '2015/08/25',
-        'salary': 515.671
-    }, {
-        'name': 'Ursula Parrish',
-        'position': 'Ac Corporation',
-        'office': 'Macao',
-        'ext': '4771',
-        'startDate': '2015/06/30',
-        'salary': 72.295
-    }, {
-        'name': 'Josephine Sykes',
-        'position': 'Blandit Congue Limited',
-        'office': 'Holy See (Vatican City State)',
-        'ext': '4684',
-        'startDate': '2014/12/22',
-        'salary': 694.656
-    }, {
-        'name': 'Maggie Sims',
-        'position': 'Vulputate Posuere Industries',
-        'office': 'Sudan',
-        'ext': '6482',
-        'startDate': '2014/11/22',
-        'salary': 363.743
-    }, {
-        'name': 'Rogan Fuentes',
-        'position': 'Vestibulum Accumsan Neque Company',
-        'office': 'Jersey',
-        'ext': '4837',
-        'startDate': '2015/07/29',
-        'salary': 606.004
-    }, {
-        'name': 'Maya Haney',
-        'position': 'Ac Foundation',
-        'office': 'Falkland Islands',
-        'ext': '5752',
-        'startDate': '2015/09/03',
-        'salary': 745.500
-    }, {
-        'name': 'Aquila Battle',
-        'position': 'Sociis Natoque Penatibus Foundation',
-        'office': 'Azerbaijan',
-        'ext': '8470',
-        'startDate': '2015/03/06',
-        'salary': 582.265
-    }, {
-        'name': 'Connor Coleman',
-        'position': 'Orci Lacus Vestibulum Foundation',
-        'office': 'Croatia',
-        'ext': '6217',
-        'startDate': '2014/10/21',
-        'salary': 416.958
-    }, {
-        'name': 'Charity Thomas',
-        'position': 'Convallis Ligula Donec Inc.',
-        'office': 'Benin',
-        'ext': '6240',
-        'startDate': '2015/07/12',
-        'salary': 540.999
-    }, {
-        'name': 'Blythe Powers',
-        'position': 'Amet Orci Limited',
-        'office': 'Falkland Islands',
-        'ext': '5608',
-        'startDate': '2015/01/23',
-        'salary': 480.067
-    }, {
-        'name': 'Adria Battle',
-        'position': 'Ornare Lectus Incorporated',
-        'office': 'British Indian Ocean Territory',
-        'ext': '7419',
-        'startDate': '2015/05/28',
-        'salary': 257.937
-    }, {
-        'name': 'Melanie Mcintyre',
-        'position': 'Nunc Corp.',
-        'office': 'Mongolia',
-        'ext': '4326',
-        'startDate': '2015/01/06',
-        'salary': 359.737
-    }, {
-        'name': 'Keely Bauer',
-        'position': 'Nec Tempus Institute',
-        'office': 'Somalia',
-        'ext': '8372',
-        'startDate': '2015/03/09',
-        'salary': 99.718
-    }, {
-        'name': 'Noelani Strong',
-        'position': 'Nec LLP',
-        'office': 'Iran',
-        'ext': '0049',
-        'startDate': '2015/08/24',
-        'salary': 480.718
-    }, {
-        'name': 'Jeanette Henderson',
-        'position': 'Eu Elit Nulla Corporation',
-        'office': 'Italy',
-        'ext': '7586',
-        'startDate': '2015/06/19',
-        'salary': 253.772
-    }, {
-        'name': 'Candace Huber',
-        'position': 'Sed Institute',
-        'office': 'Uganda',
-        'ext': '7183',
-        'startDate': '2015/06/16',
-        'salary': 388.879
-    }, {
-        'name': 'Bethany Potter',
-        'position': 'Vivamus Nibh Dolor Incorporated',
-        'office': 'Puerto Rico',
-        'ext': '3354',
-        'startDate': '2014/11/12',
-        'salary': 747.310
-    }, {
-        'name': 'Whoopi Burks',
-        'position': 'Justo Inc.',
-        'office': 'Fiji',
-        'ext': '2185',
-        'startDate': '2014/09/24',
-        'salary': 803.037
-    }, {
-        'name': 'Sheila Long',
-        'position': 'Diam Associates',
-        'office': 'Sao Tome and Principe',
-        'ext': '7760',
-        'startDate': '2014/12/21',
-        'salary': 674.379
-    }, {
-        'name': 'Sonya Church',
-        'position': 'Laoreet Institute',
-        'office': 'Grenada',
-        'ext': '8920',
-        'startDate': '2015/06/03',
-        'salary': 625.147
-    }, {
-        'name': 'Shaine Forbes',
-        'position': 'Eu Arcu LLP',
-        'office': 'Cyprus',
-        'ext': '2369',
-        'startDate': '2015/01/18',
-        'salary': 208.100
-    }, {
-        'name': 'Alexandra Patrick',
-        'position': 'Ligula Donec Inc.',
-        'office': 'Viet Nam',
-        'ext': '8531',
-        'startDate': '2015/04/09',
-        'salary': 104.063
-    }, {
-        'name': 'Patience Vincent',
-        'position': 'Sem Molestie Associates',
-        'office': 'Philippines',
-        'ext': '8888',
-        'startDate': '2015/07/04',
-        'salary': 673.556
-    }, {
-        'name': 'Evelyn Smith',
-        'position': 'Fusce Industries',
-        'office': 'Togo',
-        'ext': '5051',
-        'startDate': '2015/08/15',
-        'salary': 737.284
-    }, {
-        'name': 'Kieran Gonzalez',
-        'position': 'Non Corp.',
-        'office': 'Equatorial Guinea',
-        'ext': '4834',
-        'startDate': '2015/08/24',
-        'salary': 90.195
-    }, {
-        'name': 'Molly Oneil',
-        'position': 'Non Dui Consulting',
-        'office': 'Belize',
-        'ext': '7501',
-        'startDate': '2014/10/28',
-        'salary': 140.767
-    }, {
-        'name': 'Nigel Davenport',
-        'position': 'Ullamcorper Velit In Industries',
-        'office': 'Vanuatu',
-        'ext': '0976',
-        'startDate': '2015/03/16',
-        'salary': 70.536
-    }, {
-        'name': 'Thor Young',
-        'position': 'Malesuada Consulting',
-        'office': 'French Southern Territories',
-        'ext': '0211',
-        'startDate': '2015/01/28',
-        'salary': 75.501
-    }, {
-        'name': 'Finn Delacruz',
-        'position': 'Lorem Industries',
-        'office': 'Cocos (Keeling) Islands',
-        'ext': '2980',
-        'startDate': '2014/12/11',
-        'salary': 754.967
-    }, {
-        'name': 'Lane Henderson',
-        'position': 'Pede Foundation',
-        'office': 'Kazakhstan',
-        'ext': '1446',
-        'startDate': '2015/07/02',
-        'salary': 842.050
-    }, {
-        'name': 'Shea Potter',
-        'position': 'Curabitur Limited',
-        'office': 'Timor-Leste',
-        'ext': '4654',
-        'startDate': '2015/05/07',
-        'salary': 263.629
-    }, {
-        'name': 'Brynn Yang',
-        'position': 'Ut Limited',
-        'office': 'Mayotte',
-        'ext': '4668',
-        'startDate': '2015/01/17',
-        'salary': 74.292
-    }, {
-        'name': 'Kylan Fuentes',
-        'position': 'Sapien Aenean Associates',
-        'office': 'Brazil',
-        'ext': '6623',
-        'startDate': '2014/12/28',
-        'salary': 108.632
-    }, {
-        'name': 'Lionel Mcbride',
-        'position': 'Ipsum PC',
-        'office': 'Portugal',
-        'ext': '3978',
-        'startDate': '2015/07/11',
-        'salary': 34.244
-    }, {
-        'name': 'Paul Lucas',
-        'position': 'Eget LLP',
-        'office': 'Nicaragua',
-        'ext': '8890',
-        'startDate': '2014/09/30',
-        'salary': 690.834
-    }, {
-        'name': 'Lareina Williamson',
-        'position': 'Imperdiet Ullamcorper Ltd',
-        'office': 'Cocos (Keeling) Islands',
-        'ext': '9489',
-        'startDate': '2014/12/01',
-        'salary': 603.498
-    }, {
-        'name': 'Amy Acevedo',
-        'position': 'Id Institute',
-        'office': 'Cook Islands',
-        'ext': '5592',
-        'startDate': '2015/02/04',
-        'salary': 125.165
-    }, {
-        'name': 'Nomlanga Silva',
-        'position': 'Eget LLC',
-        'office': 'Belize',
-        'ext': '3110',
-        'startDate': '2015/01/31',
-        'salary': 268.509
-    }, {
-        'name': 'Amena Stone',
-        'position': 'Enim Incorporated',
-        'office': 'Guinea',
-        'ext': '1211',
-        'startDate': '2014/09/23',
-        'salary': 214.381
-    }, {
-        'name': 'Danielle Coffey',
-        'position': 'Feugiat Placerat Corp.',
-        'office': 'Sao Tome and Principe',
-        'ext': '8176',
-        'startDate': '2015/06/17',
-        'salary': 137.423
-    }, {
-        'name': 'Buffy Russell',
-        'position': 'Lacus Quisque Ltd',
-        'office': 'Ecuador',
-        'ext': '6741',
-        'startDate': '2014/10/17',
-        'salary': 612.184
-    }, {
-        'name': 'Kaitlin Lamb',
-        'position': 'Malesuada Fringilla Est Associates',
-        'office': 'Algeria',
-        'ext': '5054',
-        'startDate': '2014/10/18',
-        'salary': 327.367
-    }, {
-        'name': 'Leilani Yates',
-        'position': 'Mus Proin LLC',
-        'office': 'South Sudan',
-        'ext': '1550',
-        'startDate': '2015/05/27',
-        'salary': 743.493
-    }, {
-        'name': 'Jemima Moon',
-        'position': 'Phasellus Corp.',
-        'office': 'South Georgia and The South Sandwich Islands',
-        'ext': '7582',
-        'startDate': '2015/05/21',
-        'salary': 496.067
-    }, {
-        'name': 'Hiroko Schwartz',
-        'position': 'Neque Institute',
-        'office': 'Saint Vincent and The Grenadines',
-        'ext': '9368',
-        'startDate': '2015/03/13',
-        'salary': 178.782
-    }, {
-        'name': 'Nathaniel Jensen',
-        'position': 'Mi Tempor Limited',
-        'office': 'Dominica',
-        'ext': '8331',
-        'startDate': '2014/12/05',
-        'salary': 37.441
-    }, {
-        'name': 'Silas Sweeney',
-        'position': 'Ultrices Institute',
-        'office': 'Turkmenistan',
-        'ext': '0746',
-        'startDate': '2014/11/13',
-        'salary': 152.980
-    }, {
-        'name': 'Jermaine Barry',
-        'position': 'Dapibus Corporation',
-        'office': 'Uzbekistan',
-        'ext': '1545',
-        'startDate': '2015/03/06',
-        'salary': 409.463
-    }, {
-        'name': 'Tatiana Nichols',
-        'position': 'Nec Diam Industries',
-        'office': 'Cook Islands',
-        'ext': '4395',
-        'startDate': '2015/05/22',
-        'salary': 51.155
+        'salary': 62243
     }, {
         'name': 'Rama Waller',
         'position': 'Sem Pellentesque LLC',
         'office': 'Andorra',
-        'ext': '2973',
+        'ext': '9929732973',
         'startDate': '2014/12/01',
-        'salary': 223.227
+        'salary': 223227
     }
 ];
 //# sourceMappingURL=ng2-table-data.js.map
