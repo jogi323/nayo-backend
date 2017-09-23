@@ -16,14 +16,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var themeA = __webpack_require__(703);
-var themeB = __webpack_require__(704);
-var themeC = __webpack_require__(705);
-var themeD = __webpack_require__(706);
-var themeE = __webpack_require__(707);
-var themeF = __webpack_require__(708);
-var themeG = __webpack_require__(709);
-var themeH = __webpack_require__(710);
+var themeA = __webpack_require__(704);
+var themeB = __webpack_require__(705);
+var themeC = __webpack_require__(706);
+var themeD = __webpack_require__(707);
+var themeE = __webpack_require__(708);
+var themeF = __webpack_require__(709);
+var themeG = __webpack_require__(710);
+var themeH = __webpack_require__(711);
 var ThemesService = (function () {
     function ThemesService() {
         this.createStyle();
@@ -90,31 +90,31 @@ ThemesService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular2_toaster_angular2_toaster__ = __webpack_require__(482);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap_accordion__ = __webpack_require__(778);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ngx_bootstrap_alert__ = __webpack_require__(780);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ngx_bootstrap_buttons__ = __webpack_require__(782);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ngx_bootstrap_carousel__ = __webpack_require__(784);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ngx_bootstrap_collapse__ = __webpack_require__(785);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ngx_bootstrap_dropdown__ = __webpack_require__(789);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ngx_bootstrap_modal__ = __webpack_require__(790);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ngx_bootstrap_pagination__ = __webpack_require__(792);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ngx_bootstrap_progressbar__ = __webpack_require__(795);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_ngx_bootstrap_rating__ = __webpack_require__(797);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ngx_bootstrap_tabs__ = __webpack_require__(799);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_ngx_bootstrap_timepicker__ = __webpack_require__(801);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_ngx_bootstrap_tooltip__ = __webpack_require__(803);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ngx_bootstrap_typeahead__ = __webpack_require__(805);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ngx_bootstrap_datepicker__ = __webpack_require__(787);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__directives_flot_flot_directive__ = __webpack_require__(472);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__directives_sparkline_sparkline_directive__ = __webpack_require__(476);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__directives_easypiechart_easypiechart_directive__ = __webpack_require__(471);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular2_toaster_angular2_toaster__ = __webpack_require__(483);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap_accordion__ = __webpack_require__(779);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ngx_bootstrap_alert__ = __webpack_require__(781);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ngx_bootstrap_buttons__ = __webpack_require__(783);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ngx_bootstrap_carousel__ = __webpack_require__(785);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ngx_bootstrap_collapse__ = __webpack_require__(786);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ngx_bootstrap_dropdown__ = __webpack_require__(790);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ngx_bootstrap_modal__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ngx_bootstrap_pagination__ = __webpack_require__(793);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ngx_bootstrap_progressbar__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_ngx_bootstrap_rating__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ngx_bootstrap_tabs__ = __webpack_require__(800);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_ngx_bootstrap_timepicker__ = __webpack_require__(802);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_ngx_bootstrap_tooltip__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ngx_bootstrap_typeahead__ = __webpack_require__(806);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ngx_bootstrap_datepicker__ = __webpack_require__(788);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__directives_flot_flot_directive__ = __webpack_require__(473);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__directives_sparkline_sparkline_directive__ = __webpack_require__(477);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__directives_easypiechart_easypiechart_directive__ = __webpack_require__(472);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__colors_colors_service__ = __webpack_require__(450);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__directives_checkall_checkall_directive__ = __webpack_require__(470);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__directives_vectormap_vectormap_directive__ = __webpack_require__(477);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__directives_now_now_directive__ = __webpack_require__(474);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__directives_scrollable_scrollable_directive__ = __webpack_require__(475);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__directives_jqcloud_jqcloud_directive__ = __webpack_require__(473);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__directives_checkall_checkall_directive__ = __webpack_require__(471);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__directives_vectormap_vectormap_directive__ = __webpack_require__(478);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__directives_now_now_directive__ = __webpack_require__(475);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__directives_scrollable_scrollable_directive__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__directives_jqcloud_jqcloud_directive__ = __webpack_require__(474);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -241,7 +241,7 @@ var SharedModule_1;
 
 /***/ }),
 
-/***/ 159:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -381,8 +381,8 @@ __decorate([
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
-        template: __webpack_require__(831),
-        styles: [__webpack_require__(691)]
+        template: __webpack_require__(832),
+        styles: [__webpack_require__(692)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object])
 ], AppComponent);
@@ -392,7 +392,7 @@ var _a;
 
 /***/ }),
 
-/***/ 160:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -441,7 +441,7 @@ var _a;
 
 /***/ }),
 
-/***/ 161:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -489,8 +489,8 @@ var LoginComponent = (function () {
 LoginComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-login',
-        template: __webpack_require__(839),
-        styles: [__webpack_require__(699)]
+        template: __webpack_require__(840),
+        styles: [__webpack_require__(700)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"]) === "function" && _b || Object])
 ], LoginComponent);
@@ -500,7 +500,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 162:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -547,8 +547,8 @@ var RecoverUsernameComponent = (function () {
 RecoverUsernameComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-recover-username',
-        template: __webpack_require__(840),
-        styles: [__webpack_require__(700)]
+        template: __webpack_require__(841),
+        styles: [__webpack_require__(701)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"]) === "function" && _b || Object])
 ], RecoverUsernameComponent);
@@ -558,7 +558,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 163:
+/***/ 164:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -605,8 +605,8 @@ var RecoverComponent = (function () {
 RecoverComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-recover',
-        template: __webpack_require__(841),
-        styles: [__webpack_require__(701)]
+        template: __webpack_require__(842),
+        styles: [__webpack_require__(702)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"]) === "function" && _b || Object])
 ], RecoverComponent);
@@ -616,7 +616,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 164:
+/***/ 165:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -679,8 +679,8 @@ var RegisterComponent = (function () {
 RegisterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-register',
-        template: __webpack_require__(842),
-        styles: [__webpack_require__(702)]
+        template: __webpack_require__(843),
+        styles: [__webpack_require__(703)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"]) === "function" && _b || Object])
 ], RegisterComponent);
@@ -814,11 +814,11 @@ webpackAsyncContext.id = 425;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vendor_ts__ = __webpack_require__(479);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vendor_ts__ = __webpack_require__(480);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_dynamic__ = __webpack_require__(456);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(459);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(478);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_dynamic__ = __webpack_require__(457);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(479);
 
 
 
@@ -840,7 +840,7 @@ p.then(function () { window.appBootstrap && window.appBootstrap(); });
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(854);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
@@ -941,16 +941,16 @@ ColorsService = __decorate([
 
 /***/ }),
 
-/***/ 458:
+/***/ 459:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_login_component__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_register_component__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__recover_recover_component__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__recover_username_recover_username_component__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_login_component__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_register_component__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__recover_recover_component__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__recover_username_recover_username_component__ = __webpack_require__(163);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 // import { NgModule } from '@angular/core';
 
@@ -991,25 +991,25 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* RouterModule 
 
 /***/ }),
 
-/***/ 459:
+/***/ 460:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_animations__ = __webpack_require__(457);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_animations__ = __webpack_require__(458);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_http_loader__ = __webpack_require__(480);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_http_loader__ = __webpack_require__(481);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_service__ = __webpack_require__(449);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module__ = __webpack_require__(458);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__core_core_module__ = __webpack_require__(460);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout_layout_module__ = __webpack_require__(466);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__core_core_module__ = __webpack_require__(461);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout_layout_module__ = __webpack_require__(467);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_shared_module__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__login_login_component__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__register_register_component__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__recover_recover_component__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__recover_username_recover_username_component__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__login_login_component__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__register_register_component__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__recover_recover_component__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__recover_username_recover_username_component__ = __webpack_require__(163);
 /* unused harmony export createTranslateLoader */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1083,16 +1083,16 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 460:
+/***/ 461:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__settings_settings_service__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__themes_themes_service__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__translator_translator_service__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__translator_translator_service__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__menu_menu_service__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__module_import_guard__ = __webpack_require__(461);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__module_import_guard__ = __webpack_require__(462);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CoreModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1138,7 +1138,7 @@ CoreModule = __decorate([
 
 /***/ }),
 
-/***/ 461:
+/***/ 462:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1154,7 +1154,7 @@ function throwIfAlreadyLoaded(parentModule, moduleName) {
 
 /***/ }),
 
-/***/ 462:
+/***/ 463:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1183,8 +1183,8 @@ var FooterComponent = (function () {
 FooterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: '[app-footer]',
-        template: __webpack_require__(832),
-        styles: [__webpack_require__(692)]
+        template: __webpack_require__(833),
+        styles: [__webpack_require__(693)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object])
 ], FooterComponent);
@@ -1194,7 +1194,7 @@ var _a;
 
 /***/ }),
 
-/***/ 463:
+/***/ 464:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1281,8 +1281,8 @@ __decorate([
 HeaderComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-header',
-        template: __webpack_require__(833),
-        styles: [__webpack_require__(693)]
+        template: __webpack_require__(834),
+        styles: [__webpack_require__(694)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__sidebar_userblock_userblock_service__["a" /* UserblockService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__sidebar_userblock_userblock_service__["a" /* UserblockService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _c || Object])
 ], HeaderComponent);
@@ -1292,7 +1292,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 464:
+/***/ 465:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1353,8 +1353,8 @@ __decorate([
 NavsearchComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-navsearch',
-        template: __webpack_require__(834),
-        styles: [__webpack_require__(694)]
+        template: __webpack_require__(835),
+        styles: [__webpack_require__(695)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object])
 ], NavsearchComponent);
@@ -1364,7 +1364,7 @@ var _a;
 
 /***/ }),
 
-/***/ 465:
+/***/ 466:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1390,8 +1390,8 @@ var LayoutComponent = (function () {
 LayoutComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-layout',
-        template: __webpack_require__(835),
-        styles: [__webpack_require__(695)]
+        template: __webpack_require__(836),
+        styles: [__webpack_require__(696)]
     }),
     __metadata("design:paramtypes", [])
 ], LayoutComponent);
@@ -1400,19 +1400,19 @@ LayoutComponent = __decorate([
 
 /***/ }),
 
-/***/ 466:
+/***/ 467:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layout_component__ = __webpack_require__(465);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_sidebar_component__ = __webpack_require__(468);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__header_header_component__ = __webpack_require__(463);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__header_navsearch_navsearch_component__ = __webpack_require__(464);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__offsidebar_offsidebar_component__ = __webpack_require__(467);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sidebar_userblock_userblock_component__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layout_component__ = __webpack_require__(466);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_sidebar_component__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__header_header_component__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__header_navsearch_navsearch_component__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__offsidebar_offsidebar_component__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sidebar_userblock_userblock_component__ = __webpack_require__(470);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__sidebar_userblock_userblock_service__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__ = __webpack_require__(462);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__ = __webpack_require__(463);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shared_shared_module__ = __webpack_require__(157);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LayoutModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1469,14 +1469,14 @@ LayoutModule = __decorate([
 
 /***/ }),
 
-/***/ 467:
+/***/ 468:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_themes_themes_service__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_translator_translator_service__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_translator_translator_service__ = __webpack_require__(161);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OffsidebarComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1514,8 +1514,8 @@ var OffsidebarComponent = (function () {
 OffsidebarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-offsidebar',
-        template: __webpack_require__(836),
-        styles: [__webpack_require__(696)]
+        template: __webpack_require__(837),
+        styles: [__webpack_require__(697)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__core_themes_themes_service__["a" /* ThemesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_themes_themes_service__["a" /* ThemesService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__core_translator_translator_service__["a" /* TranslatorService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_translator_translator_service__["a" /* TranslatorService */]) === "function" && _c || Object])
 ], OffsidebarComponent);
@@ -1525,7 +1525,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 468:
+/***/ 469:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1679,8 +1679,8 @@ var SidebarComponent = (function () {
 SidebarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-sidebar',
-        template: __webpack_require__(837),
-        styles: [__webpack_require__(697)]
+        template: __webpack_require__(838),
+        styles: [__webpack_require__(698)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__core_menu_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_menu_menu_service__["a" /* MenuService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__["a" /* SettingsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_settings_settings_service__["a" /* SettingsService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injector"]) === "function" && _c || Object])
 ], SidebarComponent);
@@ -1690,7 +1690,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 469:
+/***/ 470:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1725,8 +1725,8 @@ var UserblockComponent = (function () {
 UserblockComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-userblock',
-        template: __webpack_require__(838),
-        styles: [__webpack_require__(698)]
+        template: __webpack_require__(839),
+        styles: [__webpack_require__(699)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__userblock_service__["a" /* UserblockService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__userblock_service__["a" /* UserblockService */]) === "function" && _a || Object])
 ], UserblockComponent);
@@ -1736,7 +1736,7 @@ var _a;
 
 /***/ }),
 
-/***/ 470:
+/***/ 471:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1777,7 +1777,7 @@ var _a;
 
 /***/ }),
 
-/***/ 471:
+/***/ 472:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1850,7 +1850,7 @@ var _a;
 
 /***/ }),
 
-/***/ 472:
+/***/ 473:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1979,7 +1979,7 @@ var _a;
 
 /***/ }),
 
-/***/ 473:
+/***/ 474:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2054,7 +2054,7 @@ var _a;
 
 /***/ }),
 
-/***/ 474:
+/***/ 475:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2106,7 +2106,7 @@ var _a;
 
 /***/ }),
 
-/***/ 475:
+/***/ 476:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2150,7 +2150,7 @@ var _a;
 
 /***/ }),
 
-/***/ 476:
+/***/ 477:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2217,7 +2217,7 @@ var _a;
 
 /***/ }),
 
-/***/ 477:
+/***/ 478:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2322,7 +2322,7 @@ var _a;
 
 /***/ }),
 
-/***/ 478:
+/***/ 479:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2339,29 +2339,29 @@ var environment = {
 
 /***/ }),
 
-/***/ 479:
+/***/ 480:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modernizr_js__ = __webpack_require__(883);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modernizr_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__modernizr_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ika_jvectormap_jquery_jvectormap_1_2_2_min_js__ = __webpack_require__(717);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ika_jvectormap_jquery_jvectormap_1_2_2_min_js__ = __webpack_require__(718);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_ika_jvectormap_jquery_jvectormap_1_2_2_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__node_modules_ika_jvectormap_jquery_jvectormap_1_2_2_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_ika_jvectormap_jquery_jvectormap_world_mill_en_js__ = __webpack_require__(719);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_ika_jvectormap_jquery_jvectormap_world_mill_en_js__ = __webpack_require__(720);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_ika_jvectormap_jquery_jvectormap_world_mill_en_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__node_modules_ika_jvectormap_jquery_jvectormap_world_mill_en_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__node_modules_ika_jvectormap_jquery_jvectormap_us_mill_en_js__ = __webpack_require__(718);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__node_modules_ika_jvectormap_jquery_jvectormap_us_mill_en_js__ = __webpack_require__(719);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__node_modules_ika_jvectormap_jquery_jvectormap_us_mill_en_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__node_modules_ika_jvectormap_jquery_jvectormap_us_mill_en_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__node_modules_jquery_slimscroll_jquery_slimscroll_js__ = __webpack_require__(722);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__node_modules_jquery_slimscroll_jquery_slimscroll_js__ = __webpack_require__(723);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__node_modules_jquery_slimscroll_jquery_slimscroll_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__node_modules_jquery_slimscroll_jquery_slimscroll_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__node_modules_codemirror_lib_codemirror_js__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__node_modules_codemirror_lib_codemirror_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__node_modules_codemirror_lib_codemirror_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__node_modules_codemirror_mode_javascript_javascript_js__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__node_modules_codemirror_mode_javascript_javascript_js__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__node_modules_codemirror_mode_javascript_javascript_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__node_modules_codemirror_mode_javascript_javascript_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__node_modules_codemirror_mode_xml_xml_js__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__node_modules_codemirror_mode_xml_xml_js__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__node_modules_codemirror_mode_xml_xml_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__node_modules_codemirror_mode_xml_xml_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__node_modules_codemirror_mode_htmlmixed_htmlmixed_js__ = __webpack_require__(490);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__node_modules_codemirror_mode_htmlmixed_htmlmixed_js__ = __webpack_require__(491);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__node_modules_codemirror_mode_htmlmixed_htmlmixed_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__node_modules_codemirror_mode_htmlmixed_htmlmixed_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__node_modules_codemirror_mode_css_css_js__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__node_modules_codemirror_mode_css_css_js__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__node_modules_codemirror_mode_css_css_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__node_modules_codemirror_mode_css_css_js__);
  // 'npm run modernizr' to create this file
 
@@ -2374,24 +2374,6 @@ var environment = {
 
 
 //# sourceMappingURL=vendor.js.map
-
-/***/ }),
-
-/***/ 691:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(4)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -2601,7 +2583,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #fff; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #23b7e5 0%, #51c6ea 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF23B7E5', endColorstr='#FF51C6EA', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #23b7e5; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #23b7e5; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #117391; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #23b7e5;\n    background-image: linear-gradient(to right, #23b7e5 0%, #51c6ea 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF23B7E5', endColorstr='#FF51C6EA', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #23b7e5;\n    background-image: linear-gradient(to right, #23b7e5 0%, #51c6ea 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF23B7E5', endColorstr='#FF51C6EA', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #117391; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #fff; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #515253; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #23b7e5; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #fcfcfc;\n    color: #23b7e5; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #23b7e5; }\n  .sidebar .nav > li.active {\n    border-left-color: #23b7e5; }\n\n.sidebar-subnav {\n  background-color: #fff; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #515253; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #515253; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #23b7e5; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #23b7e5; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #23b7e5;\n      background-color: #23b7e5; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -2619,7 +2601,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #fff; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #37bc9b 0%, #58ceb1 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF37BC9B', endColorstr='#FF58CEB1', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #37bc9b; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #37bc9b; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #206d5a; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #37bc9b;\n    background-image: linear-gradient(to right, #37bc9b 0%, #58ceb1 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF37BC9B', endColorstr='#FF58CEB1', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #37bc9b;\n    background-image: linear-gradient(to right, #37bc9b 0%, #58ceb1 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF37BC9B', endColorstr='#FF58CEB1', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #206d5a; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #fff; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #515253; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #37bc9b; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #fcfcfc;\n    color: #37bc9b; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #37bc9b; }\n  .sidebar .nav > li.active {\n    border-left-color: #37bc9b; }\n\n.sidebar-subnav {\n  background-color: #fff; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #515253; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #515253; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #37bc9b; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #37bc9b; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #37bc9b;\n      background-color: #37bc9b; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
+exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #fff; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #23b7e5 0%, #51c6ea 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF23B7E5', endColorstr='#FF51C6EA', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #23b7e5; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #23b7e5; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #117391; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #23b7e5;\n    background-image: linear-gradient(to right, #23b7e5 0%, #51c6ea 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF23B7E5', endColorstr='#FF51C6EA', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #23b7e5;\n    background-image: linear-gradient(to right, #23b7e5 0%, #51c6ea 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF23B7E5', endColorstr='#FF51C6EA', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #117391; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #fff; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #515253; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #23b7e5; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #fcfcfc;\n    color: #23b7e5; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #23b7e5; }\n  .sidebar .nav > li.active {\n    border-left-color: #23b7e5; }\n\n.sidebar-subnav {\n  background-color: #fff; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #515253; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #515253; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #23b7e5; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #23b7e5; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #23b7e5;\n      background-color: #23b7e5; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
 
 // exports
 
@@ -2637,7 +2619,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #fff; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #7266ba 0%, #9289ca 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF7266BA', endColorstr='#FF9289CA', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #7266ba; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #7266ba; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #443a80; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #7266ba;\n    background-image: linear-gradient(to right, #7266ba 0%, #9289ca 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF7266BA', endColorstr='#FF9289CA', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #7266ba;\n    background-image: linear-gradient(to right, #7266ba 0%, #9289ca 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF7266BA', endColorstr='#FF9289CA', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #443a80; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #fff; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #515253; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #7266ba; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #fcfcfc;\n    color: #7266ba; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #7266ba; }\n  .sidebar .nav > li.active {\n    border-left-color: #7266ba; }\n\n.sidebar-subnav {\n  background-color: #fff; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #515253; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #515253; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #7266ba; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #7266ba; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #7266ba;\n      background-color: #7266ba; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
+exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #fff; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #37bc9b 0%, #58ceb1 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF37BC9B', endColorstr='#FF58CEB1', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #37bc9b; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #37bc9b; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #206d5a; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #37bc9b;\n    background-image: linear-gradient(to right, #37bc9b 0%, #58ceb1 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF37BC9B', endColorstr='#FF58CEB1', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #37bc9b;\n    background-image: linear-gradient(to right, #37bc9b 0%, #58ceb1 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF37BC9B', endColorstr='#FF58CEB1', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #206d5a; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #fff; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #515253; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #37bc9b; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #fcfcfc;\n    color: #37bc9b; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #37bc9b; }\n  .sidebar .nav > li.active {\n    border-left-color: #37bc9b; }\n\n.sidebar-subnav {\n  background-color: #fff; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #515253; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #515253; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #37bc9b; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #37bc9b; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #37bc9b;\n      background-color: #37bc9b; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
 
 // exports
 
@@ -2655,7 +2637,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #fff; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #f05050 0%, #f47f7f 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF05050', endColorstr='#FFF47F7F', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #f05050; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #f05050; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #c91111; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #f05050;\n    background-image: linear-gradient(to right, #f05050 0%, #f47f7f 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF05050', endColorstr='#FFF47F7F', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #f05050;\n    background-image: linear-gradient(to right, #f05050 0%, #f47f7f 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF05050', endColorstr='#FFF47F7F', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #c91111; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #fff; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #515253; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #f05050; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #fcfcfc;\n    color: #f05050; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #f05050; }\n  .sidebar .nav > li.active {\n    border-left-color: #f05050; }\n\n.sidebar-subnav {\n  background-color: #fff; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #515253; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #515253; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #f05050; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #f05050; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #f05050;\n      background-color: #f05050; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
+exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #fff; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #7266ba 0%, #9289ca 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF7266BA', endColorstr='#FF9289CA', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #7266ba; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #7266ba; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #443a80; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #7266ba;\n    background-image: linear-gradient(to right, #7266ba 0%, #9289ca 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF7266BA', endColorstr='#FF9289CA', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #7266ba;\n    background-image: linear-gradient(to right, #7266ba 0%, #9289ca 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF7266BA', endColorstr='#FF9289CA', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #443a80; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #fff; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #515253; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #7266ba; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #fcfcfc;\n    color: #7266ba; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #7266ba; }\n  .sidebar .nav > li.active {\n    border-left-color: #7266ba; }\n\n.sidebar-subnav {\n  background-color: #fff; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #515253; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #515253; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #7266ba; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #7266ba; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #7266ba;\n      background-color: #7266ba; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
 
 // exports
 
@@ -2673,7 +2655,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #3a3f51; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #1797be 0%, #23b7e5 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1797BE', endColorstr='#FF23B7E5', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #1797be; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #1797be; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #0c4f63; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #1797be;\n    background-image: linear-gradient(to right, #1797be 0%, #23b7e5 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1797BE', endColorstr='#FF23B7E5', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #1797be;\n    background-image: linear-gradient(to right, #1797be 0%, #23b7e5 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1797BE', endColorstr='#FF23B7E5', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #0c4f63; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #3a3f51; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #1797be; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #383d4e;\n    color: #1797be; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #1797be; }\n  .sidebar .nav > li.active {\n    border-left-color: #1797be; }\n\n.sidebar-subnav {\n  background-color: #3a3f51; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #e1e2e3; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #1797be; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #1797be; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #1797be;\n      background-color: #1797be; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
+exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #fff; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #f05050 0%, #f47f7f 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF05050', endColorstr='#FFF47F7F', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #f05050; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #f05050; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #c91111; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #f05050;\n    background-image: linear-gradient(to right, #f05050 0%, #f47f7f 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF05050', endColorstr='#FFF47F7F', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #f05050;\n    background-image: linear-gradient(to right, #f05050 0%, #f47f7f 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF05050', endColorstr='#FFF47F7F', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #c91111; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #fff; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #515253; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #f05050; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #fcfcfc;\n    color: #f05050; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #f05050; }\n  .sidebar .nav > li.active {\n    border-left-color: #f05050; }\n\n.sidebar-subnav {\n  background-color: #fff; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #515253; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #515253; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #f05050; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #f05050; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #f05050;\n      background-color: #f05050; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
 
 // exports
 
@@ -2691,7 +2673,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #3a3f51; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #2b957a 0%, #37bc9b 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2B957A', endColorstr='#FF37BC9B', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #2b957a; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #2b957a; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #144639; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #2b957a;\n    background-image: linear-gradient(to right, #2b957a 0%, #37bc9b 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2B957A', endColorstr='#FF37BC9B', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #2b957a;\n    background-image: linear-gradient(to right, #2b957a 0%, #37bc9b 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2B957A', endColorstr='#FF37BC9B', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #144639; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #3a3f51; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #2b957a; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #383d4e;\n    color: #2b957a; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #2b957a; }\n  .sidebar .nav > li.active {\n    border-left-color: #2b957a; }\n\n.sidebar-subnav {\n  background-color: #3a3f51; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #e1e2e3; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #2b957a; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #2b957a; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #2b957a;\n      background-color: #2b957a; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
+exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #3a3f51; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #1797be 0%, #23b7e5 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1797BE', endColorstr='#FF23B7E5', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #1797be; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #1797be; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #0c4f63; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #1797be;\n    background-image: linear-gradient(to right, #1797be 0%, #23b7e5 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1797BE', endColorstr='#FF23B7E5', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #1797be;\n    background-image: linear-gradient(to right, #1797be 0%, #23b7e5 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1797BE', endColorstr='#FF23B7E5', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #0c4f63; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #3a3f51; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #1797be; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #383d4e;\n    color: #1797be; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #1797be; }\n  .sidebar .nav > li.active {\n    border-left-color: #1797be; }\n\n.sidebar-subnav {\n  background-color: #3a3f51; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #e1e2e3; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #1797be; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #1797be; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #1797be;\n      background-color: #1797be; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
 
 // exports
 
@@ -2709,7 +2691,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #3a3f51; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #564aa3 0%, #7266ba 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF564AA3', endColorstr='#FF7266BA', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #564aa3; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #564aa3; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #312a5d; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #564aa3;\n    background-image: linear-gradient(to right, #564aa3 0%, #7266ba 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF564AA3', endColorstr='#FF7266BA', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #564aa3;\n    background-image: linear-gradient(to right, #564aa3 0%, #7266ba 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF564AA3', endColorstr='#FF7266BA', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #312a5d; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #3a3f51; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #9289ca; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #383d4e;\n    color: #9289ca; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #9289ca; }\n  .sidebar .nav > li.active {\n    border-left-color: #9289ca; }\n\n.sidebar-subnav {\n  background-color: #3a3f51; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #e1e2e3; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #9289ca; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #9289ca; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #9289ca;\n      background-color: #9289ca; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
+exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #3a3f51; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #2b957a 0%, #37bc9b 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2B957A', endColorstr='#FF37BC9B', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #2b957a; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #2b957a; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #144639; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #2b957a;\n    background-image: linear-gradient(to right, #2b957a 0%, #37bc9b 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2B957A', endColorstr='#FF37BC9B', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #2b957a;\n    background-image: linear-gradient(to right, #2b957a 0%, #37bc9b 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2B957A', endColorstr='#FF37BC9B', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #144639; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #3a3f51; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #2b957a; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #383d4e;\n    color: #2b957a; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #2b957a; }\n  .sidebar .nav > li.active {\n    border-left-color: #2b957a; }\n\n.sidebar-subnav {\n  background-color: #3a3f51; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #e1e2e3; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #2b957a; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #2b957a; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #2b957a;\n      background-color: #2b957a; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
 
 // exports
 
@@ -2727,6 +2709,24 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
+exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #3a3f51; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #564aa3 0%, #7266ba 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF564AA3', endColorstr='#FF7266BA', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #564aa3; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #564aa3; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #312a5d; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #564aa3;\n    background-image: linear-gradient(to right, #564aa3 0%, #7266ba 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF564AA3', endColorstr='#FF7266BA', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #564aa3;\n    background-image: linear-gradient(to right, #564aa3 0%, #7266ba 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF564AA3', endColorstr='#FF7266BA', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #312a5d; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #3a3f51; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #9289ca; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #383d4e;\n    color: #9289ca; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #9289ca; }\n  .sidebar .nav > li.active {\n    border-left-color: #9289ca; }\n\n.sidebar-subnav {\n  background-color: #3a3f51; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #e1e2e3; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #9289ca; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #9289ca; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #9289ca;\n      background-color: #9289ca; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 711:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
 exports.push([module.i, "/* ========================================================================\n     Component: media-queries\n ========================================================================== */\n/* ========================================================================\n   Component: layout\n ========================================================================== */\nbody,\n.wrapper > section {\n  background-color: #f5f7fa; }\n\n.wrapper > .aside {\n  background-color: #3a3f51; }\n\n/* ========================================================================\n   Component: top-navbar\n ========================================================================== */\n.topnavbar {\n  background-color: #fff; }\n  .topnavbar .navbar-header {\n    background-color: transparent;\n    background-image: linear-gradient(to right, #ec2121 0%, #f05050 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEC2121', endColorstr='#FFF05050', GradientType=1); }\n    @media only screen and (min-width: 768px) {\n      .topnavbar .navbar-header {\n        background-image: none; } }\n  .topnavbar .navbar-nav > li > .navbar-text {\n    color: #ec2121; }\n  .topnavbar .navbar-nav > li > a,\n  .topnavbar .navbar-nav > .open > a {\n    color: #ec2121; }\n    .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n    .topnavbar .navbar-nav > .open > a:hover,\n    .topnavbar .navbar-nav > .open > a:focus {\n      color: #9a0d0d; }\n  .topnavbar .navbar-nav > .active > a, .topnavbar .navbar-nav > .active > a:hover, .topnavbar .navbar-nav > .active > a:focus,\n  .topnavbar .navbar-nav > .open > a,\n  .topnavbar .navbar-nav > .open > a:hover,\n  .topnavbar .navbar-nav > .open > a:focus {\n    background-color: transparent; }\n  .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {\n    color: #fff; }\n  .topnavbar .nav-wrapper {\n    background-color: #ec2121;\n    background-image: linear-gradient(to right, #ec2121 0%, #f05050 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEC2121', endColorstr='#FFF05050', GradientType=1); }\n\n@media only screen and (min-width: 768px) {\n  .topnavbar {\n    background-color: #ec2121;\n    background-image: linear-gradient(to right, #ec2121 0%, #f05050 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEC2121', endColorstr='#FFF05050', GradientType=1); }\n    .topnavbar .navbar-nav > .open > a, .topnavbar .navbar-nav > .open > a:hover, .topnavbar .navbar-nav > .open > a:focus {\n      box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset; }\n    .topnavbar .navbar-nav > li > .navbar-text {\n      color: #fff; }\n    .topnavbar .navbar-nav > li > a,\n    .topnavbar .navbar-nav > .open > a {\n      color: #fff; }\n      .topnavbar .navbar-nav > li > a:hover, .topnavbar .navbar-nav > li > a:focus,\n      .topnavbar .navbar-nav > .open > a:hover,\n      .topnavbar .navbar-nav > .open > a:focus {\n        color: #9a0d0d; } }\n\n/* ========================================================================\n   Component: sidebar\n ========================================================================== */\n.sidebar {\n  background-color: #3a3f51; }\n  .sidebar .nav-heading {\n    color: #919DA8; }\n  .sidebar .nav > li > a,\n  .sidebar .nav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar .nav > li > a:focus, .sidebar .nav > li > a:hover,\n    .sidebar .nav > li > .nav-item:focus,\n    .sidebar .nav > li > .nav-item:hover {\n      color: #f05050; }\n    .sidebar .nav > li > a > em,\n    .sidebar .nav > li > .nav-item > em {\n      color: inherits; }\n  .sidebar .nav > li.active,\n  .sidebar .nav > li.active > a,\n  .sidebar .nav > li.active .nav, .sidebar .nav > li.open,\n  .sidebar .nav > li.open > a,\n  .sidebar .nav > li.open .nav {\n    background-color: #383d4e;\n    color: #f05050; }\n  .sidebar .nav > li.active > a > em, .sidebar .nav > li.open > a > em {\n    color: #f05050; }\n  .sidebar .nav > li.active {\n    border-left-color: #f05050; }\n\n.sidebar-subnav {\n  background-color: #3a3f51; }\n  .sidebar-subnav > .sidebar-subnav-header {\n    color: #e1e2e3; }\n  .sidebar-subnav > li > a,\n  .sidebar-subnav > li > .nav-item {\n    color: #e1e2e3; }\n    .sidebar-subnav > li > a:focus, .sidebar-subnav > li > a:hover,\n    .sidebar-subnav > li > .nav-item:focus,\n    .sidebar-subnav > li > .nav-item:hover {\n      color: #f05050; }\n  .sidebar-subnav > li.active > a,\n  .sidebar-subnav > li.active > .nav-item {\n    color: #f05050; }\n    .sidebar-subnav > li.active > a:after,\n    .sidebar-subnav > li.active > .nav-item:after {\n      border-color: #f05050;\n      background-color: #f05050; }\n\n/* ========================================================================\n   Component: offsidebar\n ========================================================================== */\n.offsidebar {\n  border-left: 1px solid greyscale(#cccccc);\n  background-color: #fff;\n  color: #515253; }\n", ""]);
 
 // exports
@@ -2737,240 +2737,240 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 726:
+/***/ 727:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 226,
-	"./af.js": 226,
-	"./ar": 233,
-	"./ar-dz": 227,
-	"./ar-dz.js": 227,
-	"./ar-kw": 228,
-	"./ar-kw.js": 228,
-	"./ar-ly": 229,
-	"./ar-ly.js": 229,
-	"./ar-ma": 230,
-	"./ar-ma.js": 230,
-	"./ar-sa": 231,
-	"./ar-sa.js": 231,
-	"./ar-tn": 232,
-	"./ar-tn.js": 232,
-	"./ar.js": 233,
-	"./az": 234,
-	"./az.js": 234,
-	"./be": 235,
-	"./be.js": 235,
-	"./bg": 236,
-	"./bg.js": 236,
-	"./bn": 237,
-	"./bn.js": 237,
-	"./bo": 238,
-	"./bo.js": 238,
-	"./br": 239,
-	"./br.js": 239,
-	"./bs": 240,
-	"./bs.js": 240,
-	"./ca": 241,
-	"./ca.js": 241,
-	"./cs": 242,
-	"./cs.js": 242,
-	"./cv": 243,
-	"./cv.js": 243,
-	"./cy": 244,
-	"./cy.js": 244,
-	"./da": 245,
-	"./da.js": 245,
-	"./de": 248,
-	"./de-at": 246,
-	"./de-at.js": 246,
-	"./de-ch": 247,
-	"./de-ch.js": 247,
-	"./de.js": 248,
-	"./dv": 249,
-	"./dv.js": 249,
-	"./el": 250,
-	"./el.js": 250,
-	"./en-au": 251,
-	"./en-au.js": 251,
-	"./en-ca": 252,
-	"./en-ca.js": 252,
-	"./en-gb": 253,
-	"./en-gb.js": 253,
-	"./en-ie": 254,
-	"./en-ie.js": 254,
-	"./en-nz": 255,
-	"./en-nz.js": 255,
-	"./eo": 256,
-	"./eo.js": 256,
-	"./es": 258,
-	"./es-do": 257,
-	"./es-do.js": 257,
-	"./es.js": 258,
-	"./et": 259,
-	"./et.js": 259,
-	"./eu": 260,
-	"./eu.js": 260,
-	"./fa": 261,
-	"./fa.js": 261,
-	"./fi": 262,
-	"./fi.js": 262,
-	"./fo": 263,
-	"./fo.js": 263,
-	"./fr": 266,
-	"./fr-ca": 264,
-	"./fr-ca.js": 264,
-	"./fr-ch": 265,
-	"./fr-ch.js": 265,
-	"./fr.js": 266,
-	"./fy": 267,
-	"./fy.js": 267,
-	"./gd": 268,
-	"./gd.js": 268,
-	"./gl": 269,
-	"./gl.js": 269,
-	"./gom-latn": 270,
-	"./gom-latn.js": 270,
-	"./he": 271,
-	"./he.js": 271,
-	"./hi": 272,
-	"./hi.js": 272,
-	"./hr": 273,
-	"./hr.js": 273,
-	"./hu": 274,
-	"./hu.js": 274,
-	"./hy-am": 275,
-	"./hy-am.js": 275,
-	"./id": 276,
-	"./id.js": 276,
-	"./is": 277,
-	"./is.js": 277,
-	"./it": 278,
-	"./it.js": 278,
-	"./ja": 279,
-	"./ja.js": 279,
-	"./jv": 280,
-	"./jv.js": 280,
-	"./ka": 281,
-	"./ka.js": 281,
-	"./kk": 282,
-	"./kk.js": 282,
-	"./km": 283,
-	"./km.js": 283,
-	"./kn": 284,
-	"./kn.js": 284,
-	"./ko": 285,
-	"./ko.js": 285,
-	"./ky": 286,
-	"./ky.js": 286,
-	"./lb": 287,
-	"./lb.js": 287,
-	"./lo": 288,
-	"./lo.js": 288,
-	"./lt": 289,
-	"./lt.js": 289,
-	"./lv": 290,
-	"./lv.js": 290,
-	"./me": 291,
-	"./me.js": 291,
-	"./mi": 292,
-	"./mi.js": 292,
-	"./mk": 293,
-	"./mk.js": 293,
-	"./ml": 294,
-	"./ml.js": 294,
-	"./mr": 295,
-	"./mr.js": 295,
-	"./ms": 297,
-	"./ms-my": 296,
-	"./ms-my.js": 296,
-	"./ms.js": 297,
-	"./my": 298,
-	"./my.js": 298,
-	"./nb": 299,
-	"./nb.js": 299,
-	"./ne": 300,
-	"./ne.js": 300,
-	"./nl": 302,
-	"./nl-be": 301,
-	"./nl-be.js": 301,
-	"./nl.js": 302,
-	"./nn": 303,
-	"./nn.js": 303,
-	"./pa-in": 304,
-	"./pa-in.js": 304,
-	"./pl": 305,
-	"./pl.js": 305,
-	"./pt": 307,
-	"./pt-br": 306,
-	"./pt-br.js": 306,
-	"./pt.js": 307,
-	"./ro": 308,
-	"./ro.js": 308,
-	"./ru": 309,
-	"./ru.js": 309,
-	"./sd": 310,
-	"./sd.js": 310,
-	"./se": 311,
-	"./se.js": 311,
-	"./si": 312,
-	"./si.js": 312,
-	"./sk": 313,
-	"./sk.js": 313,
-	"./sl": 314,
-	"./sl.js": 314,
-	"./sq": 315,
-	"./sq.js": 315,
-	"./sr": 317,
-	"./sr-cyrl": 316,
-	"./sr-cyrl.js": 316,
-	"./sr.js": 317,
-	"./ss": 318,
-	"./ss.js": 318,
-	"./sv": 319,
-	"./sv.js": 319,
-	"./sw": 320,
-	"./sw.js": 320,
-	"./ta": 321,
-	"./ta.js": 321,
-	"./te": 322,
-	"./te.js": 322,
-	"./tet": 323,
-	"./tet.js": 323,
-	"./th": 324,
-	"./th.js": 324,
-	"./tl-ph": 325,
-	"./tl-ph.js": 325,
-	"./tlh": 326,
-	"./tlh.js": 326,
-	"./tr": 327,
-	"./tr.js": 327,
-	"./tzl": 328,
-	"./tzl.js": 328,
-	"./tzm": 330,
-	"./tzm-latn": 329,
-	"./tzm-latn.js": 329,
-	"./tzm.js": 330,
-	"./uk": 331,
-	"./uk.js": 331,
-	"./ur": 332,
-	"./ur.js": 332,
-	"./uz": 334,
-	"./uz-latn": 333,
-	"./uz-latn.js": 333,
-	"./uz.js": 334,
-	"./vi": 335,
-	"./vi.js": 335,
-	"./x-pseudo": 336,
-	"./x-pseudo.js": 336,
-	"./yo": 337,
-	"./yo.js": 337,
-	"./zh-cn": 338,
-	"./zh-cn.js": 338,
-	"./zh-hk": 339,
-	"./zh-hk.js": 339,
-	"./zh-tw": 340,
-	"./zh-tw.js": 340
+	"./af": 227,
+	"./af.js": 227,
+	"./ar": 234,
+	"./ar-dz": 228,
+	"./ar-dz.js": 228,
+	"./ar-kw": 229,
+	"./ar-kw.js": 229,
+	"./ar-ly": 230,
+	"./ar-ly.js": 230,
+	"./ar-ma": 231,
+	"./ar-ma.js": 231,
+	"./ar-sa": 232,
+	"./ar-sa.js": 232,
+	"./ar-tn": 233,
+	"./ar-tn.js": 233,
+	"./ar.js": 234,
+	"./az": 235,
+	"./az.js": 235,
+	"./be": 236,
+	"./be.js": 236,
+	"./bg": 237,
+	"./bg.js": 237,
+	"./bn": 238,
+	"./bn.js": 238,
+	"./bo": 239,
+	"./bo.js": 239,
+	"./br": 240,
+	"./br.js": 240,
+	"./bs": 241,
+	"./bs.js": 241,
+	"./ca": 242,
+	"./ca.js": 242,
+	"./cs": 243,
+	"./cs.js": 243,
+	"./cv": 244,
+	"./cv.js": 244,
+	"./cy": 245,
+	"./cy.js": 245,
+	"./da": 246,
+	"./da.js": 246,
+	"./de": 249,
+	"./de-at": 247,
+	"./de-at.js": 247,
+	"./de-ch": 248,
+	"./de-ch.js": 248,
+	"./de.js": 249,
+	"./dv": 250,
+	"./dv.js": 250,
+	"./el": 251,
+	"./el.js": 251,
+	"./en-au": 252,
+	"./en-au.js": 252,
+	"./en-ca": 253,
+	"./en-ca.js": 253,
+	"./en-gb": 254,
+	"./en-gb.js": 254,
+	"./en-ie": 255,
+	"./en-ie.js": 255,
+	"./en-nz": 256,
+	"./en-nz.js": 256,
+	"./eo": 257,
+	"./eo.js": 257,
+	"./es": 259,
+	"./es-do": 258,
+	"./es-do.js": 258,
+	"./es.js": 259,
+	"./et": 260,
+	"./et.js": 260,
+	"./eu": 261,
+	"./eu.js": 261,
+	"./fa": 262,
+	"./fa.js": 262,
+	"./fi": 263,
+	"./fi.js": 263,
+	"./fo": 264,
+	"./fo.js": 264,
+	"./fr": 267,
+	"./fr-ca": 265,
+	"./fr-ca.js": 265,
+	"./fr-ch": 266,
+	"./fr-ch.js": 266,
+	"./fr.js": 267,
+	"./fy": 268,
+	"./fy.js": 268,
+	"./gd": 269,
+	"./gd.js": 269,
+	"./gl": 270,
+	"./gl.js": 270,
+	"./gom-latn": 271,
+	"./gom-latn.js": 271,
+	"./he": 272,
+	"./he.js": 272,
+	"./hi": 273,
+	"./hi.js": 273,
+	"./hr": 274,
+	"./hr.js": 274,
+	"./hu": 275,
+	"./hu.js": 275,
+	"./hy-am": 276,
+	"./hy-am.js": 276,
+	"./id": 277,
+	"./id.js": 277,
+	"./is": 278,
+	"./is.js": 278,
+	"./it": 279,
+	"./it.js": 279,
+	"./ja": 280,
+	"./ja.js": 280,
+	"./jv": 281,
+	"./jv.js": 281,
+	"./ka": 282,
+	"./ka.js": 282,
+	"./kk": 283,
+	"./kk.js": 283,
+	"./km": 284,
+	"./km.js": 284,
+	"./kn": 285,
+	"./kn.js": 285,
+	"./ko": 286,
+	"./ko.js": 286,
+	"./ky": 287,
+	"./ky.js": 287,
+	"./lb": 288,
+	"./lb.js": 288,
+	"./lo": 289,
+	"./lo.js": 289,
+	"./lt": 290,
+	"./lt.js": 290,
+	"./lv": 291,
+	"./lv.js": 291,
+	"./me": 292,
+	"./me.js": 292,
+	"./mi": 293,
+	"./mi.js": 293,
+	"./mk": 294,
+	"./mk.js": 294,
+	"./ml": 295,
+	"./ml.js": 295,
+	"./mr": 296,
+	"./mr.js": 296,
+	"./ms": 298,
+	"./ms-my": 297,
+	"./ms-my.js": 297,
+	"./ms.js": 298,
+	"./my": 299,
+	"./my.js": 299,
+	"./nb": 300,
+	"./nb.js": 300,
+	"./ne": 301,
+	"./ne.js": 301,
+	"./nl": 303,
+	"./nl-be": 302,
+	"./nl-be.js": 302,
+	"./nl.js": 303,
+	"./nn": 304,
+	"./nn.js": 304,
+	"./pa-in": 305,
+	"./pa-in.js": 305,
+	"./pl": 306,
+	"./pl.js": 306,
+	"./pt": 308,
+	"./pt-br": 307,
+	"./pt-br.js": 307,
+	"./pt.js": 308,
+	"./ro": 309,
+	"./ro.js": 309,
+	"./ru": 310,
+	"./ru.js": 310,
+	"./sd": 311,
+	"./sd.js": 311,
+	"./se": 312,
+	"./se.js": 312,
+	"./si": 313,
+	"./si.js": 313,
+	"./sk": 314,
+	"./sk.js": 314,
+	"./sl": 315,
+	"./sl.js": 315,
+	"./sq": 316,
+	"./sq.js": 316,
+	"./sr": 318,
+	"./sr-cyrl": 317,
+	"./sr-cyrl.js": 317,
+	"./sr.js": 318,
+	"./ss": 319,
+	"./ss.js": 319,
+	"./sv": 320,
+	"./sv.js": 320,
+	"./sw": 321,
+	"./sw.js": 321,
+	"./ta": 322,
+	"./ta.js": 322,
+	"./te": 323,
+	"./te.js": 323,
+	"./tet": 324,
+	"./tet.js": 324,
+	"./th": 325,
+	"./th.js": 325,
+	"./tl-ph": 326,
+	"./tl-ph.js": 326,
+	"./tlh": 327,
+	"./tlh.js": 327,
+	"./tr": 328,
+	"./tr.js": 328,
+	"./tzl": 329,
+	"./tzl.js": 329,
+	"./tzm": 331,
+	"./tzm-latn": 330,
+	"./tzm-latn.js": 330,
+	"./tzm.js": 331,
+	"./uk": 332,
+	"./uk.js": 332,
+	"./ur": 333,
+	"./ur.js": 333,
+	"./uz": 335,
+	"./uz-latn": 334,
+	"./uz-latn.js": 334,
+	"./uz.js": 335,
+	"./vi": 336,
+	"./vi.js": 336,
+	"./x-pseudo": 337,
+	"./x-pseudo.js": 337,
+	"./yo": 338,
+	"./yo.js": 338,
+	"./zh-cn": 339,
+	"./zh-cn.js": 339,
+	"./zh-hk": 340,
+	"./zh-hk.js": 340,
+	"./zh-tw": 341,
+	"./zh-tw.js": 341
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -2986,89 +2986,89 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 726;
+webpackContext.id = 727;
 
-
-/***/ }),
-
-/***/ 831:
-/***/ (function(module, exports) {
-
-module.exports = "<router-outlet></router-outlet>\n"
 
 /***/ }),
 
 /***/ 832:
 /***/ (function(module, exports) {
 
-module.exports = "<span>&copy; {{settings.app.year}} - {{ settings.app.name }}</span>"
+module.exports = "<router-outlet></router-outlet>\n"
 
 /***/ }),
 
 /***/ 833:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- START Top Navbar-->\n<nav class=\"navbar topnavbar\" role=\"navigation\">\n    <!-- START navbar header-->\n    <div class=\"navbar-header\">\n        <a class=\"navbar-brand\" href=\"#/\">\n            <div class=\"brand-logo\">\n                <img class=\"img-responsive\" src=\"assets/img/logo.png\" alt=\"App Logo\" />\n            </div>\n            <div class=\"brand-logo-collapsed\">\n                <img class=\"img-responsive\" src=\"assets/img/logo-single.png\" alt=\"App Logo\" />\n            </div>\n        </a>\n    </div>\n    <!-- END navbar header-->\n    <!-- START Nav wrapper-->\n    <div class=\"nav-wrapper\">\n        <!-- START Left navbar-->\n        <ul class=\"nav navbar-nav\">\n            <li>\n                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\n                <a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\n                    <em class=\"fa fa-navicon\"></em>\n                </a>\n                <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\n                <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\n                    <em class=\"fa fa-navicon\"></em>\n                </a>\n            </li>\n            <!-- START User avatar toggle-->\n            <li>\n                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\n                <a (click)=\"toggleUserBlock($event)\">\n                    <em class=\"icon-user\"></em>\n                </a>\n            </li>\n            <!-- END User avatar toggle-->\n            <!-- START lock screen-->\n            <li>\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\n                    <em class=\"icon-lock\"></em>\n                </a>\n            </li>\n            <!-- END lock screen-->\n        </ul>\n        <!-- END Left navbar-->\n        <!-- START Right Navbar-->\n        <ul class=\"nav navbar-nav navbar-right\">\n            <!-- Search icon-->\n            <li>\n                <a (click)=\"openNavSearch($event)\">\n                    <em class=\"icon-magnifier\"></em>\n                </a>\n            </li>\n            <!-- Fullscreen (only desktops)-->\n            <li class=\"visible-lg\">\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\n                    <em class=\"fa fa-expand\"></em>\n                </a>\n            </li>\n            <!-- START Alert menu-->\n            <li class=\"dropdown dropdown-list\" dropdown>\n                <a dropdownToggle>\n                    <em class=\"icon-bell\"></em>\n                    <div class=\"label label-danger\">11</div>\n                </a>\n                <!-- START Dropdown menu-->\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\n                    <li>\n                        <!-- START list group-->\n                        <div class=\"list-group\">\n                            <!-- list item-->\n                            <a class=\"list-group-item\">\n                                <div class=\"media-box\">\n                                    <div class=\"pull-left\">\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\n                                    </div>\n                                    <div class=\"media-box-body clearfix\">\n                                        <p class=\"m0\">New followers</p>\n                                        <p class=\"m0 text-muted\">\n                                            <small>1 new follower</small>\n                                        </p>\n                                    </div>\n                                </div>\n                            </a>\n                            <!-- list item-->\n                            <a class=\"list-group-item\">\n                                <div class=\"media-box\">\n                                    <div class=\"pull-left\">\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\n                                    </div>\n                                    <div class=\"media-box-body clearfix\">\n                                        <p class=\"m0\">New e-mails</p>\n                                        <p class=\"m0 text-muted\">\n                                            <small>You have 10 new emails</small>\n                                        </p>\n                                    </div>\n                                </div>\n                            </a>\n                            <!-- list item-->\n                            <a class=\"list-group-item\">\n                                <div class=\"media-box\">\n                                    <div class=\"pull-left\">\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\n                                    </div>\n                                    <div class=\"media-box-body clearfix\">\n                                        <p class=\"m0\">Pending Tasks</p>\n                                        <p class=\"m0 text-muted\">\n                                            <small>11 pending task</small>\n                                        </p>\n                                    </div>\n                                </div>\n                            </a>\n                            <!-- last list item-->\n                            <a class=\"list-group-item\">\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\n                                <span class=\"label label-danger pull-right\">14</span>\n                            </a>\n                        </div>\n                        <!-- END list group-->\n                    </li>\n                </ul>\n                <!-- END Dropdown menu-->\n            </li>\n            <!-- END Alert menu-->\n            <!-- START Offsidebar button-->\n            <li>\n                <a (click)=\"toggleOffsidebar()\">\n                    <em class=\"icon-notebook\"></em>\n                </a>\n            </li>\n            <!-- END Offsidebar menu-->\n        </ul>\n        <!-- END Right Navbar-->\n    </div>\n    <!-- END Nav wrapper-->\n\n    <!-- <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch> -->\n\n</nav>\n<!-- END Top Navbar-->\n"
+module.exports = "<span>&copy; {{settings.app.year}} - {{ settings.app.name }}</span>"
 
 /***/ }),
 
 /***/ 834:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- START Search form-->\n<form class=\"navbar-form\" role=\"search\" action=\"search.html\" [class.open]=\"visible\" (submit)=\"handleForm()\">\n    <div class=\"form-group has-feedback\">\n        <input [(ngModel)]=\"term\" name=\"term\" class=\"form-control\" type=\"text\" placeholder=\"{{'header.search.PLACEHOLDER' | translate}}\" />\n        <div class=\"fa fa-times form-control-feedback\" (click)=\"closeNavSearch()\"></div>\n    </div>\n    <button class=\"hidden btn btn-default\" type=\"submit\">Submit</button>\n</form>\n<!-- END Search form-->\n"
+module.exports = "<!-- START Top Navbar-->\n<nav class=\"navbar topnavbar\" role=\"navigation\">\n    <!-- START navbar header-->\n    <div class=\"navbar-header\">\n        <a class=\"navbar-brand\" href=\"#/\">\n            <div class=\"brand-logo\">\n                <img class=\"img-responsive\" src=\"assets/img/logo.png\" alt=\"App Logo\" />\n            </div>\n            <div class=\"brand-logo-collapsed\">\n                <img class=\"img-responsive\" src=\"assets/img/logo-single.png\" alt=\"App Logo\" />\n            </div>\n        </a>\n    </div>\n    <!-- END navbar header-->\n    <!-- START Nav wrapper-->\n    <div class=\"nav-wrapper\">\n        <!-- START Left navbar-->\n        <ul class=\"nav navbar-nav\">\n            <li>\n                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\n                <a class=\"hidden-xs\" trigger-resize=\"\" (click)=\"toggleCollapsedSideabar()\" *ngIf=\"!isCollapsedText()\">\n                    <em class=\"fa fa-navicon\"></em>\n                </a>\n                <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->\n                <a class=\"visible-xs sidebar-toggle\" (click)=\"settings.layout.asideToggled =! settings.layout.asideToggled\">\n                    <em class=\"fa fa-navicon\"></em>\n                </a>\n            </li>\n            <!-- START User avatar toggle-->\n            <li>\n                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->\n                <a (click)=\"toggleUserBlock($event)\">\n                    <em class=\"icon-user\"></em>\n                </a>\n            </li>\n            <!-- END User avatar toggle-->\n            <!-- START lock screen-->\n            <li>\n                <a  title=\"Lock screen\" [routerLink]=\"'/lock'\">\n                    <em class=\"icon-lock\"></em>\n                </a>\n            </li>\n            <!-- END lock screen-->\n        </ul>\n        <!-- END Left navbar-->\n        <!-- START Right Navbar-->\n        <ul class=\"nav navbar-nav navbar-right\">\n            <!-- Search icon-->\n            <li>\n                <a (click)=\"openNavSearch($event)\">\n                    <em class=\"icon-magnifier\"></em>\n                </a>\n            </li>\n            <!-- Fullscreen (only desktops)-->\n            <li class=\"visible-lg\">\n                <a #fsbutton (click)=\"toggleFullScreen($event)\">\n                    <em class=\"fa fa-expand\"></em>\n                </a>\n            </li>\n            <!-- START Alert menu-->\n            <li class=\"dropdown dropdown-list\" dropdown>\n                <a dropdownToggle>\n                    <em class=\"icon-bell\"></em>\n                    <div class=\"label label-danger\">11</div>\n                </a>\n                <!-- START Dropdown menu-->\n                <ul *dropdownMenu class=\"dropdown-menu animated flipInX\">\n                    <li>\n                        <!-- START list group-->\n                        <div class=\"list-group\">\n                            <!-- list item-->\n                            <a class=\"list-group-item\">\n                                <div class=\"media-box\">\n                                    <div class=\"pull-left\">\n                                        <em class=\"fa fa-twitter fa-2x text-info\"></em>\n                                    </div>\n                                    <div class=\"media-box-body clearfix\">\n                                        <p class=\"m0\">New followers</p>\n                                        <p class=\"m0 text-muted\">\n                                            <small>1 new follower</small>\n                                        </p>\n                                    </div>\n                                </div>\n                            </a>\n                            <!-- list item-->\n                            <a class=\"list-group-item\">\n                                <div class=\"media-box\">\n                                    <div class=\"pull-left\">\n                                        <em class=\"fa fa-envelope fa-2x text-warning\"></em>\n                                    </div>\n                                    <div class=\"media-box-body clearfix\">\n                                        <p class=\"m0\">New e-mails</p>\n                                        <p class=\"m0 text-muted\">\n                                            <small>You have 10 new emails</small>\n                                        </p>\n                                    </div>\n                                </div>\n                            </a>\n                            <!-- list item-->\n                            <a class=\"list-group-item\">\n                                <div class=\"media-box\">\n                                    <div class=\"pull-left\">\n                                        <em class=\"fa fa-tasks fa-2x text-success\"></em>\n                                    </div>\n                                    <div class=\"media-box-body clearfix\">\n                                        <p class=\"m0\">Pending Tasks</p>\n                                        <p class=\"m0 text-muted\">\n                                            <small>11 pending task</small>\n                                        </p>\n                                    </div>\n                                </div>\n                            </a>\n                            <!-- last list item-->\n                            <a class=\"list-group-item\">\n                                <small translate=\"topbar.notification.MORE\">More notifications</small>\n                                <span class=\"label label-danger pull-right\">14</span>\n                            </a>\n                        </div>\n                        <!-- END list group-->\n                    </li>\n                </ul>\n                <!-- END Dropdown menu-->\n            </li>\n            <!-- END Alert menu-->\n            <!-- START Offsidebar button-->\n            <li>\n                <a (click)=\"toggleOffsidebar()\">\n                    <em class=\"icon-notebook\"></em>\n                </a>\n            </li>\n            <!-- END Offsidebar menu-->\n        </ul>\n        <!-- END Right Navbar-->\n    </div>\n    <!-- END Nav wrapper-->\n\n    <!-- <app-navsearch [visible]=\"getNavSearchVisible()\" (onclose)=\"setNavSearchVisible(false)\"></app-navsearch> -->\n\n</nav>\n<!-- END Top Navbar-->\n"
 
 /***/ }),
 
 /***/ 835:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n    <!-- top navbar-->\n    <app-header class=\"topnavbar-wrapper\"></app-header>\n    <!-- sidebar-->\n    <app-sidebar class=\"aside\"></app-sidebar>\n    <!-- offsidebar-->\n    <app-offsidebar class=\"offsidebar\"></app-offsidebar>\n    <!-- Main section-->\n    <section>\n        <!-- Page content-->\n        <div class=\"content-wrapper\">\n            <router-outlet></router-outlet>\n        </div>\n    </section>\n    <!-- Page footer-->\n    <footer app-footer></footer>\n</div>"
+module.exports = "<!-- START Search form-->\n<form class=\"navbar-form\" role=\"search\" action=\"search.html\" [class.open]=\"visible\" (submit)=\"handleForm()\">\n    <div class=\"form-group has-feedback\">\n        <input [(ngModel)]=\"term\" name=\"term\" class=\"form-control\" type=\"text\" placeholder=\"{{'header.search.PLACEHOLDER' | translate}}\" />\n        <div class=\"fa fa-times form-control-feedback\" (click)=\"closeNavSearch()\"></div>\n    </div>\n    <button class=\"hidden btn btn-default\" type=\"submit\">Submit</button>\n</form>\n<!-- END Search form-->\n"
 
 /***/ }),
 
 /***/ 836:
 /***/ (function(module, exports) {
 
-module.exports = "<tabset [justified]=\"true\">\n    <tab>\n        <ng-template tabHeading>\n            <em class=\"icon-equalizer fa-lg\"></em>\n        </ng-template>\n        <h3 class=\"text-center text-thin\" [innerHTML]=\"'offsidebar.setting.SETTINGS' | translate\"></h3>\n        <div class=\"p\">\n            <h4 class=\"text-muted text-thin\">Themes</h4>\n            <div class=\"table-grid mb\">\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"A\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-info\"></span>\n                            <span class=\"color bg-info-light\"></span>\n                            </span>\n                            <span class=\"color bg-white\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"B\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-green\"></span>\n                            <span class=\"color bg-green-light\"></span>\n                            </span>\n                            <span class=\"color bg-white\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"C\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-purple\"></span>\n                            <span class=\"color bg-purple-light\"></span>\n                            </span>\n                            <span class=\"color bg-white\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"D\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-danger\"></span>\n                            <span class=\"color bg-danger-light\"></span>\n                            </span>\n                            <span class=\"color bg-white\"></span>\n                        </label>\n                    </div>\n                </div>\n            </div>\n            <div class=\"table-grid mb\">\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"E\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-info-dark\"></span>\n                            <span class=\"color bg-info\"></span>\n                            </span>\n                            <span class=\"color bg-gray-dark\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"F\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-green-dark\"></span>\n                            <span class=\"color bg-green\"></span>\n                            </span>\n                            <span class=\"color bg-gray-dark\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"G\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-purple-dark\"></span>\n                            <span class=\"color bg-purple\"></span>\n                            </span>\n                            <span class=\"color bg-gray-dark\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"H\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-danger-dark\"></span>\n                            <span class=\"color bg-danger\"></span>\n                            </span>\n                            <span class=\"color bg-gray-dark\"></span>\n                        </label>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"p\">\n            <h4 class=\"text-muted text-thin\">Layout</h4>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Fixed</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.isFixed\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Boxed</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.isBoxed\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <!--\n    <div class=\"clearfix\">\n      <p class=\"pull-left\">RTL</p>\n      <div class=\"pull-right\">\n         <label class=\"switch\">\n            <input type=\"checkbox\" [(ngModel)]=\"layoutRTL\"/>\n            <span></span>\n         </label>\n      </div>\n    </div>\n    -->\n        </div>\n        <div class=\"p\" *ngIf=\"!settings.layout.horizontal\">\n            <h4 class=\"text-muted text-thin\">Aside</h4>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Collapsed</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.isCollapsed\" [disabled]=\"settings.layout.isCollapsedText\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Collapsed Text</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.isCollapsedText\" [disabled]=\"settings.layout.isCollapsed\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Float</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.isFloat\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Hover</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.asideHover\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Show Scrollbar</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.asideScrollbar\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n        </div>\n        <div class=\"p\">\n            <h4 class=\"text-muted text-thin\">Language</h4>\n            <select class=\"form-control\" [ngModel]=\"selectedLanguage\" (ngModelChange)=\"setLang($event)\">\n                <option [value]=\"lang.code\" *ngFor=\"let lang of getLangs()\">{{lang.text}}</option>\n            </select>\n        </div>\n    </tab>\n    <tab>\n        <ng-template tabHeading>\n            <em class=\"icon-user fa-lg\"></em>\n        </ng-template>\n        <h3 class=\"text-center text-thin\">Connections</h3>\n        <ul class=\"nav\">\n            <!-- START list title-->\n            <li class=\"p\">\n                <small class=\"text-muted\">ONLINE</small>\n            </li>\n            <!-- END list title-->\n            <li>\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-success circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/05.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Juan Sims</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Designeer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-success circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/06.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Maureen Jenkins</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Designeer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-danger circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/07.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Billie Dunn</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Designeer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-warning circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/08.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Tomothy Roberts</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Designer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n            </li>\n            <!-- START list title-->\n            <li class=\"p\">\n                <small class=\"text-muted\">OFFLINE</small>\n            </li>\n            <!-- END list title-->\n            <li>\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/09.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Lawrence Robinson</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Developer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/10.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Tyrone Owens</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Designer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n            </li>\n            <li>\n                <div class=\"p-lg text-center\">\n                    <!-- Optional link to list more users-->\n                    <a href=\"#\" title=\"See more contacts\" class=\"btn btn-purple btn-sm\">\n                        <strong>Load more..</strong>\n                    </a>\n                </div>\n            </li>\n        </ul>\n        <!-- Extra items-->\n        <div class=\"p\">\n            <p>\n                <small class=\"text-muted\">Tasks completion</small>\n            </p>\n            <div class=\"progress progress-xs m0\">\n                <div role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\" class=\"progress-bar progress-bar-success progress-80\">\n                    <span class=\"sr-only\">80% Complete</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"p\">\n            <p>\n                <small class=\"text-muted\">Upload quota</small>\n            </p>\n            <div class=\"progress progress-xs m0\">\n                <div role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\" class=\"progress-bar progress-bar-warning progress-40\">\n                    <span class=\"sr-only\">40% Complete</span>\n                </div>\n            </div>\n        </div>\n    </tab>\n</tabset>\n"
+module.exports = "<div class=\"wrapper\">\n    <!-- top navbar-->\n    <app-header class=\"topnavbar-wrapper\"></app-header>\n    <!-- sidebar-->\n    <app-sidebar class=\"aside\"></app-sidebar>\n    <!-- offsidebar-->\n    <app-offsidebar class=\"offsidebar\"></app-offsidebar>\n    <!-- Main section-->\n    <section>\n        <!-- Page content-->\n        <div class=\"content-wrapper\">\n            <router-outlet></router-outlet>\n        </div>\n    </section>\n    <!-- Page footer-->\n    <footer app-footer></footer>\n</div>"
 
 /***/ }),
 
 /***/ 837:
 /***/ (function(module, exports) {
 
-module.exports = "<!-- START Sidebar (left)-->\n<div class=\"aside-inner\">\n    <nav class=\"sidebar\" sidebar-anyclick-close=\"\" [class.show-scrollbar]=\"settings.layout.asideScrollbar\">\n\n        <!-- START sidebar nav-->\n        <ul class=\"nav\">\n\n            <!-- START user info-->\n            <li class=\"has-user-block\">\n                <app-userblock></app-userblock>\n            </li>\n            <!-- END user info-->\n\n            <li *ngFor='let item of menuItems' [ngClass]=\"{'nav-heading': item.heading}\" [routerLinkActive]=\"['active']\">\n                <!-- menu heading -->\n                <span *ngIf=\"item.heading\">{{(item.translate | translate) || item.text}}</span>\n                <!-- external links -->\n                <a *ngIf=\"!item.heading && !item.submenu && item.elink\" [attr.target]=\"item.target\" [attr.href]=\"item.elink\" title=\"{{item.text}}\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- single menu item -->\n                <a *ngIf=\"!item.heading && !item.submenu && !item.elink\" [routerLink]=\"item.link\" [attr.route]=\"item.link\" title=\"{{item.text}}\"\n                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- has submenu -->\n                <a *ngIf=\"!item.heading && item.submenu\" title=\"{{item.text}}\"\n                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                        <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                        <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                        <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- SUBLEVEL -->\n                <ul *ngIf=\"item.submenu\" class=\"nav sidebar-subnav\" [routerLinkActive]=\"['opening']\">\n                    <li class=\"sidebar-subnav-header\">{{(item.translate | translate) || item.text}}</li>\n                    <li *ngFor='let subitem of item.submenu' [routerLinkActive]=\"['active']\">\n                        <!-- sublevel: external links -->\n                        <a *ngIf=\"!subitem.heading && !subitem.submenu && subitem.elink\" [attr.target]=\"subitem.target\" [attr.href]=\"subitem.elink\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: single menu item  -->\n                        <a *ngIf=\"!subitem.submenu && !subitem.elink\" [routerLink]=\"subitem.link\" [attr.route]=\"subitem.link\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: has submenu -->\n                        <a *ngIf=\"subitem.submenu\" title=\"{{subitem.text}}\"\n                            (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                                <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                                <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- SUBLEVEL 2 -->\n                        <ul *ngIf=\"subitem.submenu\" class=\"nav sidebar-subnav level2\" [routerLinkActive]=\"['opening']\">\n                            <li *ngFor='let subitem2 of subitem.submenu' [routerLinkActive]=\"['active']\">\n                                <!-- sublevel 2: single menu item  -->\n                                <a *ngIf=\"!subitem2.submenu\" [routerLink]=\"subitem2.link\" [attr.route]=\"subitem2.link\" title=\"{{subitem2.text}}\">\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- sublevel2: has submenu -->\n                                <a *ngIf=\"subitem2.submenu\" title=\"{{subitem2.text}}\"\n                                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                        <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                        <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                        <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- SUBLEVEL 3 -->\n                                <ul *ngIf=\"subitem2.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                    <li *ngFor='let subitem3 of subitem2.submenu' [routerLinkActive]=\"['active']\">\n                                        <!-- sublevel 2: single menu item  -->\n                                        <a *ngIf=\"!subitem3.submenu\" [routerLink]=\"subitem3.link\" [attr.route]=\"subitem3.link\" title=\"{{subitem3.text}}\">\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- sublevel3: has submenu -->\n                                        <a *ngIf=\"subitem3.submenu\" title=\"{{subitem3.text}}\"\n                                            (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                                <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                                <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                                <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- SUBLEVEL 4 -->\n                                        <ul *ngIf=\"subitem3.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                            <li *ngFor='let subitem4 of subitem3.submenu' [routerLinkActive]=\"['active']\">\n                                                <!-- sublevel 2: single menu item  -->\n                                                <a *ngIf=\"!subitem4.submenu\" [routerLink]=\"subitem4.link\" [attr.route]=\"subitem4.link\" title=\"{{subitem4.text}}\">\n                                                    <span class=\"pull-right\" *ngIf=\"subitem4.alert\" [ngClass]=\"subitem4.label || 'label label-success'\">{{subitem4.alert}}</span>\n                                                    <em class=\"{{subitem4.icon}}\" *ngIf=\"subitem4.icon\"></em>\n                                                    <span>{{(subitem4.translate | translate) || subitem4.text}}</span>\n                                                </a>\n                                            </li>\n                                        </ul>\n                                    </li>\n                                </ul>\n                            <li>\n                        </ul>\n                    <li>\n                </ul>\n            </li>\n\n        </ul>\n        <!-- END sidebar nav-->\n\n    </nav>\n</div>\n<!-- END Sidebar (left)-->\n"
+module.exports = "<tabset [justified]=\"true\">\n    <tab>\n        <ng-template tabHeading>\n            <em class=\"icon-equalizer fa-lg\"></em>\n        </ng-template>\n        <h3 class=\"text-center text-thin\" [innerHTML]=\"'offsidebar.setting.SETTINGS' | translate\"></h3>\n        <div class=\"p\">\n            <h4 class=\"text-muted text-thin\">Themes</h4>\n            <div class=\"table-grid mb\">\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"A\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-info\"></span>\n                            <span class=\"color bg-info-light\"></span>\n                            </span>\n                            <span class=\"color bg-white\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"B\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-green\"></span>\n                            <span class=\"color bg-green-light\"></span>\n                            </span>\n                            <span class=\"color bg-white\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"C\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-purple\"></span>\n                            <span class=\"color bg-purple-light\"></span>\n                            </span>\n                            <span class=\"color bg-white\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"D\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-danger\"></span>\n                            <span class=\"color bg-danger-light\"></span>\n                            </span>\n                            <span class=\"color bg-white\"></span>\n                        </label>\n                    </div>\n                </div>\n            </div>\n            <div class=\"table-grid mb\">\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"E\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-info-dark\"></span>\n                            <span class=\"color bg-info\"></span>\n                            </span>\n                            <span class=\"color bg-gray-dark\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"F\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-green-dark\"></span>\n                            <span class=\"color bg-green\"></span>\n                            </span>\n                            <span class=\"color bg-gray-dark\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"G\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-purple-dark\"></span>\n                            <span class=\"color bg-purple\"></span>\n                            </span>\n                            <span class=\"color bg-gray-dark\"></span>\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col mb\">\n                    <div class=\"setting-color\">\n                        <label>\n                            <input type=\"radio\" name=\"setting-theme\" [(ngModel)]=\"currentTheme\" (ngModelChange)=\"setTheme()\" value=\"H\" />\n                            <span class=\"icon-check\"></span>\n                            <span class=\"split\">\n                  <span class=\"color bg-danger-dark\"></span>\n                            <span class=\"color bg-danger\"></span>\n                            </span>\n                            <span class=\"color bg-gray-dark\"></span>\n                        </label>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"p\">\n            <h4 class=\"text-muted text-thin\">Layout</h4>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Fixed</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.isFixed\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Boxed</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.isBoxed\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <!--\n    <div class=\"clearfix\">\n      <p class=\"pull-left\">RTL</p>\n      <div class=\"pull-right\">\n         <label class=\"switch\">\n            <input type=\"checkbox\" [(ngModel)]=\"layoutRTL\"/>\n            <span></span>\n         </label>\n      </div>\n    </div>\n    -->\n        </div>\n        <div class=\"p\" *ngIf=\"!settings.layout.horizontal\">\n            <h4 class=\"text-muted text-thin\">Aside</h4>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Collapsed</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.isCollapsed\" [disabled]=\"settings.layout.isCollapsedText\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Collapsed Text</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.isCollapsedText\" [disabled]=\"settings.layout.isCollapsed\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Float</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.isFloat\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Hover</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.asideHover\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n            <div class=\"clearfix\">\n                <p class=\"pull-left\">Show Scrollbar</p>\n                <div class=\"pull-right\">\n                    <label class=\"switch\">\n                        <input type=\"checkbox\" [(ngModel)]=\"settings.layout.asideScrollbar\" />\n                        <span></span>\n                    </label>\n                </div>\n            </div>\n        </div>\n        <div class=\"p\">\n            <h4 class=\"text-muted text-thin\">Language</h4>\n            <select class=\"form-control\" [ngModel]=\"selectedLanguage\" (ngModelChange)=\"setLang($event)\">\n                <option [value]=\"lang.code\" *ngFor=\"let lang of getLangs()\">{{lang.text}}</option>\n            </select>\n        </div>\n    </tab>\n    <tab>\n        <ng-template tabHeading>\n            <em class=\"icon-user fa-lg\"></em>\n        </ng-template>\n        <h3 class=\"text-center text-thin\">Connections</h3>\n        <ul class=\"nav\">\n            <!-- START list title-->\n            <li class=\"p\">\n                <small class=\"text-muted\">ONLINE</small>\n            </li>\n            <!-- END list title-->\n            <li>\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-success circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/05.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Juan Sims</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Designeer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-success circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/06.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Maureen Jenkins</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Designeer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-danger circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/07.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Billie Dunn</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Designeer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-warning circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/08.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Tomothy Roberts</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Designer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n            </li>\n            <!-- START list title-->\n            <li class=\"p\">\n                <small class=\"text-muted\">OFFLINE</small>\n            </li>\n            <!-- END list title-->\n            <li>\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/09.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Lawrence Robinson</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Developer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n                <!-- START User status-->\n                <a href=\"#\" class=\"media-box p mt0\">\n                    <span class=\"pull-right\">\n                                 <span class=\"circle circle-lg\"></span>\n                    </span>\n                    <span class=\"pull-left\">\n                                 <!-- Contact avatar-->\n                                 <img src=\"assets/img/user/10.jpg\" alt=\"Image\" class=\"media-box-object img-circle thumb48\">\n                              </span>\n                    <!-- Contact info-->\n                    <span class=\"media-box-body\">\n                                 <span class=\"media-box-heading\">\n                                    <strong>Tyrone Owens</strong>\n                                    <br>\n                                    <small class=\"text-muted\">Designer</small>\n                                 </span>\n                    </span>\n                </a>\n                <!-- END User status-->\n            </li>\n            <li>\n                <div class=\"p-lg text-center\">\n                    <!-- Optional link to list more users-->\n                    <a href=\"#\" title=\"See more contacts\" class=\"btn btn-purple btn-sm\">\n                        <strong>Load more..</strong>\n                    </a>\n                </div>\n            </li>\n        </ul>\n        <!-- Extra items-->\n        <div class=\"p\">\n            <p>\n                <small class=\"text-muted\">Tasks completion</small>\n            </p>\n            <div class=\"progress progress-xs m0\">\n                <div role=\"progressbar\" aria-valuenow=\"80\" aria-valuemin=\"0\" aria-valuemax=\"100\" class=\"progress-bar progress-bar-success progress-80\">\n                    <span class=\"sr-only\">80% Complete</span>\n                </div>\n            </div>\n        </div>\n        <div class=\"p\">\n            <p>\n                <small class=\"text-muted\">Upload quota</small>\n            </p>\n            <div class=\"progress progress-xs m0\">\n                <div role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\" class=\"progress-bar progress-bar-warning progress-40\">\n                    <span class=\"sr-only\">40% Complete</span>\n                </div>\n            </div>\n        </div>\n    </tab>\n</tabset>\n"
 
 /***/ }),
 
 /***/ 838:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"item user-block\" *ngIf=\"userBlockIsVisible()\">\n    <!-- User picture-->\n    <div class=\"user-block-picture\">\n        <div class=\"user-block-status\">\n            <img class=\"img-thumbnail img-circle\" [src]=\"user.picture\" alt=\"Avatar\" />\n            <div class=\"circle circle-success circle-lg\"></div>\n        </div>\n    </div>\n    <!-- Name and Job-->\n    <div class=\"user-block-info\">\n        <span class=\"user-block-name\">{{ 'sidebar.WELCOME' | translate }}  John</span>\n        <span class=\"user-block-role\">Programmer</span>\n    </div>\n</div>\n"
+module.exports = "<!-- START Sidebar (left)-->\n<div class=\"aside-inner\">\n    <nav class=\"sidebar\" sidebar-anyclick-close=\"\" [class.show-scrollbar]=\"settings.layout.asideScrollbar\">\n\n        <!-- START sidebar nav-->\n        <ul class=\"nav\">\n\n            <!-- START user info-->\n            <li class=\"has-user-block\">\n                <app-userblock></app-userblock>\n            </li>\n            <!-- END user info-->\n\n            <li *ngFor='let item of menuItems' [ngClass]=\"{'nav-heading': item.heading}\" [routerLinkActive]=\"['active']\">\n                <!-- menu heading -->\n                <span *ngIf=\"item.heading\">{{(item.translate | translate) || item.text}}</span>\n                <!-- external links -->\n                <a *ngIf=\"!item.heading && !item.submenu && item.elink\" [attr.target]=\"item.target\" [attr.href]=\"item.elink\" title=\"{{item.text}}\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- single menu item -->\n                <a *ngIf=\"!item.heading && !item.submenu && !item.elink\" [routerLink]=\"item.link\" [attr.route]=\"item.link\" title=\"{{item.text}}\"\n                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                    <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                    <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                    <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- has submenu -->\n                <a *ngIf=\"!item.heading && item.submenu\" title=\"{{item.text}}\"\n                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                        <span class=\"pull-right\" *ngIf=\"item.alert\" [ngClass]=\"item.label || 'label label-success'\">{{item.alert}}</span>\n                        <em class=\"{{item.icon}}\" *ngIf=\"item.icon\"></em>\n                        <span>{{(item.translate | translate) || item.text}}</span>\n                </a>\n                <!-- SUBLEVEL -->\n                <ul *ngIf=\"item.submenu\" class=\"nav sidebar-subnav\" [routerLinkActive]=\"['opening']\">\n                    <li class=\"sidebar-subnav-header\">{{(item.translate | translate) || item.text}}</li>\n                    <li *ngFor='let subitem of item.submenu' [routerLinkActive]=\"['active']\">\n                        <!-- sublevel: external links -->\n                        <a *ngIf=\"!subitem.heading && !subitem.submenu && subitem.elink\" [attr.target]=\"subitem.target\" [attr.href]=\"subitem.elink\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: single menu item  -->\n                        <a *ngIf=\"!subitem.submenu && !subitem.elink\" [routerLink]=\"subitem.link\" [attr.route]=\"subitem.link\" title=\"{{subitem.text}}\">\n                            <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                            <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                            <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- sublevel: has submenu -->\n                        <a *ngIf=\"subitem.submenu\" title=\"{{subitem.text}}\"\n                            (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                <span class=\"pull-right\" *ngIf=\"subitem.alert\" [ngClass]=\"subitem.label || 'label label-success'\">{{subitem.alert}}</span>\n                                <em class=\"{{subitem.icon}}\" *ngIf=\"subitem.icon\"></em>\n                                <span>{{(subitem.translate | translate) || subitem.text}}</span>\n                        </a>\n                        <!-- SUBLEVEL 2 -->\n                        <ul *ngIf=\"subitem.submenu\" class=\"nav sidebar-subnav level2\" [routerLinkActive]=\"['opening']\">\n                            <li *ngFor='let subitem2 of subitem.submenu' [routerLinkActive]=\"['active']\">\n                                <!-- sublevel 2: single menu item  -->\n                                <a *ngIf=\"!subitem2.submenu\" [routerLink]=\"subitem2.link\" [attr.route]=\"subitem2.link\" title=\"{{subitem2.text}}\">\n                                    <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                    <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                    <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- sublevel2: has submenu -->\n                                <a *ngIf=\"subitem2.submenu\" title=\"{{subitem2.text}}\"\n                                    (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                        <span class=\"pull-right\" *ngIf=\"subitem2.alert\" [ngClass]=\"subitem2.label || 'label label-success'\">{{subitem2.alert}}</span>\n                                        <em class=\"{{subitem2.icon}}\" *ngIf=\"subitem2.icon\"></em>\n                                        <span>{{(subitem2.translate | translate) || subitem2.text}}</span>\n                                </a>\n                                <!-- SUBLEVEL 3 -->\n                                <ul *ngIf=\"subitem2.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                    <li *ngFor='let subitem3 of subitem2.submenu' [routerLinkActive]=\"['active']\">\n                                        <!-- sublevel 2: single menu item  -->\n                                        <a *ngIf=\"!subitem3.submenu\" [routerLink]=\"subitem3.link\" [attr.route]=\"subitem3.link\" title=\"{{subitem3.text}}\">\n                                            <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                            <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                            <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- sublevel3: has submenu -->\n                                        <a *ngIf=\"subitem3.submenu\" title=\"{{subitem3.text}}\"\n                                            (click)=\"toggleSubmenuClick($event)\" (mouseenter)=\"toggleSubmenuHover($event)\">\n                                                <span class=\"pull-right\" *ngIf=\"subitem3.alert\" [ngClass]=\"subitem3.label || 'label label-success'\">{{subitem3.alert}}</span>\n                                                <em class=\"{{subitem3.icon}}\" *ngIf=\"subitem3.icon\"></em>\n                                                <span>{{(subitem3.translate | translate) || subitem3.text}}</span>\n                                        </a>\n                                        <!-- SUBLEVEL 4 -->\n                                        <ul *ngIf=\"subitem3.submenu\" class=\"nav sidebar-subnav level3\" [routerLinkActive]=\"['opening']\">\n                                            <li *ngFor='let subitem4 of subitem3.submenu' [routerLinkActive]=\"['active']\">\n                                                <!-- sublevel 2: single menu item  -->\n                                                <a *ngIf=\"!subitem4.submenu\" [routerLink]=\"subitem4.link\" [attr.route]=\"subitem4.link\" title=\"{{subitem4.text}}\">\n                                                    <span class=\"pull-right\" *ngIf=\"subitem4.alert\" [ngClass]=\"subitem4.label || 'label label-success'\">{{subitem4.alert}}</span>\n                                                    <em class=\"{{subitem4.icon}}\" *ngIf=\"subitem4.icon\"></em>\n                                                    <span>{{(subitem4.translate | translate) || subitem4.text}}</span>\n                                                </a>\n                                            </li>\n                                        </ul>\n                                    </li>\n                                </ul>\n                            <li>\n                        </ul>\n                    <li>\n                </ul>\n            </li>\n\n        </ul>\n        <!-- END sidebar nav-->\n\n    </nav>\n</div>\n<!-- END Sidebar (left)-->\n"
 
 /***/ }),
 
 /***/ 839:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n    <div class=\"block-center mt-xl wd-xl\">\n        <!-- START panel-->\n        <div class=\"panel panel-dark panel-flat\">\n            <div class=\"panel-heading text-center\">\n                <a href=\"#\">\n                    <img class=\"block-center img-rounded\" src=\"assets/img/logo.png\" alt=\"Image\" width=\"190\" height=\"29\" />\n                </a>\n            </div>\n            <div class=\"panel-body\">\n                <p class=\"text-center pv\">SIGN IN TO CONTINUE.</p>\n                <form [formGroup]=\"valForm\" class=\"form-validate mb-lg\" role=\"form\" name=\"loginForm\" novalidate=\"\" (submit)=\"submitForm($event, valForm.value)\">\n                    <div class=\"form-group has-feedback\">\n                        <input class=\"form-control\" id=\"exampleInputEmail1\" type=\"email\" name=\"email\" placeholder=\"Enter email\" autocomplete=\"off\" formControlName=\"email\" required=\"\" />\n                        <span class=\"fa fa-envelope form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('required') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('email') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field must be a valid email address</span>\n                    </div>\n                    <div class=\"form-group has-feedback\">\n                        <input class=\"form-control\" id=\"exampleInputPassword1\" type=\"password\" name=\"password\" placeholder=\"Password\" formControlName=\"password\" required=\"\" />\n                        <span class=\"fa fa-lock form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['password'].hasError('required') && (valForm.controls['password'].dirty || valForm.controls['password'].touched)\">This field is required</span>\n                    </div>\n                    <div class=\"clearfix\">\n                        <div class=\"checkbox c-checkbox pull-left mt0\">\n                            <label>\n                                <input type=\"checkbox\" value=\"\" name=\"account_remember\"/>\n                                <span class=\"fa fa-check\"></span>Remember Me</label>\n                        </div><br>\n                        <div class=\"pull-right\"><a class=\"text-muted\" [routerLink]=\"'/recover'\">Forgot your password?</a>\n                        </div><br>\n                        <div class=\"pull-right\"><a class=\"text-muted\" [routerLink]=\"'/recoverusername'\">Forgot your username?</a>\n                        </div>\n                    </div>\n                    <button class=\"btn btn-block btn-primary mt-lg\" type=\"submit\">Login</button>\n                </form>\n                <!-- <div class=\"alert alert-danger text-center\" ></div> -->\n                <p class=\"pt-lg text-center\">Need to Signup?</p><a class=\"btn btn-block btn-default\" [routerLink]=\"'/register'\">Register Now</a>\n            </div>\n        </div>\n        <!-- END panel-->\n        <!--<div class=\"p-lg text-center\">\n            <span>&copy;</span>\n            <span>{{ settings.app.year }}</span>\n            <span>-</span>\n            <span>{{ settings.app.name }}</span>\n            <br/>\n            <span>{{ settings.app.description }}</span>\n        </div>-->\n    </div>\n</div>"
+module.exports = "<div class=\"item user-block\" *ngIf=\"userBlockIsVisible()\">\n    <!-- User picture-->\n    <div class=\"user-block-picture\">\n        <div class=\"user-block-status\">\n            <img class=\"img-thumbnail img-circle\" [src]=\"user.picture\" alt=\"Avatar\" />\n            <div class=\"circle circle-success circle-lg\"></div>\n        </div>\n    </div>\n    <!-- Name and Job-->\n    <div class=\"user-block-info\">\n        <span class=\"user-block-name\">{{ 'sidebar.WELCOME' | translate }}  John</span>\n        <span class=\"user-block-role\">Programmer</span>\n    </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 840:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n    <div class=\"block-center mt-xl wd-xl\">\n        <!-- START panel-->\n        <div class=\"panel panel-dark panel-flat\">\n            <div class=\"panel-heading text-center\">\n                <a href=\"#\">\n                    <img class=\"block-center img-rounded\" src=\"assets/img/logo.png\" alt=\"Image\" width=\"190\" height=\"29\" />\n                </a>\n            </div>\n            <div class=\"panel-body\">\n                <p class=\"text-center pv\">USERNAME RESET</p>\n                <form [formGroup]=\"valForm\" class=\"form-validate\" role=\"form\" name=\"recoverForm\" novalidate=\"\" (submit)=\"submitForm($event, valForm.value)\">\n                    <p class=\"text-center\">Fill with your mail to receive instructions on how to reset your username.</p>\n                    <div class=\"form-group has-feedback\">\n                        <label class=\"text-muted\">Email address</label>\n                        <input class=\"form-control\" type=\"email\" name=\"email\" placeholder=\"Enter email\" autocomplete=\"off\" formControlName=\"email\"/>\n                        <span class=\"fa fa-envelope form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('required') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('email') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field must be a valid email address</span>\n                    </div>\n                    <button class=\"btn btn-danger btn-block\" type=\"submit\">Reset</button><br>\n                    <div class=\"pull-right\">\n                        <a class=\"text-muted\" [routerLink]=\"'/login'\">Login</a>\n                    </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n"
+module.exports = "<div class=\"wrapper\">\n    <div class=\"block-center mt-xl wd-xl\">\n        <!-- START panel-->\n        <div class=\"panel panel-dark panel-flat\">\n            <div class=\"panel-heading text-center\">\n                <a href=\"#\">\n                    <img class=\"block-center img-rounded\" src=\"assets/img/logo.png\" alt=\"Image\" width=\"190\" height=\"29\" />\n                </a>\n            </div>\n            <div class=\"panel-body\">\n                <p class=\"text-center pv\">SIGN IN TO CONTINUE.</p>\n                <form [formGroup]=\"valForm\" class=\"form-validate mb-lg\" role=\"form\" name=\"loginForm\" novalidate=\"\" (submit)=\"submitForm($event, valForm.value)\">\n                    <div class=\"form-group has-feedback\">\n                        <input class=\"form-control\" id=\"exampleInputEmail1\" type=\"email\" name=\"email\" placeholder=\"Enter email\" autocomplete=\"off\" formControlName=\"email\" required=\"\" />\n                        <span class=\"fa fa-envelope form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('required') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('email') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field must be a valid email address</span>\n                    </div>\n                    <div class=\"form-group has-feedback\">\n                        <input class=\"form-control\" id=\"exampleInputPassword1\" type=\"password\" name=\"password\" placeholder=\"Password\" formControlName=\"password\" required=\"\" />\n                        <span class=\"fa fa-lock form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['password'].hasError('required') && (valForm.controls['password'].dirty || valForm.controls['password'].touched)\">This field is required</span>\n                    </div>\n                    <div class=\"clearfix\">\n                        <div class=\"checkbox c-checkbox pull-left mt0\">\n                            <label>\n                                <input type=\"checkbox\" value=\"\" name=\"account_remember\"/>\n                                <span class=\"fa fa-check\"></span>Remember Me</label>\n                        </div><br>\n                        <div class=\"pull-right\"><a class=\"text-muted\" [routerLink]=\"'/recover'\">Forgot your password?</a>\n                        </div><br>\n                        <div class=\"pull-right\"><a class=\"text-muted\" [routerLink]=\"'/recoverusername'\">Forgot your username?</a>\n                        </div>\n                    </div>\n                    <button class=\"btn btn-block btn-primary mt-lg\" type=\"submit\">Login</button>\n                </form>\n                <!-- <div class=\"alert alert-danger text-center\" ></div> -->\n                <p class=\"pt-lg text-center\">Need to Signup?</p><a class=\"btn btn-block btn-default\" [routerLink]=\"'/register'\">Register Now</a>\n            </div>\n        </div>\n        <!-- END panel-->\n        <!--<div class=\"p-lg text-center\">\n            <span>&copy;</span>\n            <span>{{ settings.app.year }}</span>\n            <span>-</span>\n            <span>{{ settings.app.name }}</span>\n            <br/>\n            <span>{{ settings.app.description }}</span>\n        </div>-->\n    </div>\n</div>"
 
 /***/ }),
 
 /***/ 841:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n    <div class=\"block-center mt-xl wd-xl\">\n        <!-- START panel-->\n        <div class=\"panel panel-dark panel-flat\">\n            <div class=\"panel-heading text-center\">            \n                <a href=\"#\">\n                    <img class=\"block-center img-rounded\" src=\"assets/img/logo.png\" alt=\"Image\" width=\"190\" height=\"29\" />\n                </a>\n            </div>\n            <div class=\"panel-body\">\n                <p class=\"text-center pv\">PASSWORD RESET</p>\n                <form [formGroup]=\"valForm\" class=\"form-validate\" role=\"form\" name=\"recoverForm\" novalidate=\"\" (submit)=\"submitForm($event, valForm.value)\">\n                    <p class=\"text-center\">Fill with your mail to receive instructions on how to reset your password.</p>\n                    <div class=\"form-group has-feedback\">\n                        <label class=\"text-muted\">Email address</label>\n                        <input class=\"form-control\" type=\"email\" name=\"email\" placeholder=\"Enter email\" autocomplete=\"off\" formControlName=\"email\"/>\n                        <span class=\"fa fa-envelope form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('required') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('email') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field must be a valid email address</span>\n                    </div>\n                    <button class=\"btn btn-danger btn-block\" type=\"submit\">Reset</button><br>\n                    <div class=\"pull-right\">\n                        <a class=\"text-muted\" [routerLink]=\"'/login'\">Login</a>\n                    </div>\n                </form>\n            </div>\n        </div>\n        <!-- END panel-->\n        <!--<div class=\"p-lg text-center\">\n            <span>&copy;</span>\n            <span>{{ settings.app.year }}</span>\n            <span>-</span>\n            <span>{{ settings.app.name }}</span>\n            <br/>\n            <span>{{ settings.app.description }}</span>\n        </div>-->\n    </div>\n</div>\n"
+module.exports = "<div class=\"wrapper\">\n    <div class=\"block-center mt-xl wd-xl\">\n        <!-- START panel-->\n        <div class=\"panel panel-dark panel-flat\">\n            <div class=\"panel-heading text-center\">\n                <a href=\"#\">\n                    <img class=\"block-center img-rounded\" src=\"assets/img/logo.png\" alt=\"Image\" width=\"190\" height=\"29\" />\n                </a>\n            </div>\n            <div class=\"panel-body\">\n                <p class=\"text-center pv\">USERNAME RESET</p>\n                <form [formGroup]=\"valForm\" class=\"form-validate\" role=\"form\" name=\"recoverForm\" novalidate=\"\" (submit)=\"submitForm($event, valForm.value)\">\n                    <p class=\"text-center\">Fill with your mail to receive instructions on how to reset your username.</p>\n                    <div class=\"form-group has-feedback\">\n                        <label class=\"text-muted\">Email address</label>\n                        <input class=\"form-control\" type=\"email\" name=\"email\" placeholder=\"Enter email\" autocomplete=\"off\" formControlName=\"email\"/>\n                        <span class=\"fa fa-envelope form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('required') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('email') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field must be a valid email address</span>\n                    </div>\n                    <button class=\"btn btn-danger btn-block\" type=\"submit\">Reset</button><br>\n                    <div class=\"pull-right\">\n                        <a class=\"text-muted\" [routerLink]=\"'/login'\">Login</a>\n                    </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 842:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"wrapper\">\n    <div class=\"block-center mt-xl wd-xl\">\n        <!-- START panel-->\n        <div class=\"panel panel-dark panel-flat\">\n            <div class=\"panel-heading text-center\">            \n                <a href=\"#\">\n                    <img class=\"block-center img-rounded\" src=\"assets/img/logo.png\" alt=\"Image\" width=\"190\" height=\"29\" />\n                </a>\n            </div>\n            <div class=\"panel-body\">\n                <p class=\"text-center pv\">PASSWORD RESET</p>\n                <form [formGroup]=\"valForm\" class=\"form-validate\" role=\"form\" name=\"recoverForm\" novalidate=\"\" (submit)=\"submitForm($event, valForm.value)\">\n                    <p class=\"text-center\">Fill with your mail to receive instructions on how to reset your password.</p>\n                    <div class=\"form-group has-feedback\">\n                        <label class=\"text-muted\">Email address</label>\n                        <input class=\"form-control\" type=\"email\" name=\"email\" placeholder=\"Enter email\" autocomplete=\"off\" formControlName=\"email\"/>\n                        <span class=\"fa fa-envelope form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('required') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('email') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field must be a valid email address</span>\n                    </div>\n                    <button class=\"btn btn-danger btn-block\" type=\"submit\">Reset</button><br>\n                    <div class=\"pull-right\">\n                        <a class=\"text-muted\" [routerLink]=\"'/login'\">Login</a>\n                    </div>\n                </form>\n            </div>\n        </div>\n        <!-- END panel-->\n        <!--<div class=\"p-lg text-center\">\n            <span>&copy;</span>\n            <span>{{ settings.app.year }}</span>\n            <span>-</span>\n            <span>{{ settings.app.name }}</span>\n            <br/>\n            <span>{{ settings.app.description }}</span>\n        </div>-->\n    </div>\n</div>\n"
+
+/***/ }),
+
+/***/ 843:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"wrapper\">\n    <div class=\"block-center mt-xl wd-xl\">\n        <!-- START panel-->\n        <div class=\"panel panel-dark panel-flat\">\n            <div class=\"panel-heading text-center\">                 \n                <a href=\"#\">\n                    <img class=\"block-center img-rounded\" src=\"assets/img/logo.png\" alt=\"Image\" width=\"190\" height=\"29\" />\n                </a>\n            </div>\n            <div class=\"panel-body\">\n                <!--<p class=\"text-center pv\">SIGNUP TO GET INSTANT ACCESS.</p>-->\n                <form [formGroup]=\"valForm\" class=\"form-validate mb-lg\" role=\"form\" name=\"registerForm\" novalidate=\"\" (submit)=\"submitForm($event, valForm.value)\">\n                    <div class=\"form-group has-feedback\">\n                        <!--<label class=\"text-muted\">Full name</label>-->\n                        <input class=\"form-control\" type=\"text\" name=\"account_name\" placeholder=\"Enter Name\" autocomplete=\"off\" formControlName=\"name\" required=\"\" />\n                        <span class=\"fa fa-user-o form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['name'].hasError('required') && (valForm.controls['name'].dirty || valForm.controls['name'].touched)\">Name is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['name'].hasError('minlength') && (valForm.controls['name'].dirty || valForm.controls['name'].touched)\">Name must contain atleast 2 characters</span>\n                    </div>\n                    <div class=\"form-group has-feedback\">\n                        <!--<label class=\"text-muted\">Email address</label>-->\n                        <input class=\"form-control\" type=\"email\" name=\"account_email\" placeholder=\"Enter email\" autocomplete=\"off\" formControlName=\"email\" required=\"\" />\n                        <span class=\"fa fa-envelope form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('required') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">Email is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['email'].hasError('email') && (valForm.controls['email'].dirty || valForm.controls['email'].touched)\">This field must be a valid email address</span>\n                    </div>\n                    <div formGroupName=\"passwordGroup\">\n                        <div class=\"form-group has-feedback\">\n                            <!--<label class=\"text-muted\">Password</label>-->\n                            <input class=\"form-control\" id=\"id-password\" type=\"password\" name=\"password\" placeholder=\"Enter Password\" formControlName=\"password\" [formControl]=\"valForm.get('passwordGroup.password')\"/>\n                            <span class=\"fa fa-lock form-control-feedback text-muted\"></span>\n                            <span class=\"text-danger\" *ngIf=\"valForm.get('passwordGroup.password').hasError('required') && (valForm.get('passwordGroup.password').dirty || valForm.get('passwordGroup.password').touched)\">Password is required</span>\n                            <span class=\"text-danger\" *ngIf=\"valForm.get('passwordGroup.password').hasError('pattern') && (valForm.get('passwordGroup.password').dirty || valForm.get('passwordGroup.password').touched)\">Input should match 'a-zA-Z0-9' and 6-10 length</span>\n                        </div>\n                        <div class=\"form-group has-feedback\">\n                            <!--<label class=\"text-muted\">Retype Password</label>-->\n                            <input class=\"form-control\" type=\"password\" name=\"confirmPassword\" placeholder=\"Confirm Password\" formControlName=\"confirmPassword\" [formControl]=\"valForm.get('passwordGroup.confirmPassword')\"/>\n                            <span class=\"fa fa-lock form-control-feedback text-muted\"></span>\n\n                            <span class=\"text-danger\" *ngIf=\"valForm.get('passwordGroup.confirmPassword').hasError('equalTo')\">Password does Not match</span>\n                        </div>\n                    </div>\n                    <div class=\"form-group has-feedback\">\n                        <!--<label class=\"text-muted\">address</label>-->\n                        <input class=\"form-control\" type=\"description\" name=\"account_address\" placeholder=\"Enter address\" autocomplete=\"off\" formControlName=\"address\" required=\"\" />\n                        <span class=\"fa fa-address-card form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['address'].hasError('required') && (valForm.controls['address'].dirty || valForm.controls['address'].touched)\">address is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['address'].hasError('minlength') && (valForm.controls['address'].dirty || valForm.controls['address'].touched)\">address must contain atlest 10 characters</span>\n                    </div>\n                    <div class=\"form-group has-feedback\">\n                        <!--<label class=\"text-muted\">address</label>-->\n                        <input class=\"form-control\" type=\"description\" name=\"account_company\" placeholder=\"Enter company name\" autocomplete=\"off\" formControlName=\"company\" required=\"\" />\n                        <span class=\"fa fa-briefcase form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['company'].hasError('required') && (valForm.controls['company'].dirty || valForm.controls['company'].touched)\">Company name is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['company'].hasError('minlength') && (valForm.controls['company'].dirty || valForm.controls['company'].touched)\">Company name must contain atlest 2 characters</span>\n                    </div>\n                    <div class=\"form-group has-feedback\">\n                        <!--<label class=\"text-muted\">Phone Number</label>-->\n                        <input class=\"form-control\" type=\"number\" name=\"account_phone\" placeholder=\"Enter Mobile number\" autocomplete=\"off\" formControlName=\"phone\" required=\"\" />\n                        <span class=\"fa fa-phone-square form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['phone'].hasError('required') && (valForm.controls['phone'].dirty || valForm.controls['phone'].touched)\">Phone Number is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['phone'].hasError('minlength') && (valForm.controls['phone'].dirty || valForm.controls['phone'].touched)\">Must contain atleast 10 number</span>\n                    </div>\n                    <div class=\"form-group has-feedback\">\n                        <!--<label class=\"text-muted\">Phone Number</label>-->\n                        <input class=\"form-control\" type=\"number\" name=\"account_pincode\" placeholder=\"Enter Pin code\" autocomplete=\"off\" formControlName=\"pincode\" required=\"\" />\n                        <span class=\"fa fa-ellipsis-h form-control-feedback text-muted\"></span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['pincode'].hasError('required') && (valForm.controls['pincode'].dirty || valForm.controls['pincode'].touched)\">Pin Code is required</span>\n                        <span class=\"text-danger\" *ngIf=\"valForm.controls['pincode'].hasError('minlength') && (valForm.controls['pincode'].dirty || valForm.controls['pincode'].touched)\">Must contain atleast 6 numbers</span>\n                    </div>\n                    <div class=\"clearfix\">\n                        <div class=\"checkbox c-checkbox pull-left mt0\">\n                            <label>\n                                <input type=\"checkbox\" required=\"\" name=\"account_agreed\" formControlName=\"accountagreed\" />\n                                <span class=\"fa fa-check\"></span>I agree with the <a href=\"#\">terms</a>\n                            </label>\n                        </div>\n                    </div>\n                    <span class=\"text-danger\" *ngIf=\"valForm.controls['accountagreed'].hasError('required') && (valForm.controls['accountagreed'].dirty || valForm.controls['accountagreed'].touched)\">You must agree the terms</span>\n                    <button class=\"btn btn-block btn-primary mt-lg\" type=\"submit\">Create account</button>\n                </form>\n                <!-- <div class=\"alert alert-danger text-center\"></div> -->\n                <p class=\"pt-lg text-center\">Have an account?</p><a class=\"btn btn-block btn-default\" [routerLink]=\"'/login'\">Signin</a>\n            </div>\n        </div>\n        <!-- END panel-->\n        <!--<div class=\"p-lg text-center\">\n            <span>&copy;</span>\n            <span>{{ settings.app.year }}</span>\n            <span>-</span>\n            <span>{{ settings.app.name }}</span>\n            <br/>\n            <span>{{ settings.app.description }}</span>\n        </div>-->\n    </div>\n</div>\n"
